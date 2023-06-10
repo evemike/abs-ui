@@ -5,11 +5,13 @@
   "types": "index.d.ts",
   "main": "./index.es.js",
   "module": "./index.es.js",
-  "style": "/style.css",
+  "style": "./style.css",
   "exports": {
     ".": {
       "import": "./index.es.js",
       "require": "./index.umd.js"
-    }
+    },
+    "./style": "./style.css",
+    "./*": "./*"
   }
 }
