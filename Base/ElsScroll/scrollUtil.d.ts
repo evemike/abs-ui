@@ -47,6 +47,7 @@ export default class ScrollUtil {
     dragEventHandle: any;
     moveEventHandle: any;
     init(): void;
+    listenContentSizeChange(): void;
     setContentSize(): void;
     initContentScroll(): void;
     showScrollBar(): void;
