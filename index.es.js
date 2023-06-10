@@ -9779,7 +9779,7 @@ class c8 {
   //
   // 初始化 content size
   setContentSize() {
-    this.contentRef.value && (this.contentWidth = this.contentRef.value.clientWidth, this.contentHeight = this.contentRef.value.clientHeight, this.contentScrollWidth = this.contentRef.value.scrollWidth, this.contentScrollHeight = this.contentRef.value.scrollHeight), console.log(this.contentWidth, this.contentHeight, this.contentScrollWidth, this.contentScrollHeight);
+    this.contentRef.value && (this.contentWidth = this.contentRef.value.clientWidth, this.contentHeight = this.contentRef.value.clientHeight, this.contentScrollWidth = this.contentRef.value.scrollWidth, this.contentScrollHeight = this.contentRef.value.scrollHeight), console.log(this.contentWidth, this.contentHeight, this.contentScrollWidth, this.contentScrollHeight, [this.contentRef.value]);
   }
   //
   initContentScroll() {
