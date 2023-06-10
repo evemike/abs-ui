@@ -1,13 +1,5 @@
 import type { PropType as __PropType } from 'vue';
 declare const _sfc_main: import("vue").DefineComponent<{
-    width: {
-        type: __PropType<string | undefined>;
-        required: false;
-    };
-    height: {
-        type: __PropType<string | undefined>;
-        required: false;
-    };
     class: {
         type: __PropType<string | undefined>;
         required: false;
@@ -70,16 +62,13 @@ declare const _sfc_main: import("vue").DefineComponent<{
         type: __PropType<string | undefined>;
         required: false;
         default: string;
+    };
+    trackSize: {
+        type: __PropType<number | [width: number, height: number] | undefined>;
+        required: false;
+        default: number;
     };
 }, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
-    width: {
-        type: __PropType<string | undefined>;
-        required: false;
-    };
-    height: {
-        type: __PropType<string | undefined>;
-        required: false;
-    };
     class: {
         type: __PropType<string | undefined>;
         required: false;
@@ -142,6 +131,11 @@ declare const _sfc_main: import("vue").DefineComponent<{
         type: __PropType<string | undefined>;
         required: false;
         default: string;
+    };
+    trackSize: {
+        type: __PropType<number | [width: number, height: number] | undefined>;
+        required: false;
+        default: number;
     };
 }>>, {
     autoHide: boolean | undefined;
@@ -155,5 +149,6 @@ declare const _sfc_main: import("vue").DefineComponent<{
     scrollClass: string | undefined;
     scrollYClass: string | undefined;
     scrollXClass: string | undefined;
+    trackSize: number | [width: number, height: number] | undefined;
 }, {}>;
 export default _sfc_main;
