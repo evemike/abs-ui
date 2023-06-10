@@ -9918,7 +9918,8 @@ class M6 {
   }
   // 初始化 content size
   setContentSize() {
-    this.contentRef.value && (this.contentWidth = this.contentRef.value.clientWidth, this.contentHeight = this.contentRef.value.clientHeight, this.contentScrollWidth = this.contentRef.value.scrollWidth, this.contentScrollHeight = this.contentRef.value.scrollHeight, this.showX.value = this.contentScrollWidth > this.contentWidth, this.showY.value = this.contentScrollHeight > this.contentHeight);
+    var t;
+    this.contentRef.value && (this.contentWidth = this.contentRef.value.offsetWidth, this.contentHeight = this.contentRef.value.offsetHeight, this.contentScrollWidth = this.contentRef.value.scrollWidth, this.contentScrollHeight = this.contentRef.value.scrollHeight, this.showX.value = this.contentScrollWidth > this.contentWidth, this.showY.value = this.contentScrollHeight > this.contentHeight), console.log(this.contentWidth, this.contentHeight, this.contentScrollWidth, this.contentScrollHeight, (t = this.contentRef.value) == null ? void 0 : t.offsetHeight);
   }
   //
   initContentScroll() {
