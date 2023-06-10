@@ -7,6 +7,7 @@ interface Config {
     thumbXRef: Ref<HTMLElement | undefined>;
     thumbYRef: Ref<HTMLElement | undefined>;
     minThumbSize: number;
+    autoHide: boolean;
 }
 export default class ScrollUtil {
     containerRef: Ref<HTMLElement | undefined>;
@@ -17,6 +18,7 @@ export default class ScrollUtil {
     thumbYRef: Ref<HTMLElement | undefined>;
     thumbXSize: Ref<number>;
     thumbYSize: Ref<number>;
+    autoHide: boolean;
     constructor(config: Config);
     contentWidth: Ref<number>;
     contentHeight: Ref<number>;
@@ -37,6 +39,9 @@ export default class ScrollUtil {
     alignSize: Ref<number[]>;
     maxOffsetX: number;
     maxOffsetY: number;
+    trackOpacity: Ref<number>;
+    trackVisible: Ref<boolean>;
+    showTrack: import("vue").ComputedRef<boolean>;
     dragEventHandle: any;
     moveEventHandle: any;
     init(): void;

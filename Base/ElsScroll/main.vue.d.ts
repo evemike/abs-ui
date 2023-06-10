@@ -13,11 +13,6 @@ declare const _sfc_main: import("vue").DefineComponent<{
         required: false;
         default: boolean;
     };
-    barClass: {
-        type: __PropType<string | [x: string, y: string] | undefined>;
-        required: false;
-        default: () => string[];
-    };
     thumbClass: {
         type: __PropType<string | [x: string, y: string] | undefined>;
         required: false;
@@ -26,13 +21,25 @@ declare const _sfc_main: import("vue").DefineComponent<{
     thumbXClass: {
         type: __PropType<string | undefined>;
         required: false;
+        default: string;
     };
     thumbYClass: {
         type: __PropType<string | undefined>;
         required: false;
+        default: string;
     };
     trackClass: {
         type: __PropType<string | [x: string, y: string] | undefined>;
+        required: false;
+        default: string;
+    };
+    trackXClass: {
+        type: __PropType<string | undefined>;
+        required: false;
+        default: string;
+    };
+    trackYClass: {
+        type: __PropType<string | undefined>;
         required: false;
         default: string;
     };
@@ -42,6 +49,16 @@ declare const _sfc_main: import("vue").DefineComponent<{
         default: number;
     };
     scrollClass: {
+        type: __PropType<string | undefined>;
+        required: false;
+        default: string;
+    };
+    scrollYClass: {
+        type: __PropType<string | undefined>;
+        required: false;
+        default: string;
+    };
+    scrollXClass: {
         type: __PropType<string | undefined>;
         required: false;
         default: string;
@@ -60,11 +77,6 @@ declare const _sfc_main: import("vue").DefineComponent<{
         required: false;
         default: boolean;
     };
-    barClass: {
-        type: __PropType<string | [x: string, y: string] | undefined>;
-        required: false;
-        default: () => string[];
-    };
     thumbClass: {
         type: __PropType<string | [x: string, y: string] | undefined>;
         required: false;
@@ -73,13 +85,25 @@ declare const _sfc_main: import("vue").DefineComponent<{
     thumbXClass: {
         type: __PropType<string | undefined>;
         required: false;
+        default: string;
     };
     thumbYClass: {
         type: __PropType<string | undefined>;
         required: false;
+        default: string;
     };
     trackClass: {
         type: __PropType<string | [x: string, y: string] | undefined>;
+        required: false;
+        default: string;
+    };
+    trackXClass: {
+        type: __PropType<string | undefined>;
+        required: false;
+        default: string;
+    };
+    trackYClass: {
+        type: __PropType<string | undefined>;
         required: false;
         default: string;
     };
@@ -93,12 +117,27 @@ declare const _sfc_main: import("vue").DefineComponent<{
         required: false;
         default: string;
     };
+    scrollYClass: {
+        type: __PropType<string | undefined>;
+        required: false;
+        default: string;
+    };
+    scrollXClass: {
+        type: __PropType<string | undefined>;
+        required: false;
+        default: string;
+    };
 }>>, {
     autoHide: boolean | undefined;
-    barClass: string | [x: string, y: string] | undefined;
     thumbClass: string | [x: string, y: string] | undefined;
+    thumbXClass: string | undefined;
+    thumbYClass: string | undefined;
     trackClass: string | [x: string, y: string] | undefined;
+    trackXClass: string | undefined;
+    trackYClass: string | undefined;
     thumbMinSize: number | undefined;
     scrollClass: string | undefined;
-}>;
+    scrollYClass: string | undefined;
+    scrollXClass: string | undefined;
+}, {}>;
 export default _sfc_main;

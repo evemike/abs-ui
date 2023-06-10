@@ -24,15 +24,7 @@ declare const _sfc_main: import("vue").DefineComponent<{
         required: false;
         default: boolean;
     };
-}, {
-    formProps: Set<string>;
-    submit: (call?: (k: string, v: any) => undefined | [string, any]) => Promise<Record<string, any>>;
-    elem: import("../ElsElem").IElsElem.Elem;
-    context: import("../ElsElem").IElsElem.Context;
-    formRef: import("vue").Ref<any>;
-    formApi: (name: string, ...args: any) => any;
-    validate: (...args: any) => Promise<any>;
-}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, ("update:modelValue" | "change")[], "update:modelValue" | "change", import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
+}, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, ("update:modelValue" | "change")[], "update:modelValue" | "change", import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     modelValue: {
         type: __PropType<Record<string, any>>;
         required: true;
@@ -63,5 +55,5 @@ declare const _sfc_main: import("vue").DefineComponent<{
     size: "small" | "default" | "large" | undefined;
     modelValue: Record<string, any>;
     autoClean: boolean | undefined;
-}>;
+}, {}>;
 export default _sfc_main;

@@ -14,5 +14,5 @@ declare const _default: import("vue").DefineComponent<{
     params: PropType<Record<string, any> | undefined>;
     slotParams: PropType<any>;
     slots: PropType<any>;
-}>>, {}>;
+}>>, {}, {}>;
 export default _default;
