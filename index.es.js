@@ -9912,14 +9912,13 @@ class M6 {
   // 监听 size 变化
   listenContentSizeChange() {
     const t = T6(this.contentRef.value);
-    console.log(".............", t), b6(() => [t.width.value, t.height.value], () => {
-      this.setContentSize(), this.calcAlignSize(), console.log("....................change");
+    b6(() => [t.width.value, t.height.value], () => {
+      this.setContentSize(), this.calcAlignSize();
     }, { debounce: 100 });
   }
   // 初始化 content size
   setContentSize() {
-    var t;
-    this.contentRef.value && (this.contentWidth = this.contentRef.value.clientWidth, this.contentHeight = this.contentRef.value.clientHeight, this.contentScrollWidth = this.contentRef.value.scrollWidth, this.contentScrollHeight = this.contentRef.value.scrollHeight, this.showX.value = this.contentScrollWidth > this.contentWidth, this.showY.value = this.contentScrollHeight > this.contentHeight), console.log(this.contentWidth, this.contentHeight, this.contentScrollWidth, this.contentScrollHeight, (t = this.contentRef.value) == null ? void 0 : t.offsetHeight, [this.contentRef.value]);
+    this.contentRef.value && (this.contentWidth = this.contentRef.value.clientWidth, this.contentHeight = this.contentRef.value.clientHeight, this.contentScrollWidth = this.contentRef.value.scrollWidth, this.contentScrollHeight = this.contentRef.value.scrollHeight, this.showX.value = this.contentScrollWidth > this.contentWidth, this.showY.value = this.contentScrollHeight > this.contentHeight);
   }
   //
   initContentScroll() {
