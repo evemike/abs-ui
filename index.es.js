@@ -9548,7 +9548,7 @@ function QF(e, t = 200, n = !1, r = !0, o = !1) {
     e
   );
 }
-function e6(e) {
+function e8(e) {
   var t;
   const n = $t(e);
   return (t = n == null ? void 0 : n.$el) != null ? t : n;
@@ -9562,7 +9562,7 @@ function ze(...e) {
   const a = [], i = () => {
     a.forEach((d) => d()), a.length = 0;
   }, s = (d, p, b, m) => (d.addEventListener(p, b, m), () => d.removeEventListener(p, b, m)), l = V(
-    () => [e6(t), $t(o)],
+    () => [e8(t), $t(o)],
     ([d, p]) => {
       i(), d && a.push(
         ...n.flatMap((b) => r.map((m) => s(d, b, m, p)))
@@ -9574,7 +9574,7 @@ function ze(...e) {
   };
   return YF(c), c;
 }
-function t6(e, t = {}) {
+function t8(e, t = {}) {
   const {
     delayEnter: n = 0,
     delayLeave: r = 0,
@@ -9588,7 +9588,7 @@ function t6(e, t = {}) {
   return o && (ze(e, "mouseenter", () => s(!0), { passive: !0 }), ze(e, "mouseleave", () => s(!1), { passive: !0 })), a;
 }
 const Pl = 1;
-function n6(e, t = {}) {
+function n8(e, t = {}) {
   const {
     throttle: n = 0,
     idle: r = 200,
@@ -9676,15 +9676,15 @@ function n6(e, t = {}) {
     }
   };
 }
-var r6 = mu, o6 = 4;
-function a6(e) {
-  return r6(e, o6);
+var r8 = mu, o8 = 4;
+function a8(e) {
+  return r8(e, o8);
 }
-var i6 = a6;
-const Br = /* @__PURE__ */ Pe(i6), s6 = { class: "els-form" }, l6 = {
+var i8 = a8;
+const Br = /* @__PURE__ */ Pe(i8), s8 = { class: "els-form" }, l8 = {
   name: "ElsForm"
-}, u6 = /* @__PURE__ */ H({
-  ...l6,
+}, u8 = /* @__PURE__ */ H({
+  ...l8,
   props: {
     modelValue: { default: () => ({}) },
     column: {},
@@ -9733,19 +9733,19 @@ const Br = /* @__PURE__ */ Pe(i6), s6 = { class: "els-form" }, l6 = {
         }
       }
       return h;
-    } }), (m, h) => (I(), B("div", s6, [
+    } }), (m, h) => (I(), B("div", s8, [
       $e(f(Uu), {
         elem: f(p).elem,
         context: f(p).context
       }, null, 8, ["elem", "context"])
     ]));
   }
-}), c6 = {
+}), c8 = {
   install: (e) => {
-    e.component("els-form", u6);
+    e.component("els-form", u8);
   }
 };
-class f6 {
+class f8 {
   constructor(t) {
     ee(this, "containerRef");
     ee(this, "contentRef");
@@ -9795,8 +9795,8 @@ class f6 {
   }
   //
   initContentScroll() {
-    this.isHover = t6(this.containerRef, { delayLeave: 1e3 });
-    const { x: t, y: n } = n6(this.contentRef);
+    this.isHover = t8(this.containerRef, { delayLeave: 1e3 });
+    const { x: t, y: n } = n8(this.contentRef);
     this.scrollX = t, this.scrollY = n;
   }
   // 是否需要显示滚动条
@@ -9864,11 +9864,13 @@ class f6 {
     });
   }
 }
-const d6 = {
+const d8 = {
   name: "ElsScroll"
-}, p6 = /* @__PURE__ */ H({
-  ...d6,
+}, p8 = /* @__PURE__ */ H({
+  ...d8,
   props: {
+    width: {},
+    height: {},
     class: {},
     style: {},
     autoHide: { type: Boolean, default: !0 },
@@ -9884,7 +9886,7 @@ const d6 = {
     scrollXClass: { default: "important-h-10" }
   },
   setup(e) {
-    const t = e, n = C(), r = C(), o = C(), a = C(), i = C(), s = C(), l = new f6({
+    const t = e, n = C(), r = C(), o = C(), a = C(), i = C(), s = C(), l = new f8({
       containerRef: n,
       contentRef: r,
       trackXRef: o,
@@ -9899,13 +9901,13 @@ const d6 = {
     }), (c, d) => (I(), B("div", {
       ref_key: "containerRef",
       ref: n,
-      class: "relative block",
-      style: me(`width:${f(l).contentWidth.value}px;height:${f(l).contentHeight.value}px;`)
+      class: "relative block p-0 m-0 els-scroll",
+      style: me(`width:${c.width || "100%"};height:${c.height || "100%"}`)
     }, [
       K("div", {
         ref_key: "contentRef",
         ref: r,
-        class: F(["_scroll-wapper relative overflow-auto", t.class || ""]),
+        class: F(["_scroll-wapper important-w-100% important-h-100% relative overflow-auto", t.class || ""]),
         style: me(t.style || "")
       }, [
         te(c.$slots, "default", {}, void 0, !0)
@@ -9961,24 +9963,24 @@ const d6 = {
     ], 4));
   }
 });
-const v6 = (e, t) => {
+const v8 = (e, t) => {
   const n = e.__vccOpts || e;
   for (const [r, o] of t)
     n[r] = o;
   return n;
-}, h6 = /* @__PURE__ */ v6(p6, [["__scopeId", "data-v-7d646aaa"]]), g6 = {
+}, h8 = /* @__PURE__ */ v8(p8, [["__scopeId", "data-v-98cb0706"]]), g8 = {
   install: (e) => {
-    e.component("els-scroll", h6);
+    e.component("els-scroll", h8);
   }
-}, y6 = {
+}, y8 = {
   install: (e) => {
-    p_.install(e), c6.install(e), g6.install(e);
+    p_.install(e), c8.install(e), g8.install(e);
   }
 };
 export {
   Uu as ElsElem,
   De as ElsElemUtil,
-  u6 as ElsForm,
-  h6 as ElsScroll,
-  y6 as default
+  u8 as ElsForm,
+  h8 as ElsScroll,
+  y8 as default
 };

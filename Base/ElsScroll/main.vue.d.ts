@@ -1,11 +1,19 @@
 import type { PropType as __PropType } from 'vue';
 declare const _sfc_main: import("vue").DefineComponent<{
+    width: {
+        type: __PropType<string | undefined>;
+        required: false;
+    };
+    height: {
+        type: __PropType<string | undefined>;
+        required: false;
+    };
     class: {
-        type: __PropType<any>;
+        type: __PropType<string | undefined>;
         required: false;
     };
     style: {
-        type: __PropType<any>;
+        type: __PropType<string | undefined>;
         required: false;
     };
     autoHide: {
@@ -64,12 +72,20 @@ declare const _sfc_main: import("vue").DefineComponent<{
         default: string;
     };
 }, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
+    width: {
+        type: __PropType<string | undefined>;
+        required: false;
+    };
+    height: {
+        type: __PropType<string | undefined>;
+        required: false;
+    };
     class: {
-        type: __PropType<any>;
+        type: __PropType<string | undefined>;
         required: false;
     };
     style: {
-        type: __PropType<any>;
+        type: __PropType<string | undefined>;
         required: false;
     };
     autoHide: {
