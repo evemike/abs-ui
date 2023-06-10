@@ -9933,7 +9933,7 @@ class M6 {
   calcAlignSize() {
     const t = this.showX.value && this.showY.value;
     let n = [0, 0];
-    t && (n = [this.trackYSize, this.trackXSize]), !(this.alignSize.value[0] == n[0] && this.alignSize.value[1] == n[1]) && (this.alignSize.value = n, this.calcThumbSize());
+    t && (n = [this.trackYSize, this.trackXSize]), this.alignSize.value = n, this.calcThumbSize();
   }
   // 滑块大小计算
   calcThumbSize() {
