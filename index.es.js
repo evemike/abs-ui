@@ -9828,7 +9828,7 @@ class c8 {
     this.moveEventHandle = et(document, "mousemove", (a) => {
       const i = a.x - r, s = a.y - o;
       n == "X" ? this.calcThumbXPos(i) && this.calcScrollXPos() : this.calcThumbYPos(s) && this.calcScrollYPos(), r = a.x, o = a.y;
-    }), n == "X" ? this.isScrollX.value = !0 : this.isScrollY.value = !0, this.showTrack();
+    }), this.isScroll.value = !0, n == "X" ? this.isScrollX.value = !0 : this.isScrollY.value = !0, this.showTrack();
   }
   // 轨道点击事件
   trackClickHandle(t, n) {
@@ -9836,7 +9836,7 @@ class c8 {
   }
   // 由滚动事件触发的位置变化重新计算滑块的位置
   scrollEventHandle(t) {
-    t.stopPropagation(), t.preventDefault(), this.isScroll.value = !0, this.scrollX.value > 0 && (this.offsetX.value = Math.round(this.scrollX.value / this.speedX)), this.scrollY.value > 0 && (this.offsetY.value = Math.round(this.scrollY.value / this.speedY));
+    t.stopPropagation(), t.preventDefault(), this.scrollX.value > 0 && (this.offsetX.value = Math.round(this.scrollX.value / this.speedX)), this.scrollY.value > 0 && (this.offsetY.value = Math.round(this.scrollY.value / this.speedY));
   }
   mouseEnterHandle() {
     this.isHover.value = !0, this.showTrack();
