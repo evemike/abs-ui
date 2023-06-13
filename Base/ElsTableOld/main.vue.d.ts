@@ -26,6 +26,7 @@ declare const _sfc_main: import("vue").DefineComponent<{
     fit: {
         type: __PropType<boolean | undefined>;
         required: false;
+        default: boolean;
     };
     stripe: {
         type: __PropType<boolean | undefined>;
@@ -35,6 +36,7 @@ declare const _sfc_main: import("vue").DefineComponent<{
     border: {
         type: __PropType<boolean | undefined>;
         required: false;
+        default: boolean;
     };
     showHeader: {
         type: __PropType<boolean | undefined>;
@@ -44,6 +46,7 @@ declare const _sfc_main: import("vue").DefineComponent<{
     showSummary: {
         type: __PropType<boolean | undefined>;
         required: false;
+        default: boolean;
     };
     sumText: {
         type: __PropType<string | undefined>;
@@ -123,6 +126,7 @@ declare const _sfc_main: import("vue").DefineComponent<{
     highlightCurrentRow: {
         type: __PropType<boolean | undefined>;
         required: false;
+        default: boolean;
     };
     rowKey: {
         type: __PropType<string | ((row: any) => string) | undefined>;
@@ -136,6 +140,7 @@ declare const _sfc_main: import("vue").DefineComponent<{
     emptyText: {
         type: __PropType<string | undefined>;
         required: false;
+        default: string;
     };
     expandRowKeys: {
         type: __PropType<any[] | undefined>;
@@ -144,6 +149,7 @@ declare const _sfc_main: import("vue").DefineComponent<{
     defaultExpandAll: {
         type: __PropType<boolean | undefined>;
         required: false;
+        default: boolean;
     };
     defaultSort: {
         type: __PropType<{
@@ -157,6 +163,7 @@ declare const _sfc_main: import("vue").DefineComponent<{
     tooltipEffect: {
         type: __PropType<"dark" | "light" | undefined>;
         required: false;
+        default: string;
     };
     spanMethod: {
         type: __PropType<((data: {
@@ -288,6 +295,7 @@ declare const _sfc_main: import("vue").DefineComponent<{
     fit: {
         type: __PropType<boolean | undefined>;
         required: false;
+        default: boolean;
     };
     stripe: {
         type: __PropType<boolean | undefined>;
@@ -297,6 +305,7 @@ declare const _sfc_main: import("vue").DefineComponent<{
     border: {
         type: __PropType<boolean | undefined>;
         required: false;
+        default: boolean;
     };
     showHeader: {
         type: __PropType<boolean | undefined>;
@@ -306,6 +315,7 @@ declare const _sfc_main: import("vue").DefineComponent<{
     showSummary: {
         type: __PropType<boolean | undefined>;
         required: false;
+        default: boolean;
     };
     sumText: {
         type: __PropType<string | undefined>;
@@ -385,6 +395,7 @@ declare const _sfc_main: import("vue").DefineComponent<{
     highlightCurrentRow: {
         type: __PropType<boolean | undefined>;
         required: false;
+        default: boolean;
     };
     rowKey: {
         type: __PropType<string | ((row: any) => string) | undefined>;
@@ -398,6 +409,7 @@ declare const _sfc_main: import("vue").DefineComponent<{
     emptyText: {
         type: __PropType<string | undefined>;
         required: false;
+        default: string;
     };
     expandRowKeys: {
         type: __PropType<any[] | undefined>;
@@ -406,6 +418,7 @@ declare const _sfc_main: import("vue").DefineComponent<{
     defaultExpandAll: {
         type: __PropType<boolean | undefined>;
         required: false;
+        default: boolean;
     };
     defaultSort: {
         type: __PropType<{
@@ -419,6 +432,7 @@ declare const _sfc_main: import("vue").DefineComponent<{
     tooltipEffect: {
         type: __PropType<"dark" | "light" | undefined>;
         required: false;
+        default: string;
     };
     spanMethod: {
         type: __PropType<((data: {
@@ -550,11 +564,18 @@ declare const _sfc_main: import("vue").DefineComponent<{
     "onReset-click"?: ((...args: any[]) => any) | undefined;
 }, {
     search: boolean | IElsTableOld.SearchOption | undefined;
+    border: boolean | undefined;
     column: IElsTableOld.ColumnItem[];
     width: string | number | undefined;
+    fit: boolean | undefined;
     stripe: boolean | undefined;
     showHeader: boolean | undefined;
+    showSummary: boolean | undefined;
+    highlightCurrentRow: boolean | undefined;
     rowKey: string | ((row: any) => string) | undefined;
+    emptyText: string | undefined;
+    defaultExpandAll: boolean | undefined;
+    tooltipEffect: "dark" | "light" | undefined;
     autoLoad: boolean | undefined;
     showIndex: boolean | undefined;
     showSelect: boolean | undefined;
