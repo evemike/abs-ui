@@ -82,5 +82,6 @@ export declare namespace IElsElem {
         root: Partial<Elem>;
         directive: Partial<Elem>;
         prop: Partial<Elem>;
+        ctx: Record<any, any>;
     }
 }

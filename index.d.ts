@@ -6,3 +6,4 @@ export default _default;
 export * from "./Base/ElsElem";
 export * from "./Base/ElsForm";
 export * from "./Base/ElsScroll";
+export * from "./Base/ElsTableOld";
