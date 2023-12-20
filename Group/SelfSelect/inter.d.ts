@@ -1,16 +1,12 @@
+import { IElsElem } from "../../Base/ElsElem";
 import { Ref } from "vue";
-import { IElsElem } from "../ElsElem";
-export declare namespace IElsForm {
+export declare namespace ISelfSelectProps {
     interface Props {
         modelValue: Record<string, any>;
         column: Column;
         size?: "large" | "default" | "small";
         UIPluging?: UIPluging;
         autoClean?: boolean;
-        params?: Record<string, any>;
-    }
-    interface ColumnItem extends IElsElem.Elem {
-        tip?: string | ColumnTip;
     }
     interface ColumnTip {
         enabled?: boolean;
@@ -19,10 +15,8 @@ export declare namespace IElsForm {
         slot?: boolean | string;
         position?: "left" | "right" | "bottom";
     }
-    type Column = ColumnItem[];
-    interface Emits {
-        (e: "update:modelValue", v: Record<string, any>): void;
-        (e: "change", name: string, value: any): void;
+    interface ColumnItem extends IElsElem.Elem {
+        tip?: string | ColumnTip;
     }
     type UIPluging = (props: Props, cfg: UIPluginConfig, ext: Record<string, any>) => {
         elem: IElsElem.Elem;
@@ -36,4 +30,5 @@ export declare namespace IElsForm {
         formData: Ref<Record<string, any>>;
         emitChange: (prop: string, val: any) => void;
     }
+    type Column = ColumnItem[];
 }

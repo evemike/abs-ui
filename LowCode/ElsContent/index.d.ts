@@ -1,8 +1,8 @@
 import { App } from 'vue';
+import ElsContent from "./main.vue";
 declare const _default: {
     install: (app: App) => void;
 };
 export default _default;
-export * from "./Base/ElsElem";
-export * from "./Base/ElsForm";
-export * from "./Base/ElsX6";
+export { ElsContent };
+export * from "./inter";

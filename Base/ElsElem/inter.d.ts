@@ -2,7 +2,7 @@ import type { Component, CSSProperties, VNode, Fragment, Teleport, Suspense, Kee
 export declare namespace IElsElem {
     interface Props {
         elem: Elem;
-        context: Context;
+        context?: Context;
         parent?: Parent;
         params?: Record<string, any>;
         slotParams?: any;
@@ -14,7 +14,7 @@ export declare namespace IElsElem {
         tagname: string;
     };
     interface Elem extends Record<string, any> {
-        tag?: TOR<Tag>;
+        tag?: TOR<StaticTag>;
         style?: TOR<string | CSSProperties>;
         contextKeys?: string[];
         excludeKeys?: string[];
@@ -33,10 +33,13 @@ export declare namespace IElsElem {
         setup?: SetupFunction;
         render?: RenderFunction | Record<string, RenderFunction>;
         beforeRender?: Elem["beforeRender"];
+        params?: Record<string, any>;
     }
     type Tag = StaticTag | FunctionTag;
     type StaticTag = keyof HTMLElementTagNameMap | "slot" | "template" | "component" | Component | InstanceType<typeof Fragment> | InstanceType<typeof Teleport> | InstanceType<typeof Suspense> | InstanceType<typeof KeepAlive> | FunctionalComponent | InstanceType<typeof TransitionGroup>;
-    type FunctionTag = (props: Props, ctx: SetupContext) => StaticTag;
+    type FunctionTag = (params: Record<string, any> & Props & {
+        tag?: any;
+    }, ctx: SetupContext) => StaticTag;
     type Child = string | boolean | number | VNode | Elem | ((scope: Record<string, any>, slotScope: any, elemScope: ScopeData) => string | VNode | undefined);
     type SetupFunction = (props: Props, params: {
         tag: StaticTag;
