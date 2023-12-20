@@ -36752,9 +36752,9 @@ const Wle = /* @__PURE__ */ O({
   grid: !0,
   panning: !0,
   mousewheel: !0,
-  background: {
-    color: "#f2f4f7"
-  },
+  // background: {
+  //   color: "#f2f4f7",
+  // },
   //
   connecting: {
     snap: !0,
@@ -46428,7 +46428,7 @@ const C2e = /* @__PURE__ */ O({
     }, 8, ["modelValue"]));
   }
 }), w2e = {
-  class: "ElsX6 w-full h-full bg-white",
+  class: "ElsX6 w-full h-full",
   id: "ElsX6Box"
 }, y2e = { class: "_box-main" }, b2e = { class: "_main-content" }, E2e = {
   name: "ElsX6"
