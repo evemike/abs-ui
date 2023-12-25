@@ -5,6 +5,6 @@ export declare namespace IElsMarkdown {
     }
     interface ViewProps {
         value: string;
-        options?: Record<string, any>;
+        theme?: Record<string, any>;
     }
 }

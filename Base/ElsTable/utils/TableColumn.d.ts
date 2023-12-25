@@ -1,5 +1,5 @@
 import { IElsTable } from "../inter";
-import { IElsElem } from "../../../index";
+import { IElsElem } from "../../ElsElem";
 type Config = Pick<IElsTable.Props, "index" | "select" | "column">;
 export declare class TableColumn {
     index: Config['index'];

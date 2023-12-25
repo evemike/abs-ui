@@ -4,5 +4,6 @@ export declare namespace IElsIcon {
         color?: string;
         size?: number;
         noel?: boolean;
+        autoCopy?: boolean;
     }
 }

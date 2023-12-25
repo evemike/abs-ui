@@ -54,10 +54,10 @@ declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_T
         readonly modelValue: boolean;
         readonly direction: import("element-plus/es/utils").EpPropMergeType<StringConstructor, "ltr" | "rtl" | "ttb" | "btt", unknown>;
         readonly size: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>;
-        readonly appendTo: string;
         readonly center: boolean;
-        readonly showClose: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
+        readonly appendTo: string;
         readonly customClass: string;
+        readonly showClose: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
         readonly withHeader: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
         readonly modalFade: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
         readonly headerAriaLevel: string;
@@ -74,9 +74,9 @@ declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_T
         readonly draggable: boolean;
         readonly fullscreen: boolean;
         readonly ariaLevel: string;
+        readonly top?: string | undefined;
         readonly width?: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown> | undefined;
         readonly zIndex?: number | undefined;
-        readonly top?: string | undefined;
         readonly beforeClose?: import("element-plus").DialogBeforeCloseFn | undefined;
         readonly modalClass?: string | undefined;
         readonly closeIcon?: import("element-plus/es/utils").EpPropMergeType<(new (...args: any[]) => (string | import("vue").Component<any, any, any, import("vue").ComputedOptions, import("vue").MethodOptions>) & {}) | (() => string | import("vue").Component<any, any, any, import("vue").ComputedOptions, import("vue").MethodOptions>) | ((new (...args: any[]) => (string | import("vue").Component<any, any, any, import("vue").ComputedOptions, import("vue").MethodOptions>) & {}) | (() => string | import("vue").Component<any, any, any, import("vue").ComputedOptions, import("vue").MethodOptions>))[], unknown, unknown> | undefined;
@@ -151,7 +151,7 @@ declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_T
         onClosed?: (() => any) | undefined;
         onOpenAutoFocus?: (() => any) | undefined;
         onCloseAutoFocus?: (() => any) | undefined;
-    }, "title" | "modelValue" | "direction" | "size" | "appendTo" | "center" | "showClose" | "customClass" | "withHeader" | "modalFade" | "headerAriaLevel" | "appendToBody" | "destroyOnClose" | "closeOnClickModal" | "closeOnPressEscape" | "lockScroll" | "modal" | "openDelay" | "closeDelay" | "trapFocus" | "alignCenter" | "draggable" | "fullscreen" | "ariaLevel">;
+    }, "title" | "modelValue" | "direction" | "size" | "center" | "appendTo" | "customClass" | "showClose" | "withHeader" | "modalFade" | "headerAriaLevel" | "appendToBody" | "destroyOnClose" | "closeOnClickModal" | "closeOnPressEscape" | "lockScroll" | "modal" | "openDelay" | "closeDelay" | "trapFocus" | "alignCenter" | "draggable" | "fullscreen" | "ariaLevel">;
 }, {}>;
 export default _default;
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;

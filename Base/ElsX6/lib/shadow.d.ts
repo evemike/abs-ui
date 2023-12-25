@@ -12,6 +12,7 @@ export declare class GraphShadow {
     currentCell: import("vue").ShallowRef<Cell<Cell.Properties> | undefined>;
     selectedCells: import("vue").Ref<Cell<Cell.Properties>[]> | import("vue").ShallowRef<Cell<Cell.Properties>[]>;
     clipboardCells: import("vue").Ref<Cell<Cell.Properties>[]> | import("vue").ShallowRef<Cell<Cell.Properties>[]>;
+    defaultNodeMarkup: IElsX6.NodeMarkup;
     initCell(cell: Cell): void;
     updateEdge(cell: Edge): void;
     setGraph(graph: Graph): void;
@@ -29,5 +30,7 @@ export declare class GraphShadow {
     clearSelectedCells(): void;
     getMetadata(cell: Cell): IElsX6.GraphNode;
     copyCells(): void;
+    resetNodeList(list: IElsX6.GraphNode[]): this;
+    resetDefaultNodeMarkup(markup?: IElsX6.NodeMarkup): this;
 }
 export {};

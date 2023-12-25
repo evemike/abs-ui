@@ -10,6 +10,7 @@ declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_T
     edgeLabelConfig: () => {
         icons: string[];
     };
+    defaultNodeMarkup: () => IElsX6.NodeMarkup;
 }>, {
     graph: import("vue").ShallowRef<Graph | undefined>;
 }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<IElsX6.Props>, {
@@ -22,12 +23,14 @@ declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_T
     edgeLabelConfig: () => {
         icons: string[];
     };
+    defaultNodeMarkup: () => IElsX6.NodeMarkup;
 }>>>, {
     menu: IElsX6.GraphMenu;
     nodeList: IElsX6.GraphNode[];
     showNodeList: boolean;
     contextmenuConfig: Record<string, import("../ElsElem").IElsElem.Elem[]>;
     edgeLabelConfig: IElsX6.GraphEdgeLabel;
+    defaultNodeMarkup: IElsX6.NodeMarkup;
 }, {}>;
 export default _default;
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;

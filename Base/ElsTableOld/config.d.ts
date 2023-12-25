@@ -1,4 +1,4 @@
-import { IElsForm } from "../../index";
+import { IElsForm } from "../ElsForm";
 import { IElsTableOld } from "./inter";
 export declare const defaultColumnItem: IElsTableOld.ColumnItem;
 export declare const normalButtons: {

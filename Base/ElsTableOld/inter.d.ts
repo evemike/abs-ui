@@ -1,6 +1,7 @@
 import { VNode, RendererNode, RendererElement, CSSProperties, Ref } from "vue";
 import { ElTable } from "element-plus";
-import { IElsElem, IElsForm } from "../../index";
+import { IElsElem } from "../ElsElem";
+import { IElsForm } from "../ElsForm";
 export declare namespace IElsTableOld {
     type Filters = {
         text: string;

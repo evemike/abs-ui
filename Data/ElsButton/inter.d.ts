@@ -1,4 +1,4 @@
-import { IElsElem } from "../../index";
+import { IElsElem } from "../../Base/ElsElem";
 export declare namespace IElsButton {
     interface Props {
         elems: IElsElem.Elem[];

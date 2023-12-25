@@ -1,4 +1,5 @@
-import { IElsForm, IElsElem } from "../../index";
+import { IElsElem } from "../ElsElem";
+import { IElsForm } from "../ElsForm";
 import { Ref } from "vue";
 export declare namespace IElsTable {
     interface Props {
