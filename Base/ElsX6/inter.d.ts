@@ -21,6 +21,7 @@ export declare namespace IElsX6 {
         contextmenuConfig?: Record<string, IElsElem.Elem[]>;
         edgeLabelConfig?: GraphEdgeLabel;
         defaultNodeMarkup?: NodeMarkup;
+        register?: (Graph: Graph) => void;
         viewModel?: boolean;
     }
     interface MenuProps {
