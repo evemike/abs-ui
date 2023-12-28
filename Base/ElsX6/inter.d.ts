@@ -22,6 +22,7 @@ export declare namespace IElsX6 {
         edgeLabelConfig?: GraphEdgeLabel;
         defaultNodeMarkup?: NodeMarkup;
         register?: (Graph: Graph) => void;
+        events?: Record<string, (e: GraphEvents, ...args: any) => void>;
         viewModel?: boolean;
     }
     interface MenuProps {
