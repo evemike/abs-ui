@@ -3,11 +3,11 @@ import { GraphForm } from "./form";
 import { GraphContextmenu } from "./contextmenu";
 import { GraphShadow } from "./shadow";
 export declare class GraphEvents {
-    constructor(graphShadow: GraphShadow, form: GraphForm, graphContextmenu: GraphContextmenu, events?: Record<string, (e: GraphEvents, ...args: any) => void>);
+    constructor(graphShadow: GraphShadow, form: GraphForm, graphContextmenu: GraphContextmenu, events?: Record<string, (...args: any) => void>);
     graphShadow: GraphShadow;
     graphForm: GraphForm;
     graphContextmenu: GraphContextmenu;
-    private graph;
+    graph: Graph | undefined;
     private events;
     currentKeydown: Set<string>;
     selectedCells: import("vue").Ref<Cell<Cell.Properties>[]> | import("vue").ShallowRef<Cell<Cell.Properties>[]>;

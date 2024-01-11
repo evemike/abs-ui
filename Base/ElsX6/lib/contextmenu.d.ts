@@ -1,5 +1,6 @@
 import { IElsElem } from "../../ElsElem";
 import { Cell, Graph } from "@antv/x6";
+import { IElsX6 } from "../inter";
 import { GraphShadow } from "./shadow";
 export declare class GraphContextmenu {
     constructor(config: Record<string, IElsElem.Elem[]>, graphShadow: GraphShadow);
@@ -18,9 +19,9 @@ export declare class GraphContextmenu {
     setGraph(graph: Graph): this;
     setDomBox(box: HTMLDivElement): this;
     initMenus(): {
-        node: import("..").IElsX6.NodeMarkup[];
-        edge: import("..").IElsX6.NodeMarkup[];
-        blank: import("..").IElsX6.NodeMarkup[];
+        node: IElsX6.NodeMarkup[];
+        edge: IElsX6.NodeMarkup[];
+        blank: IElsX6.NodeMarkup[];
     };
     createContextmenu(e: MouseEvent, cell?: Cell): void;
     close(): void;

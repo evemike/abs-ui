@@ -17,6 +17,7 @@ export declare class GraphForm {
     validateCell(cell: Cell): Promise<void>;
     validateCells(): void;
     graphStatus(): void;
-    copyCells(): void;
+    copyCells(sc: Cell, tc: Cell): void;
+    resetCellId(sid: string, tid: string): void;
     getGraphFormData(): Record<string, Record<string, any>>;
 }

@@ -1,4 +1,4 @@
-import type { Graph, Cell, Edge } from "@antv/x6";
+import type { Graph, Node, Cell, Edge } from "@antv/x6";
 import type { IElsElem } from "../ElsElem";
 import type { ElDrawer } from "element-plus";
 import { GraphShadow } from "./lib/shadow";
@@ -11,18 +11,17 @@ import { GraphTools } from "./lib/tools";
 export declare namespace IElsX6 {
     interface Props {
         config?: GraphConfig;
-        graphConfig?: GraphConfig;
-        nodeList?: GraphNode[];
+        graphConfig?: Graph.Options;
+        nodeListConfig?: NodeListProps;
         model?: GraphModel;
         menu?: GraphMenu;
         drawerConfig?: InstanceType<typeof ElDrawer>["$props"];
-        showNodeList?: boolean;
         pluginsConfig?: Record<string, Record<string, any>>;
         contextmenuConfig?: Record<string, IElsElem.Elem[]>;
         edgeLabelConfig?: GraphEdgeLabel;
         defaultNodeMarkup?: NodeMarkup;
         register?: (Graph: Graph) => void;
-        events?: Record<string, (e: GraphEvents, ...args: any) => void>;
+        events?: Record<string, (...args: any) => void>;
         viewModel?: boolean;
     }
     interface MenuProps {
@@ -38,12 +37,14 @@ export declare namespace IElsX6 {
         graphEvents: GraphEvents;
         defaultLabel: GraphEdgeLabel;
     }
-    interface ContextMenuProps {
-        x: number;
-        y: number;
-    }
     interface MarkdownProps {
         context: Context;
+    }
+    interface NodeListProps {
+        enabled?: boolean;
+        nodeList?: GraphNode[];
+        initNodeFn?: (node: GraphNode) => Promise<Node.Metadata>;
+        graph?: Graph;
     }
     interface GraphMenu {
         enabled?: boolean;
@@ -115,4 +116,10 @@ export declare namespace IElsX6 {
     }
     type CellStep = "init" | "save" | "running" | "stop" | "pause" | "success" | "error" | "finish" | "loading";
     type Mode = "edit" | "view" | "running" | "delete";
+    interface ContextmenuConfig {
+        node?: IElsElem.Elem[];
+        edge?: IElsElem.Elem[];
+        blank?: IElsElem.Elem[];
+        useDefaultMenu?: boolean;
+    }
 }

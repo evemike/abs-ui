@@ -6,4 +6,6 @@ export declare const setup: IElsElem.SetupFunction;
 declare const useElForm: IElsForm.UIPluging;
 export default useElForm;
 export declare const isFormElem: (e: IElsElem.Elem, en: string, pn?: string) => boolean;
-export declare const buildTip: (tip: IElsForm.ColumnItem['tip']) => undefined;
+export declare const buildTip: (tip: IElsForm.ColumnItem['tip']) => import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
+    [key: string]: any;
+}> | undefined;

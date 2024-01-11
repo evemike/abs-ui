@@ -1,8 +1,7 @@
 import { IElsX6 } from "./inter";
-import { Graph } from '@antv/x6';
+import { Graph } from "@antv/x6";
 declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<IElsX6.Props>, {
     nodeList: () => IElsX6.GraphNode[];
-    showNodeList: boolean;
     menu: () => {
         enabled: boolean;
     };
@@ -11,11 +10,11 @@ declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_T
         icons: string[];
     };
     defaultNodeMarkup: () => IElsX6.NodeMarkup;
+    graphConfig: () => {};
 }>, {
     graph: import("vue").ShallowRef<Graph | undefined>;
 }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<IElsX6.Props>, {
     nodeList: () => IElsX6.GraphNode[];
-    showNodeList: boolean;
     menu: () => {
         enabled: boolean;
     };
@@ -24,10 +23,10 @@ declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_T
         icons: string[];
     };
     defaultNodeMarkup: () => IElsX6.NodeMarkup;
+    graphConfig: () => {};
 }>>>, {
     menu: IElsX6.GraphMenu;
-    nodeList: IElsX6.GraphNode[];
-    showNodeList: boolean;
+    graphConfig: Graph.Options;
     contextmenuConfig: Record<string, import("../ElsElem").IElsElem.Elem[]>;
     edgeLabelConfig: IElsX6.GraphEdgeLabel;
     defaultNodeMarkup: IElsX6.NodeMarkup;

@@ -12,12 +12,9 @@ export declare namespace IElsForm {
     interface ColumnItem extends IElsElem.Elem {
         tip?: string | ColumnTip;
     }
-    interface ColumnTip {
-        enabled?: boolean;
+    interface ColumnTip extends Record<string, any> {
         content?: string;
-        icon?: string | any;
-        slot?: boolean | string;
-        position?: "left" | "right" | "bottom";
+        placement?: "top" | "right" | "left" | "bottom" | "top-start" | "top-end" | "right-start" | "right-end" | "left-start" | "left-end" | "bottom-start" | "bottom-end";
     }
     type Column = ColumnItem[];
     interface Emits {
