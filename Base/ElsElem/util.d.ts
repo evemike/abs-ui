@@ -1,3 +1,4 @@
+/// <reference types="lodash" />
 import { IElsElem } from "./inter";
 export declare namespace ElsElemUtil {
     const isHtmlTag: (tag: string) => boolean;

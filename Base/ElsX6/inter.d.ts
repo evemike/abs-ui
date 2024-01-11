@@ -1,6 +1,6 @@
 import type { Graph, Node, Cell, Edge } from "@antv/x6";
 import type { IElsElem } from "../ElsElem";
-import type { ElDrawer } from "element-plus";
+import type { ElDrawer, ElDialog } from "element-plus";
 import { GraphShadow } from "./lib/shadow";
 import { GraphForm } from "./lib/form";
 import { GraphEvents } from "./lib/events";
@@ -16,6 +16,7 @@ export declare namespace IElsX6 {
         model?: GraphModel;
         menu?: GraphMenu;
         drawerConfig?: InstanceType<typeof ElDrawer>["$props"];
+        dialogConfig?: Pick<DialogProps, "config" | "elem">;
         pluginsConfig?: Record<string, Record<string, any>>;
         contextmenuConfig?: Record<string, IElsElem.Elem[]>;
         edgeLabelConfig?: GraphEdgeLabel;
@@ -45,6 +46,11 @@ export declare namespace IElsX6 {
         nodeList?: GraphNode[];
         initNodeFn?: (node: GraphNode) => Promise<Node.Metadata>;
         graph?: Graph;
+    }
+    interface DialogProps {
+        config?: InstanceType<typeof ElDialog>["$props"];
+        context: Context;
+        elem?: IElsElem.Elem;
     }
     interface GraphMenu {
         enabled?: boolean;

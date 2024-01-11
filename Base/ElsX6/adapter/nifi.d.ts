@@ -1,5 +1,5 @@
 import { IElsX6 } from "../inter";
-import type { Node } from "@antv-x6";
+import type { Node } from "@antv/x6";
 export declare const nifiNodeTabs: {}[];
 export declare const nifiNodeElem: {};
 export declare class AdapterNifi {
