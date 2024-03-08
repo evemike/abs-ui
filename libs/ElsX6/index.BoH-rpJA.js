@@ -10,7 +10,7 @@ import { _ as U1 } from "../../chunks/_plugin-vue_export-helper.CHgC5LLL.js";
 import { _ as se, E as Y1 } from "../../chunks/main.vue_vue_type_script_setup_true_lang.CHmpPjyL.js";
 import { _ as J1 } from "../../chunks/view.vue_vue_type_style_index_0_lang.CiSdV8c3.js";
 import { _ as T1, a as Z1 } from "../../chunks/main.vue_vue_type_script_setup_true_lang.CY_zDk0A.js";
-import { _ as j1 } from "../../chunks/main.vue_vue_type_style_index_0_lang.CI0LRDnF.js";
+import { _ as j1 } from "../../chunks/main.vue_vue_type_style_index_0_lang.Bu-s41wu.js";
 const q1 = /* @__PURE__ */ j({
   __name: "node",
   props: {
@@ -8082,7 +8082,7 @@ class Lt {
   }
   setStatus(e, t) {
     const i = this.get(e);
-    console.log(e.id, t), i.status.value = t;
+    i.status.value = t;
   }
   setData(e, t) {
     const i = this.get(e);
@@ -9100,7 +9100,7 @@ const $t = /* @__PURE__ */ j({
     }), te(() => {
       a.value = W(R1(i.value)), console.log("ops === ", _({}, o, l(C))), a.value.setOption(_({}, o, l(C))), setTimeout(() => {
         a.value.resize();
-      }, 500);
+      }, 50);
     }), (w, y) => (E(), M("div", hi, [
       B("div", Ci, [
         B("div", gi, [
@@ -9128,7 +9128,7 @@ const $t = /* @__PURE__ */ j({
           ]),
           B("p", null, [
             Fi,
-            B("b", null, G(new Date(d.value.reverse()[0].timestamp).toLocaleString()), 1)
+            B("b", null, G(new Date(d.value.at(-1).timestamp).toLocaleString()), 1)
           ])
         ]),
         B("div", null, [
@@ -9616,7 +9616,7 @@ class vi {
     g(this, "rootGroups", []);
     g(this, "rootStatus", {});
     //
-    g(this, "nodeList", []);
+    g(this, "nodeList", F([]));
     g(this, "cellMetadata", /* @__PURE__ */ new Map());
     //
     g(this, "groupId", "");
@@ -9711,7 +9711,7 @@ class vi {
   async initProcessType() {
     try {
       const e = await this.apiGetProcessTypes();
-      this.processTypes = e.processorTypes, this.nodeList = e.processorTypes.map((t) => {
+      this.processTypes = e.processorTypes, this.nodeList.value = e.processorTypes.map((t) => {
         const i = Object.keys(this.NIFI_DATA.dataType).filter((s) => this.NIFI_DATA.dataType[s].includes(t.type.split(".").reverse()[0]))[0] || "default", a = this.NIFI_DATA.group[i];
         return {
           ...this.NIFI_DATA.cellData[i] || this.NIFI_DATA.cellData.otherType,
@@ -9777,7 +9777,7 @@ class vi {
       this.graphData.push(C), this.graphFormData[s.id] = s.component, this.graphCellData[s.id] = s;
     }
     for (const s of t) {
-      const n = this.NIFI_DATA.cellData, d = this.nodeList.filter((m) => m.name == s.component.type)[0].groupName, p = n[d] || {}, A = await this.apiGetNode(s.id), C = {
+      const n = this.NIFI_DATA.cellData, d = this.nodeList.value.filter((m) => m.name == s.component.type)[0].groupName, p = n[d] || {}, A = await this.apiGetNode(s.id), C = {
         ...p,
         id: s.id,
         position: s.position,
@@ -9862,7 +9862,7 @@ class vi {
       }
     else
       i.component.name && (o = "PROCESS-GROUP"), i.component.label && (o = "LABEL");
-    return (n = this.graphShadow) == null || n.set(e, "node-type", o), o;
+    return e.id && ((n = this.graphShadow) == null || n.set(e, "node-type", o)), o;
   }
   // Node
   async nodeInit(e) {
@@ -9877,17 +9877,18 @@ class vi {
   async nodeAdd(e) {
     var t, i;
     try {
-      const a = e.prop("name"), o = e.position(), r = e.toJSON();
+      const a = e == null ? void 0 : e.prop("name"), o = e.position(), r = e.toJSON();
       (t = this.graph) == null || t.removeCell(e);
-      const s = await this.apiNewNode(a, o), n = this.nodeType({ data: s }), d = {
+      const s = await this.apiNewNode(a, o), n = {
         ...r,
         id: s.id,
-        data: { ...s, type: n }
+        data: { ...s }
       };
-      (i = this.graph) == null || i.addNode(d), setTimeout(() => {
+      (i = this.graph) == null || i.addNode(n), setTimeout(() => {
         this.cellUpdate([s]);
-      }, 10);
-    } catch {
+      }, 100);
+    } catch (a) {
+      console.warn(a);
     }
   }
   async nodeEdit(e, t) {
@@ -9910,10 +9911,7 @@ class vi {
     await Promise.all(e.map((i) => this.nodeDel(i))), t == null || t.close();
   }
   async nodeMove(e) {
-    var a, o;
-    const t = e.position();
-    (o = (a = e.data) == null ? void 0 : a.component) == null || o.type;
-    const i = {
+    const t = e.position(), i = {
       component: {
         id: e.id,
         position: t

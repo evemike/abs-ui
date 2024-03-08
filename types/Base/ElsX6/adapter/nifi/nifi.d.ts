@@ -15,7 +15,7 @@ export declare class AdapterNifi {
     rootName: string;
     rootGroups: never[];
     rootStatus: {};
-    nodeList: any[];
+    nodeList: import("vue").Ref<any[]>;
     cellMetadata: Map<string, any>;
     groupId: string;
     groupFlowData: any;

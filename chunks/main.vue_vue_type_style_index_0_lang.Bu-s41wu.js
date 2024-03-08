@@ -8,7 +8,7 @@ const ke = {
   "items-center": "",
   "justify-between": "",
   class: "_header"
-}, we = /* @__PURE__ */ r("b", { "min-w-150": "" }, "属性名", -1), he = /* @__PURE__ */ r("b", {
+}, we = /* @__PURE__ */ r("b", { "min-w-200": "" }, "属性名", -1), he = /* @__PURE__ */ r("b", {
   "flex-1": "",
   "m-x-2em": ""
 }, "属性值", -1), ge = {
