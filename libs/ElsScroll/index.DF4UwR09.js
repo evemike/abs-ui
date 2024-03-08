@@ -1,4 +1,4 @@
-import { E as o } from "../../chunks/main.DrR4ERZn.js";
+import { E as o } from "../../chunks/main.BOtO-kHc.js";
 const r = {
   install: (l) => {
     l.component("els-scroll", o);

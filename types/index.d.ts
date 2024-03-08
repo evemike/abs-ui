@@ -9,6 +9,7 @@ export * from "./Base/ElsForm";
 export * from "./Base/ElsScroll";
 export * from "./Data/ElsIcon";
 export * from "./Data/ElsButton";
+export * from "./Base/ElsX6";
 export * from "./Base/ElsMarkdown";
 export * from "./Base/CodeEditor";
 export * from "./Base/JsonView";
