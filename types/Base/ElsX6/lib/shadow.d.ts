@@ -25,6 +25,9 @@ export declare class GraphShadow {
     setTabs(cell: Cell, tabs: any[]): void;
     getTabs(cell: Cell): import("vue").Ref<any[]>;
     setLabel(cell: Cell, val: string): void;
+    setStatus(cell: Cell, val: any): void;
+    setData(cell: Cell, val: any): void;
+    setRefData(cell: Cell, val: any): void;
     resetCurrentCell(cell?: Cell): void;
     resetSelectedCells(cells?: Cell[]): void;
     removeCells(cells?: Cell[]): void;

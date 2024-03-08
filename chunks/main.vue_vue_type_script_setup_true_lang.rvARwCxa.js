@@ -1,5 +1,5 @@
 import { defineComponent as f, computed as y, unref as e, onMounted as k, openBlock as o, createBlock as g, mergeProps as h, withCtx as C, createElementBlock as t, normalizeClass as a, createElementVNode as i, Fragment as v } from "vue";
-import { aH as B, a as E, d as x } from "./vendor.BakInURX.js";
+import { aP as B, a2 as E, k as x } from "./vendor.D-DybmH-.js";
 const I = ["src"], b = {
   key: 2,
   "aria-hidden": "true",
@@ -10,7 +10,7 @@ const I = ["src"], b = {
   class: "svg-icon click-copy"
 }, F = ["href"], M = {
   name: "ElsIcon"
-}, P = /* @__PURE__ */ f({
+}, S = /* @__PURE__ */ f({
   ...M,
   props: {
     name: { default: "" },
@@ -20,18 +20,18 @@ const I = ["src"], b = {
     autoCopy: { type: Boolean }
   },
   setup(u) {
-    const p = u, { noel: d = !1, name: s, autoCopy: _ = !1, ...m } = p, l = y(
+    const p = u, { noel: _ = !1, name: s, autoCopy: d = !1, ...m } = p, l = y(
       () => /^#/.test(e(s)) ? e(s) : "#" + e(s)
     ), n = /^data:/.test(e(s)) || /^http/.test(e(s)) || /\.(png|jpeg|ico|svg|jpg|bmp|gif)$/.test(e(s)), r = /\s+/.test(e(s));
     return k(() => {
-      _ && new B(".click-copy", {
+      d && new B(".click-copy", {
         text: () => s || ""
       }).on("success", (c) => {
         E.success("copy success");
       }).on("error", (c) => {
         console.error(c);
       });
-    }), (c, H) => e(d) ? (o(), t(v, { key: 1 }, [
+    }), (c, P) => e(_) ? (o(), t(v, { key: 1 }, [
       e(n) ? (o(), t("img", {
         key: 0,
         src: e(s),
@@ -65,5 +65,5 @@ const I = ["src"], b = {
   }
 });
 export {
-  P as _
+  S as _
 };

@@ -1,5 +1,5 @@
-import { E as s } from "../../chunks/main.DxNtyuEA.js";
-import { D as o, a as E, i } from "../../chunks/main.DxNtyuEA.js";
+import { E as s } from "../../chunks/main.ngZhvHVu.js";
+import { D as o, a as E, i } from "../../chunks/main.ngZhvHVu.js";
 const a = {
   install: (l) => {
     l.component("els-elem", s);

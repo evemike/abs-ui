@@ -1,5 +1,5 @@
-import { defineComponent as B, computed as O, onMounted as T, openBlock as g, createElementBlock as m, createVNode as s, unref as a, withCtx as t, normalizeStyle as _, createTextVNode as f, toDisplayString as u, createCommentVNode as w, renderSlot as x } from "vue";
-import { r as y, b as p } from "../../chunks/vendor.BakInURX.js";
+import { defineComponent as b, computed as O, onMounted as T, openBlock as g, createElementBlock as m, createVNode as s, unref as a, withCtx as t, normalizeStyle as _, createTextVNode as f, toDisplayString as u, createCommentVNode as w, renderSlot as x } from "vue";
+import { Z as y, d as p } from "../../chunks/vendor.D-DybmH-.js";
 const j = {
   dialogVisible: !1,
   title: "标题",
@@ -14,7 +14,7 @@ const j = {
   class: "dialog-footer"
 }, V = {
   name: "ModalOk"
-}, F = /* @__PURE__ */ B({
+}, F = /* @__PURE__ */ b({
   ...V,
   props: {
     dialogObject: { default: () => ({
@@ -48,7 +48,7 @@ const j = {
     }), (i, r) => (g(), m("div", S, [
       s(a(y), {
         modelValue: d.value,
-        "onUpdate:modelValue": r[0] || (r[0] = (b) => d.value = b),
+        "onUpdate:modelValue": r[0] || (r[0] = (B) => d.value = B),
         title: o.dialogTitle,
         width: o.dialogWidth,
         "show-close": o.showClose,

@@ -1,4 +1,4 @@
-import { _ as r } from "../../chunks/view.vue_vue_type_style_index_0_lang.C7El2siQ.js";
+import { _ as r } from "../../chunks/view.vue_vue_type_style_index_0_lang.DBnACStB.js";
 const o = {
   install: (a) => {
   }

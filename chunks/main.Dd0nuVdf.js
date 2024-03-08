@@ -1,6 +1,6 @@
 import "../css/main-DQsX5Ws-.css";
-import { defineComponent as X, toRefs as Y, ref as _, shallowRef as D, watch as R, onMounted as Z, openBlock as s, createElementBlock as B, Fragment as ee, createVNode as f, unref as o, withCtx as p, createElementVNode as m, renderSlot as O, createBlock as b, resolveDynamicComponent as te, withDirectives as oe, createCommentVNode as k, vShow as ae, normalizeStyle as le, mergeProps as re, markRaw as j, nextTick as ne } from "vue";
-import { w as se, x as ue, y as ie, z as r, A as L, B as N, C as de, b as z, q as ce, D as fe, r as pe } from "./vendor.BakInURX.js";
+import { defineComponent as Q, toRefs as X, ref as C, shallowRef as D, watch as R, onMounted as Y, openBlock as s, createElementBlock as B, Fragment as ee, createVNode as f, unref as o, withCtx as p, createElementVNode as m, renderSlot as L, createBlock as k, resolveDynamicComponent as te, withDirectives as oe, createCommentVNode as b, vShow as ae, normalizeStyle as le, mergeProps as re, markRaw as O, nextTick as ne } from "vue";
+import { ap as se, aq as ue, ar as ie, as as r, at as j, au as F, L as de, d as N, F as ce, av as fe, Z as pe } from "./vendor.D-DybmH-.js";
 import { _ as me } from "./_plugin-vue_export-helper.CHgC5LLL.js";
 const Ve = {
   autoCloseBrackets: !0,
@@ -56,10 +56,10 @@ const Ve = {
   "rd-4": "",
   "text-16": "",
   class: "_operate"
-}, Ce = { key: 1 }, _e = {
+}, _e = { key: 1 }, Ce = {
   name: "CodeEditor"
-}, be = /* @__PURE__ */ X({
-  ..._e,
+}, ke = /* @__PURE__ */ Q({
+  ...Ce,
   props: {
     modelValue: {},
     mode: { default: "javascript" },
@@ -77,14 +77,14 @@ const Ve = {
     class: {}
   },
   emits: ["update:modelValue"],
-  setup(F, { expose: H, emit: M }) {
-    const A = M, U = F, [$, w] = ie(), { modelValue: y, showOperate: I, theme: E, format: u, teleport: P, dialog: q, dialogTitle: G, lang: v } = Y(U), V = _(), g = _(), n = D(), i = D();
+  setup(H, { expose: M, emit: z }) {
+    const U = z, $ = H, [A, w] = ie(), { modelValue: y, showOperate: I, theme: E, format: u, teleport: P, dialog: q, dialogTitle: G, lang: v } = X($), V = C(), g = C(), n = D(), i = D();
     let a = y.value || "";
-    const l = _(!1);
-    let h = r.theme(E.value), d = L.create({
+    const l = C(!1);
+    let h = r.theme(E.value), d = j.create({
       doc: a,
       extensions: [
-        N,
+        F,
         h,
         ...v.value,
         r.updateListener.of((e) => {
@@ -95,10 +95,10 @@ const Ve = {
     const c = (e = a, t = n.value) => {
       t == null || t.dispatch({ changes: { from: 0, to: t == null ? void 0 : t.state.doc.length, insert: e } });
     }, W = (e = n.value) => e == null ? void 0 : e.state.doc.toString(), S = () => {
-      h = r.theme(E.value), d = L.create({
+      h = r.theme(E.value), d = j.create({
         doc: a,
         extensions: [
-          N,
+          F,
           h,
           ...v.value,
           r.updateListener.of((e) => {
@@ -106,17 +106,17 @@ const Ve = {
           })
         ]
       });
-    }, J = (e = n.value) => {
+    }, Z = (e = n.value) => {
       e == null || e.setState(d);
-    }, K = () => {
-      n.value = j(new r({ state: d, parent: V.value }));
+    }, J = () => {
+      n.value = O(new r({ state: d, parent: V.value }));
     }, T = () => {
       l.value = !0, ne(() => {
-        g.value && (i.value ? c(a || "", i.value) : (a = W() || "", S(), i.value = j(new r({ state: d, parent: g.value }))));
+        g.value && (i.value ? c(a || "", i.value) : (a = W() || "", S(), i.value = O(new r({ state: d, parent: g.value }))));
       });
     }, x = de((e) => {
-      a = e.state.doc.toString(), A("update:modelValue", a);
-    }, 200), Q = () => {
+      a = e.state.doc.toString(), U("update:modelValue", a);
+    }, 200), K = () => {
       var t;
       const e = ((t = u.value) == null ? void 0 : t.call(u, a)) || a;
       e != a && (a = e, c(e, l.value ? i.value : n.value));
@@ -124,34 +124,34 @@ const Ve = {
     return R(y, (e) => {
       e != a && c(e);
     }), R(v, () => {
-      S(), J();
-    }), Z(() => {
-      K();
-    }), H({
+      S(), Z();
+    }), Y(() => {
+      J();
+    }), M({
       openDialog: T
     }), (e, t) => (s(), B(ee, null, [
-      f(o($), null, {
-        default: p(({ $slots: C }) => [
+      f(o(A), null, {
+        default: p(({ $slots: _ }) => [
           m("div", ge, [
-            O(e.$slots, "default", {}, void 0, !0),
-            (s(), b(te(C.default))),
+            L(e.$slots, "default", {}, void 0, !0),
+            (s(), k(te(_.default))),
             oe(m("div", he, [
-              l.value ? k("", !0) : (s(), b(o(z), {
+              l.value ? b("", !0) : (s(), k(o(N), {
                 key: 0,
                 icon: o(ce),
                 title: "放大",
                 link: "",
                 onClick: T
               }, null, 8, ["icon"])),
-              l.value ? k("", !0) : (s(), B("i", Ce)),
-              o(u) ? (s(), b(o(z), {
+              l.value ? b("", !0) : (s(), B("i", _e)),
+              o(u) ? (s(), k(o(N), {
                 key: 2,
                 icon: o(fe),
                 title: "格式化",
                 link: "",
-                onClick: Q
-              }, null, 8, ["icon"])) : k("", !0),
-              O(e.$slots, "operate", {}, void 0, !0)
+                onClick: K
+              }, null, 8, ["icon"])) : b("", !0),
+              L(e.$slots, "operate", {}, void 0, !0)
             ], 512), [
               [ae, o(I) || l.value]
             ])
@@ -177,7 +177,7 @@ const Ve = {
         "append-to": o(P),
         width: "80%",
         modelValue: l.value,
-        "onUpdate:modelValue": t[0] || (t[0] = (C) => l.value = C)
+        "onUpdate:modelValue": t[0] || (t[0] = (_) => l.value = _)
       }, o(q), {
         title: o(G) || "代码编辑器",
         onClose: t[1] || (t[1] = () => c())
@@ -201,7 +201,7 @@ const Ve = {
       }, 16, ["append-to", "modelValue", "title"])
     ], 64));
   }
-}), Se = /* @__PURE__ */ me(be, [["__scopeId", "data-v-8dba98ff"]]);
+}), Se = /* @__PURE__ */ me(ke, [["__scopeId", "data-v-8dba98ff"]]);
 export {
   Se as C,
   Ve as D,

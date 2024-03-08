@@ -6,3 +6,4 @@ declare const _default: {
 export default _default;
 export { ElsX6 };
 export * from "./inter";
+export * from "./adapter";

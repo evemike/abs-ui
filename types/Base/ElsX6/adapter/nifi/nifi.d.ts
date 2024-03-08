@@ -5,6 +5,8 @@ export declare class AdapterNifi {
     constructor();
     NIFI_DATA: any;
     initFinishFlag: boolean;
+    refreshTimeHandle: any;
+    groupRefreshCount: number;
     contextmenu: IElsX6.ContextmenuConfig;
     clientId: string;
     processTypes: any[];
@@ -39,11 +41,12 @@ export declare class AdapterNifi {
     initGraph(id?: string): Promise<this>;
     initFlow(id?: string): Promise<void>;
     initGraphFlowData(): Promise<void>;
+    initGraphStatus(): void;
     initNodeForm(): void;
     initNodeFn(cell?: any): void;
     initEdgeLabelConfig(edge: Edge): void;
     initCellFormData(cell: Cell): void;
-    initNodeHistory(cell: Cell, ct: any): void;
+    initCellHistory(cell: Cell, ct: any): Promise<void>;
     initNodeStatus(cell: Cell, ct: any): void;
     nodeType(cell: Node): NIFI_NODE_TYPE;
     nodeInit(cell: Node): Promise<void>;
@@ -93,6 +96,8 @@ export declare class AdapterNifi {
     edgeEdit(edge: Edge, ct: any): Promise<void>;
     edgeSubmit(c: any): Promise<void>;
     edgeDel(cell: Cell, ct: any): Promise<void>;
+    cellUpdate(data?: any[]): Promise<void>;
+    groupRefresh(): Promise<void>;
     groupNodeAdd(): void;
     groupNodeDel(): void;
     groupNodeUpdate(): void;
@@ -125,6 +130,7 @@ export declare class AdapterNifi {
     apiNewFunnel(node: Node): void;
     apiUpdateFunnel(data: any): Promise<any>;
     apiDelFunnel(node: Node): Promise<any>;
+    apiGetHistory(cell: Cell): Promise<any>;
     apiPost(url: string, data?: any): Promise<any>;
     apiGet(url: string): Promise<any>;
     apiPut(url: string, data?: any): Promise<any>;
