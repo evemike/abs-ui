@@ -1,4 +1,3 @@
-import "./style/theme.scss";
 import { App } from 'vue';
 declare const _default: {
     install: (app: App, options?: Record<string, any>) => void;
@@ -6,9 +5,14 @@ declare const _default: {
 export default _default;
 export * from "./Base/ElsElem";
 export * from "./Base/ElsForm";
+export * from "./LowCode/ElsContent";
 export * from "./Base/ElsScroll";
+export * from "./Animation/ElsAnimationQueue";
+export * from "./Animation/ElsPpt";
+export * from "./Base/ElsTable";
 export * from "./Data/ElsIcon";
 export * from "./Data/ElsButton";
+export * from "./Base/ElsTableOld";
 export * from "./Base/ElsX6";
 export * from "./Base/ElsMarkdown";
 export * from "./Base/CodeEditor";
@@ -17,3 +21,5 @@ export * from "./Base/ElsListForm";
 export * from "./Base/DialogTable";
 export * from "./Base/ModalOk";
 export * from "./Data/ElsFormDesign";
+export * from "./Base/ElsResizeBox";
+export * as ElsUtil from "./utils";

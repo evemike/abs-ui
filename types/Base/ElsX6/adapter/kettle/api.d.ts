@@ -12,7 +12,7 @@ export declare class KettleApi {
     initApi(): void;
     getToken(): Promise<void>;
     initWS(): void;
-    getNodes(): Promise<void>;
+    getNodes(): Promise<never[]>;
     updateGraph(data: any): Promise<any>;
     apiPost(url: string, data?: any, headers?: Record<string, any>): Promise<any>;
     apiGet(url: string, headers?: Record<string, any>): Promise<any>;
