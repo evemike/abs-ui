@@ -60,8 +60,9 @@ export declare class AdapterNifi {
     nodeMove(node: Node): Promise<void>;
     nodeUpdate(d: any, node: Node): Promise<void>;
     nodeDisable(node: Node, ct: any, flag: boolean): Promise<void>;
-    nodeCheck(node: Node, ct?: any): Promise<void>;
+    nodeCheck(node: any, ct?: any): Promise<void>;
     nodeRun(node: any, ct?: any): Promise<void>;
+    nodeRunOnce(node: any, ct?: any): Promise<void>;
     nodeStop(node: any, ct?: any): Promise<void>;
     getEdgeData(edge: Edge): {
         title: string;
@@ -138,7 +139,7 @@ export declare class AdapterNifi {
     apiRunProcessNode(node: any): Promise<any>;
     apiStopProcessNode(node: any): Promise<any>;
     apiRunOnceProcessNode(node: any): Promise<any>;
-    apiRunStatusNode(node: any, state: "RUN_ONCE" | "STOPPED" | "RUNNING"): Promise<any>;
+    apiRunStatusNode(node: any, state: "RUN_ONCE" | "STOPPED" | "RUNNING" | "DISABLED"): Promise<any>;
     apiNewEdge(component: any): Promise<any>;
     apiUpdateEdge(data: any): Promise<any>;
     apiDelEdge(edge: Cell): Promise<any>;
@@ -146,7 +147,7 @@ export declare class AdapterNifi {
     apiGetNodeInfo(id: string): Promise<any>;
     apiGetControllServices(id: string): Promise<unknown>;
     getReversion(params: any): any;
-    apiDisOrEnableNode(node: Node, ct: any, flag?: boolean): Promise<any>;
+    apiDisOrEnableNode(node: Node, flag?: boolean): Promise<any>;
     apiNewLabel(node: Node): Promise<any>;
     apiUpdateLabel(data: any): Promise<any>;
     apiDelLabel(data: any): Promise<any>;
