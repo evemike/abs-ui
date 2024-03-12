@@ -51,7 +51,7 @@ export declare namespace IElsX6 {
     }
     interface NodeListProps {
         enabled?: boolean;
-        nodeList?: GraphNode[];
+        nodeList?: GraphNode[] | Ref<GraphNode[]>;
         initNodeFn?: (node: GraphNode) => Promise<Node.Metadata>;
         graph?: Graph;
     }
@@ -150,7 +150,7 @@ export declare namespace IElsX6 {
         elsX6Ref: Ref<HTMLElement | undefined>;
         drawerRef: Ref<InstanceType<typeof Drawer> | undefined>;
     }
-    type CellStep = "init" | "save" | "running" | "stop" | "pause" | "success" | "error" | "finish" | "loading" | "disabled" | "undisabled";
+    type CellStep = "init" | "save" | "running" | "stop" | "pause" | "success" | "error" | "finish" | "loading" | "disabled" | "undisabled" | "invalid" | "checking";
     type Mode = "edit" | "view" | "running" | "delete";
     interface ContextmenuConfig {
         node?: IElsElem.Elem[];
@@ -172,7 +172,7 @@ export declare namespace IElsX6 {
         "init:edge"?: (edge: Edge) => void;
         "render:done"?: (e: GraphEvents) => void;
         "dialog:cancel"?: () => void;
-        "dialog:submit"?: () => void;
+        "dialog:submit"?: (args: any) => void;
         "drawer:cancel"?: (cell: Cell) => void;
         "drawer:submit"?: (cell: Cell, close: () => void) => void;
         "cell:selectAll"?: (cells: Cell[]) => void;

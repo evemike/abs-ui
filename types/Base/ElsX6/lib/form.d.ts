@@ -21,8 +21,6 @@ export declare class GraphForm {
         result: boolean;
         info: any[];
     }>;
-    initFormData(data: Record<string, Record<string, any>>): void;
-    initCellFormData(cell: Cell | string, data?: Record<string, any>): this;
     validateForm(e?: any, tab?: any): void;
     validateCell(cell: Cell): Promise<void>;
     validateCells(): void;

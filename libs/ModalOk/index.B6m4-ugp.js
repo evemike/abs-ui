@@ -1,5 +1,5 @@
-import { defineComponent as b, computed as O, onMounted as T, openBlock as g, createElementBlock as m, createVNode as s, unref as a, withCtx as t, normalizeStyle as _, createTextVNode as f, toDisplayString as u, createCommentVNode as w, renderSlot as x } from "vue";
-import { Z as y, d as p } from "../../chunks/vendor.3wbU5Pec.js";
+import { defineComponent as b, computed as O, onMounted as T, openBlock as g, createElementBlock as m, createVNode as i, unref as s, withCtx as t, normalizeStyle as _, createTextVNode as f, toDisplayString as u, createCommentVNode as w, renderSlot as x } from "vue";
+import { a1 as y, d as p } from "../../chunks/vendor.CNZ6m-gA.js";
 const j = {
   dialogVisible: !1,
   title: "标题",
@@ -28,8 +28,8 @@ const j = {
       get() {
         return e.dialogObject.dialogVisible || !1;
       },
-      set(i) {
-        return i;
+      set(a) {
+        return a;
       }
     }), o = {
       dialogTitle: e.dialogObject.title || "标题",
@@ -45,8 +45,8 @@ const j = {
       n("dialogConfirm", !1, "success");
     };
     return T(() => {
-    }), (i, r) => (g(), m("div", S, [
-      s(a(y), {
+    }), (a, r) => (g(), m("div", S, [
+      i(s(y), {
         modelValue: d.value,
         "onUpdate:modelValue": r[0] || (r[0] = (B) => d.value = B),
         title: o.dialogTitle,
@@ -56,7 +56,7 @@ const j = {
       }, {
         footer: t(() => [
           o.dialogIsFooter ? (g(), m("span", k, [
-            s(a(p), {
+            i(s(p), {
               onClick: c,
               style: _(o.cancelBtnStyle)
             }, {
@@ -65,7 +65,7 @@ const j = {
               ]),
               _: 1
             }, 8, ["style"]),
-            s(a(p), {
+            i(s(p), {
               onClick: h,
               type: "primary"
             }, {
@@ -77,7 +77,7 @@ const j = {
           ])) : w("", !0)
         ]),
         default: t(() => [
-          x(i.$slots, "default")
+          x(a.$slots, "default")
         ]),
         _: 3
       }, 8, ["modelValue", "title", "width", "show-close"])

@@ -1,6 +1,6 @@
 import "../css/main-DQsX5Ws-.css";
-import { defineComponent as Q, toRefs as X, ref as C, shallowRef as D, watch as R, onMounted as Y, openBlock as s, createElementBlock as B, Fragment as ee, createVNode as f, unref as o, withCtx as p, createElementVNode as m, renderSlot as L, createBlock as k, resolveDynamicComponent as te, withDirectives as oe, createCommentVNode as b, vShow as ae, normalizeStyle as le, mergeProps as re, markRaw as O, nextTick as ne } from "vue";
-import { ap as se, aq as ue, ar as ie, as as r, at as j, au as F, L as de, d as N, F as ce, av as fe, Z as pe } from "./vendor.3wbU5Pec.js";
+import { defineComponent as X, toRefs as Y, ref as C, shallowRef as D, watch as R, onMounted as Z, openBlock as s, createElementBlock as B, Fragment as ee, createVNode as f, unref as o, withCtx as p, createElementVNode as m, renderSlot as O, createBlock as k, resolveDynamicComponent as te, withDirectives as oe, createCommentVNode as b, vShow as ae, normalizeStyle as le, mergeProps as re, markRaw as j, nextTick as ne } from "vue";
+import { at as se, au as ue, av as ie, aw as r, ax as L, ay as N, Q as de, d as z, K as ce, az as fe, a1 as pe } from "./vendor.CNZ6m-gA.js";
 import { _ as me } from "./_plugin-vue_export-helper.CHgC5LLL.js";
 const Ve = {
   autoCloseBrackets: !0,
@@ -58,7 +58,7 @@ const Ve = {
   class: "_operate"
 }, _e = { key: 1 }, Ce = {
   name: "CodeEditor"
-}, ke = /* @__PURE__ */ Q({
+}, ke = /* @__PURE__ */ X({
   ...Ce,
   props: {
     modelValue: {},
@@ -77,14 +77,14 @@ const Ve = {
     class: {}
   },
   emits: ["update:modelValue"],
-  setup(H, { expose: M, emit: z }) {
-    const U = z, $ = H, [A, w] = ie(), { modelValue: y, showOperate: I, theme: E, format: u, teleport: P, dialog: q, dialogTitle: G, lang: v } = X($), V = C(), g = C(), n = D(), i = D();
+  setup(F, { expose: H, emit: M }) {
+    const U = M, $ = F, [A, w] = ie(), { modelValue: y, showOperate: I, theme: E, format: u, teleport: P, dialog: G, dialogTitle: K, lang: v } = Y($), V = C(), g = C(), n = D(), i = D();
     let a = y.value || "";
     const l = C(!1);
-    let h = r.theme(E.value), d = j.create({
+    let h = r.theme(E.value), d = L.create({
       doc: a,
       extensions: [
-        F,
+        N,
         h,
         ...v.value,
         r.updateListener.of((e) => {
@@ -94,11 +94,11 @@ const Ve = {
     });
     const c = (e = a, t = n.value) => {
       t == null || t.dispatch({ changes: { from: 0, to: t == null ? void 0 : t.state.doc.length, insert: e } });
-    }, W = (e = n.value) => e == null ? void 0 : e.state.doc.toString(), S = () => {
-      h = r.theme(E.value), d = j.create({
+    }, Q = (e = n.value) => e == null ? void 0 : e.state.doc.toString(), S = () => {
+      h = r.theme(E.value), d = L.create({
         doc: a,
         extensions: [
-          F,
+          N,
           h,
           ...v.value,
           r.updateListener.of((e) => {
@@ -106,17 +106,17 @@ const Ve = {
           })
         ]
       });
-    }, Z = (e = n.value) => {
+    }, W = (e = n.value) => {
       e == null || e.setState(d);
-    }, J = () => {
-      n.value = O(new r({ state: d, parent: V.value }));
+    }, q = () => {
+      n.value = j(new r({ state: d, parent: V.value }));
     }, T = () => {
       l.value = !0, ne(() => {
-        g.value && (i.value ? c(a || "", i.value) : (a = W() || "", S(), i.value = O(new r({ state: d, parent: g.value }))));
+        g.value && (i.value ? c(a || "", i.value) : (a = Q() || "", S(), i.value = j(new r({ state: d, parent: g.value }))));
       });
     }, x = de((e) => {
       a = e.state.doc.toString(), U("update:modelValue", a);
-    }, 200), K = () => {
+    }, 200), J = () => {
       var t;
       const e = ((t = u.value) == null ? void 0 : t.call(u, a)) || a;
       e != a && (a = e, c(e, l.value ? i.value : n.value));
@@ -124,19 +124,19 @@ const Ve = {
     return R(y, (e) => {
       e != a && c(e);
     }), R(v, () => {
-      S(), Z();
-    }), Y(() => {
-      J();
-    }), M({
+      S(), W();
+    }), Z(() => {
+      q();
+    }), H({
       openDialog: T
     }), (e, t) => (s(), B(ee, null, [
       f(o(A), null, {
         default: p(({ $slots: _ }) => [
           m("div", ge, [
-            L(e.$slots, "default", {}, void 0, !0),
+            O(e.$slots, "default", {}, void 0, !0),
             (s(), k(te(_.default))),
             oe(m("div", he, [
-              l.value ? b("", !0) : (s(), k(o(N), {
+              l.value ? b("", !0) : (s(), k(o(z), {
                 key: 0,
                 icon: o(ce),
                 title: "放大",
@@ -144,14 +144,14 @@ const Ve = {
                 onClick: T
               }, null, 8, ["icon"])),
               l.value ? b("", !0) : (s(), B("i", _e)),
-              o(u) ? (s(), k(o(N), {
+              o(u) ? (s(), k(o(z), {
                 key: 2,
                 icon: o(fe),
                 title: "格式化",
                 link: "",
-                onClick: K
+                onClick: J
               }, null, 8, ["icon"])) : b("", !0),
-              L(e.$slots, "operate", {}, void 0, !0)
+              O(e.$slots, "operate", {}, void 0, !0)
             ], 512), [
               [ae, o(I) || l.value]
             ])
@@ -178,8 +178,8 @@ const Ve = {
         width: "80%",
         modelValue: l.value,
         "onUpdate:modelValue": t[0] || (t[0] = (_) => l.value = _)
-      }, o(q), {
-        title: o(G) || "代码编辑器",
+      }, o(G), {
+        title: o(K) || "代码编辑器",
         onClose: t[1] || (t[1] = () => c())
       }), {
         default: p(() => [

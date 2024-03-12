@@ -1,5 +1,5 @@
 import { defineComponent as f, computed as y, unref as e, onMounted as k, openBlock as o, createBlock as g, mergeProps as h, withCtx as C, createElementBlock as t, normalizeClass as a, createElementVNode as i, Fragment as v } from "vue";
-import { aP as B, a2 as E, k as x } from "./vendor.3wbU5Pec.js";
+import { aT as B, a6 as E, k as x } from "./vendor.CNZ6m-gA.js";
 const I = ["src"], b = {
   key: 2,
   "aria-hidden": "true",
@@ -31,7 +31,7 @@ const I = ["src"], b = {
       }).on("error", (c) => {
         console.error(c);
       });
-    }), (c, P) => e(_) ? (o(), t(v, { key: 1 }, [
+    }), (c, J) => e(_) ? (o(), t(v, { key: 1 }, [
       e(n) ? (o(), t("img", {
         key: 0,
         src: e(s),

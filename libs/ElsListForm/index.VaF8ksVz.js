@@ -1,4 +1,4 @@
-import { _ as o } from "../../chunks/main.vue_vue_type_style_index_0_lang.Bu-s41wu.js";
+import { _ as o } from "../../chunks/main.vue_vue_type_style_index_0_lang.0u4eG972.js";
 const l = {
   install: (s) => {
     s.component("els-list-form", o);

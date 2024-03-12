@@ -17,6 +17,8 @@ export declare class AdapterNifi {
     rootStatus: {};
     nodeList: import("vue").Ref<any[]>;
     cellMetadata: Map<string, any>;
+    edgeFormData: import("vue").Ref<any>;
+    currentEdgeJson: any;
     groupId: string;
     groupFlowData: any;
     groupBreadcrumb: any[];
@@ -52,12 +54,15 @@ export declare class AdapterNifi {
     nodeInit(cell: Node): Promise<void>;
     nodeAdd(cell: Node): Promise<void>;
     nodeEdit(node: Node, ct?: any): Promise<void>;
-    nodeSave(cell: Cell, cl: any): Promise<void>;
+    nodeSave(cell: Cell, close: any): Promise<void>;
     nodeDel(node: Node, ct?: any): Promise<void>;
     nodesDel(nodes: Node[], ct: any): Promise<void>;
     nodeMove(node: Node): Promise<void>;
     nodeUpdate(d: any, node: Node): Promise<void>;
     nodeDisable(node: Node, ct: any, flag: boolean): Promise<void>;
+    nodeCheck(node: Node, ct?: any): Promise<void>;
+    nodeRun(node: any, ct?: any): Promise<void>;
+    nodeStop(node: any, ct?: any): Promise<void>;
     getEdgeData(edge: Edge): {
         title: string;
         outPorts: any;
@@ -75,9 +80,17 @@ export declare class AdapterNifi {
         title: string;
         inPorts: any;
         outPorts: any;
-        modelValue: {
-            $EdgeJSONData: Edge.Properties;
+        source: {
+            id: any;
+            groupId: any;
+            type: string;
         };
+        destination: {
+            id: any;
+            groupId: any;
+            type: string;
+        };
+        modelValue: any;
         relationships: any;
         sourceNode: Cell<Cell.Properties> | undefined;
         targetNode: Cell<Cell.Properties> | undefined;
@@ -86,9 +99,7 @@ export declare class AdapterNifi {
         title: string;
         outPorts: any;
         inPorts: any;
-        modelValue: {
-            $EdgeJSONData: Edge.Properties;
-        };
+        modelValue: any;
         elem: any;
     }>;
     edgeInit(edge: Edge): Promise<void>;
@@ -109,6 +120,10 @@ export declare class AdapterNifi {
     apiGetGroupData(id: string): Promise<any>;
     apiUpdateGroup(data: any): Promise<any>;
     apiNewGroup(data: any): Promise<any>;
+    apiDelGroup(node: any): Promise<any>;
+    apiRunGroup(node: any): Promise<any>;
+    apiStopGroup(node: any): Promise<any>;
+    apiGroupRunStatus(node: any, state: "TRANSMITTING" | "STOPPED"): Promise<any>;
     apiNewNode(name: string, position?: {
         x: number;
         y: number;
@@ -116,6 +131,14 @@ export declare class AdapterNifi {
     apiGetNode(id: string): Promise<any>;
     apiUpdateNode(data: any): Promise<any>;
     apiDelNode(node: Node): Promise<any>;
+    apiAnalyseNode(node: Node): Promise<any>;
+    apiValidateNode(node: Node): Promise<any>;
+    apiGetValidateNode(node: any, reqId: string): Promise<any>;
+    apiDelValidateNode(node: any, reqId: string): Promise<any>;
+    apiRunProcessNode(node: any): Promise<any>;
+    apiStopProcessNode(node: any): Promise<any>;
+    apiRunOnceProcessNode(node: any): Promise<any>;
+    apiRunStatusNode(node: any, state: "RUN_ONCE" | "STOPPED" | "RUNNING"): Promise<any>;
     apiNewEdge(component: any): Promise<any>;
     apiUpdateEdge(data: any): Promise<any>;
     apiDelEdge(edge: Cell): Promise<any>;

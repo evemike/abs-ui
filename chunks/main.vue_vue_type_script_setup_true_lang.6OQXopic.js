@@ -1,7 +1,7 @@
-import { unref as h, useAttrs as q, ref as T, toRef as j, h as S, computed as G, onUnmounted as B, defineComponent as U, useSlots as z, onMounted as D, watch as L, reactive as K, onBeforeUnmount as H, openBlock as W, createElementBlock as Y, createVNode as J } from "vue";
-import { a as A, E as Q } from "./main.BeuaEiRW.js";
-import { ax as X, ay as _, N as v, az as w, g as b, aA as V, aB as I, aC as Z, aD as ee, y as te, aE as se, aF as P, o as re, aG as oe, K as N, aH as ne, n as le, af as ae, a6 as ce, am as ie, k as ue, a3 as fe, aI as de, L as me } from "./vendor.3wbU5Pec.js";
-const k = (r = [], t = () => {
+import { unref as h, useAttrs as $, ref as j, toRef as N, h as S, computed as G, onUnmounted as B, defineComponent as U, useSlots as K, onMounted as D, watch as L, reactive as z, onBeforeUnmount as H, openBlock as J, createElementBlock as Q, createVNode as W } from "vue";
+import { a as A, E as Y } from "./main.CzNHmSIX.js";
+import { aB as X, aC as _, R as v, aD as w, g as b, aE as M, aF as I, aG as Z, aH as ee, C as te, aI as se, aJ as P, o as re, aK as oe, P as T, aL as ne, n as le, aj as ae, aa as ce, aq as ie, k as ue, a7 as fe, aM as de, Q as me } from "./vendor.CNZ6m-gA.js";
+const F = (r = [], t = () => {
 }, e = {}) => {
   const l = e.isSource || !1 ? r : X(r), o = e.children || "children", a = (c, i, n) => {
     const u = _(c);
@@ -19,14 +19,14 @@ const k = (r = [], t = () => {
     }
   };
   return a(l, void 0, void 0), l;
-}, Ce = (r, t = {}) => {
+}, Oe = (r, t = {}) => {
   const e = {}, s = t.key || "id";
-  return k(r, (o) => {
+  return F(r, (o) => {
     o && o[s] && (e[o[s]] = o);
   }, t), e;
 }, pe = (r = [], t, e = {}) => {
   const s = e.children || "children";
-  return k(r, (o, a, c, i, n) => {
+  return F(r, (o, a, c, i, n) => {
     if (!t(o, a, c, i, n)) {
       const f = a.indexOf(o);
       if (a.splice(f, 1), i) {
@@ -35,16 +35,16 @@ const k = (r = [], t = () => {
       }
     }
   }, e);
-}, Ve = (r = [], t, e = {}) => k(r, (l, o, a, c, i) => {
+}, Me = (r = [], t, e = {}) => F(r, (l, o, a, c, i) => {
   o.sort(t);
-}, e), Me = (r, t, e, s, l = {}, o) => {
+}, e), Ve = (r, t, e, s, l = {}, o) => {
   const a = l.key || "id", c = l.children || "children";
   let i, n, u, f, p, m;
-  const g = k(r, (E, y, F, O) => {
-    E[a] == t && (i = E, u = y, n = F, m = O), E[a] == e && (f = typeof c == "string" ? E[c] : c(E) || E, p = E);
+  const g = F(r, (E, k, y, C) => {
+    E[a] == t && (i = E, u = k, n = y, m = C), E[a] == e && (f = typeof c == "string" ? E[c] : c(E) || E, p = E);
   }, l);
   return f = f ?? g, o && i && o(i, m, p, n), i != null && (u && u.splice(n, 1), f && (Array.isArray(f) ? f.splice(s, 0, i) : typeof c == "string" ? f[c] = [i] : c(f, [i]))), g;
-}, De = (r = [], t, e = {}) => (e.children, k(r, (l, o, a, c, i) => {
+}, De = (r = [], t, e = {}) => (e.children, F(r, (l, o, a, c, i) => {
   if (c) {
     const [n, u = o.length] = t(c) || [];
     if (n)
@@ -52,28 +52,28 @@ const k = (r = [], t = () => {
   }
 }, e)), Le = (r = [], t, e = {}) => {
   const s = e.children || "children";
-  return k(r, (o, a) => {
+  return F(r, (o, a) => {
     const [c, i = a.length] = t(o) || [], n = c && (typeof s == "string" ? c[s] : s(c));
     if (n && n.length > 0)
       return n.splice(i, 0, c), !1;
   }, e);
 }, we = (r, t, e = {}) => {
   let s;
-  return k(r, (o) => {
+  return F(r, (o) => {
     if (t(o))
       return s = o, !1;
   }, e), s;
-}, Ne = (r = [], t = [], e = {}) => {
+}, Te = (r = [], t = [], e = {}) => {
   const s = e.key || "id";
   return pe(r, (o) => !t.includes(o[s]), e);
-}, Te = (r = [], t, e = {}) => {
+}, je = (r = [], t, e = {}) => {
   const s = e.key || "id";
   let l;
-  return k(r, (a, c, i) => a[s] == t ? (c.splice(i, 1), l = a, !1) : !0, e), l;
-}, $ = (r = [], t = {}) => {
+  return F(r, (a, c, i) => a[s] == t ? (c.splice(i, 1), l = a, !1) : !0, e), l;
+}, q = (r = [], t = {}) => {
   const e = [];
   let s = [];
-  return k(r, (o, a, c, i, n) => {
+  return F(r, (o, a, c, i, n) => {
     if (i) {
       const u = s.indexOf(i), f = s.length;
       if (u == -1)
@@ -87,18 +87,18 @@ const k = (r = [], t = () => {
       s = [];
     e.push([o, ...s]);
   }, t), e;
-}, je = (r = [], t = {}) => {
+}, Ne = (r = [], t = {}) => {
   const e = t.children || "children";
-  return $(r, t).filter((l) => {
+  return q(r, t).filter((l) => {
     const o = typeof e == "string" ? l[0][e] : e(l[0]);
     return !o || o.length == 0;
   });
-}, $e = (r = [], t = [], e = {}) => {
+}, qe = (r = [], t = [], e = {}) => {
   const s = e.key || "id";
-  return $(r, e).filter((o) => t.includes(o[0][s]));
-}, qe = (r = [], t, e = {}) => {
+  return q(r, e).filter((o) => t.includes(o[0][s]));
+}, $e = (r = [], t, e = {}) => {
   const s = e.sourceChildren || e.children || "children", l = e.children || "children";
-  return k(r, (a, c, i, n, u) => {
+  return F(r, (a, c, i, n, u) => {
     const f = t(a, c, i, n, u);
     if (f == a && a != null)
       return;
@@ -111,7 +111,7 @@ const k = (r = [], t = () => {
       return;
     Object.keys(a).forEach((g) => delete a[g]), Object.keys(f).forEach((g) => a[g] = f[g]), typeof l == "string" ? f[l] || (a[l] = p) : l(a, p);
   }, e);
-}, M = {
+}, V = {
   required: "请输入 [ {{label}} ] ！",
   pattern: "请按照要求输入正确的 [ {{label}} ] 格式! 格式：{{ pattern }}",
   common: "请输入正确的 [ {{label}} ] 格式!"
@@ -130,15 +130,15 @@ const k = (r = [], t = () => {
 var R;
 ((r) => {
   r.buildRules = (t) => {
-    const e = h(t.required) ?? !1, s = h(t.trigger) ?? "blur", l = v(t, "message") ? A.getExpValue(h(t.message), t) : A.getExpValue(M.required, t), o = w(h(t.rules)) ? [...h(t.rules)] : [], a = Object.keys(M), c = [];
+    const e = h(t.required) ?? !1, s = h(t.trigger) ?? "blur", l = v(t, "message") ? A.getExpValue(h(t.message), t) : A.getExpValue(V.required, t), o = w(h(t.rules)) ? [...h(t.rules)] : [], a = Object.keys(V), c = [];
     let i = !1;
     return o.forEach((n) => {
       var m;
-      const u = { ...h(n) }, f = ((m = a.filter((d) => v(u, d))) == null ? void 0 : m[0]) || "common", p = u.message || h(t.message) || b(M, f);
+      const u = { ...h(n) }, f = ((m = a.filter((d) => v(u, d))) == null ? void 0 : m[0]) || "common", p = u.message || h(t.message) || b(V, f);
       u.message = A.getExpValue(p, { ...t, ...u }), v(u, "required") && (i = !0), v(u, "trigger") || (u.trigger = s), c.push(u);
     }), !i && e && c.push({ required: e, message: l, trigger: s }), delete t.required, delete t.trigger, delete t.message, c;
   }, r.buildElFormItemProps = (t) => {
-    const e = h(b(t, "elFormItem")), s = w(e) ? e : V(e) ? Object.keys(e) : [], l = V(e) ? { ...e } : {};
+    const e = h(b(t, "elFormItem")), s = w(e) ? e : M(e) ? Object.keys(e) : [], l = M(e) ? { ...e } : {};
     return he.forEach((o) => {
       v(t, o) && !s.includes(o) && (l[o] = b(t, o), I(t, o));
     }), I(t, "elFormItem"), l;
@@ -152,8 +152,8 @@ var R;
         return u && Array.isArray(u) ? new Array().concat(u) : [];
       }
     }, o = {}, a = {};
-    k(e, (n, u, f, p) => {
-      if (!V(n))
+    F(e, (n, u, f, p) => {
+      if (!M(n))
         return !0;
       if (p) {
         const m = `${p.$prop || p.prop || ""}.${n.prop || ""}`;
@@ -180,7 +180,7 @@ var R;
     });
   }, r.SELF_FORM_NAMES = ["elsListForm"];
 })(R || (R = {}));
-const ge = R.buildRules, Ee = R.buildElFormItemProps, ye = R.isNeedElFormItem, ke = ({ tag: r, parent: t }) => r || (t && v(x, P(t.tagname)) ? x[P(t.tagname)] : re), Fe = (r) => {
+const ge = R.buildRules, Ee = R.buildElFormItemProps, ke = R.isNeedElFormItem, Fe = ({ tag: r, parent: t }) => r || (t && v(x, P(t.tagname)) ? x[P(t.tagname)] : re), ye = (r) => {
   const t = r.props, e = r.setupRes;
   if (e.isFormElem) {
     const s = e.formProp;
@@ -201,28 +201,29 @@ const ge = R.buildRules, Ee = R.buildElFormItemProps, ye = R.isNeedElFormItem, k
   if (p.length > 0 && (d.formProp = m), Re(e, a, c)) {
     if (d.isFormElem = !0, e.isFormElem !== !1) {
       s == null || s.add(m);
-      const g = h(e.modelValue ?? e.value) ?? void 0, E = r.context, y = E == null ? void 0 : E.formData;
-      b(h(y), m) == null && N(h(y), m, g), d.prop = {
-        ":modelValue": G(() => b(h(y), m)),
-        "onUpdate:modelValue": (F) => {
-          N(h(y), m, F ?? g), l == null || l(m, F);
+      const g = h(e.modelValue ?? e.value) ?? void 0, E = r.context, k = E == null ? void 0 : E.formData;
+      b(h(k), m) == null && T(h(k), m, g), d.prop = {
+        ":modelValue": G(() => b(h(k), m)),
+        // ":modelValue": get(unref(formData), formProp),
+        "onUpdate:modelValue": (y) => {
+          T(h(k), m, y ?? g), l == null || l(m, y);
         }
       };
     }
-    d.excludeKeys = ["value"], d.isFormItem = !0, d.isNeedElFormItem = ye(e), B(() => {
+    d.excludeKeys = ["value"], d.isFormItem = !0, d.isNeedElFormItem = ke(e), B(() => {
       s == null || s.delete(m);
     });
   }
   return d;
 }, ve = (r, t, e) => {
-  const s = h(r.size) || "default", l = q(), o = t.formData, a = te(
+  const s = h(r.size) || "default", l = $(), o = t.formData, a = te(
     { validateOnRuleChange: !1, size: s },
     l.elForm || {}
-  ), c = T(), i = {
+  ), c = j(), i = {
     ...a,
     tag: se,
     ref: (f) => c.value = f,
-    cls: j(r, "column"),
+    cls: N(r, "column"),
     model: o
   }, n = (f, p) => {
     const m = b(h(c), f);
@@ -233,9 +234,9 @@ const ge = R.buildRules, Ee = R.buildElFormItemProps, ye = R.isNeedElFormItem, k
     formData: o,
     formProps: t.formProps,
     emitChange: t.emitChange,
-    tag: ke,
+    tag: Fe,
     setup: be,
-    render: Fe,
+    render: ye,
     excludeKeys: ["isFormElem", "isNeedElFormItem"],
     params: {
       ...e,
@@ -299,7 +300,7 @@ const ge = R.buildRules, Ee = R.buildElFormItemProps, ye = R.isNeedElFormItem, k
   },
   emits: ["update:modelValue", "change"],
   setup(r, { expose: t, emit: e }) {
-    const s = e, l = r, o = z(), a = T(_(h(l.modelValue || {})));
+    const s = e, l = r, o = K(), a = j(_(h(l.modelValue || {})));
     let c = !1;
     const i = me((d, g) => {
       s("change", d, g), s("update:modelValue", _(h(a))), c === !1 && (c = !0, setTimeout(() => {
@@ -308,10 +309,10 @@ const ge = R.buildRules, Ee = R.buildElFormItemProps, ye = R.isNeedElFormItem, k
     }, 200);
     D(() => {
       s("update:modelValue", _(h(a)));
-    }), L(j(l, "modelValue"), (d) => {
+    }), L(N(l, "modelValue"), (d) => {
       c === !1 && d && (a.value = _(d)), c === !0 && (c = !1);
     });
-    const n = K(/* @__PURE__ */ new Set()), u = { formProps: n, formData: a, emitChange: i }, p = (l.UIPluging || ve)(l, u, { slots: o });
+    const n = z(/* @__PURE__ */ new Set()), u = { formProps: n, formData: a, emitChange: i }, p = (l.UIPluging || ve)(l, u, { slots: o });
     if (l.autoClean) {
       let d = [];
       D(() => {
@@ -319,24 +320,24 @@ const ge = R.buildRules, Ee = R.buildElFormItemProps, ye = R.isNeedElFormItem, k
       }), H(() => {
         d = [], n.clear();
       }), L(n, (g) => {
-        const E = Array.from(g), y = de(d, E);
-        y.length > 0 && (y.forEach((F) => I(h(a), F)), d = E, s("update:modelValue", h(a)));
+        const E = Array.from(g), k = de(d, E);
+        k.length > 0 && (k.forEach((y) => I(h(a), y)), d = E, s("update:modelValue", h(a)));
       });
     }
     return t({ ...p, formProps: n, submit: (d = (g, E) => [g, E]) => new Promise(async (g, E) => {
       try {
         await p.validate();
-        const y = _(h(a));
-        for (const F of Array.from(n)) {
-          const O = b(h(a), F), C = d(F, O);
-          C[0] && C[1] == null && I(y, C[0]);
+        const k = _(h(a));
+        for (const y of Array.from(n)) {
+          const C = b(h(a), y), O = d(y, C);
+          O[0] && O[1] == null && I(k, O[0]);
         }
-        g(y);
-      } catch (y) {
-        console.error("表单校验失败！====>", y), E(y);
+        g(k);
+      } catch (k) {
+        console.error("表单校验失败！====>", k), E(k);
       }
-    }) }), (d, g) => (W(), Y("div", Ie, [
-      J(h(Q), {
+    }) }), (d, g) => (J(), Q("div", Ie, [
+      W(h(Y), {
         elem: h(p).elem,
         params: d.params,
         context: h(p).context
@@ -348,17 +349,17 @@ export {
   R as E,
   Ge as _,
   Le as a,
-  $ as b,
-  Ne as c,
-  Te as d,
+  q as b,
+  Te as c,
+  je as d,
   pe as e,
   we as f,
-  $e as g,
-  je as h,
-  k as i,
-  Me as j,
-  qe as k,
-  Ve as l,
-  Ce as m,
+  qe as g,
+  Ne as h,
+  F as i,
+  Ve as j,
+  $e as k,
+  Me as l,
+  Oe as m,
   De as t
 };

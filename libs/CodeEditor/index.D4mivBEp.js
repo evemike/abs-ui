@@ -1,5 +1,5 @@
-import { C as t } from "../../chunks/main.BSar4gEM.js";
-import { D as s, a as E } from "../../chunks/main.BSar4gEM.js";
+import { C as t } from "../../chunks/main.JrGJHiSO.js";
+import { D as s, a as E } from "../../chunks/main.JrGJHiSO.js";
 const e = {
   install: (o) => {
     o.component("code-editor", t);

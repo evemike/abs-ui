@@ -7,7 +7,7 @@ declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_T
         showFooter: boolean;
     };
 }>, {
-    open: (e?: IElsElem.Elem | undefined) => void;
+    open: (e?: IElsElem.Elem | undefined, d?: any) => void;
     close: () => void;
     setConfig: (key: string | Record<string, any>, val?: any) => void;
 }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<IElsX6.DialogProps>, {
