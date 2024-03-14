@@ -186,6 +186,7 @@ export declare namespace IElsX6 {
         cell: Cell;
         status: Ref<Record<string, any>>;
         step: Ref<CellStep>;
+        stepTip: Ref<string>;
         label: Ref<string>;
         desc: Ref<string>;
         icon: string;

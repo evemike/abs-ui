@@ -1,6 +1,6 @@
 import { IElsX6 } from "../../inter";
 import type { Node, Cell, Edge, Graph } from "@antv/x6";
-export type NIFI_NODE_TYPE = "PROCESS" | "PROCESS-GROUP" | "INPUT_PORTS" | "OUTPUT_PORTS" | "LABEL" | "FUNNELS" | "CONNECTIONS";
+export type NIFI_NODE_TYPE = "PROCESSORS" | "PROCESS-GROUPS" | "INPUT_PORTS" | "OUTPUT_PORTS" | "LABEL" | "FUNNELS" | "CONNECTIONS" | "PROCESSORS";
 export declare class AdapterNifi {
     constructor();
     NIFI_DATA: any;
@@ -50,7 +50,7 @@ export declare class AdapterNifi {
     initCellFormData(cell: Cell): void;
     initCellHistory(cell: Cell, ct: any): Promise<void>;
     initNodeStatus(cell: Cell, ct: any): void;
-    nodeType(cell: Node): NIFI_NODE_TYPE;
+    nodeType(cell: any): NIFI_NODE_TYPE;
     nodeInit(cell: Node): Promise<void>;
     nodeAdd(cell: Node): Promise<void>;
     nodeEdit(node: Node, ct?: any): Promise<void>;
@@ -108,11 +108,20 @@ export declare class AdapterNifi {
     edgeEdit(edge: Edge, ct: any): Promise<void>;
     edgeSubmit(c: any): Promise<void>;
     edgeDel(cell: Cell, ct: any): Promise<void>;
+    edgeListQuene(cell: any, ct?: any): Promise<void>;
+    edgeDropQuene(cell: any, ct?: any): Promise<void>;
+    cellUpdateStatus(cell: Cell): Promise<void>;
+    cellUpdateStep(cell: any, status: string): void;
+    cellDelete(cell: any, ct?: any): Promise<void>;
+    cellsDelete(cells: any[], ct?: any): Promise<void>;
     cellUpdate(data?: any[]): Promise<void>;
     groupRefresh(): Promise<void>;
     groupNodeAdd(): void;
     groupNodeDel(): void;
     groupNodeUpdate(): void;
+    apiGetCellStatus(cell: any): Promise<any>;
+    apiDelCell(cell: any): Promise<any>;
+    apiUpdateCell(cell: any, data: any): Promise<any>;
     apiGetClientId(): void;
     apiGetProcessTypes(): Promise<any>;
     apiGetPrioritizers(): Promise<any>;
@@ -133,9 +142,8 @@ export declare class AdapterNifi {
     apiUpdateNode(data: any): Promise<any>;
     apiDelNode(node: Node): Promise<any>;
     apiAnalyseNode(node: Node): Promise<any>;
-    apiValidateNode(node: Node): Promise<any>;
-    apiGetValidateNode(node: any, reqId: string): Promise<any>;
-    apiDelValidateNode(node: any, reqId: string): Promise<any>;
+    apiCheckNode(node: any): Promise<any>;
+    apiStatusNode(node: any): Promise<any>;
     apiRunProcessNode(node: any): Promise<any>;
     apiStopProcessNode(node: any): Promise<any>;
     apiRunOnceProcessNode(node: any): Promise<any>;
@@ -143,6 +151,7 @@ export declare class AdapterNifi {
     apiNewEdge(component: any): Promise<any>;
     apiUpdateEdge(data: any): Promise<any>;
     apiDelEdge(edge: Cell): Promise<any>;
+    apiStatusEdge(edge: Cell): Promise<any>;
     apiNewGroupNode(): void;
     apiGetNodeInfo(id: string): Promise<any>;
     apiGetControllServices(id: string): Promise<unknown>;
@@ -155,6 +164,8 @@ export declare class AdapterNifi {
     apiUpdateFunnel(data: any): Promise<any>;
     apiDelFunnel(node: Node): Promise<any>;
     apiGetHistory(cell: Cell): Promise<any>;
+    apiListQuene(cell: any): Promise<void>;
+    apiDropQuene(node: any): Promise<any>;
     apiPost(url: string, data?: any): Promise<any>;
     apiGet(url: string): Promise<any>;
     apiPut(url: string, data?: any): Promise<any>;

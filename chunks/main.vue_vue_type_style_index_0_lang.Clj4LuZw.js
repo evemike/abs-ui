@@ -1,8 +1,8 @@
 import "../css/main-BMVByKCq.css";
-import { defineComponent as se, toRefs as ne, reactive as ue, unref as l, shallowRef as L, ref as F, watch as re, openBlock as n, createElementBlock as w, normalizeClass as de, createElementVNode as r, createVNode as d, Fragment as C, renderList as I, toDisplayString as P, createBlock as f, withCtx as i, createCommentVNode as c, mergeProps as k, createTextVNode as h } from "vue";
-import { R as pe, d as E, p as ie, ar as fe, k as ce, a8 as me, o as N, g as p, Q as _, ac as ve, ab as ye, ai as _e, af as T, as as be, f as Ve, L as we, a2 as H, aj as ke, at as x } from "./vendor.3EV9Wvnx.js";
-import { C as G } from "./main.HVWEZNVf.js";
-import { E as he } from "./main.B-m_TxZg.js";
+import { defineComponent as se, toRefs as ne, reactive as ue, unref as l, shallowRef as L, ref as F, watch as re, openBlock as n, createElementBlock as w, normalizeClass as de, createElementVNode as r, createVNode as d, Fragment as C, renderList as I, toDisplayString as P, createBlock as c, withCtx as i, createCommentVNode as f, mergeProps as k, createTextVNode as h } from "vue";
+import { R as pe, d as E, p as ie, aw as ce, k as fe, a8 as me, o as N, g as p, Q as _, ac as ve, ab as ye, ai as _e, ah as T, ax as be, f as Ve, L as we, a2 as H, aj as ke, ay as x } from "./vendor.BiQBBLE_.js";
+import { C as G } from "./main.BJ0yqKco.js";
+import { E as he } from "./main.Ls77sn-E.js";
 const ge = {
   flex: "",
   "items-center": "",
@@ -77,57 +77,57 @@ const ge = {
   emits: ["update:modelValue", "change", "add"],
   setup(Q, { emit: q }) {
     const j = Q, D = q, { keys: J, keyName: R, modelValue: m, format: B, size: y, isNew: Te, isAdd: M } = j, { disabled: W } = ne(j), u = ue({ ...l(m) }), V = L([]), X = (a) => {
-      let t = typeof a;
-      return t == "string" ? /^#[0-9a-fA-f]+$/.test(a) && (t = "color") : t == "object" && (t = "json"), t;
+      let o = typeof a;
+      return o == "string" ? /^#[0-9a-fA-f]+$/.test(a) && (o = "color") : o == "object" && (o = "json"), o;
     }, U = F(!1), b = F({ prop: "", type: "string" }), Y = () => {
       M && (b.value = { prop: "", type: "string", isDel: !0 }, U.value = !0);
     }, Z = () => {
       const a = b.value;
       a.prop && (V.value.push({ ...a }), U.value = !1, D("add", { ...a }));
     }, ee = (a) => {
-      V.value = V.value.filter((t) => t != a);
+      V.value = V.value.filter((o) => o != a);
     };
     let O = !1, A = "";
-    const le = (a, t) => {
+    const le = (a, o) => {
       try {
         O = !0;
         const s = JSON.parse(a);
-        _(l(u), t, s);
+        _(l(u), o, s);
       } catch (s) {
         console.warn("JSON 格式不正确！", s);
       }
-    }, te = (a) => O ? (O = !1, A) : (A = JSON.stringify(p(l(u), a) || {}, null, 2), A);
+    }, oe = (a) => O ? (O = !1, A) : (A = JSON.stringify(p(l(u), a) || {}, null, 2), A);
     (() => {
-      const { propKey: a, valueKey: t } = R;
+      const { propKey: a, valueKey: o } = R;
       if (J.length == 0)
-        Array.isArray(m) ? V.value = m.map((s) => ({ prop: p(s, a), value: p(s, t), type: X(p(s, t)) })) : V.value = Object.keys(m).map((s) => ({ prop: s, value: p(m, s), type: p(m, s) }));
+        Array.isArray(m) ? V.value = m.map((s) => ({ prop: p(s, a), value: p(s, o), type: X(p(s, o)) })) : V.value = Object.keys(m).map((s) => ({ prop: s, value: p(m, s), type: p(m, s) }));
       else {
         let s = m || {};
-        Array.isArray(m) && (s = Object.fromEntries(m.map((v) => [v[a], v[t]]))), V.value = J.map((v) => ({ ...v, value: p(s, v.prop) ?? v.value }));
+        Array.isArray(m) && (s = Object.fromEntries(m.map((v) => [v[a], v[o]]))), V.value = J.map((v) => ({ ...v, value: p(s, v.prop) ?? v.value }));
       }
       for (const s of V.value)
         _(u, s.prop, s.value);
     })();
-    const S = F(!1), g = L(), K = {}, oe = (a) => {
-      const t = a.type, s = a.prop;
-      ["json", "code"].includes(t) ? p(K, s).openDialog() : (g.value = a, S.value = !0);
+    const S = F(!1), g = L(), K = {}, te = (a) => {
+      const o = a.type, s = a.prop;
+      ["json", "code"].includes(o) ? p(K, s).openDialog() : (g.value = a, S.value = !0);
     }, ae = {
       formData: u,
       elsListFormProps: j
     };
     return re(u, pe((a) => {
-      let t = a;
+      let o = a;
       if (B && typeof B == "function")
-        t = B(a);
+        o = B(a);
       else if (Array.isArray(m)) {
         const { propKey: s, valueKey: v } = R, e = m.map((z) => z[s]);
-        t = V.value.map((z) => {
-          const o = e.indexOf(z.prop), $ = { ...m[o] || {} };
+        o = V.value.map((z) => {
+          const t = e.indexOf(z.prop), $ = { ...m[t] || {} };
           return $[v] = p(a, z.prop), $;
         });
       }
-      D("change", t), D("update:modelValue", t);
-    }, 100), { deep: !0 }), (a, t) => {
+      D("change", o), D("update:modelValue", o);
+    }, 100), { deep: !0 }), (a, o) => {
       var s, v;
       return n(), w("div", {
         class: de(["els-list-form", `size-${l(y)}`]),
@@ -165,13 +165,13 @@ const ge = {
                 title: e.label || e.prop
               }, [
                 r("i", Ne, P(e.label || e.prop), 1),
-                e.desc ? (n(), f(l(fe), {
+                e.desc ? (n(), c(l(ce), {
                   key: 0,
                   content: e.desc,
                   placement: "top-start"
                 }, {
                   default: i(() => [
-                    d(l(ce), {
+                    d(l(fe), {
                       "ml-1em": "",
                       c: "#909399"
                     }, {
@@ -182,118 +182,118 @@ const ge = {
                     })
                   ]),
                   _: 2
-                }, 1032, ["content"])) : c("", !0)
+                }, 1032, ["content"])) : f("", !0)
               ], 8, Ce),
               l(W) ? (n(), w("b", De)) : (n(), w("b", je, [
-                e.tag != null ? (n(), f(l(he), {
+                e.tag != null ? (n(), c(l(he), {
                   key: 0,
                   elem: e,
                   params: ae
                 }, null, 8, ["elem"])) : (n(), w(C, { key: 1 }, [
-                  e.type == "string" ? (n(), f(l(N), k({
+                  e.type == "string" ? (n(), c(l(N), k({
                     key: 0,
                     "w-full": "",
                     truncate: "",
                     "model-value": l(p)(u, e.prop),
-                    "onUpdate:modelValue": (o) => l(_)(u, e.prop, o),
+                    "onUpdate:modelValue": (t) => l(_)(u, e.prop, t),
                     size: l(y)
-                  }, e.attr || {}, { autosize: "" }), null, 16, ["model-value", "onUpdate:modelValue", "size"])) : c("", !0),
-                  e.type == "select" ? (n(), f(l(ve), k({
+                  }, e.attr || {}, { autosize: "" }), null, 16, ["model-value", "onUpdate:modelValue", "size"])) : f("", !0),
+                  e.type == "select" ? (n(), c(l(ve), k({
                     key: 1,
                     "w-full": "",
                     "model-value": l(p)(u, e.prop),
-                    "onUpdate:modelValue": (o) => l(_)(u, e.prop, o),
+                    "onUpdate:modelValue": (t) => l(_)(u, e.prop, t),
                     size: l(y)
                   }, e.attr || {}), {
                     default: i(() => [
-                      (n(!0), w(C, null, I(e.cls || [], (o) => (n(), f(l(ye), {
-                        label: o.label,
-                        value: o.value
+                      (n(!0), w(C, null, I(e.cls || [], (t) => (n(), c(l(ye), {
+                        label: t.label,
+                        value: t.value
                       }, null, 8, ["label", "value"]))), 256))
                     ]),
                     _: 2
-                  }, 1040, ["model-value", "onUpdate:modelValue", "size"])) : c("", !0),
-                  e.type == "number" ? (n(), f(l(_e), k({
+                  }, 1040, ["model-value", "onUpdate:modelValue", "size"])) : f("", !0),
+                  e.type == "number" ? (n(), c(l(_e), k({
                     key: 2,
                     "w-full": "",
                     "model-value": l(p)(u, e.prop),
-                    "onUpdate:modelValue": (o) => l(_)(u, e.prop, o),
+                    "onUpdate:modelValue": (t) => l(_)(u, e.prop, t),
                     size: l(y)
-                  }, e.attr || {}), null, 16, ["model-value", "onUpdate:modelValue", "size"])) : c("", !0),
-                  e.type == "boolean" ? (n(), f(l(T), k({
+                  }, e.attr || {}), null, 16, ["model-value", "onUpdate:modelValue", "size"])) : f("", !0),
+                  e.type == "boolean" ? (n(), c(l(T), k({
                     key: 3,
                     "w-full": "",
                     "model-value": l(p)(u, e.prop),
-                    "onUpdate:modelValue": (o) => l(_)(u, e.prop, o),
+                    "onUpdate:modelValue": (t) => l(_)(u, e.prop, t),
                     size: l(y)
-                  }, e.attr || {}), null, 16, ["model-value", "onUpdate:modelValue", "size"])) : c("", !0),
-                  e.type == "color" ? (n(), f(l(be), k({
+                  }, e.attr || {}), null, 16, ["model-value", "onUpdate:modelValue", "size"])) : f("", !0),
+                  e.type == "color" ? (n(), c(l(be), k({
                     key: 4,
                     "w-full": "",
                     "model-value": l(p)(u, e.prop),
-                    "onUpdate:modelValue": (o) => l(_)(u, e.prop, o),
+                    "onUpdate:modelValue": (t) => l(_)(u, e.prop, t),
                     size: l(y)
-                  }, e.attr || {}), null, 16, ["model-value", "onUpdate:modelValue", "size"])) : c("", !0),
-                  e.type == "json" ? (n(), f(l(G), k({
+                  }, e.attr || {}), null, 16, ["model-value", "onUpdate:modelValue", "size"])) : f("", !0),
+                  e.type == "json" ? (n(), c(l(G), k({
                     key: 5,
                     class: "b-1 b-solid b-#E6E8EB rd-8 w-full overflow-hidden"
                   }, e.attr || {}, {
                     ref_for: !0,
-                    ref: (o) => l(_)(K, e.prop, o),
+                    ref: (t) => l(_)(K, e.prop, t),
                     showOperate: !1,
                     maxHeight: "32px",
-                    "model-value": te(e.prop),
-                    "onUpdate:modelValue": (o) => le(o, e.prop),
+                    "model-value": oe(e.prop),
+                    "onUpdate:modelValue": (t) => le(t, e.prop),
                     size: l(y)
-                  }), null, 16, ["model-value", "onUpdate:modelValue", "size"])) : c("", !0),
-                  e.type == "code" ? (n(), f(l(G), k({
+                  }), null, 16, ["model-value", "onUpdate:modelValue", "size"])) : f("", !0),
+                  e.type == "code" ? (n(), c(l(G), k({
                     key: 6,
                     class: "b-1 b-solid b-#E6E8EB rd-8 w-full overflow-hidden"
                   }, e.attr || {}, {
                     ref_for: !0,
-                    ref: (o) => l(_)(K, e.prop, o),
+                    ref: (t) => l(_)(K, e.prop, t),
                     showOperate: !1,
                     maxHeight: "32px",
                     "model-value": l(p)(u, e.prop),
-                    "onUpdate:modelValue": (o) => l(_)(u, e.prop, o),
+                    "onUpdate:modelValue": (t) => l(_)(u, e.prop, t),
                     size: l(y)
-                  }), null, 16, ["model-value", "onUpdate:modelValue", "size"])) : c("", !0)
+                  }), null, 16, ["model-value", "onUpdate:modelValue", "size"])) : f("", !0)
                 ], 64))
               ])),
               r("b", Be, [
-                e.isDel ? (n(), f(l(E), {
+                e.isDel ? (n(), c(l(E), {
                   key: 0,
                   type: "danger",
                   link: "",
                   icon: l(Ve),
-                  onClick: (o) => ee(e),
+                  onClick: (t) => ee(e),
                   title: "删除"
-                }, null, 8, ["icon", "onClick"])) : c("", !0),
-                ["string", "code", "json"].includes(e.type) && e.tag == null ? (n(), f(l(E), {
+                }, null, 8, ["icon", "onClick"])) : f("", !0),
+                ["string", "code", "json"].includes(e.type) && e.tag == null ? (n(), c(l(E), {
                   key: 1,
                   link: "",
                   type: "success",
                   icon: l(we),
-                  onClick: (o) => oe(e),
+                  onClick: (t) => te(e),
                   title: "全屏"
-                }, null, 8, ["icon", "onClick"])) : c("", !0),
-                e.btns ? (n(!0), w(C, { key: 2 }, I(e.btns, (o) => (n(), f(l(E), k(o.attr || {}, {
+                }, null, 8, ["icon", "onClick"])) : f("", !0),
+                e.btns ? (n(!0), w(C, { key: 2 }, I(e.btns, (t) => (n(), c(l(E), k(t.attr || {}, {
                   link: "",
-                  title: o.title,
-                  onClick: () => o.handle(e, z, u)
+                  title: t.title,
+                  onClick: () => t.handle(e, z, u)
                 }), {
                   default: i(() => [
-                    h(P(o.label), 1)
+                    h(P(t.label), 1)
                   ]),
                   _: 2
-                }, 1040, ["title", "onClick"]))), 256)) : c("", !0)
+                }, 1040, ["title", "onClick"]))), 256)) : f("", !0)
               ])
             ]))), 128))
           ])
         ]),
         d(l(H), {
           modelValue: U.value,
-          "onUpdate:modelValue": t[5] || (t[5] = (e) => U.value = e),
+          "onUpdate:modelValue": o[5] || (o[5] = (e) => U.value = e),
           title: "新增属性"
         }, {
           default: i(() => [
@@ -302,7 +302,7 @@ const ge = {
                 Ae,
                 d(l(N), {
                   modelValue: b.value.prop,
-                  "onUpdate:modelValue": t[0] || (t[0] = (e) => b.value.prop = e),
+                  "onUpdate:modelValue": o[0] || (o[0] = (e) => b.value.prop = e),
                   size: l(y),
                   placeholder: "属性名 必填"
                 }, null, 8, ["modelValue", "size"])
@@ -311,7 +311,7 @@ const ge = {
                 Ke,
                 d(l(ke), {
                   modelValue: b.value.type,
-                  "onUpdate:modelValue": t[1] || (t[1] = (e) => b.value.type = e),
+                  "onUpdate:modelValue": o[1] || (o[1] = (e) => b.value.type = e),
                   size: l(y)
                 }, {
                   default: i(() => [
@@ -359,7 +359,7 @@ const ge = {
                 Ie,
                 d(l(N), {
                   modelValue: b.value.desc,
-                  "onUpdate:modelValue": t[2] || (t[2] = (e) => b.value.desc = e),
+                  "onUpdate:modelValue": o[2] || (o[2] = (e) => b.value.desc = e),
                   type: "textarea",
                   autosize: "",
                   placeholder: "属性描述"
@@ -369,13 +369,13 @@ const ge = {
                 Re,
                 d(l(T), {
                   modelValue: b.value.isDel,
-                  "onUpdate:modelValue": t[3] || (t[3] = (e) => b.value.isDel = e)
+                  "onUpdate:modelValue": o[3] || (o[3] = (e) => b.value.isDel = e)
                 }, null, 8, ["modelValue"])
               ])
             ]),
             r("div", $e, [
               d(l(E), {
-                onClick: t[4] || (t[4] = (e) => U.value = !1)
+                onClick: o[4] || (o[4] = (e) => U.value = !1)
               }, {
                 default: i(() => [
                   h("取消")
@@ -397,24 +397,24 @@ const ge = {
         }, 8, ["modelValue"]),
         d(l(H), {
           modelValue: S.value,
-          "onUpdate:modelValue": t[7] || (t[7] = (e) => S.value = e),
+          "onUpdate:modelValue": o[7] || (o[7] = (e) => S.value = e),
           title: ((s = g.value) == null ? void 0 : s.label) || ((v = g.value) == null ? void 0 : v.prop),
           "destroy-on-close": "",
           width: "80%"
         }, {
           default: i(() => [
             g.value ? (n(), w("div", Le, [
-              g.value.type == "string" ? (n(), f(l(N), k({
+              g.value.type == "string" ? (n(), c(l(N), k({
                 key: 0,
                 "important-h-full": "",
                 bg: "#f8f9fc",
                 class: "h-full",
                 "model-value": l(p)(u, g.value.prop),
-                "onUpdate:modelValue": t[6] || (t[6] = (e) => l(_)(u, g.value.prop, e)),
+                "onUpdate:modelValue": o[6] || (o[6] = (e) => l(_)(u, g.value.prop, e)),
                 type: "textarea",
                 size: l(y)
-              }, g.value.attr || {}, { resize: "none" }), null, 16, ["model-value", "size"])) : c("", !0)
-            ])) : c("", !0)
+              }, g.value.attr || {}, { resize: "none" }), null, 16, ["model-value", "size"])) : f("", !0)
+            ])) : f("", !0)
           ]),
           _: 1
         }, 8, ["modelValue", "title"])

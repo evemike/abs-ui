@@ -28,7 +28,8 @@ export declare class GraphShadow {
     setStatus(cell: Cell, val: any): void;
     setData(cell: Cell, val: any): void;
     setRefData(cell: Cell, val: any): void;
-    setStep(cell: Cell, step: IElsX6.CellStep): void;
+    setStep(cell: Cell, step: IElsX6.CellStep, tip?: string): void;
+    setStepTip(cell: Cell, tip: string): void;
     resetCurrentCell(cell?: Cell): void;
     resetSelectedCells(cells?: Cell[]): void;
     removeCells(cells?: Cell[]): void;

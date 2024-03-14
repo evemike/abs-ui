@@ -1,7 +1,7 @@
 import type { Component, CSSProperties, VNode, Fragment, Teleport, Suspense, KeepAlive, TransitionGroup, SetupContext, FunctionalComponent } from "vue";
 export declare namespace IElsElem {
     interface Props {
-        elem: Elem;
+        elem?: Elem;
         context?: Context;
         parent?: Parent;
         params?: Record<string, any>;

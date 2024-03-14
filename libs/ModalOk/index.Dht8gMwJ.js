@@ -1,5 +1,5 @@
 import { defineComponent as b, computed as O, onMounted as T, openBlock as g, createElementBlock as m, createVNode as i, unref as s, withCtx as t, normalizeStyle as _, createTextVNode as f, toDisplayString as u, createCommentVNode as w, renderSlot as x } from "vue";
-import { a2 as y, d as p } from "../../chunks/vendor.3EV9Wvnx.js";
+import { a2 as y, d as p } from "../../chunks/vendor.BiQBBLE_.js";
 const j = {
   dialogVisible: !1,
   title: "标题",

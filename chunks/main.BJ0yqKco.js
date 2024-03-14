@@ -1,6 +1,6 @@
 import "../css/main-DQsX5Ws-.css";
-import { defineComponent as X, toRefs as Y, ref as C, shallowRef as R, watch as D, onMounted as Z, openBlock as s, createElementBlock as B, Fragment as ee, createVNode as f, unref as o, withCtx as p, createElementVNode as m, renderSlot as L, createBlock as k, resolveDynamicComponent as te, withDirectives as oe, createCommentVNode as b, vShow as ae, normalizeStyle as le, mergeProps as re, markRaw as O, nextTick as ne } from "vue";
-import { au as se, av as ue, aw as ie, ax as r, ay as j, az as N, R as de, d as z, L as ce, aA as fe, a2 as pe } from "./vendor.3EV9Wvnx.js";
+import { defineComponent as X, toRefs as Y, ref as _, shallowRef as R, watch as x, onMounted as Z, openBlock as s, createElementBlock as B, Fragment as ee, createVNode as f, unref as o, withCtx as p, createElementVNode as m, renderSlot as L, createBlock as k, resolveDynamicComponent as te, withDirectives as oe, createCommentVNode as b, vShow as ae, normalizeStyle as le, mergeProps as re, markRaw as O, nextTick as ne } from "vue";
+import { az as se, aA as ue, aB as ie, aC as r, aD as j, aE as F, R as de, d as N, L as ce, aF as fe, a2 as pe } from "./vendor.BiQBBLE_.js";
 import { _ as me } from "./_plugin-vue_export-helper.CHgC5LLL.js";
 const Ve = {
   autoCloseBrackets: !0,
@@ -56,10 +56,10 @@ const Ve = {
   "rd-4": "",
   "text-16": "",
   class: "_operate"
-}, _e = { key: 1 }, Ce = {
+}, Ce = { key: 1 }, _e = {
   name: "CodeEditor"
 }, ke = /* @__PURE__ */ X({
-  ...Ce,
+  ..._e,
   props: {
     modelValue: {},
     mode: { default: "javascript" },
@@ -77,32 +77,32 @@ const Ve = {
     class: {}
   },
   emits: ["update:modelValue"],
-  setup(F, { expose: H, emit: M }) {
-    const A = M, U = F, [$, w] = ie(), { modelValue: y, showOperate: I, theme: E, format: u, teleport: P, dialog: G, dialogTitle: W, lang: v } = Y(U), V = C(), g = C(), n = R(), i = R();
-    let a = y.value || "";
-    const l = C(!1);
-    let h = r.theme(E.value), d = j.create({
+  setup(z, { expose: H, emit: M }) {
+    const A = M, U = z, [$, E] = ie(), { modelValue: w, showOperate: I, theme: y, format: u, teleport: P, dialog: G, dialogTitle: W, lang: v } = Y(U), V = _(), g = _(), n = R(), i = R();
+    let a = w.value || "";
+    const l = _(!1);
+    let h = r.theme(y.value), d = j.create({
       doc: a,
       extensions: [
-        N,
+        F,
         h,
         ...v.value,
         r.updateListener.of((e) => {
-          e.docChanged && x(e);
+          e.docChanged && D(e);
         })
       ]
     });
     const c = (e = a, t = n.value) => {
       t == null || t.dispatch({ changes: { from: 0, to: t == null ? void 0 : t.state.doc.length, insert: e } });
     }, q = (e = n.value) => e == null ? void 0 : e.state.doc.toString(), S = () => {
-      h = r.theme(E.value), d = j.create({
+      h = r.theme(y.value), d = j.create({
         doc: a,
         extensions: [
-          N,
+          F,
           h,
           ...v.value,
           r.updateListener.of((e) => {
-            e.docChanged && x(e);
+            e.docChanged && D(e);
           })
         ]
       });
@@ -114,16 +114,16 @@ const Ve = {
       l.value = !0, ne(() => {
         g.value && (i.value ? c(a || "", i.value) : (a = q() || "", S(), i.value = O(new r({ state: d, parent: g.value }))));
       });
-    }, x = de((e) => {
+    }, D = de((e) => {
       a = e.state.doc.toString(), A("update:modelValue", a);
     }, 200), Q = () => {
       var t;
       const e = ((t = u.value) == null ? void 0 : t.call(u, a)) || a;
       e != a && (a = e, c(e, l.value ? i.value : n.value));
     };
-    return D(y, (e) => {
+    return x(w, (e) => {
       e != a && c(e);
-    }), D(v, () => {
+    }), x(v, () => {
       S(), J();
     }), Z(() => {
       K();
@@ -131,20 +131,20 @@ const Ve = {
       openDialog: T
     }), (e, t) => (s(), B(ee, null, [
       f(o($), null, {
-        default: p(({ $slots: _ }) => [
+        default: p(({ $slots: C }) => [
           m("div", ge, [
             L(e.$slots, "default", {}, void 0, !0),
-            (s(), k(te(_.default))),
+            (s(), k(te(C.default))),
             oe(m("div", he, [
-              l.value ? b("", !0) : (s(), k(o(z), {
+              l.value ? b("", !0) : (s(), k(o(N), {
                 key: 0,
                 icon: o(ce),
                 title: "放大",
                 link: "",
                 onClick: T
               }, null, 8, ["icon"])),
-              l.value ? b("", !0) : (s(), B("i", _e)),
-              o(u) ? (s(), k(o(z), {
+              l.value ? b("", !0) : (s(), B("i", Ce)),
+              o(u) ? (s(), k(o(N), {
                 key: 2,
                 icon: o(fe),
                 title: "格式化",
@@ -159,7 +159,7 @@ const Ve = {
         ]),
         _: 3
       }),
-      f(o(w), null, {
+      f(o(E), null, {
         default: p(() => [
           m("div", {
             relative: "",
@@ -177,13 +177,13 @@ const Ve = {
         "append-to": o(P),
         width: "80%",
         modelValue: l.value,
-        "onUpdate:modelValue": t[0] || (t[0] = (_) => l.value = _)
+        "onUpdate:modelValue": t[0] || (t[0] = (C) => l.value = C)
       }, o(G), {
         title: o(W) || "代码编辑器",
         onClose: t[1] || (t[1] = () => c())
       }), {
         default: p(() => [
-          f(o(w), { class: "important-h-70vh" }, {
+          f(o(E), { class: "important-h-70vh" }, {
             default: p(() => [
               m("div", {
                 relative: "",
