@@ -1,6 +1,7 @@
 import { IElsX6 } from "../../inter";
 import type { Node, Cell, Edge, Graph } from "@antv/x6";
-export type NIFI_NODE_TYPE = "PROCESSORS" | "PROCESS-GROUPS" | "INPUT_PORTS" | "OUTPUT_PORTS" | "LABEL" | "FUNNELS" | "CONNECTIONS" | "PROCESSORS";
+export type NIFI_NODE_TYPE = "PROCESSORS" | "PROCESS-GROUPS" | "INPUT_PORTS" | "OUTPUT_PORTS" | "LABEL" | "FUNNELS" | "CONNECTIONS";
+export type NIFI_CELL_TYPE = "processors" | "process-groups" | "input-ports" | "output-ports" | "label" | "funnels" | "connections";
 export declare class AdapterNifi {
     constructor();
     NIFI_DATA: any;
@@ -16,7 +17,6 @@ export declare class AdapterNifi {
     rootGroups: never[];
     rootStatus: {};
     nodeList: import("vue").Ref<any[]>;
-    cellMetadata: Map<string, any>;
     edgeFormData: import("vue").Ref<any>;
     currentEdgeJson: any;
     groupId: string;
@@ -43,9 +43,7 @@ export declare class AdapterNifi {
     initGraph(id?: string): Promise<this>;
     initFlow(id?: string): Promise<void>;
     initGraphFlowData(): Promise<void>;
-    initGraphStatus(): void;
     initNodeForm(): void;
-    initNodeFn(cell?: any): void;
     initEdgeLabelConfig(edge: Edge): void;
     initCellFormData(cell: Cell): void;
     initCellHistory(cell: Cell, ct: any): Promise<void>;
@@ -110,11 +108,61 @@ export declare class AdapterNifi {
     edgeDel(cell: Cell, ct: any): Promise<void>;
     edgeListQuene(cell: any, ct?: any): Promise<void>;
     edgeDropQuene(cell: any, ct?: any): Promise<void>;
-    cellUpdateStatus(cell: Cell): Promise<void>;
+    getProcessGroupName(type: string): string;
+    getDefaultCellData(groupName: string): any;
+    mdProcessor(data: any): any;
+    mdProcessGroup(data: any): {
+        ports: {
+            items: any[];
+        };
+        id: any;
+        position: any;
+        shape: string;
+        name: any;
+        label: any;
+        data: any;
+    };
+    mdInputPort(data: any): any;
+    mdOutputPort(data: any): any;
+    mdLabel(data: any): undefined;
+    mdFunnel(data: any): any;
+    mdConnection(data: any): {
+        id: any;
+        shape: string;
+        source: {
+            cell: any;
+            port: string;
+        };
+        target: {
+            cell: any;
+            port: string;
+        };
+        data: any;
+    };
+    cellName(data: {
+        id?: string;
+        uri?: string;
+    }): NIFI_CELL_TYPE;
+    cellMetadata(data: any): {
+        id: any;
+        position: any;
+        shape: string;
+        name: any;
+        label: any;
+        data: any;
+    };
+    cellTabs(data: any): void;
+    cellFormData(data: any): any;
+    cellInit(cell: Cell, data?: any): void;
+    cellAdd(data: any): boolean | undefined;
+    cellUpdateStatus(cell: Cell, data?: any): Promise<void>;
     cellUpdateStep(cell: any, status: string): void;
     cellDelete(cell: any, ct?: any): Promise<void>;
     cellsDelete(cells: any[], ct?: any): Promise<void>;
-    cellUpdate(data?: any[]): Promise<void>;
+    cellUpdate(data: any): void;
+    cellsUpdate(data?: any[]): Promise<void>;
+    cellRefresh(cell: Cell, data: any): void;
+    cellsRefresh(): Promise<void>;
     groupRefresh(): Promise<void>;
     groupNodeAdd(): void;
     groupNodeDel(): void;

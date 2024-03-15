@@ -1,6 +1,6 @@
 import "../css/main-DQsX5Ws-.css";
-import { defineComponent as X, toRefs as Y, ref as _, shallowRef as R, watch as x, onMounted as Z, openBlock as s, createElementBlock as B, Fragment as ee, createVNode as f, unref as o, withCtx as p, createElementVNode as m, renderSlot as L, createBlock as k, resolveDynamicComponent as te, withDirectives as oe, createCommentVNode as b, vShow as ae, normalizeStyle as le, mergeProps as re, markRaw as O, nextTick as ne } from "vue";
-import { az as se, aA as ue, aB as ie, aC as r, aD as j, aE as F, R as de, d as N, L as ce, aF as fe, a2 as pe } from "./vendor.BiQBBLE_.js";
+import { defineComponent as X, toRefs as Y, ref as _, shallowRef as x, watch as R, onMounted as Z, openBlock as s, createElementBlock as B, Fragment as ee, createVNode as f, unref as o, withCtx as p, createElementVNode as m, renderSlot as L, createBlock as k, resolveDynamicComponent as te, withDirectives as oe, createCommentVNode as b, vShow as ae, normalizeStyle as le, mergeProps as re, markRaw as O, nextTick as ne } from "vue";
+import { az as se, aA as ue, aB as ie, aC as r, aD as j, aE as F, av as de, d as N, L as ce, aF as fe, a0 as pe } from "./vendor.BlYUAX4D.js";
 import { _ as me } from "./_plugin-vue_export-helper.CHgC5LLL.js";
 const Ve = {
   autoCloseBrackets: !0,
@@ -78,7 +78,7 @@ const Ve = {
   },
   emits: ["update:modelValue"],
   setup(z, { expose: H, emit: M }) {
-    const A = M, U = z, [$, E] = ie(), { modelValue: w, showOperate: I, theme: y, format: u, teleport: P, dialog: G, dialogTitle: W, lang: v } = Y(U), V = _(), g = _(), n = R(), i = R();
+    const A = M, U = z, [$, E] = ie(), { modelValue: w, showOperate: I, theme: y, format: u, teleport: P, dialog: G, dialogTitle: W, lang: v } = Y(U), V = _(), g = _(), n = x(), i = x();
     let a = w.value || "";
     const l = _(!1);
     let h = r.theme(y.value), d = j.create({
@@ -121,9 +121,9 @@ const Ve = {
       const e = ((t = u.value) == null ? void 0 : t.call(u, a)) || a;
       e != a && (a = e, c(e, l.value ? i.value : n.value));
     };
-    return x(w, (e) => {
+    return R(w, (e) => {
       e != a && c(e);
-    }), x(v, () => {
+    }), R(v, () => {
       S(), J();
     }), Z(() => {
       K();

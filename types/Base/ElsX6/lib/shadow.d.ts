@@ -16,9 +16,12 @@ export declare class GraphShadow {
     initCell(c: Cell | string): void;
     updateEdge(cell: Edge): void;
     setGraph(graph: Graph): void;
+    has(cell: string | Cell): boolean;
     add(cell: Cell | string): void;
-    del(cell: Cell): void;
+    del(cell: Cell | string): void;
+    remove(cell: Cell | string): void;
     get(cell: Cell | string, key?: string): any;
+    getByKey(cell: string | Cell, key: string): any;
     getEdgeData(cell: Cell | string): IElsX6.EdgeData;
     getNodeData(cell: Cell | string): IElsX6.NodeData;
     set(cell: Cell | string, key: string, value: any): void;
@@ -30,6 +33,7 @@ export declare class GraphShadow {
     setRefData(cell: Cell, val: any): void;
     setStep(cell: Cell, step: IElsX6.CellStep, tip?: string): void;
     setStepTip(cell: Cell, tip: string): void;
+    setType(cell: Cell | string, type: string): void;
     resetCurrentCell(cell?: Cell): void;
     resetSelectedCells(cells?: Cell[]): void;
     removeCells(cells?: Cell[]): void;
@@ -47,7 +51,6 @@ export declare class GraphShadow {
     resetDefaultNodeMarkup(markup?: IElsX6.NodeMarkup): this;
     resetCellId(sid: string, tid: string): void;
     getTabsData(cell: string | Cell): any[];
-    getByKey(cell: string | Cell, key: string): any;
     setEdgeLabelConfig(cell: Cell | string, data: IElsX6.EdgeLabelConfig): void;
     getEdgeLabelConfig(cell: Edge): import("vue").Ref<IElsX6.EdgeLabelConfig>;
 }

@@ -1,4 +1,5 @@
 import { IElsX6 } from "../inter";
+import type { Cell } from "@antv/x6";
 declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<IElsX6.DrawerProps>, {
     config: () => {
         direction: string;
@@ -6,7 +7,11 @@ declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_T
         showClose: boolean;
         lockScroll: boolean;
     };
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<IElsX6.DrawerProps>, {
+}>, {
+    open: (cell?: Cell<Cell.Properties> | undefined) => void;
+    close: (clear?: boolean | undefined) => void;
+    formRef: import("vue").ShallowRef<any>;
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<IElsX6.DrawerProps>, {
     config: () => {
         direction: string;
         modal: boolean;

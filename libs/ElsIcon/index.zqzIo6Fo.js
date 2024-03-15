@@ -1,4 +1,4 @@
-import { _ as s } from "../../chunks/main.vue_vue_type_script_setup_true_lang.CQzAHLBq.js";
+import { _ as s } from "../../chunks/main.vue_vue_type_script_setup_true_lang.D2-4X_Xq.js";
 const a = {
   install: (o) => {
     o.component("els-icon", s);

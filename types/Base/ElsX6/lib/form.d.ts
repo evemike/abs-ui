@@ -16,6 +16,7 @@ export declare class GraphForm {
     visible: Ref<boolean>;
     setGraph(graph: Graph): void;
     initCell(cell: Cell): this;
+    remove(cell: Cell | string): void;
     getCellFormData(cell: Cell): Record<string, any>;
     getCellStatus(cell: Cell): Ref<{
         result: boolean;
