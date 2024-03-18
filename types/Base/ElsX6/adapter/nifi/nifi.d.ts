@@ -153,7 +153,7 @@ export declare class AdapterNifi {
     };
     cellTabs(data: any): void;
     cellFormData(data: any): any;
-    cellInit(cell: Cell, data?: any): void;
+    cellInit(cell: Cell, data: any, type: string): void;
     cellAdd(data: any): boolean | undefined;
     cellUpdateStatus(cell: Cell, data?: any): Promise<void>;
     cellUpdateStep(cell: any, status: string): void;

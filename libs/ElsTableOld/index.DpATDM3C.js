@@ -1,8 +1,8 @@
 import "../../css/ElsTableOld-D1aEQt7J.css";
 import { defineComponent as Me, toRefs as De, ref as f, onMounted as Oe, openBlock as g, createBlock as A, unref as l, withCtx as Ve, createElementBlock as z, Fragment as ce, renderList as de, useAttrs as $e, computed as D, onUpdated as je, createVNode as re, mergeProps as se, createCommentVNode as B, createElementVNode as ue } from "vue";
-import { E as me } from "../../chunks/main.DcV0_eqY.js";
+import { E as me } from "../../chunks/main.BgVuWlic.js";
 import { E as Ue, c as We, g as Ee, d as v, p as Ge, e as Je, v as Qe, f as Te, h as He, i as Pe, s as Xe, r as Ye, j as Ze, k as qe, l as _e, m as et, n as Ae } from "../../chunks/vendor.BlYUAX4D.js";
-import { _ as Le } from "../../chunks/main.vue_vue_type_script_setup_true_lang.C2xbVFha.js";
+import { _ as Le } from "../../chunks/main.vue_vue_type_script_setup_true_lang.Rwc10YNt.js";
 const tt = {
   name: "els-table-base"
 }, lt = /* @__PURE__ */ Me({

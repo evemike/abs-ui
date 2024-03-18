@@ -1,8 +1,8 @@
 var et = Object.defineProperty;
 var st = (n, v, l) => v in n ? et(n, v, { enumerable: !0, configurable: !0, writable: !0, value: l }) : n[v] = l;
 var _ = (n, v, l) => (st(n, typeof v != "symbol" ? v + "" : v, l), l);
-import { unref as y, computed as B, renderSlot as rt, resolveDynamicComponent as nt, createVNode as ot, resolveComponent as E, h as w, mergeProps as I, isVNode as W, defineComponent as it } from "vue";
-import { aT as Z, aU as at, aK as Y, aV as ct, aJ as ut, g as M, aW as k, aI as J, y as F, Q as X, aX as lt, aR as H, aY as z } from "./vendor.BlYUAX4D.js";
+import { unref as y, computed as B, renderSlot as rt, resolveDynamicComponent as nt, createVNode as ot, resolveComponent as E, h as w, mergeProps as I, isVNode as W, defineComponent as at } from "vue";
+import { aT as Z, aU as it, aK as Y, aV as ct, aJ as ut, g as M, aW as k, aI as J, y as L, Q as X, aX as lt, aR as H, aY as z } from "./vendor.BlYUAX4D.js";
 var S;
 ((n) => {
   const v = /^\s*v-([\w-]+)\s*$/, l = /^\s*(?:(?:v-slot:|#)(\w+)|v-slot)\s*$/, e = /^\s*(?:(?:v-bind:|:)(\w+)|v-bind)\s*$/, u = /^\s*(?:v-on:|@)([\w:]+)\s*$/, m = [
@@ -169,7 +169,7 @@ var S;
       if (typeof c == "string" ? c = /^```.*?```$/.test(c) ? (0, n.getExpValue)(c.replace(/(^```|```$)/g, ""), o) : (0, n.doEval)(c, o, !0) : c = y(c), e.test(r)) {
         const a = e.exec(r) ?? [];
         if (a[1] == null)
-          if (at(c))
+          if (it(c))
             for (const [b, O] of c)
               v.test(b) ? s[b] = O : s["v-bind"][b] = O;
           else
@@ -183,8 +183,8 @@ var S;
         if (a[1]) {
           const b = "on" + ct(a[1]);
           s["v-on"][b] = typeof c == "function" ? (O, ...R) => {
-            const P = Object.prototype.toString.call(O).split(" ")[1].replace("]", "").toLowerCase(), L = { ...o };
-            return d.includes(P) ? L.$event = O : R = [O, ...R], R.length > 0 && (L.$ = R), c.apply(o, [L]);
+            const P = Object.prototype.toString.call(O).split(" ")[1].replace("]", "").toLowerCase(), N = { ...o };
+            return d.includes(P) ? N.$event = O : R = [O, ...R], R.length > 0 && (N.$ = R), c.apply(o, [N]);
           } : c;
         }
       } else
@@ -304,7 +304,7 @@ var Q;
     //
     mergeData(e = {}) {
       return this.list = this.source.map(
-        (u) => J(F({}, u, I(u, e)))
+        (u) => J(L({}, u, I(u, e)))
       ), this.resetDataKeys(), this;
     }
     resetData(e) {
@@ -331,7 +331,7 @@ var Q;
         const p = e[d];
         if (!(d == 0 && typeof p == "string" && /^:/.test(p))) {
           if (Z(p) && p.id) {
-            X(u, p.id) && g.push(F({}, m, I(m, p), { children: M(u, p.id) }));
+            X(u, p.id) && g.push(L({}, m, I(m, p), { children: M(u, p.id) }));
             continue;
           }
           if (typeof p != "string" && Array.isArray(p)) {
@@ -358,7 +358,7 @@ var Q;
     }
     getGroupAttr(e = {}, u = []) {
       const m = typeof this.groupAttr == "function" ? this.groupAttr(u) : this.groupAttr;
-      return F({}, m, I(m, e));
+      return L({}, m, I(m, e));
     }
     getListData(e) {
       const u = this.listKeys.indexOf(e);
@@ -368,7 +368,7 @@ var Q;
   }
   n.SetGroup = v;
 })(Q || (Q = {}));
-const pt = (n) => n && typeof n == "object" && (n == null ? void 0 : n.tag) == null && (n.setup != null || n.render != null) && (n.name || n.__name), dt = S.getElemAttrs, ft = S.parseDirective, gt = S.getExpValue, ht = S.getDestruct, mt = S.getSlotName, yt = S.isHtmlTag, vt = S.defaultRender, bt = S.getProps, xt = it({
+const pt = (n) => n && typeof n == "object" && (n == null ? void 0 : n.tag) == null && (n.setup != null || n.render != null) && (n.name || n.__name), dt = S.getElemAttrs, ft = S.parseDirective, gt = S.getExpValue, ht = S.getDestruct, mt = S.getSlotName, yt = S.isHtmlTag, vt = S.defaultRender, bt = S.getProps, Dt = at({
   name: "els-elem",
   props: {
     elem: Object,
@@ -390,16 +390,16 @@ const pt = (n) => n && typeof n == "object" && (n == null ? void 0 : n.tag) == n
       n,
       { tag: y(p), tagname: A, isHtml: x },
       v
-    ) || {}, F(o, t)), l.setup && (D = l.setup(
+    ) || {}, L(o, t)), l.setup && (D = l.setup(
       n,
       { tag: y(p), tagname: A, isHtml: x },
       v
-    ) || {}, F(o, D));
-    const i = dt(I(l, o.prop || {}), e), s = i.root, r = i.prop, c = i.directive, a = new Array().concat(
+    ) || {}, L(o, D));
+    const i = dt(I(l, o.prop || {}), e), { root: s, prop: r, directive: c, ctx: a } = i, b = new Array().concat(
       o.excludeKeys || [],
       l.excludeKeys || [],
       e.excludeKeys || []
-    ), b = { $isHtml: x, ...(e == null ? void 0 : e.params) || {}, ...m, ...r, ...i.ctx, ...o, h: w }, O = {
+    ), O = { $isHtml: x, ...(e == null ? void 0 : e.params) || {}, ...m, prop: r, ...a, ...o, h: w }, R = {
       $tag: y(p),
       $tagname: A,
       $isHtml: x,
@@ -414,23 +414,23 @@ const pt = (n) => n && typeof n == "object" && (n == null ? void 0 : n.tag) == n
       $setupRes: o,
       $parent: u,
       $params: m
-    }, R = B(
+    }, P = B(
       () => new Array().concat(y(s.children), y(s.cls)).filter((G) => G != null)
-    ), P = (G) => {
-      const N = y(R);
-      if (N.length === 0)
+    ), N = (G) => {
+      const F = y(P);
+      if (F.length === 0)
         return;
       const $ = {
         default: []
       };
-      N.forEach((T) => {
+      F.forEach((T) => {
         const f = y(T);
         if (W(f))
           $.default.push(() => f);
         else if (pt(f))
           $.default.push(() => w(f));
         else if (H(f))
-          $.default.push((K) => f(G, K, O));
+          $.default.push((K) => f(G, K, R));
         else if (Y(f)) {
           const K = mt(f);
           if ($[K] || ($[K] = []), f.isDirectRender === !0) {
@@ -469,13 +469,13 @@ const pt = (n) => n && typeof n == "object" && (n == null ? void 0 : n.tag) == n
       }), j;
     };
     return () => {
-      const G = ht(s["slot-scope"], n.slotParams), N = { ...b, ...G }, $ = ft(c, N);
+      const G = ht(s["slot-scope"], n.slotParams), F = { ...O, ...G }, $ = ft(c, F);
       if ($["v-if"] === !1)
         return;
       const j = k(
         I(r, $["v-bind"], $["v-on"]),
-        a
-      ), T = P(N), f = {
+        b
+      ), T = N(F), f = {
         tag: y(p),
         tagname: A,
         isHtml: x,
@@ -500,7 +500,7 @@ const pt = (n) => n && typeof n == "object" && (n == null ? void 0 : n.tag) == n
 });
 export {
   Q as D,
-  xt as E,
+  Dt as E,
   S as a,
   pt as i
 };

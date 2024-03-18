@@ -193,6 +193,8 @@ export declare namespace IElsX6 {
         name: string;
         metadata?: any;
         tabs: Ref<any[]>;
+        isEdge: boolean;
+        isNode: boolean;
     }
     interface EdgeData extends CellData {
         source: Ref<string>;

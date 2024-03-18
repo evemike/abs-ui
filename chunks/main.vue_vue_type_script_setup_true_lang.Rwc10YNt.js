@@ -1,5 +1,5 @@
 import { unref as h, useAttrs as q, ref as T, toRef as j, h as S, computed as G, onUnmounted as B, defineComponent as U, useSlots as K, onMounted as D, watch as L, reactive as z, onBeforeUnmount as H, openBlock as Q, createElementBlock as J, createVNode as W } from "vue";
-import { a as A, E as Y } from "./main.DcV0_eqY.js";
+import { a as A, E as Y } from "./main.BgVuWlic.js";
 import { aH as X, aI as _, Q as v, aJ as w, g as b, aK as M, aL as I, aM as Z, aN as ee, y as te, aO as se, aP as P, o as re, aQ as oe, aa as N, aR as ne, n as le, aj as ae, a9 as ce, aw as ie, k as ue, a6 as fe, aS as de, av as me } from "./vendor.BlYUAX4D.js";
 const y = (r = [], t = () => {
 }, e = {}) => {
@@ -197,7 +197,10 @@ const ge = R.buildRules, Ee = R.buildElFormItemProps, ke = R.isNeedElFormItem, y
   }
   return A.defaultRender(r);
 }, be = (r, t) => {
-  const e = r.elem, { formProps: s, emitChange: l } = r.context, o = r.parent, a = P(t.tagname), c = P(o == null ? void 0 : o.tagname), i = o == null ? void 0 : o.setupRes, n = h(e.prop), u = typeof n == "function" ? n(r) : n, f = h(i == null ? void 0 : i.formProp) || [], p = /^\^/.test(u) ? [u.replace("^", "")] : new Array().concat(f, u || []), m = p.join("."), d = { isFormElem: !1 };
+  const e = r.elem;
+  if (!e)
+    return;
+  const { formProps: s, emitChange: l } = r.context, o = r.parent, a = P(t.tagname), c = P(o == null ? void 0 : o.tagname), i = o == null ? void 0 : o.setupRes, n = h(e.prop), u = typeof n == "function" ? n(r) : n, f = h(i == null ? void 0 : i.formProp) || [], p = /^\^/.test(u) ? [u.replace("^", "")] : new Array().concat(f, u || []), m = p.join("."), d = { isFormElem: !1 };
   if (p.length > 0 && (d.formProp = m), Re(e, a, c)) {
     if (d.isFormElem = !0, e.isFormElem !== !1) {
       s == null || s.add(m);
