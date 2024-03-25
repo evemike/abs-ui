@@ -1,8 +1,8 @@
 import "../css/main-BMVByKCq.css";
 import { defineComponent as ae, toRefs as se, reactive as ne, unref as l, shallowRef as L, ref as F, watch as ue, openBlock as n, createElementBlock as z, normalizeClass as re, createElementVNode as r, createVNode as d, Fragment as C, renderList as I, toDisplayString as P, createBlock as f, withCtx as i, createCommentVNode as c, mergeProps as w, createTextVNode as k } from "vue";
-import { av as de, d as E, p as pe, aw as ie, k as fe, a6 as ce, o as N, g as p, aa as _, ab as ve, a9 as me, ah as ye, ag as T, ax as _e, f as Ve, L as be, a0 as H, ai as we, ay as x } from "./vendor.BlYUAX4D.js";
-import { C as G } from "./main.D3eKUqTa.js";
-import { E as ke } from "./main.BgVuWlic.js";
+import { aw as de, d as E, p as pe, ax as ie, k as fe, a6 as ce, o as N, g as p, ab as _, ac as me, a9 as ve, ai as ye, ah as T, ay as _e, f as Ve, L as be, a0 as H, aj as we, az as x } from "./vendor.D9J4rVyn.js";
+import { C as G } from "./main.yXpvJsSd.js";
+import { E as ke } from "./main.CPKgzyBf.js";
 const he = {
   flex: "",
   "items-center": "",
@@ -69,9 +69,9 @@ const he = {
   },
   emits: ["update:modelValue", "change", "add"],
   setup(q, { emit: M }) {
-    const j = q, D = M, { keys: J, keyName: R, modelValue: v, format: B, size: y, isNew: Le, isAdd: Q } = j;
+    const j = q, D = M, { keys: J, keyName: R, modelValue: m, format: B, size: y, isNew: Le, isAdd: Q } = j;
     se(j);
-    const u = ne({ ...l(v) }), b = L([]), W = (a) => {
+    const u = ne({ ...l(m) }), b = L([]), W = (a) => {
       let o = typeof a;
       return o == "string" ? /^#[0-9a-fA-f]+$/.test(a) && (o = "color") : o == "object" && (o = "json"), o;
     }, U = F(!1), V = F({ prop: "", type: "string" }), X = () => {
@@ -95,10 +95,10 @@ const he = {
     (() => {
       const { propKey: a, valueKey: o } = R;
       if (J.length == 0)
-        Array.isArray(v) ? b.value = v.map((s) => ({ prop: p(s, a), value: p(s, o), type: W(p(s, o)) })) : b.value = Object.keys(v).map((s) => ({ prop: s, value: p(v, s), type: p(v, s) }));
+        Array.isArray(m) ? b.value = m.map((s) => ({ prop: p(s, a), value: p(s, o), type: W(p(s, o)) })) : b.value = Object.keys(m).map((s) => ({ prop: s, value: p(m, s), type: p(m, s) }));
       else {
-        let s = v || {};
-        Array.isArray(v) && (s = Object.fromEntries(v.map((m) => [m[a], m[o]]))), b.value = J.map((m) => ({ ...m, value: p(s, m.prop) ?? m.value }));
+        let s = m || {};
+        Array.isArray(m) && (s = Object.fromEntries(m.map((v) => [v[a], v[o]]))), b.value = J.map((v) => ({ ...v, value: p(s, v.prop) ?? v.value }));
       }
       for (const s of b.value)
         _(u, s.prop, s.value);
@@ -114,16 +114,16 @@ const he = {
       let o = a;
       if (B && typeof B == "function")
         o = B(a);
-      else if (Array.isArray(v)) {
-        const { propKey: s, valueKey: m } = R, e = v.map((g) => g[s]);
+      else if (Array.isArray(m)) {
+        const { propKey: s, valueKey: v } = R, e = m.map((g) => g[s]);
         o = b.value.map((g) => {
-          const t = e.indexOf(g.prop), $ = { ...v[t] || {} };
-          return $[m] = p(a, g.prop), $;
+          const t = e.indexOf(g.prop), $ = { ...m[t] || {} };
+          return $[v] = p(a, g.prop), $;
         });
       }
       D("change", o), D("update:modelValue", o);
     }, 100), { deep: !0 }), (a, o) => {
-      var s, m;
+      var s, v;
       return n(), z("div", {
         class: re(["els-list-form", `size-${l(y)}`]),
         "w-full": ""
@@ -193,7 +193,7 @@ const he = {
                     "onUpdate:modelValue": (t) => l(_)(u, e.prop, t),
                     size: l(y)
                   }, e.attr || {}, { autosize: "" }), null, 16, ["model-value", "onUpdate:modelValue", "size"])) : c("", !0),
-                  e.type == "select" ? (n(), f(l(ve), w({
+                  e.type == "select" ? (n(), f(l(me), w({
                     key: 1,
                     "w-full": "",
                     "model-value": l(p)(u, e.prop),
@@ -201,7 +201,7 @@ const he = {
                     size: l(y)
                   }, e.attr || {}), {
                     default: i(() => [
-                      (n(!0), z(C, null, I(e.cls || [], (t) => (n(), f(l(me), {
+                      (n(!0), z(C, null, I(e.cls || [], (t) => (n(), f(l(ve), {
                         label: t.label,
                         value: t.value
                       }, null, 8, ["label", "value"]))), 256))
@@ -393,7 +393,7 @@ const he = {
         d(l(H), {
           modelValue: S.value,
           "onUpdate:modelValue": o[7] || (o[7] = (e) => S.value = e),
-          title: ((s = h.value) == null ? void 0 : s.label) || ((m = h.value) == null ? void 0 : m.prop),
+          title: ((s = h.value) == null ? void 0 : s.label) || ((v = h.value) == null ? void 0 : v.prop),
           "destroy-on-close": "",
           width: "80%"
         }, {

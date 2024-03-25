@@ -101,6 +101,7 @@ export declare namespace IElsX6 {
         label: string;
         desc?: string;
         group?: string;
+        groupName?: string;
         markup?: NodeMarkup;
         icon?: string;
         contextmenu?: IElsElem.Elem[];
@@ -186,6 +187,7 @@ export declare namespace IElsX6 {
         cell: Cell;
         status: Ref<Record<string, any>>;
         step: Ref<CellStep>;
+        selected: Ref<boolean>;
         stepTip: Ref<string>;
         label: Ref<string>;
         desc: Ref<string>;

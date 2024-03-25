@@ -1,6 +1,6 @@
 import "../css/main-DQsX5Ws-.css";
 import { defineComponent as X, toRefs as Y, ref as _, shallowRef as x, watch as R, onMounted as Z, openBlock as s, createElementBlock as B, Fragment as ee, createVNode as f, unref as o, withCtx as p, createElementVNode as m, renderSlot as L, createBlock as k, resolveDynamicComponent as te, withDirectives as oe, createCommentVNode as b, vShow as ae, normalizeStyle as le, mergeProps as re, markRaw as O, nextTick as ne } from "vue";
-import { az as se, aA as ue, aB as ie, aC as r, aD as j, aE as F, av as de, d as N, L as ce, aF as fe, a0 as pe } from "./vendor.BlYUAX4D.js";
+import { aA as se, aB as ue, aC as ie, aD as r, aE as j, aF as F, aw as de, d as N, L as ce, aG as fe, a0 as pe } from "./vendor.D9J4rVyn.js";
 import { _ as me } from "./_plugin-vue_export-helper.CHgC5LLL.js";
 const Ve = {
   autoCloseBrackets: !0,
@@ -77,9 +77,9 @@ const Ve = {
     class: {}
   },
   emits: ["update:modelValue"],
-  setup(z, { expose: H, emit: M }) {
-    const A = M, U = z, [$, E] = ie(), { modelValue: w, showOperate: I, theme: y, format: u, teleport: P, dialog: G, dialogTitle: W, lang: v } = Y(U), V = _(), g = _(), n = x(), i = x();
-    let a = w.value || "";
+  setup(H, { expose: M, emit: z }) {
+    const A = z, U = H, [$, w] = ie(), { modelValue: E, showOperate: G, theme: y, format: u, teleport: I, dialog: P, dialogTitle: W, lang: v } = Y(U), V = _(), g = _(), n = x(), i = x();
+    let a = E.value || "";
     const l = _(!1);
     let h = r.theme(y.value), d = j.create({
       doc: a,
@@ -121,13 +121,13 @@ const Ve = {
       const e = ((t = u.value) == null ? void 0 : t.call(u, a)) || a;
       e != a && (a = e, c(e, l.value ? i.value : n.value));
     };
-    return R(w, (e) => {
+    return R(E, (e) => {
       e != a && c(e);
     }), R(v, () => {
       S(), J();
     }), Z(() => {
       K();
-    }), H({
+    }), M({
       openDialog: T
     }), (e, t) => (s(), B(ee, null, [
       f(o($), null, {
@@ -153,13 +153,13 @@ const Ve = {
               }, null, 8, ["icon"])) : b("", !0),
               L(e.$slots, "operate", {}, void 0, !0)
             ], 512), [
-              [ae, o(I) || l.value]
+              [ae, o(G) || l.value]
             ])
           ])
         ]),
         _: 3
       }),
-      f(o(E), null, {
+      f(o(w), null, {
         default: p(() => [
           m("div", {
             relative: "",
@@ -174,16 +174,16 @@ const Ve = {
         _: 1
       }),
       f(o(pe), re({
-        "append-to": o(P),
+        "append-to": o(I),
         width: "80%",
         modelValue: l.value,
         "onUpdate:modelValue": t[0] || (t[0] = (C) => l.value = C)
-      }, o(G), {
+      }, o(P), {
         title: o(W) || "代码编辑器",
         onClose: t[1] || (t[1] = () => c())
       }), {
         default: p(() => [
-          f(o(E), { class: "important-h-70vh" }, {
+          f(o(w), { class: "important-h-70vh" }, {
             default: p(() => [
               m("div", {
                 relative: "",

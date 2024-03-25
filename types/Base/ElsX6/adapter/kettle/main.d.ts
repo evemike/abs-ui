@@ -1,8 +1,21 @@
+import { IElsX6 } from "../../inter";
 import { KettleApi } from "./api";
-export declare class AdapterKettle {
-    constructor();
-    api: KettleApi;
-    nodeList: import("vue").Ref<never[]>;
-    init(): void;
-    initNodeList(): Promise<void>;
+import { KettleEvent } from "./event";
+interface KettleConfig {
+    id: string;
+    token?: string;
 }
+export declare class AdapterKettle {
+    constructor(config: KettleConfig);
+    id: string;
+    api: KettleApi;
+    event: KettleEvent;
+    contextmenu: IElsX6.ContextmenuConfig;
+    nodeList: import("vue").Ref<any[]>;
+    projectData: any;
+    init(): Promise<void>;
+    initNodeList(): Promise<void>;
+    initGraph(): Promise<void>;
+    updateGraph(): Promise<void>;
+}
+export {};

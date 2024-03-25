@@ -18,17 +18,10 @@ export declare const NIFI_FORMAT_KEYS: ({
     "connection.config.saslPassword"?: undefined;
 })[];
 export declare const useKafka: (config?: UseKafkaConfig) => {
-    valueKey: string;
-    currentKafka: import("vue").Ref<{}>;
-    currentTopic: import("vue").Ref<{}>;
-    kafkaList: import("vue").Ref<any[]>;
-    topicList: import("vue").Ref<any[]>;
+    kafkaList: any[];
+    topicList: any[];
     kafkaOptions: import("vue").Ref<any[]>;
     topicOptions: import("vue").Ref<any[]>;
-    resetFormData: (formData: any, keys: [Record<string, string>, Record<string, string>]) => void;
-    setKafkaServer: (data: any, val: any) => void;
-    setKafkaTopic: (data: any, val: any) => void;
-    initKafkaServer: (data: any, key: string) => void;
     NIFI_FORMAT_KEYS: ({
         "connection.config.bootstrapServers": string;
         "connection.config.saslUsername": string;
@@ -42,4 +35,7 @@ export declare const useKafka: (config?: UseKafkaConfig) => {
         "connection.config.saslUsername"?: undefined;
         "connection.config.saslPassword"?: undefined;
     })[];
+    initTopicList: (val: string) => void;
+    topicChange: (data: any, val: any) => void;
+    kafkaServerChange: (data: any, val: any) => void;
 };

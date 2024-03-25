@@ -2,6 +2,7 @@ import { Cell, Graph, Edge } from "@antv/x6";
 import { IElsX6 } from "../inter";
 interface GraphShadowConfig extends Record<string, any> {
     nodelist?: IElsX6.GraphNode[];
+    nodeMarkup?: IElsX6.NodeMarkup;
 }
 export declare class GraphShadow {
     constructor(config?: GraphShadowConfig);
@@ -34,6 +35,8 @@ export declare class GraphShadow {
     setStep(cell: Cell, step: IElsX6.CellStep, tip?: string): void;
     setStepTip(cell: Cell, tip: string): void;
     setType(cell: Cell | string, type: string): void;
+    setMetadata(cell: Cell | string, md: any): void;
+    toggleSelected(cell: Cell | string, clear?: boolean, value?: boolean): void;
     resetCurrentCell(cell?: Cell): void;
     resetSelectedCells(cells?: Cell[]): void;
     removeCells(cells?: Cell[]): void;
@@ -42,10 +45,6 @@ export declare class GraphShadow {
     delSelectedCell(cell: Cell): void;
     toggleSelectedCell(cell: Cell): void;
     clearSelectedCells(): void;
-    initMetadata(mds: any[]): void;
-    setMetadata(md: any): void;
-    getMetadata(cell: Cell): IElsX6.GraphNode;
-    upCellMetadata(cell: Cell, key: string, value: any): void;
     copyCells(sc: Cell, tc: Cell): void;
     resetNodeList(list: IElsX6.GraphNode[]): this;
     resetDefaultNodeMarkup(markup?: IElsX6.NodeMarkup): this;
