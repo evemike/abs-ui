@@ -10684,7 +10684,7 @@ class H5 {
   async apiGetNodeList() {
     const t = await this.apiGet("/task-api/stream/pluginManage/getAllBasicPluginInfoByUserId");
     console.log("=========>", t);
-    const o = (t.result || []).map((a) => {
+    const o = (t.result || t.content || []).map((a) => {
       var r;
       return ((r = a.children) == null ? void 0 : r.map((s) => {
         const n = Object.keys(this.NIFI_DATA.dataType).filter((A) => {
