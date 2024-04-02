@@ -38,6 +38,7 @@ export declare class AdapterNifi {
     procesorUpdate(data: any): Promise<void>;
     buildNodesFromTypes(): void;
     initPrioritizers(): Promise<void>;
+    initNodeList(): Promise<void>;
     initProcessType(): Promise<void>;
     initRoot(): Promise<void>;
     initGraph(id?: string): Promise<this>;
@@ -64,15 +65,15 @@ export declare class AdapterNifi {
     nodeStop(node: any, ct?: any): Promise<void>;
     getEdgeData(edge: Edge): {
         title: string;
-        outPorts: any;
-        inPorts: any;
+        outPorts: any[];
+        inPorts: any[];
         modelValue: {};
         label: any;
         relationships: any;
         sourceNode: Cell<Cell.Properties> | undefined;
         targetNode: Cell<Cell.Properties> | undefined;
-        sourceId: any;
-        targetId: any;
+        sourceId: string;
+        targetId: string;
         id: any;
     };
     getEdgeInfo(edge: Edge): Promise<{
@@ -80,12 +81,12 @@ export declare class AdapterNifi {
         inPorts: any;
         outPorts: any;
         source: {
-            id: any;
+            id: string;
             groupId: any;
             type: string;
         };
         destination: {
-            id: any;
+            id: string;
             groupId: any;
             type: string;
         };
@@ -172,6 +173,7 @@ export declare class AdapterNifi {
     apiUpdateCell(cell: any, data: any): Promise<any>;
     apiGetClientId(): void;
     apiGetProcessTypes(): Promise<any>;
+    apiGetNodeList(): Promise<never[]>;
     apiGetPrioritizers(): Promise<any>;
     apiGetRootStatus(): void;
     apiGetFlowByGroup(id?: string): Promise<any>;

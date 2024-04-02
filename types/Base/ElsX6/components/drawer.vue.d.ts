@@ -11,6 +11,8 @@ declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_T
     open: (cell?: Cell<Cell.Properties> | undefined) => void;
     close: (clear?: boolean | undefined) => void;
     formRef: import("vue").ShallowRef<any>;
+    celldata: import("vue").ShallowRef<IElsX6.CellData | undefined>;
+    visible: import("vue").Ref<boolean>;
 }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<IElsX6.DrawerProps>, {
     config: () => {
         direction: string;

@@ -17,5 +17,6 @@ export declare class AdapterKettle {
     initNodeList(): Promise<void>;
     initGraph(): Promise<void>;
     updateGraph(): Promise<void>;
+    buildGraphData(): Promise<void>;
 }
 export {};

@@ -1,4 +1,4 @@
-import { Cell, Graph, Edge } from "@antv/x6";
+import { Cell, Graph, Edge, Node } from "@antv/x6";
 import { IElsX6 } from "../inter";
 interface GraphShadowConfig extends Record<string, any> {
     nodelist?: IElsX6.GraphNode[];
@@ -9,7 +9,7 @@ export declare class GraphShadow {
     nodelist: IElsX6.GraphNode[];
     graph: Graph | undefined;
     mode: import("vue").Ref<IElsX6.Mode>;
-    cells: Map<string, IElsX6.CellData | IElsX6.EdgeData | IElsX6.NodeData>;
+    cells: Map<string, IElsX6.NodeData | IElsX6.CellData | IElsX6.EdgeData>;
     currentCell: import("vue").ShallowRef<Cell<Cell.Properties> | undefined>;
     selectedCells: import("vue").ShallowRef<Cell<Cell.Properties>[]>;
     clipboardCells: import("vue").ShallowRef<Cell<Cell.Properties>[]>;
@@ -21,8 +21,11 @@ export declare class GraphShadow {
     add(cell: Cell | string): void;
     del(cell: Cell | string): void;
     remove(cell: Cell | string): void;
-    get(cell: Cell | string, key?: string): any;
+    get(cell: Edge): IElsX6.EdgeData;
+    get(cell: Node): IElsX6.NodeData;
+    get(cell: Cell | string): IElsX6.CellData;
     getByKey(cell: string | Cell, key: string): any;
+    getCellData(cell: Cell | string): IElsX6.CellData;
     getEdgeData(cell: Cell | string): IElsX6.EdgeData;
     getNodeData(cell: Cell | string): IElsX6.NodeData;
     set(cell: Cell | string, key: string, value: any): void;

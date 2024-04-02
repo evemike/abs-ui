@@ -7,6 +7,7 @@ export declare class KettleEvent {
     graph: Graph | undefined;
     shadow: IElsX6.Context['graphShadow'] | undefined;
     drawerRef: IElsX6.Context['drawerRef'] | undefined;
+    form: IElsX6.Context['graphForm'] | undefined;
     nodes: any[];
     edges: any[];
     data: IElsX6.Events;

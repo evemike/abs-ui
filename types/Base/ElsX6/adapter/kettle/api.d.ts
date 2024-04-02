@@ -15,6 +15,7 @@ export declare class KettleApi {
     initWS(): void;
     getNodes(): Promise<any[]>;
     getProjectInfo(id?: string): Promise<any>;
+    getFieldInfo(data: any): Promise<void>;
     updateGraph(data: any): Promise<any>;
     apiPost(url: string, data?: any, headers?: Record<string, any>): Promise<any>;
     apiGet(url: string, headers?: Record<string, any>): Promise<any>;
