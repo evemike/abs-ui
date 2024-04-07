@@ -1,5 +1,5 @@
-import { defineComponent as b, computed as O, onMounted as T, openBlock as g, createElementBlock as m, createVNode as i, unref as s, withCtx as t, normalizeStyle as _, createTextVNode as f, toDisplayString as u, createCommentVNode as w, renderSlot as x } from "vue";
-import { a0 as y, d as p } from "../../chunks/vendor.D9J4rVyn.js";
+import { defineComponent as b, computed as O, onMounted as T, openBlock as g, createElementBlock as f, createVNode as i, unref as s, withCtx as t, normalizeStyle as _, createTextVNode as m, toDisplayString as u, createCommentVNode as w, renderSlot as x } from "vue";
+import { a5 as y, f as p } from "../../chunks/vendor.Btkc3P4Q.js";
 const j = {
   dialogVisible: !1,
   title: "标题",
@@ -45,7 +45,7 @@ const j = {
       n("dialogConfirm", !1, "success");
     };
     return T(() => {
-    }), (a, r) => (g(), m("div", S, [
+    }), (a, r) => (g(), f("div", S, [
       i(s(y), {
         modelValue: d.value,
         "onUpdate:modelValue": r[0] || (r[0] = (B) => d.value = B),
@@ -55,13 +55,13 @@ const j = {
         "before-close": c
       }, {
         footer: t(() => [
-          o.dialogIsFooter ? (g(), m("span", k, [
+          o.dialogIsFooter ? (g(), f("span", k, [
             i(s(p), {
               onClick: c,
               style: _(o.cancelBtnStyle)
             }, {
               default: t(() => [
-                f(u(o.dialogCloseBtnText), 1)
+                m(u(o.dialogCloseBtnText), 1)
               ]),
               _: 1
             }, 8, ["style"]),
@@ -70,7 +70,7 @@ const j = {
               type: "primary"
             }, {
               default: t(() => [
-                f(u(o.dialogConfirmBtnText), 1)
+                m(u(o.dialogConfirmBtnText), 1)
               ]),
               _: 1
             })

@@ -13,10 +13,14 @@ export declare class AdapterKettle {
     contextmenu: IElsX6.ContextmenuConfig;
     nodeList: import("vue").Ref<any[]>;
     projectData: any;
+    projectInfo: any;
+    flowInfo: any;
     init(): Promise<void>;
     initNodeList(): Promise<void>;
     initGraph(): Promise<void>;
     updateGraph(): Promise<void>;
-    buildGraphData(): Promise<void>;
+    buildGraphData(): Promise<{
+        transformation: any;
+    }>;
 }
 export {};

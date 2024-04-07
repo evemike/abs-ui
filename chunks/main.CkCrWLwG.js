@@ -1,6 +1,6 @@
-import "../css/main-PC6Eepi0.css";
-import { defineComponent as U, useSlots as P, toRefs as W, ref as n, shallowRef as S, watch as x, onMounted as q, openBlock as d, createElementBlock as g, createElementVNode as c, normalizeClass as J, renderSlot as V, normalizeStyle as K, withDirectives as Q, createVNode as X, unref as l, createCommentVNode as _, createBlock as Y, vShow as Z, markRaw as ee } from "vue";
-import { aA as te, aB as oe, aC as ae, aD as i, aE as T, aF as B, aw as le, d as L, L as se, aG as re } from "./vendor.D9J4rVyn.js";
+import "../css/main-KOnvI2t9.css";
+import { defineComponent as P, useSlots as U, toRefs as J, ref as n, shallowRef as S, watch as x, onMounted as W, openBlock as d, createElementBlock as g, createElementVNode as c, normalizeClass as q, renderSlot as V, normalizeStyle as K, withDirectives as Q, createVNode as X, unref as l, createCommentVNode as _, createBlock as Y, vShow as Z, markRaw as ee } from "vue";
+import { aD as te, aE as oe, aF as ae, aG as i, aH as T, aI as B, az as le, f as H, P as se, aJ as re } from "./vendor.Btkc3P4Q.js";
 import { _ as ne } from "./_plugin-vue_export-helper.CHgC5LLL.js";
 const we = {
   autoCloseBrackets: !0,
@@ -64,7 +64,7 @@ const we = {
   class: "_operate"
 }, fe = { key: 0 }, ve = ["innerHTML"], pe = {
   name: "CodeEditor"
-}, he = /* @__PURE__ */ U({
+}, he = /* @__PURE__ */ P({
   ...pe,
   props: {
     modelValue: {},
@@ -78,20 +78,20 @@ const we = {
     dialogTitle: {},
     lang: { default: () => [te(), oe()] },
     showOperate: { type: Boolean, default: !0 },
-    maxHeight: { default: "auto" },
+    maxHeight: { default: "none" },
     size: {},
     class: {}
   },
   emits: ["update:modelValue"],
-  setup(R, { expose: D, emit: H }) {
-    const M = H, O = R;
-    P(), ae();
-    const { modelValue: C, showOperate: j, theme: b, format: r, teleport: ge, dialog: _e, dialogTitle: Ce, lang: f } = W(O), k = n(), m = n();
+  setup(R, { expose: D, emit: L }) {
+    const M = L, O = R;
+    U(), ae();
+    const { modelValue: b, showOperate: j, theme: C, format: r, teleport: ge, dialog: _e, dialogTitle: be, lang: f } = J(O), k = n(), m = n();
     n();
     const s = S(), u = S();
-    let a = C.value || "";
+    let a = b.value || "";
     const o = n(!0), E = n("");
-    let v = i.theme(b.value), p = T.create({
+    let v = i.theme(C.value), p = T.create({
       doc: a,
       extensions: [
         B,
@@ -104,10 +104,10 @@ const we = {
     });
     const h = (e = a, t = l(o) ? u.value : s.value) => {
       t == null || t.dispatch({ changes: { from: 0, to: t == null ? void 0 : t.state.doc.length, insert: e } }), t == null || t.focus();
-    }, N = (e = "", t = l(o) ? u.value : s.value) => {
+    }, z = (e = "", t = l(o) ? u.value : s.value) => {
       t == null || t.dispatch(t == null ? void 0 : t.state.replaceSelection(e)), t == null || t.focus();
-    }, z = (e = l(o) ? u.value : s.value) => e == null ? void 0 : e.state.doc.toString(), F = () => {
-      v = i.theme(b.value), p = T.create({
+    }, N = (e = l(o) ? u.value : s.value) => e == null ? void 0 : e.state.doc.toString(), F = () => {
+      v = i.theme(C.value), p = T.create({
         doc: a,
         extensions: [
           B,
@@ -118,33 +118,33 @@ const we = {
           })
         ]
       });
-    }, A = (e = s.value) => {
+    }, I = (e = s.value) => {
       e == null || e.setState(p);
     }, $ = () => {
       s.value = ee(new i({ state: p, parent: m.value }));
-    }, G = () => {
+    }, A = () => {
       w();
     }, w = () => {
       var e;
       E.value = ((e = k.value) == null ? void 0 : e.innerHTML) || "", o.value = !o.value;
     }, y = le((e) => {
       a = e.state.doc.toString(), M("update:modelValue", a);
-    }, 200), I = () => {
+    }, 200), G = () => {
       var t;
       const e = ((t = r.value) == null ? void 0 : t.call(r, a)) || a;
       e != a && (a = e, h(e, o.value ? u.value : s.value));
     };
-    return x(C, (e) => {
+    return x(b, (e) => {
       e != a && h(e);
     }), x(f, () => {
-      F(), A();
-    }), q(() => {
+      F(), I();
+    }), W(() => {
       $(), o.value = !1;
     }), D({
-      openDialog: G,
+      openDialog: A,
       setValue: h,
-      getValue: z,
-      insertValue: N
+      getValue: N,
+      insertValue: z
     }), (e, t) => (d(), g("div", ue, [
       c("div", {
         relative: "",
@@ -152,7 +152,7 @@ const we = {
         "w-full": "",
         ref_key: "codeEditorBoxRef",
         ref: k,
-        class: J(["_mask", { "is-visible": o.value }])
+        class: q(["_mask", { "is-visible": o.value }])
       }, [
         c("div", de, [
           V(e.$slots, "default", {}, void 0, !0),
@@ -163,22 +163,22 @@ const we = {
             class: "_codemirror-box",
             ref_key: "codeEditorRef",
             ref: m,
-            style: K(`max-height:${e.maxHeight}`)
+            style: K(o.value ? "" : `max-height:${e.maxHeight}`)
           }, null, 4),
           Q(c("div", ce, [
-            X(l(L), {
+            X(l(H), {
               icon: l(se),
               title: o.value ? "恢复" : "放大",
               link: "",
               onClick: w
             }, null, 8, ["icon", "title"]),
             l(r) ? (d(), g("i", fe)) : _("", !0),
-            l(r) ? (d(), Y(l(L), {
+            l(r) ? (d(), Y(l(H), {
               key: 1,
               icon: l(re),
               title: "格式化",
               link: "",
-              onClick: I
+              onClick: G
             }, null, 8, ["icon"])) : _("", !0),
             V(e.$slots, "operate", {}, void 0, !0)
           ], 512), [
@@ -193,7 +193,7 @@ const we = {
       }, null, 8, ve)) : _("", !0)
     ]));
   }
-}), ye = /* @__PURE__ */ ne(he, [["__scopeId", "data-v-221e673f"]]);
+}), ye = /* @__PURE__ */ ne(he, [["__scopeId", "data-v-46a98bf8"]]);
 export {
   ye as C,
   we as D,

@@ -87,6 +87,7 @@ export declare namespace IElsX6 {
         disabled?: boolean;
         params?: Record<string, any>;
         title?: string;
+        contentElem?: IElsElem.Elem;
     }
     interface GraphConfig extends Graph.Options {
     }

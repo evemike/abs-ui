@@ -1,6 +1,6 @@
 import { defineComponent as f, computed as y, unref as e, onMounted as k, openBlock as o, createBlock as g, mergeProps as h, withCtx as C, createElementBlock as t, normalizeClass as a, createElementVNode as i, Fragment as v } from "vue";
-import { a_ as B, a5 as E, k as x } from "./vendor.D9J4rVyn.js";
-const I = ["src"], b = {
+import { b1 as B, a as E, o as b } from "./vendor.Btkc3P4Q.js";
+const x = ["src"], I = {
   key: 2,
   "aria-hidden": "true",
   class: "svg-icon"
@@ -45,15 +45,15 @@ const I = ["src"], b = {
           fill: "currentColor"
         }, null, 8, F)
       ]))
-    ], 64)) : (o(), g(e(x), h({ key: 0 }, m, { class: "click-copy" }), {
+    ], 64)) : (o(), g(e(b), h({ key: 0 }, m, { class: "click-copy" }), {
       default: C(() => [
         e(n) ? (o(), t("img", {
           key: 0,
           src: e(s)
-        }, null, 8, I)) : e(r) ? (o(), t("i", {
+        }, null, 8, x)) : e(r) ? (o(), t("i", {
           key: 1,
           class: a(e(s))
-        }, null, 2)) : (o(), t("svg", b, [
+        }, null, 2)) : (o(), t("svg", I, [
           i("use", {
             href: l.value,
             fill: "currentColor"
