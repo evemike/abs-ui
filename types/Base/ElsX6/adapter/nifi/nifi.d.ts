@@ -16,7 +16,9 @@ export declare class AdapterNifi {
     rootName: string;
     rootGroups: never[];
     rootStatus: {};
+    nodeMarkup: import("../../../ElsElem").IElsElem.Elem;
     nodeList: import("vue").Ref<any[]>;
+    edgeLabelConfig: IElsX6.EdgeLabelConfig;
     edgeFormData: import("vue").Ref<any>;
     currentEdgeJson: any;
     groupId: string;

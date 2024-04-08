@@ -6,12 +6,14 @@ export interface ResizeDrawerProps {
     visible?: boolean;
     title?: string;
     showClose?: boolean;
+    destoryOnClose?: boolean;
 }
 declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<ResizeDrawerProps>, {
     direction: string;
     visible: boolean;
     maxSize: string;
     showClose: boolean;
+    destoryOnClose: boolean;
 }>, {
     visible: import("vue").Ref<boolean>;
     open: () => void;
@@ -23,6 +25,7 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     visible: boolean;
     maxSize: string;
     showClose: boolean;
+    destoryOnClose: boolean;
 }>>> & {
     "onUpdate:visible"?: ((visible: boolean) => any) | undefined;
 }, {
@@ -30,6 +33,7 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     showClose: boolean;
     direction: "top" | "right" | "left" | "bottom";
     maxSize: string;
+    destoryOnClose: boolean;
 }, {}>, {
     title?(_: {}): any;
     operate?(_: {}): any;

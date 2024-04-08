@@ -30,7 +30,7 @@ export declare namespace IElsForm {
     };
     interface UIPluginConfig {
         formProps: Set<string>;
-        formData: Ref<Record<string, any>>;
+        formData: Record<string, any>;
         emitChange: (prop: string, val: any) => void;
     }
 }

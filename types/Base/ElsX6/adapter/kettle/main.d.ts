@@ -14,7 +14,6 @@ export declare class AdapterKettle {
     nodeList: import("vue").Ref<any[]>;
     projectData: any;
     projectInfo: any;
-    flowInfo: any;
     init(): Promise<void>;
     initNodeList(): Promise<void>;
     initGraph(): Promise<void>;

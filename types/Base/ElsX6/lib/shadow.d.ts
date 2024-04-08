@@ -54,6 +54,6 @@ export declare class GraphShadow {
     resetCellId(sid: string, tid: string): void;
     getTabsData(cell: string | Cell): any[];
     setEdgeLabelConfig(cell: Cell | string, data: IElsX6.EdgeLabelConfig): void;
-    getEdgeLabelConfig(cell: Edge): import("vue").Ref<IElsX6.EdgeLabelConfig>;
+    getEdgeLabelConfig(cell: Edge): IElsX6.EdgeLabelConfig;
 }
 export {};

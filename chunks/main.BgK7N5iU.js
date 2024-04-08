@@ -1,6 +1,6 @@
 import "../css/main-KOnvI2t9.css";
 import { defineComponent as P, useSlots as U, toRefs as J, ref as n, shallowRef as S, watch as x, onMounted as W, openBlock as d, createElementBlock as g, createElementVNode as c, normalizeClass as q, renderSlot as V, normalizeStyle as K, withDirectives as Q, createVNode as X, unref as l, createCommentVNode as _, createBlock as Y, vShow as Z, markRaw as ee } from "vue";
-import { aD as te, aE as oe, aF as ae, aG as i, aH as T, aI as B, az as le, f as H, P as se, aJ as re } from "./vendor.Btkc3P4Q.js";
+import { aD as te, aE as oe, aF as ae, aG as i, aH as T, aI as B, ay as le, f as H, P as se, aJ as re } from "./vendor.BpDCHYT3.js";
 import { _ as ne } from "./_plugin-vue_export-helper.CHgC5LLL.js";
 const we = {
   autoCloseBrackets: !0,
@@ -104,9 +104,9 @@ const we = {
     });
     const h = (e = a, t = l(o) ? u.value : s.value) => {
       t == null || t.dispatch({ changes: { from: 0, to: t == null ? void 0 : t.state.doc.length, insert: e } }), t == null || t.focus();
-    }, z = (e = "", t = l(o) ? u.value : s.value) => {
+    }, N = (e = "", t = l(o) ? u.value : s.value) => {
       t == null || t.dispatch(t == null ? void 0 : t.state.replaceSelection(e)), t == null || t.focus();
-    }, N = (e = l(o) ? u.value : s.value) => e == null ? void 0 : e.state.doc.toString(), F = () => {
+    }, z = (e = l(o) ? u.value : s.value) => e == null ? void 0 : e.state.doc.toString(), F = () => {
       v = i.theme(C.value), p = T.create({
         doc: a,
         extensions: [
@@ -143,8 +143,8 @@ const we = {
     }), D({
       openDialog: A,
       setValue: h,
-      getValue: N,
-      insertValue: z
+      getValue: z,
+      insertValue: N
     }), (e, t) => (d(), g("div", ue, [
       c("div", {
         relative: "",

@@ -5,5 +5,6 @@ export interface NodeModel {
         step: any[];
         connection?: any[];
     };
+    submit: (formData: any, cellData: any) => Promise<any>;
 }
 export declare const initNodesData: () => Promise<Map<string, NodeModel>>;

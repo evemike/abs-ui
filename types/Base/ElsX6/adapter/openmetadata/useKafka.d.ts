@@ -38,4 +38,6 @@ export declare const useKafka: (config?: UseKafkaConfig) => {
     initTopicList: (val: string) => void;
     topicChange: (data: any, val: any) => void;
     kafkaServerChange: (data: any, val: any) => void;
+    getKafkaValue: (data: any) => any;
+    getTopicValue: (data: any) => any;
 };

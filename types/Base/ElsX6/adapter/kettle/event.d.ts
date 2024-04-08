@@ -85,5 +85,7 @@ export declare class KettleEvent {
             to: string;
         };
     };
-    graphData(): string;
+    getProjectFile(): {
+        projectFile: string;
+    };
 }
