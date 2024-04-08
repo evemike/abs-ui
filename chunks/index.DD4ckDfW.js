@@ -2,12 +2,12 @@ var A1 = Object.defineProperty;
 var h1 = (c, e, t) => e in c ? A1(c, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : c[e] = t;
 var f = (c, e, t) => (h1(c, typeof e != "symbol" ? e + "" : e, t), t);
 import "../css/index-DvPTEGMN.css";
-import { defineComponent as W, inject as C1, computed as P, openBlock as Q, createElementBlock as H, normalizeClass as xe, createBlock as R, unref as l, createCommentVNode as Z, h as V, createStaticVNode as g1, createElementVNode as C, toRefs as Ce, ref as F, onMounted as ge, watch as re, normalizeStyle as $e, toDisplayString as b, renderSlot as He, shallowRef as T, withCtx as x, createVNode as I, Fragment as X, renderList as se, mergeProps as Ve, withModifiers as Je, createTextVNode as te, reactive as ye, toRef as f1, withDirectives as u1, vShow as w1, provide as fe, markRaw as Ae, render as m1, normalizeProps as Te, guardReactiveProps as Ze, onUnmounted as y1 } from "vue";
-import { M as B1, y as z, z as je, o as ae, A as ke, B as e1, f as M, C as he, G as Ne, D as E1, F as F1, H as Q1, I as D1, J as qe, K as I1, j as Be, s as Oe, L as t1, N as i1, O, P as Ke, Q as M1, R as H1, u as b1, S as v1, T as o1, U as Ge, V as Ee, W as S1, m as L1, X as x1, Y as k1, Z as N1, g as Y, _ as ze, $ as G1, l as Re, k as R1, a0 as P1, a1 as V1, a2 as O1, a3 as K1, a4 as U1, a5 as Pe, a6 as Y1, a7 as J1, a8 as T1, a9 as Z1, a as K, aa as j1, ab as ce, ac as q1, ad as ue, ae as We, af as _, ag as z1, ah as Fe, x as Qe, ai as pe, aj as ie, i as $, ak as W1, al as X1, am as _1, an as $1, ao as Xe, ap as et, aq as tt, ar as it, as as ot, d as at, e as ne, at as rt, v as _e, au as st, E as be, av as ve, aw as nt, ax as lt } from "./vendor.BpDCHYT3.js";
-import { E as ee } from "./main.3l7vHGlx.js";
+import { defineComponent as W, inject as C1, computed as P, openBlock as Q, createElementBlock as H, normalizeClass as xe, createBlock as R, unref as l, createCommentVNode as Z, h as V, createStaticVNode as g1, createElementVNode as C, toRefs as he, ref as F, onMounted as Ce, watch as re, normalizeStyle as e1, toDisplayString as b, renderSlot as He, shallowRef as T, withCtx as x, createVNode as I, Fragment as X, renderList as se, mergeProps as Ve, withModifiers as Je, createTextVNode as ee, reactive as me, toRef as f1, withDirectives as u1, vShow as w1, provide as ge, markRaw as ye, render as m1, normalizeProps as Te, guardReactiveProps as Ze, onUnmounted as y1 } from "vue";
+import { M as B1, y as z, z as je, o as ae, A as ke, B as t1, f as M, C as Ae, G as Ne, D as E1, F as F1, H as Q1, I as D1, J as qe, K as I1, j as Be, s as Oe, L as i1, N as o1, O, P as Ke, Q as M1, R as H1, u as b1, S as v1, T as a1, U as Ge, V as Ee, W as S1, m as L1, X as x1, Y as k1, Z as N1, g as Y, _ as ze, $ as G1, l as Re, k as R1, a0 as P1, a1 as V1, a2 as O1, a3 as K1, a4 as U1, a5 as Pe, a6 as Y1, a7 as J1, a8 as T1, a9 as Z1, a as K, aa as j1, ab as ce, ac as q1, ad as fe, ae as We, af as ie, ag as z1, ah as Fe, x as Qe, ai as pe, aj as te, i as _, ak as W1, al as X1, am as _1, an as $1, ao as Xe, ap as et, aq as tt, ar as it, as as ot, d as at, e as ne, at as rt, v as _e, au as st, E as be, av as ve, aw as nt, ax as lt } from "./vendor.BpDCHYT3.js";
+import { E as $ } from "./main.3l7vHGlx.js";
 import { _ as Me } from "./main.vue_vue_type_script_setup_true_lang.CvtchxTx.js";
-import { _ as a1 } from "./_plugin-vue_export-helper.CHgC5LLL.js";
-import { _ as r1, E as ct } from "./main.vue_vue_type_script_setup_true_lang.DyvbNg2A.js";
+import { _ as r1 } from "./_plugin-vue_export-helper.CHgC5LLL.js";
+import { _ as s1, E as ct } from "./main.vue_vue_type_script_setup_true_lang.Ces4_R8M.js";
 import { _ as dt } from "./view.vue_vue_type_style_index_0_lang.DXcUqBKT.js";
 import { l as pt } from "./flexAdd.vue_vue_type_style_index_0_scoped_546246fc_lang.D62XS5AP.js";
 import { _ as At } from "./main.vue_vue_type_style_index_0_lang.DC7tGqLG.js";
@@ -32,7 +32,7 @@ const Ct = /* @__PURE__ */ W({
       return Q(), H("div", {
         class: xe(["default_node_style", { "is-selected": r.value, "is-current": s.value }])
       }, [
-        h.value ? (Q(), R(l(ee), {
+        h.value ? (Q(), R(l($), {
           key: 0,
           elem: h.value,
           params: { ...n.value, STEP_LIB: l(Ue), formStatus: (u = l(a)) == null ? void 0 : u.getCellStatus(l(t)) }
@@ -7044,17 +7044,17 @@ Note: This Processor expects CEF messages WITHOUT the syslog headers (i.e. start
     }
   },
   label: {}
-}, me = {
+}, we = {
   circle: {
     magnet: !0,
     stroke: "#8f8f8f",
     r: 5
   }
 }, mt = {
-  left: { position: "left", attrs: me },
-  top: { position: "top", attrs: me },
-  bottom: { position: "bottom", attrs: me },
-  right: { position: "right", attrs: me },
+  left: { position: "left", attrs: we },
+  top: { position: "top", attrs: we },
+  bottom: { position: "bottom", attrs: we },
+  right: { position: "right", attrs: we },
   "arrow-left": {
     position: { name: "left" },
     markup: [
@@ -7073,7 +7073,7 @@ Note: This Processor expects CEF messages WITHOUT the syslog headers (i.e. start
       }
     }
   }
-}, s1 = {
+}, n1 = {
   groups: mt
   // items: [
   //   { id: "in", group: "left" },
@@ -7086,7 +7086,7 @@ Note: This Processor expects CEF messages WITHOUT the syslog headers (i.e. start
   height: 50,
   effect: ["color"],
   component: Ct,
-  ports: s1
+  ports: n1
 }, Ue = {
   running: { bc: "#67C23A", c: "#67C23A", class: "is-loading", icon: F1 },
   stop: { bc: "#409EFF", c: "#409EFF", class: "", icon: Q1 },
@@ -7120,7 +7120,7 @@ Note: This Processor expects CEF messages WITHOUT the syslog headers (i.e. start
           width: "auto",
           "v-if": "!formStatus?.result",
           cls: [
-            { tag: ae, "#reference": "", class: "_node-tip-icon", cls: { tag: e1 } },
+            { tag: ae, "#reference": "", class: "_node-tip-icon", cls: { tag: t1 } },
             { tag: "div", class: "_node-status-tip", cls: "{{ formStatus?.info.map(t => h('p',{class:'_tip-item'},t)) }}" }
           ]
         },
@@ -7178,7 +7178,7 @@ Note: This Processor expects CEF messages WITHOUT the syslog headers (i.e. start
   {
     tag: M,
     link: !0,
-    icon: t1,
+    icon: i1,
     cls: "复制",
     ":disabled": "selectedCells.length == 0",
     "@click": ({ graph: c, contextmenu: e, selectedCells: t, ElMessage: i }) => {
@@ -7188,7 +7188,7 @@ Note: This Processor expects CEF messages WITHOUT the syslog headers (i.e. start
   {
     tag: M,
     link: !0,
-    icon: i1,
+    icon: o1,
     cls: "粘贴",
     ":disabled": "clipboardCells.length == 0",
     "@click": ({ graph: c, contextmenu: e, clipboardCells: t }) => {
@@ -7241,10 +7241,10 @@ ft.newProcessorTypes.filter((c) => c.type.includes("ConsumeAMQP") || c.type.incl
   };
 });
 const Dt = (c = {}) => {
-  const e = he({}, wt, c);
+  const e = Ae({}, wt, c);
   Ne.registerEdge("vue-edge", e, !0);
 }, It = (c = {}) => {
-  const e = he({}, yt, c);
+  const e = Ae({}, yt, c);
   E1(e);
 }, Mt = {}, Ht = {
   xmlns: "http://www.w3.org/2000/svg",
@@ -7269,7 +7269,7 @@ const Dt = (c = {}) => {
 function Lt(c, e) {
   return Q(), H("svg", Ht, St);
 }
-const xt = /* @__PURE__ */ a1(Mt, [["render", Lt]]), kt = {
+const xt = /* @__PURE__ */ r1(Mt, [["render", Lt]]), kt = {
   class: "_title",
   flex: "",
   "items-center": "",
@@ -7314,7 +7314,7 @@ const xt = /* @__PURE__ */ a1(Mt, [["render", Lt]]), kt = {
   },
   emits: ["update:visible"],
   setup(c, { expose: e, emit: t }) {
-    const i = c, a = t, { direction: o, minSize: r, maxSize: s, size: n, destoryOnClose: h } = i, { visible: A } = Ce(i), d = F(l(A)), u = o == "left" || o == "right", B = M1(), y = u ? "width" : "height", E = `min-${y}:${r || "none"};max-${y}:${s || "none"};`, m = F(), { x: p, y: w } = H1({ target: B }), { width: g, height: D } = b1(m);
+    const i = c, a = t, { direction: o, minSize: r, maxSize: s, size: n, destoryOnClose: h } = i, { visible: A } = he(i), d = F(l(A)), u = o == "left" || o == "right", B = M1(), y = u ? "width" : "height", E = `min-${y}:${r || "none"};max-${y}:${s || "none"};`, m = F(), { x: p, y: w } = H1({ target: B }), { width: g, height: D } = b1(m);
     let v = 0, L = F(0);
     const k = F(), { pressed: G } = v1({ target: k }), S = P(() => {
       if (!l(G))
@@ -7325,7 +7325,7 @@ const xt = /* @__PURE__ */ a1(Mt, [["render", Lt]]), kt = {
       const N = l(L) == 0 ? n : l(S) + "px";
       return `${y}:${N};${E}`;
     }), j = F(!1);
-    ge(() => {
+    Ce(() => {
       var N;
       (N = m.value) == null || N.addEventListener("transitionend", () => {
         d.value == !1 && h && (j.value = !0);
@@ -7348,7 +7348,7 @@ const xt = /* @__PURE__ */ a1(Mt, [["render", Lt]]), kt = {
       absolute: "",
       flex: "",
       "overflow-hidden": "",
-      style: $e(U.value)
+      style: e1(U.value)
     }, [
       C("div", {
         class: xe(["_line", l(o)]),
@@ -7386,7 +7386,7 @@ const xt = /* @__PURE__ */ a1(Mt, [["render", Lt]]), kt = {
       ]))
     ], 6));
   }
-}), Kt = /* @__PURE__ */ a1(Ot, [["__scopeId", "data-v-cf7b3571"]]), Ut = {
+}), Kt = /* @__PURE__ */ r1(Ot, [["__scopeId", "data-v-cf7b3571"]]), Ut = {
   "w-full": "",
   "h-full": "",
   relative: "",
@@ -7440,14 +7440,14 @@ const xt = /* @__PURE__ */ a1(Mt, [["render", Lt]]), kt = {
     }, {
       default: x(() => [
         C("div", Ut, [
-          n.value != null ? (Q(), R(l(ee), {
+          n.value != null ? (Q(), R(l($), {
             key: h.value,
             elem: A.value,
             params: B.value,
             context: { params: { close: w } }
           }, null, 8, ["elem", "params", "context"])) : Z("", !0),
           I(l(O), { "m-y-8": "" }),
-          d.value.length > 0 ? (Q(), R(l(o1), {
+          d.value.length > 0 ? (Q(), R(l(a1), {
             "model-value": "default-tab",
             key: h.value + y.value
           }, {
@@ -7458,7 +7458,7 @@ const xt = /* @__PURE__ */ a1(Mt, [["render", Lt]]), kt = {
                 label: v.label
               }, {
                 default: x(() => [
-                  v.type === "form" ? (Q(), R(l(r1), Ve({
+                  v.type === "form" ? (Q(), R(l(s1), Ve({
                     key: 0,
                     ref_for: !0,
                     ref: (k) => E.value = k,
@@ -7467,7 +7467,7 @@ const xt = /* @__PURE__ */ a1(Mt, [["render", Lt]]), kt = {
                     params: B.value,
                     column: v.column,
                     elForm: { disabled: y.value }
-                  }, v.attr || {}), null, 16, ["modelValue", "params", "column", "elForm"])) : (Q(), R(l(ee), {
+                  }, v.attr || {}), null, 16, ["modelValue", "params", "column", "elForm"])) : (Q(), R(l($), {
                     key: 1,
                     elem: v.elem,
                     params: B.value,
@@ -7798,7 +7798,7 @@ const Zt = { class: "_search" }, jt = ["onMousedown", "title"], qt = { class: "_
     graph: {}
   },
   setup(c) {
-    const e = c, t = F(), { graph: i } = Ce(e), { nodeList: a } = e, { initNodeFn: o } = e, r = F(""), s = F(), n = F([]), h = S1(r, 500), A = P(() => {
+    const e = c, t = F(), { graph: i } = he(e), { nodeList: a } = e, { initNodeFn: o } = e, r = F(""), s = F(), n = F([]), h = S1(r, 500), A = P(() => {
       const B = h.value;
       let y = l(a) || [];
       B ? (y = y.filter(({ label: p, name: w, group: g }) => p.includes(B) || w.includes(B) || (g == null ? void 0 : g.includes(B))), n.value.push(...y.map((p) => p.groupName || p.group || ""))) : n.value = [];
@@ -7822,7 +7822,7 @@ const Zt = { class: "_search" }, jt = ["onMousedown", "title"], qt = { class: "_
         return;
       s.value || d(), B.shape || (B.shape = "vue-node"), B.ports || (B.ports = {});
       const m = B.ports;
-      if (m.groups || (m.groups = s1.groups), o) {
+      if (m.groups || (m.groups = n1.groups), o) {
         try {
           o(B).then((g) => {
             var D;
@@ -7842,7 +7842,7 @@ const Zt = { class: "_search" }, jt = ["onMousedown", "title"], qt = { class: "_
       };
       (w = s.value) == null || w.start(E.createNode(p), y);
     };
-    return ge(() => {
+    return Ce(() => {
       d();
     }), (B, y) => (Q(), H("div", {
       class: "_graph-node-list",
@@ -7892,11 +7892,11 @@ const Zt = { class: "_search" }, jt = ["onMousedown", "title"], qt = { class: "_
       }, 8, ["modelValue"])
     ], 512));
   }
-}), j5 = (c, e) => {
+}), U5 = (c, e) => {
   const { filter: t, order: i, group: a } = e;
   let o = c;
-  return t && (o = c1(o, t)), i && (o = l1(o, i)), a && (o = n1(o, a)), o;
-}, n1 = (c, e) => {
+  return t && (o = d1(o, t)), i && (o = c1(o, i)), a && (o = l1(o, a)), o;
+}, l1 = (c, e) => {
   let t = {}, i = [...c];
   const { index: a, key: o, fn: r, iteratee: s } = e;
   if (a) {
@@ -7910,11 +7910,11 @@ const Zt = { class: "_search" }, jt = ["onMousedown", "title"], qt = { class: "_
   } else
     s ? t = ze(i, s) : r && (t = r(i));
   return t;
-}, l1 = (c, e) => {
+}, c1 = (c, e) => {
   let t = [...c];
   const { key: i, fn: a, isReverse: o } = e;
   return i && (t = G1(t, i)), a && (t = a(t)), o && (t = t.reverse()), t;
-}, c1 = (c, e) => {
+}, d1 = (c, e) => {
   let t = [...c];
   const { key: i = "id", blackList: a, whiteList: o, fn: r, items: s } = e;
   return a && (t = t.filter((n) => !a.includes(Y(n, i)))), o && (t = t.filter((n) => o.includes(Y(n, i)))), r && (t = t.filter((n) => r(n))), s && t.push(...s), t;
@@ -7945,7 +7945,7 @@ const Zt = { class: "_search" }, jt = ["onMousedown", "title"], qt = { class: "_
     context: {}
   },
   setup(c, { expose: e }) {
-    const t = c, { context: i } = t, { config: a } = Ce(t), o = i == null ? void 0 : i.graphTools, r = i == null ? void 0 : i.markdownRef, s = [
+    const t = c, { context: i } = t, { config: a } = he(t), o = i == null ? void 0 : i.graphTools, r = i == null ? void 0 : i.markdownRef, s = [
       { title: "导出", key: "export", icon: Re, handle: () => o == null ? void 0 : o.export() },
       { title: "导入", key: "import", icon: R1, handle: () => o == null ? void 0 : o.import() },
       { title: "撤销", key: "undo", icon: P1, handle: () => o == null ? void 0 : o.undo() },
@@ -7961,13 +7961,13 @@ const Zt = { class: "_search" }, jt = ["onMousedown", "title"], qt = { class: "_
     ], n = P(() => {
       const { elems: h = [], filter: A, order: d, group: u } = l(a) || {}, B = [...s, ...l(h)];
       let y = B;
-      return A && (y = c1(B, A)), d && (y = l1(y, d)), u && (y = n1(y, u)), console.log("menu - list = ", y, h, A, d, u, a.value), y && !Array.isArray(y) && (y = Object.keys(y).map((E) => Y(y, E))), y;
+      return A && (y = d1(B, A)), d && (y = c1(y, d)), u && (y = l1(y, u)), console.log("menu - list = ", y, h, A, d, u, a.value), y && !Array.isArray(y) && (y = Object.keys(y).map((E) => Y(y, E))), y;
     });
     return e({}), (h, A) => (Q(), H("div", Xt, [
       (Q(!0), H(X, null, se(n.value, (d) => (Q(), H(X, null, [
         Array.isArray(d) ? (Q(), H("div", _t, [
           (Q(!0), H(X, null, se(d, (u) => (Q(), H(X, null, [
-            u.tag ? (Q(), R(l(ee), {
+            u.tag ? (Q(), R(l($), {
               key: 0,
               elem: d,
               params: l(i)
@@ -7979,7 +7979,7 @@ const Zt = { class: "_search" }, jt = ["onMousedown", "title"], qt = { class: "_
             }, null, 8, ["onClick", "title", "icon"]))
           ], 64))), 256))
         ])) : (Q(), H(X, { key: 1 }, [
-          d.tag ? (Q(), R(l(ee), {
+          d.tag ? (Q(), R(l($), {
             key: 0,
             elem: d,
             params: l(i)
@@ -8014,14 +8014,14 @@ const Zt = { class: "_search" }, jt = ["onMousedown", "title"], qt = { class: "_
     elem: {}
   },
   setup(c, { expose: e }) {
-    const t = c, { config: i, context: a } = t, { elem: o } = Ce(t), r = T(o.value || {}), { showFooter: s, ...n } = i, h = T(n), A = F(!1);
+    const t = c, { config: i, context: a } = t, { elem: o } = he(t), r = T(o.value || {}), { showFooter: s, ...n } = i, h = T(n), A = F(!1);
     let d;
     const u = (p, w) => {
       d = w, p && (r.value = p), r.value && (A.value = !0);
     }, B = () => {
       A.value = !1;
     }, y = (p, w) => {
-      typeof p == "string" ? h.value[p] = w : h.value = he({}, n, p);
+      typeof p == "string" ? h.value[p] = w : h.value = Ae({}, n, p);
     }, E = () => {
       a.graphEvents.hasEvent("dialog:cancel") ? a.graphEvents.eventCall("dialog:cancel", d) : B();
     }, m = () => {
@@ -8039,7 +8039,7 @@ const Zt = { class: "_search" }, jt = ["onMousedown", "title"], qt = { class: "_
       "onUpdate:modelValue": w[0] || (w[0] = (g) => A.value = g)
     }, h.value, { "destroy-on-close": "" }), {
       default: x(() => [
-        I(l(ee), {
+        I(l($), {
           elem: r.value,
           params: l(a)
         }, null, 8, ["elem", "params"]),
@@ -8049,7 +8049,7 @@ const Zt = { class: "_search" }, jt = ["onMousedown", "title"], qt = { class: "_
             onClick: Je(E, ["stop"])
           }, {
             default: x(() => [
-              te("取消")
+              ee("取消")
             ]),
             _: 1
           }),
@@ -8058,7 +8058,7 @@ const Zt = { class: "_search" }, jt = ["onMousedown", "title"], qt = { class: "_
             onClick: Je(m, ["stop"])
           }, {
             default: x(() => [
-              te("确定")
+              ee("确定")
             ]),
             _: 1
           })
@@ -8160,11 +8160,11 @@ class oi {
       data: {},
       refData: F({})
     };
-    if (i.isEdge && (i.source = F(((o = t.source) == null ? void 0 : o.cell) || ""), i.target = F(((r = t.target) == null ? void 0 : r.cell) || ""), i.labelConfig = ye({}), i.target && this.cells.has(i.target.value) && this.cells.has(i.source.value))) {
+    if (i.isEdge && (i.source = F(((o = t.source) == null ? void 0 : o.cell) || ""), i.target = F(((r = t.target) == null ? void 0 : r.cell) || ""), i.labelConfig = me({}), i.target && this.cells.has(i.target.value) && this.cells.has(i.source.value))) {
       const s = this.cells.get(i.source.value), n = this.cells.get(i.target.value);
       s == null || s.outCells.add(i.id), n == null || n.inCells.add(i.id);
     }
-    i.isNode && (i.inCells = ye(/* @__PURE__ */ new Set()), i.outCells = ye(/* @__PURE__ */ new Set())), this.cells.set(t.id, i);
+    i.isNode && (i.inCells = me(/* @__PURE__ */ new Set()), i.outCells = me(/* @__PURE__ */ new Set())), this.cells.set(t.id, i);
   }
   //
   updateEdge(e) {
@@ -8471,9 +8471,9 @@ const ri = {
   setup(c) {
     var B, y;
     const e = c, { edge: t, context: i, config: a } = e, { graphShadow: o, graph: r } = i, s = o.getEdgeData(t), n = s.source, h = s.target, A = (B = r.value) == null ? void 0 : B.getCellById(l(n)), d = (y = r.value) == null ? void 0 : y.getCellById(l(h)), u = Object.assign({}, a, l(s.labelConfig));
-    return ge(() => {
+    return Ce(() => {
     }), (E, m) => l(u).enabled != !1 ? (Q(), H("div", ri, [
-      l(u).elem ? (Q(), R(l(ee), {
+      l(u).elem ? (Q(), R(l($), {
         key: 0,
         class: "_content",
         elem: l(u).elem,
@@ -8598,9 +8598,9 @@ const ci = /* @__PURE__ */ W({
     }), (r, s) => u1((Q(), H("div", {
       class: "_contextmenu-box",
       contenteditable: "false",
-      style: $e(`position:absolute;z-index:9999;left:${l(i).x.value}px;top:${l(i).y.value}px`)
+      style: e1(`position:absolute;z-index:9999;left:${l(i).x.value}px;top:${l(i).y.value}px`)
     }, [
-      (Q(), R(l(ee), {
+      (Q(), R(l($), {
         key: l(i).key.value,
         elem: l(i).menu.value,
         params: l(i).params.value,
@@ -8631,7 +8631,7 @@ const ci = /* @__PURE__ */ W({
     viewModel: { type: Boolean }
   },
   setup(c, { expose: e }) {
-    const t = c, { viewModel: i, nodeListConfig: a } = Ce(t), { graphConfig: o, menuConfig: r, pluginsConfig: s, contextmenuConfig: n, edgeLabelConfig: h, defaultNodeMarkup: A, register: d, events: u } = t, B = q1(), y = T(), E = F(), m = F(), p = F(), w = F(), g = F(), D = F(), v = F(), L = F(), k = new oi().resetDefaultNodeMarkup(A), G = new Tt(k), S = new Jt({ graphShadow: k, graphForm: G, contextmenuRef: D, events: u, containerBox: p }), U = new ii(s), j = new ai({ elsX6Ref: E }), J = {
+    const t = c, { viewModel: i, nodeListConfig: a } = he(t), { graphConfig: o, menuConfig: r, pluginsConfig: s, contextmenuConfig: n, edgeLabelConfig: h, defaultNodeMarkup: A, register: d, events: u } = t, B = q1(), y = T(), E = F(), m = F(), p = F(), w = F(), g = F(), D = F(), v = F(), L = F(), k = new oi().resetDefaultNodeMarkup(A), G = new Tt(k), S = new Jt({ graphShadow: k, graphForm: G, contextmenuRef: D, events: u, containerBox: p }), U = new ii(s), j = new ai({ elsX6Ref: E }), J = {
       graph: y,
       graphShadow: k,
       graphForm: G,
@@ -8643,9 +8643,9 @@ const ci = /* @__PURE__ */ W({
       elsX6Ref: E,
       drawerRef: v
     };
-    return fe("GRAPH-SHADOW", k), fe("GRAPH", y), fe("GRAPH-FORM", G), fe("GRAPH-MARKDOWN", w), fe("GRAPH-CONTEXT", J), Dt(), It(), d && d(Ne), ge(() => {
-      const le = he(ut, o);
-      y.value = Ae(new Ne({
+    return ge("GRAPH-SHADOW", k), ge("GRAPH", y), ge("GRAPH-FORM", G), ge("GRAPH-MARKDOWN", w), ge("GRAPH-CONTEXT", J), Dt(), It(), d && d(Ne), Ce(() => {
+      const le = Ae(ut, o);
+      y.value = ye(new Ne({
         ...le,
         // 自定义 边的弹出展示
         onEdgeLabelRendered: (N) => {
@@ -8725,7 +8725,7 @@ const ci = /* @__PURE__ */ W({
       ], 512);
     };
   }
-}), Ci = "/openmetadata-api", d1 = (c) => {
+}), Ci = "/openmetadata-api", p1 = (c) => {
   const e = Ci + "/openMetadata/query", t = new FormData();
   return t.append("suffix", c), new Promise((i, a) => {
     fetch(e, { method: "POST", body: t }).then(async (o) => {
@@ -8736,14 +8736,14 @@ const ci = /* @__PURE__ */ W({
 }, gi = async () => {
   const c = "v1/services/messagingServices?fields=owner&limit=9999";
   try {
-    return await d1(c);
+    return await p1(c);
   } catch {
     return;
   }
 }, fi = async (c) => {
   const e = `v1/topics?service=${c}&fields=owner%2Ctags&include=non-deleted`;
   try {
-    return await d1(e);
+    return await p1(e);
   } catch {
     return;
   }
@@ -8759,17 +8759,17 @@ const ci = /* @__PURE__ */ W({
     name: "topic",
     id: "group.id"
   }
-], p1 = (c) => {
+], ui = (c) => {
   let e = [], t = [];
   const i = F([]), a = F([]), o = (c == null ? void 0 : c.kafkaOptionKey) || "connection.config.bootstrapServers", r = (c == null ? void 0 : c.topicOptionKey) || "name", s = (c == null ? void 0 : c.kafkaFormatKeys) || Se[0], n = (c == null ? void 0 : c.topicFormatKeys) || Se[1];
   gi().then((w) => {
-    e = w.data, i.value = w.data.map((g) => ({ label: g.name, value: Y(g, o), tag: Ae(ue) }));
+    e = w.data, i.value = w.data.map((g) => ({ label: g.name, value: Y(g, o), tag: ye(fe) }));
   });
   const h = async (w) => {
     if (!w)
       return;
     const g = await fi(w);
-    t = g.data, a.value = g.data.map((D) => ({ label: D.name, value: Y(D, r), tag: Ae(ue) }));
+    t = g.data, a.value = g.data.map((D) => ({ label: D.name, value: Y(D, r), tag: ye(fe) }));
   }, A = (w) => {
     const g = B(w);
     g && h(g.name);
@@ -8814,13 +8814,13 @@ const ci = /* @__PURE__ */ W({
     });
   };
   return { kafkaList: e, topicList: t, kafkaOptions: i, topicOptions: a, NIFI_FORMAT_KEYS: Se, initTopicList: A, topicChange: m, kafkaServerChange: y, getKafkaValue: d, getTopicValue: u };
-}, ui = { "w-full": "" }, wi = {
+}, wi = { "w-full": "" }, mi = {
   flex: "",
   "flex-col": ""
-}, mi = /* @__PURE__ */ C("b", null, "选择 kafka 连接", -1), yi = {
+}, yi = /* @__PURE__ */ C("b", null, "选择 kafka 连接", -1), Bi = {
   flex: "",
   "flex-col": ""
-}, Bi = /* @__PURE__ */ C("b", null, "选择 TOPIC", -1), Ei = /* @__PURE__ */ W({
+}, Ei = /* @__PURE__ */ C("b", null, "选择 TOPIC", -1), $e = /* @__PURE__ */ W({
   __name: "kafka",
   props: {
     config: {},
@@ -8829,57 +8829,60 @@ const ci = /* @__PURE__ */ W({
     prop: {}
   },
   setup(c) {
-    const e = c, { formdata: t, prop: i = "" } = e, { kafkaOptions: a, topicOptions: o, kafkaServerChange: r, topicChange: s, getKafkaValue: n, getTopicValue: h, initTopicList: A } = p1(e.config), d = n(Y(t, i)), u = h(Y(t, i)), B = F(d), y = F(u);
+    const e = c, { formdata: t, prop: i = "" } = e, { kafkaOptions: a, topicOptions: o, kafkaServerChange: r, topicChange: s, getKafkaValue: n, getTopicValue: h, initTopicList: A } = ui(e.config), d = n(Y(t, i)), u = h(Y(t, i)), B = F(d), y = F(u);
     return d && A(d), re(B, (E) => {
       const m = Y(t, i);
       r(m, E), console.log("KAFKA ===> ", e.data.config.properties == m, e.data == t);
     }), re(y, (E) => {
       const m = Y(t, i);
       s(m, E);
-    }), (E, m) => (Q(), H("div", ui, [
-      C("div", wi, [
-        mi,
-        I(l(_), {
+    }), (E, m) => (Q(), H("div", wi, [
+      C("div", mi, [
+        yi,
+        I(l(ie), {
           modelValue: B.value,
           "onUpdate:modelValue": m[0] || (m[0] = (p) => B.value = p)
         }, {
           default: x(() => [
-            (Q(!0), H(X, null, se(l(a), (p) => (Q(), R(l(ue), Te(Ze(p)), null, 16))), 256))
+            (Q(!0), H(X, null, se(l(a), (p) => (Q(), R(l(fe), Te(Ze(p)), null, 16))), 256))
           ]),
           _: 1
         }, 8, ["modelValue"])
       ]),
-      C("div", yi, [
-        Bi,
-        I(l(_), {
+      C("div", Bi, [
+        Ei,
+        I(l(ie), {
           modelValue: y.value,
           "onUpdate:modelValue": m[1] || (m[1] = (p) => y.value = p)
         }, {
           default: x(() => [
-            (Q(!0), H(X, null, se(l(o), (p) => (Q(), R(l(ue), Te(Ze(p)), null, 16))), 256))
+            (Q(!0), H(X, null, se(l(o), (p) => (Q(), R(l(fe), Te(Ze(p)), null, 16))), 256))
           ]),
           _: 1
         }, 8, ["modelValue"])
       ])
     ]));
   }
-}), { kafkaOptions: Fi, topicOptions: Qi, initTopicList: Di, kafkaServerChange: Ii, topicChange: Mi } = p1(), Hi = {
+}), Fi = {
   "org.apache.nifi.processors.kafka.pubsub.ConsumeKafka_2_6": {
-    "bootstrap.servers": { tag: Ei, ":formdata": "formData", prop: "config.properties", isFormElem: !1, label: "", ":data": "formData" }
+    "bootstrap.servers": { tag: $e, ":formdata": "formData", prop: "config.properties", isFormElem: !1, label: "", ":data": "formData" },
+    topic: !1
     // "bootstrap.servers":{label:"Kafka 服务",tag:markRaw(ElSelect),filterable:true,allowCreate:true,defaultFirstOption:true,cls:kafkaOptions,':modelValue':"formData['bootstrap.servers']",'@update:modelValue':({formData,$}:any) => kafkaServerChange(formData,$[0]),setup:({params}:any) => initTopicList(params.formData['bootstrap.servers'])},
     // "topic":{label:"Kafka Topic",tag:markRaw(ElSelect),filterable:true,allowCreate:true,defaultFirstOption:true,cls:topicOptions,':modelValue':"formData['topic']",'@update:modelValue':({formData,$}:any) => topicChange(formData,$[0])},
     // "topic":{tag:markRaw(ElSelect),filterable:true,allowCreate:true,defaultFirstOption:true,valueKey,cls:topicOptions,':modelValue':"formData['topic']",'onUpdate:modelValue':(v) => currentTopic.value = v,'@change':({formData}:any) => {resetFormData(formData,NIFI_FORMAT_KEYS)}},
   },
   "org.apache.nifi.processors.kafka.pubsub.PublishKafka_2_6": {
-    "bootstrap.servers": { tag: Ae(_), filterable: !0, allowCreate: !0, defaultFirstOption: !0, cls: Fi, ":modelValue": "formData['bootstrap.servers']", "@update:modelValue": ({ formData: c, $: e }) => Ii(c, e[0]), setup: ({ params: c }) => Di(c.formData["bootstrap.servers"]) },
-    topic: { tag: Ae(_), filterable: !0, allowCreate: !0, defaultFirstOption: !0, cls: Qi, ":modelValue": "formData['topic']", "@update:modelValue": ({ formData: c, $: e }) => Mi(c, e[0]) }
+    "bootstrap.servers": { tag: $e, ":formdata": "formData", prop: "config.properties", isFormElem: !1, label: "", ":data": "formData" },
+    topic: !1
+    // "bootstrap.servers":{tag:markRaw(ElSelect),filterable:true,allowCreate:true,defaultFirstOption:true,cls:kafkaOptions,':modelValue':"formData['bootstrap.servers']",'@update:modelValue':({formData,$}:any) => kafkaServerChange(formData,$[0]),setup:({params}:any) => initTopicList(params.formData['bootstrap.servers'])},
+    // "topic":{tag:markRaw(ElSelect),filterable:true,allowCreate:true,defaultFirstOption:true,cls:topicOptions,':modelValue':"formData['topic']",'@update:modelValue':({formData,$}:any) => topicChange(formData,$[0])},
     // "bootstrap.servers":{tag:markRaw(ElSelect),filterable:true,allowCreate:true,defaultFirstOption:true,valueKey,cls:kafkaOptions,':modelValue':currentKafka,'onUpdate:modelValue':(v) => currentKafka.value = v},
     // "topic":{tag:markRaw(ElSelect),filterable:true,allowCreate:true,defaultFirstOption:true,valueKey,cls:topicOptions,':modelValue':currentTopic,'onUpdate:modelValue':(v) => currentTopic.value = v,'@change':({formData}:any) => {resetFormData(formData,NIFI_FORMAT_KEYS)}},
   },
   "org.apache.nifi.processors.groovyx.ExecuteGroovyScript": {
     "groovyx-script-body": { tag: ht, style: "min-height:200px", maxHeight: "200px", dialogTitle: "groovyx-script-body", isFormElem: !0, label: "JAVA 脚本", elFormItem: { class: "flex-column" } }
   }
-}, { copy: Ie } = z1(), bi = (c, e, t) => {
+}, { copy: Ie } = z1(), Qi = (c, e, t) => {
   const i = c.relationships, a = t.that, o = t.modelValue;
   t.id;
   const r = c.outPorts, s = e.inPorts;
@@ -8887,7 +8890,7 @@ const ci = /* @__PURE__ */ W({
     tag: "div",
     cls: [
       {
-        tag: r1,
+        tag: s1,
         modelValue: o,
         ref: (n) => {
           a.dialogRef = n;
@@ -8897,8 +8900,8 @@ const ci = /* @__PURE__ */ W({
           { tag: z, label: "名称", prop: "name", value: "" },
           { tag: z, label: "编号", prop: "id", disabled: !0 },
           //
-          { tag: _, label: "从输出", prop: "source.id", "v-if": r.length > 0, cls: r.map((n) => ({ value: n.id, label: n.component.name })) },
-          { tag: _, label: "输入", prop: "destination.id", "v-if": s.length > 0, cls: s.map((n) => ({ value: n.id, label: n.component.name })) },
+          { tag: ie, label: "从输出", prop: "source.id", "v-if": r.length > 0, cls: r.map((n) => ({ value: n.id, label: n.component.name })) },
+          { tag: ie, label: "输入", prop: "destination.id", "v-if": s.length > 0, cls: s.map((n) => ({ value: n.id, label: n.component.name })) },
           // 连线规则 关系
           { tag: Fe, label: "输出数据流", value: i.length == 1 ? [i[0].name] : [], "v-if": i.length > 0, required: !0, prop: "selectedRelationships", cls: i.map((n) => ({ tag: Qe, label: n.name, title: n.description })) },
           // 优先级
@@ -8909,10 +8912,10 @@ const ci = /* @__PURE__ */ W({
           { tag: z, label: "背压对象阈值", prop: "backPressureObjectThreshold", value: "1000", rules: [{ pattern: /^\d+(\.\d+)?$/, message: "只能输入数字" }] },
           { tag: z, label: "背压大小阈值", prop: "backPressureDataSizeThreshold", value: "1 GB" },
           //
-          { tag: _, label: "负载均衡策略", prop: "loadBalanceStrategy", value: "DO_NOT_LOAD_BALANCE", cls: [{ label: "do not load balance", value: "DO_NOT_LOAD_BALANCE" }, { label: "partition by attribute", value: "PARTITION_BY_ATTRIBUTE" }, { label: "round robin", value: "ROUND_ROBIN" }, { label: "single node", value: "SINGLE_NODE" }] },
+          { tag: ie, label: "负载均衡策略", prop: "loadBalanceStrategy", value: "DO_NOT_LOAD_BALANCE", cls: [{ label: "do not load balance", value: "DO_NOT_LOAD_BALANCE" }, { label: "partition by attribute", value: "PARTITION_BY_ATTRIBUTE" }, { label: "round robin", value: "ROUND_ROBIN" }, { label: "single node", value: "SINGLE_NODE" }] },
           { tag: z, label: "属性名称", prop: "loadBalancePartitionAttribute", value: "", "v-if": ({ formData: n }) => n.loadBalanceStrategy == "PARTITION_BY_ATTRIBUTE" },
           {
-            tag: _,
+            tag: ie,
             label: "负载均衡压缩",
             prop: "loadBalanceCompression",
             "v-if": ({ formData: n }) => n.loadBalanceStrategy != "DO_NOT_LOAD_BALANCE",
@@ -8927,7 +8930,7 @@ const ci = /* @__PURE__ */ W({
       }
     ]
   };
-}, vi = (c) => {
+}, Di = (c) => {
   const e = c.groupBreadcrumb, t = e.length - 1, i = e.map((a, o) => ({ tag: M, link: !0, key: "elem", type: o == t ? "primary" : "success", cls: a.name, "@click": () => {
     c.initGraph(a.id);
   }, disabled: o == t, style: o == t ? "cursor:default" : "" }));
@@ -8940,7 +8943,7 @@ const ci = /* @__PURE__ */ W({
     tag: "div",
     cls: []
   }), i;
-}, Si = { tag: "div", ":class": "step", cls: [
+}, Ii = { tag: "div", ":class": "step", cls: [
   { tag: "div", style: "text-align:center;", cls: [
     { tag: "span", "v-if": "edge?.data?.component?.source.type == 'OUTPUT_PORT'", cls: ["从", { tag: "b", cls: "{{ edge?.data?.component?.source.name }}" }] },
     { tag: "span", "v-if": "edge?.data?.component?.destination.type == 'INPUT_PORT'", cls: ["从", { tag: "b", cls: "{{ edge?.data?.component?.destination.name }}" }] },
@@ -8949,7 +8952,7 @@ const ci = /* @__PURE__ */ W({
   { tag: "div", style: "text-align:center;", cls: [
     { tag: "span", style: "white-space:nowrap", title: "", cls: ["排队等待", "{{ status.queued }}"] }
   ] }
-] }, Li = {
+] }, Mi = {
   tag: "div",
   class: "_default-node",
   ":class": "step",
@@ -8984,7 +8987,7 @@ const ci = /* @__PURE__ */ W({
           width: "auto",
           "v-if": "!formStatus?.result",
           cls: [
-            { tag: ae, "#reference": "", class: "_node-tip-icon", cls: { tag: e1 } },
+            { tag: ae, "#reference": "", class: "_node-tip-icon", cls: { tag: t1 } },
             { tag: "div", class: "_node-status-tip", cls: "{{ formStatus?.info.map(t => h('p',{class:'_tip-item'},t)) }}" }
           ]
         },
@@ -8992,20 +8995,20 @@ const ci = /* @__PURE__ */ W({
       ]
     }
   ]
-}, xi = (c) => ({
+}, Hi = (c) => ({
   useDefaultMenu: !1,
   node: [
-    { tag: M, link: !0, icon: $, cls: "开始", "v-if": ({ status: t }) => l(t).runStatus == "Stopped", "@click": ({ cell: t, contextmenu: i }) => c.nodeRun(t, i) },
-    { tag: M, link: !0, icon: $, cls: "停止", "v-if": ({ status: t }) => l(t).runStatus == "Running", "@click": ({ cell: t, contextmenu: i }) => c.nodeStop(t, i) },
-    { tag: M, link: !0, icon: $, cls: "执行一次", "v-if": ({ status: t, cell: i }) => l(t).runStatus == "Stopped" && c.cellName(i.data) == "processors", "@click": ({ cell: t, contextmenu: i }) => c.nodeRunOnce(t, i) },
-    { tag: M, link: !0, icon: $, cls: "校验", "v-if": ({ cell: t, status: i }) => c.cellName(t.data) == "processors" && l(i).runStatus != "Running", "@click": ({ cell: t, contextmenu: i }) => c.nodeCheck(t, i) },
+    { tag: M, link: !0, icon: _, cls: "开始", "v-if": ({ status: t }) => l(t).runStatus == "Stopped", "@click": ({ cell: t, contextmenu: i }) => c.nodeRun(t, i) },
+    { tag: M, link: !0, icon: _, cls: "停止", "v-if": ({ status: t }) => l(t).runStatus == "Running", "@click": ({ cell: t, contextmenu: i }) => c.nodeStop(t, i) },
+    { tag: M, link: !0, icon: _, cls: "执行一次", "v-if": ({ status: t, cell: i }) => l(t).runStatus == "Stopped" && c.cellName(i.data) == "processors", "@click": ({ cell: t, contextmenu: i }) => c.nodeRunOnce(t, i) },
+    { tag: M, link: !0, icon: _, cls: "校验", "v-if": ({ cell: t, status: i }) => c.cellName(t.data) == "processors" && l(i).runStatus != "Running", "@click": ({ cell: t, contextmenu: i }) => c.nodeCheck(t, i) },
     //
     { tag: O, "v-if": ({ status: t }) => l(t).runStatus != "Invalid" },
     //
-    { tag: M, link: !0, icon: $, cls: "查看", "v-if": ({ status: t }) => l(t).runStatus == "Running", "@click": ({ cell: t, contextmenu: i }) => c.nodeEdit(t, i) },
-    { tag: M, link: !0, icon: $, cls: "编辑", "v-if": ({ cell: t, status: i }) => c.cellName(t.data) != "funnels" && l(i).runStatus != "Running", "@click": ({ cell: t, contextmenu: i }) => c.nodeEdit(t, i) },
+    { tag: M, link: !0, icon: _, cls: "查看", "v-if": ({ status: t }) => l(t).runStatus == "Running", "@click": ({ cell: t, contextmenu: i }) => c.nodeEdit(t, i) },
+    { tag: M, link: !0, icon: _, cls: "编辑", "v-if": ({ cell: t, status: i }) => c.cellName(t.data) != "funnels" && l(i).runStatus != "Running", "@click": ({ cell: t, contextmenu: i }) => c.nodeEdit(t, i) },
     { tag: O, "v-if": ({ cell: t }) => c.cellName(t.data) == "processors" },
-    { tag: M, link: !0, icon: $, cls: "查看历史", "v-if": ({ cell: t }) => ["processors", "process-groups"].includes(c.cellName(t.data)), "@click": ({ cell: t, contextmenu: i }) => c.initCellHistory(t, i) },
+    { tag: M, link: !0, icon: _, cls: "查看历史", "v-if": ({ cell: t }) => ["processors", "process-groups"].includes(c.cellName(t.data)), "@click": ({ cell: t, contextmenu: i }) => c.initCellHistory(t, i) },
     // { tag: ElButton, link: true, icon: Edit, cls: "查看状态", "v-if": ({ cell }: any) => adapter.nodeType(cell).includes("PROCESSORS"), "@click": ({ cell, contextmenu }: any) => adapter.initNodeStatus(cell, contextmenu) },
     { tag: O },
     {
@@ -9023,12 +9026,12 @@ const ci = /* @__PURE__ */ W({
     // { tag: ElButton, link: true, icon: Delete, cls: "批量删除", "v-if": ({ selectedCells }: any) => selectedCells.value.length > 1, "@click": ({ selectedCells, contextmenu }: any) => adapter.nodesDel(selectedCells.value, contextmenu) }
   ],
   edge: [
-    { tag: M, link: !0, icon: $, cls: "列出队列", "@click": ({ cell: t, contextmenu: i }) => c.edgeListQuene(t, i) },
-    { tag: M, link: !0, icon: $, cls: "清空队列", "@click": ({ cell: t, contextmenu: i }) => c.edgeDropQuene(t, i) },
+    { tag: M, link: !0, icon: _, cls: "列出队列", "@click": ({ cell: t, contextmenu: i }) => c.edgeListQuene(t, i) },
+    { tag: M, link: !0, icon: _, cls: "清空队列", "@click": ({ cell: t, contextmenu: i }) => c.edgeDropQuene(t, i) },
     { tag: O },
-    { tag: M, link: !0, icon: $, cls: "查看历史", "@click": ({ cell: t, contextmenu: i }) => c.initCellHistory(t, i) },
+    { tag: M, link: !0, icon: _, cls: "查看历史", "@click": ({ cell: t, contextmenu: i }) => c.initCellHistory(t, i) },
     { tag: O },
-    { tag: M, link: !0, icon: $, cls: "编辑", "@click": ({ cell: t, contextmenu: i }) => c.edgeEdit(t, i) },
+    { tag: M, link: !0, icon: _, cls: "编辑", "@click": ({ cell: t, contextmenu: i }) => c.edgeEdit(t, i) },
     { tag: O },
     { tag: M, link: !0, icon: Be, cls: "删除", "@click": ({ cell: t, contextmenu: i }) => c.cellDelete(t, i) }
   ],
@@ -9037,8 +9040,8 @@ const ci = /* @__PURE__ */ W({
       t.close(), c.cellsRefresh();
     } },
     // { tag: ElButton, link: true, icon: Select, cls: "全选" },
-    { tag: M, link: !0, icon: t1, cls: "复制", ":disabled": "selectedCells.length == 0" },
-    { tag: M, link: !0, icon: i1, cls: "粘贴", ":disabled": "clipboardCells.length == 0" },
+    { tag: M, link: !0, icon: i1, cls: "复制", ":disabled": "selectedCells.length == 0" },
+    { tag: M, link: !0, icon: o1, cls: "粘贴", ":disabled": "clipboardCells.length == 0" },
     { tag: O },
     {
       tag: M,
@@ -9052,24 +9055,24 @@ const ci = /* @__PURE__ */ W({
     // { tag: ElDivider },
     // { tag: ElButton, link: true, icon: Delete, cls: "批量删除", "v-if": ({ selectedCells }: any) => selectedCells.value.length > 1, "@click": ({ selectedCells, contextmenu }: any) => adapter.nodesDel(selectedCells.value, contextmenu) }
   ]
-}), ki = (c, e) => {
+}), bi = (c, e) => {
   const t = e.cellName(c.data);
   let i = [];
   switch (t) {
     case "processors":
-      i = Ni(c, e);
+      i = vi(c, e);
       break;
     case "process-groups":
-      i = Gi(c);
+      i = Si(c);
       break;
   }
   return i;
-}, Ni = (c, e) => {
+}, vi = (c, e) => {
   var p, w, g, D, v, L, k, G;
-  const t = c.data, i = ((w = (p = t.component) == null ? void 0 : p.config) == null ? void 0 : w.descriptors) || {}, a = t.component.type, o = e.cellName(t), r = Hi[a], s = [], n = o == "processors" && i ? Object.keys(i).map((S) => {
-    const U = i[S], j = U.name, J = U.displayName, le = U.description, N = U.required, q = U.dependencies.length > 0 ? "select" : "string", oe = q == "select" ? U.dependencies.map((we) => {
+  const t = c.data, i = ((w = (p = t.component) == null ? void 0 : p.config) == null ? void 0 : w.descriptors) || {}, a = t.component.type, o = e.cellName(t), r = Fi[a], s = [], n = o == "processors" && i ? Object.keys(i).map((S) => {
+    const U = i[S], j = U.name, J = U.displayName, le = U.description, N = U.required, q = U.dependencies.length > 0 ? "select" : "string", oe = q == "select" ? U.dependencies.map((ue) => {
       var Ye;
-      return { label: we.propertyName, value: (Ye = we == null ? void 0 : we.dependentValues) == null ? void 0 : Ye[0] };
+      return { label: ue.propertyName, value: (Ye = ue == null ? void 0 : ue.dependentValues) == null ? void 0 : Ye[0] };
     }) : [], de = r == null ? void 0 : r[j];
     if (de !== !1)
       if (de) {
@@ -9109,7 +9112,7 @@ const ci = /* @__PURE__ */ W({
           { prop: "state", label: "是否启用", tag: X1, activeValue: "STOPPED", inactiveValue: "DISABLED" },
           { prop: "config.penaltyDuration", label: "惩罚处理间隔", tip: "The amount of time used when this processor penalizes a FlowFile." },
           { prop: "config.yieldDuration", label: "让步持续时间", tip: "When a processor yields, it will not be scheduled again until this amount of time elapses." },
-          { tag: _, prop: "config.bulletinLevel", label: "公告级别", cls: [{ value: "DEBUG", label: "调试" }, { value: "INFO", label: "信息" }, { value: "WARN", label: "警告" }, { value: "ERROR", label: "错误" }, { value: "NONE", label: "无" }], tip: "The level at which this processor will generate bulletins." }
+          { tag: ie, prop: "config.bulletinLevel", label: "公告级别", cls: [{ value: "DEBUG", label: "调试" }, { value: "INFO", label: "信息" }, { value: "WARN", label: "警告" }, { value: "ERROR", label: "错误" }, { value: "NONE", label: "无" }], tip: "The level at which this processor will generate bulletins." }
         ]
       },
       {
@@ -9117,7 +9120,7 @@ const ci = /* @__PURE__ */ W({
         cls: [
           { tag: "legend", cls: "调度" },
           {
-            tag: _,
+            tag: ie,
             prop: "config.schedulingStrategy",
             label: "调度策略",
             cls: [{ value: "TIMER_DRIVEN", label: "定时器驱动" }, { value: "CRON_DRIVEN", label: "基于CRON表达式的驱动" }],
@@ -9128,7 +9131,7 @@ const ci = /* @__PURE__ */ W({
           },
           { prop: "config.concurrentlySchedulableTaskCount", label: "并发任务数", ":disabled": "formData?.config?.schedulingStrategy == 'TIMER_DRIVEN'", tip: "The number of tasks that should be concurrently scheduled for this processor." },
           { prop: "config.schedulingPeriod", label: "运行计划", tip: "The amount of time that should elapse between task executions." },
-          { tag: _, prop: "config.executionNode", label: "执行", cls: [{ value: "ALL", label: "所有节点" }, { value: "PRIMARY", label: "主节点" }], tip: "The node(s) that this processor will be scheduled to run on when clustered." }
+          { tag: ie, prop: "config.executionNode", label: "执行", cls: [{ value: "ALL", label: "所有节点" }, { value: "PRIMARY", label: "主节点" }], tip: "The node(s) that this processor will be scheduled to run on when clustered." }
         ]
       }
     ]
@@ -9151,15 +9154,15 @@ const ci = /* @__PURE__ */ W({
       },
       { tag: z, type: "textarea", class: "nifi-form-tip", autoSize: !0, prop: "config.comments", label: "描述" },
       { tag: "div", style: "display:flex;gap:24px;flex-wrap:wrap;font-size:14px;color:#999;", cls: [
-        { tag: "span", style: "display:flex;align-items:center;gap:12px;", cls: [{ tag: "b", cls: "编号" }, { tag: ie, cls: t.id, "@click": () => K.success(`复制 [ ${t.id} ]`) && Ie(t.id) }] },
-        { tag: "span", style: "display:flex;align-items:center;gap:12px;", cls: [{ tag: "b", cls: "类型" }, { tag: ie, cls: t.component.type, title: t.component.type, "@click": () => K.success(`复制 [ ${t.component.type} ]`) && Ie(t.component.type) }] },
-        { tag: "span", style: "display:flex;align-items:center;gap:12px;", cls: [{ tag: "b", cls: "版本号" }, { tag: ie, cls: (k = t.revision) == null ? void 0 : k.version, type: "success" }] },
-        { tag: "span", style: "display:flex;align-items:center;gap:12px;", cls: [{ tag: "b", cls: "运行状态" }, { tag: ie, ":type": "{running:'success',stop:'primary',invalid:'warning'}[step] || 'info'", cls: "{{ step }}" }, { tag: ie, cls: (G = t.status) == null ? void 0 : G.statsLastRefreshed }] }
+        { tag: "span", style: "display:flex;align-items:center;gap:12px;", cls: [{ tag: "b", cls: "编号" }, { tag: te, cls: t.id, "@click": () => K.success(`复制 [ ${t.id} ]`) && Ie(t.id) }] },
+        { tag: "span", style: "display:flex;align-items:center;gap:12px;", cls: [{ tag: "b", cls: "类型" }, { tag: te, cls: t.component.type, title: t.component.type, "@click": () => K.success(`复制 [ ${t.component.type} ]`) && Ie(t.component.type) }] },
+        { tag: "span", style: "display:flex;align-items:center;gap:12px;", cls: [{ tag: "b", cls: "版本号" }, { tag: te, cls: (k = t.revision) == null ? void 0 : k.version, type: "success" }] },
+        { tag: "span", style: "display:flex;align-items:center;gap:12px;", cls: [{ tag: "b", cls: "运行状态" }, { tag: te, ":type": "{running:'success',stop:'primary',invalid:'warning'}[step] || 'info'", cls: "{{ step }}" }, { tag: te, cls: (G = t.status) == null ? void 0 : G.statsLastRefreshed }] }
       ] }
     ]
   }];
   return s.length > 0 && m.push(d), m.push(u, B, y), m;
-}, Gi = (c, e) => {
+}, Si = (c, e) => {
   var a, o, r;
   const t = c.data;
   return [{
@@ -9180,26 +9183,26 @@ const ci = /* @__PURE__ */ W({
         }
       },
       { tag: z, type: "textarea", class: "nifi-form-tip", autoSize: !0, prop: "config.comments", label: "" },
-      { tag: "p", class: "nifi-form-item", cls: [{ tag: "b", cls: "编号" }, { tag: ie, cls: t.id, "@click": () => K.success(`复制 [ ${t.id} ]`) && Ie(t.id) }] },
-      { tag: "p", class: "nifi-form-item", cls: [{ tag: "b", cls: "类型" }, { tag: ie, cls: t.component.type, title: t.component.type, "@click": () => K.success(`复制 [ ${t.component.type} ]`) && Ie(t.component.type) }] },
-      { tag: "p", class: "nifi-form-item", cls: [{ tag: "b", cls: "版本号" }, { tag: ie, cls: (a = t.revision) == null ? void 0 : a.version, type: "success" }] },
-      { tag: "p", class: "nifi-form-item", cls: [{ tag: "b", cls: "运行状态" }, { tag: ie, type: "info", cls: (o = t.status) == null ? void 0 : o.runStatus }, { tag: ie, cls: (r = t.status) == null ? void 0 : r.statsLastRefreshed }] }
+      { tag: "p", class: "nifi-form-item", cls: [{ tag: "b", cls: "编号" }, { tag: te, cls: t.id, "@click": () => K.success(`复制 [ ${t.id} ]`) && Ie(t.id) }] },
+      { tag: "p", class: "nifi-form-item", cls: [{ tag: "b", cls: "类型" }, { tag: te, cls: t.component.type, title: t.component.type, "@click": () => K.success(`复制 [ ${t.component.type} ]`) && Ie(t.component.type) }] },
+      { tag: "p", class: "nifi-form-item", cls: [{ tag: "b", cls: "版本号" }, { tag: te, cls: (a = t.revision) == null ? void 0 : a.version, type: "success" }] },
+      { tag: "p", class: "nifi-form-item", cls: [{ tag: "b", cls: "运行状态" }, { tag: te, type: "info", cls: (o = t.status) == null ? void 0 : o.runStatus }, { tag: te, cls: (r = t.status) == null ? void 0 : r.statsLastRefreshed }] }
     ]
   }];
-}, Ri = { class: "nifi-history" }, Pi = { class: "_left" }, Vi = { class: "_info" }, Oi = /* @__PURE__ */ C("i", null, "ID", -1), Ki = /* @__PURE__ */ C("i", null, "GroupId", -1), Ui = { key: 0 }, Yi = /* @__PURE__ */ C("i", null, "Source Name", -1), Ji = { key: 1 }, Ti = /* @__PURE__ */ C("i", null, "Destination Name", -1), Zi = /* @__PURE__ */ C("i", null, "开始时间", -1), ji = /* @__PURE__ */ C("i", null, "结束时间", -1), qi = /* @__PURE__ */ C("p", null, [
+}, Li = { class: "nifi-history" }, xi = { class: "_left" }, ki = { class: "_info" }, Ni = /* @__PURE__ */ C("i", null, "ID", -1), Gi = /* @__PURE__ */ C("i", null, "GroupId", -1), Ri = { key: 0 }, Pi = /* @__PURE__ */ C("i", null, "Source Name", -1), Vi = { key: 1 }, Oi = /* @__PURE__ */ C("i", null, "Destination Name", -1), Ki = /* @__PURE__ */ C("i", null, "开始时间", -1), Ui = /* @__PURE__ */ C("i", null, "结束时间", -1), Yi = /* @__PURE__ */ C("p", null, [
   /* @__PURE__ */ C("i", null, "最小值"),
-  /* @__PURE__ */ te("/"),
+  /* @__PURE__ */ ee("/"),
   /* @__PURE__ */ C("i", null, "最大值"),
-  /* @__PURE__ */ te("/"),
+  /* @__PURE__ */ ee("/"),
   /* @__PURE__ */ C("i", null, "平均值")
-], -1), zi = { class: "_right" }, Wi = { class: "_header" }, Xi = { class: "_chart-box" }, _i = /* @__PURE__ */ W({
+], -1), Ji = { class: "_right" }, Ti = { class: "_header" }, Zi = { class: "_chart-box" }, ji = /* @__PURE__ */ W({
   __name: "history",
   props: {
     data: {}
   },
   setup(c) {
     var B, y, E, m;
-    const e = c, { data: t } = Ce(e), i = F(), a = F(), o = {
+    const e = c, { data: t } = he(e), i = F(), a = F(), o = {
       tooltip: {
         trigger: "axis",
         position: function(p) {
@@ -9273,54 +9276,54 @@ const ci = /* @__PURE__ */ W({
     return re(u, (p) => {
       var w;
       (w = a.value) == null || w.setOption(p);
-    }), ge(() => {
-      a.value = Ae(et(i.value)), console.log("ops === ", he({}, o, l(u))), a.value.setOption(he({}, o, l(u))), setTimeout(() => {
+    }), Ce(() => {
+      a.value = ye(et(i.value)), console.log("ops === ", Ae({}, o, l(u))), a.value.setOption(Ae({}, o, l(u))), setTimeout(() => {
         a.value.resize();
       }, 50);
-    }), (p, w) => (Q(), H("div", Ri, [
-      C("div", Pi, [
-        C("div", Vi, [
+    }), (p, w) => (Q(), H("div", Li, [
+      C("div", xi, [
+        C("div", ki, [
           C("p", null, [
-            Oi,
+            Ni,
             C("b", null, b(r.value.Id), 1)
           ]),
           C("p", null, [
-            Ki,
+            Gi,
             C("b", null, b(r.value["Group Id"]), 1)
           ]),
-          l(Ee)(r.value, "Source Name") ? (Q(), H("p", Ui, [
-            Yi,
+          l(Ee)(r.value, "Source Name") ? (Q(), H("p", Ri, [
+            Pi,
             C("b", null, b(r.value["Source Name"]), 1)
           ])) : Z("", !0),
-          l(Ee)(r.value, "Destination Name") ? (Q(), H("p", Ji, [
-            Ti,
+          l(Ee)(r.value, "Destination Name") ? (Q(), H("p", Vi, [
+            Oi,
             C("b", null, b(r.value["Destination Name"]), 1)
           ])) : Z("", !0)
         ]),
         C("div", null, [
           C("p", null, [
-            Zi,
+            Ki,
             C("b", null, b(new Date(h.value[0].timestamp).toLocaleString()), 1)
           ]),
           C("p", null, [
-            ji,
+            Ui,
             C("b", null, b(new Date(h.value.at(-1).timestamp).toLocaleString()), 1)
           ])
         ]),
         C("div", null, [
-          qi,
+          Yi,
           C("p", null, b(l(tt)(d.value)) + " " + b(n.value.includes("Bytes") ? "bytes" : "") + " / " + b(l(it)(d.value)) + " " + b(n.value.includes("Bytes") ? "bytes" : "") + " / " + b(l(ot)(d.value)) + " " + b(n.value.includes("Bytes") ? "bytes" : ""), 1)
         ])
       ]),
-      C("div", zi, [
-        C("div", Wi, [
-          I(l(_), {
+      C("div", Ji, [
+        C("div", Ti, [
+          I(l(ie), {
             modelValue: n.value,
             "onUpdate:modelValue": w[0] || (w[0] = (g) => n.value = g),
             "default-first-option": ""
           }, {
             default: x(() => [
-              (Q(!0), H(X, null, se(s.value, (g) => (Q(), R(l(ue), {
+              (Q(!0), H(X, null, se(s.value, (g) => (Q(), R(l(fe), {
                 label: g.label,
                 value: g.value,
                 title: g.title,
@@ -9330,7 +9333,7 @@ const ci = /* @__PURE__ */ W({
             _: 1
           }, 8, ["modelValue"])
         ]),
-        C("div", Xi, [
+        C("div", Zi, [
           C("div", {
             ref_key: "chartRef",
             ref: i,
@@ -9340,23 +9343,23 @@ const ci = /* @__PURE__ */ W({
       ])
     ]));
   }
-}), $i = {
+}), qi = {
   "w-80vw": "",
   "h-60vh": "",
   relative: "",
   "min-w-80vw": "",
   "max-h-60vh": "",
   class: "nifi-quene"
-}, e5 = { flex: "" }, t5 = { "flex-1": "" }, i5 = /* @__PURE__ */ C("p", {
+}, zi = { flex: "" }, Wi = { "flex-1": "" }, Xi = /* @__PURE__ */ C("p", {
   "text-16": "",
   "fw-600": ""
-}, "文件流详情", -1), o5 = { "m-y-4": "" }, a5 = /* @__PURE__ */ C("p", { c: "#999" }, "UUID", -1), r5 = { "m-y-4": "" }, s5 = /* @__PURE__ */ C("p", { c: "#999" }, "文件名", -1), n5 = { "m-y-4": "" }, l5 = /* @__PURE__ */ C("p", { c: "#999" }, "文件大小", -1), c5 = { "m-y-4": "" }, d5 = /* @__PURE__ */ C("p", { c: "#999" }, "队列设置", -1), p5 = { "m-y-4": "" }, A5 = /* @__PURE__ */ C("p", { c: "#999" }, "排队持续时间", -1), h5 = { "m-y-4": "" }, C5 = /* @__PURE__ */ C("p", { c: "#999" }, "血缘持续时间", -1), g5 = { "m-y-4": "" }, f5 = /* @__PURE__ */ C("p", { c: "#999" }, "受到惩罚", -1), u5 = { "flex-1": "" }, w5 = /* @__PURE__ */ C("p", {
+}, "文件流详情", -1), _i = { "m-y-4": "" }, $i = /* @__PURE__ */ C("p", { c: "#999" }, "UUID", -1), e5 = { "m-y-4": "" }, t5 = /* @__PURE__ */ C("p", { c: "#999" }, "文件名", -1), i5 = { "m-y-4": "" }, o5 = /* @__PURE__ */ C("p", { c: "#999" }, "文件大小", -1), a5 = { "m-y-4": "" }, r5 = /* @__PURE__ */ C("p", { c: "#999" }, "队列设置", -1), s5 = { "m-y-4": "" }, n5 = /* @__PURE__ */ C("p", { c: "#999" }, "排队持续时间", -1), l5 = { "m-y-4": "" }, c5 = /* @__PURE__ */ C("p", { c: "#999" }, "血缘持续时间", -1), d5 = { "m-y-4": "" }, p5 = /* @__PURE__ */ C("p", { c: "#999" }, "受到惩罚", -1), A5 = { "flex-1": "" }, h5 = /* @__PURE__ */ C("p", {
   "text-16": "",
   "fw-600": ""
-}, "内容声明", -1), m5 = { "m-y-4": "" }, y5 = /* @__PURE__ */ C("p", { c: "#999" }, "容器", -1), B5 = { "m-y-4": "" }, E5 = /* @__PURE__ */ C("p", { c: "#999" }, "Section", -1), F5 = { "m-y-4": "" }, Q5 = /* @__PURE__ */ C("p", { c: "#999" }, "标示", -1), D5 = { "m-y-4": "" }, I5 = /* @__PURE__ */ C("p", { c: "#999" }, "偏移量", -1), M5 = { "m-y-4": "" }, H5 = /* @__PURE__ */ C("p", { c: "#999" }, "大小", -1), b5 = /* @__PURE__ */ C("p", {
+}, "内容声明", -1), C5 = { "m-y-4": "" }, g5 = /* @__PURE__ */ C("p", { c: "#999" }, "容器", -1), f5 = { "m-y-4": "" }, u5 = /* @__PURE__ */ C("p", { c: "#999" }, "Section", -1), w5 = { "m-y-4": "" }, m5 = /* @__PURE__ */ C("p", { c: "#999" }, "标示", -1), y5 = { "m-y-4": "" }, B5 = /* @__PURE__ */ C("p", { c: "#999" }, "偏移量", -1), E5 = { "m-y-4": "" }, F5 = /* @__PURE__ */ C("p", { c: "#999" }, "大小", -1), Q5 = /* @__PURE__ */ C("p", {
   "text-16": "",
   "fw-600": ""
-}, "属性值", -1), v5 = { "m-y-4": "" }, S5 = { c: "#999" }, Le = 1e3 * 60, L5 = /* @__PURE__ */ W({
+}, "属性值", -1), D5 = { "m-y-4": "" }, I5 = { c: "#999" }, Le = 1e3 * 60, M5 = /* @__PURE__ */ W({
   __name: "quene",
   props: {
     data: {}
@@ -9388,7 +9391,7 @@ const ci = /* @__PURE__ */ W({
         g ? m(D) : (K.warning(D), p(D));
       }).catch((w) => p(w));
     });
-    return (E, m) => (Q(), H("div", $i, [
+    return (E, m) => (Q(), H("div", qi, [
       I(l(at), {
         "w-full": "",
         "h-full": "",
@@ -9416,7 +9419,7 @@ const ci = /* @__PURE__ */ W({
             width: "100"
           }, {
             default: x(({ row: p }) => [
-              te(b(p.size) + " bytes", 1)
+              ee(b(p.size) + " bytes", 1)
             ]),
             _: 1
           }),
@@ -9426,7 +9429,7 @@ const ci = /* @__PURE__ */ W({
             "min-width": "220"
           }, {
             default: x(({ row: p }) => [
-              te(b(i(p.queuedDuration)), 1)
+              ee(b(i(p.queuedDuration)), 1)
             ]),
             _: 1
           }),
@@ -9436,7 +9439,7 @@ const ci = /* @__PURE__ */ W({
             "min-width": "220"
           }, {
             default: x(({ row: p }) => [
-              te(b(i(p.lineageDuration)), 1)
+              ee(b(i(p.lineageDuration)), 1)
             ]),
             _: 1
           }),
@@ -9446,7 +9449,7 @@ const ci = /* @__PURE__ */ W({
             width: "80"
           }, {
             default: x(({ row: p }) => [
-              te(b(p.penaltyExpiresIn == 0 ? "否" : "是"), 1)
+              ee(b(p.penaltyExpiresIn == 0 ? "否" : "是"), 1)
             ]),
             _: 1
           }),
@@ -9498,7 +9501,7 @@ const ci = /* @__PURE__ */ W({
         title: "详细信息"
       }, {
         default: x(() => [
-          I(l(o1), {
+          I(l(a1), {
             "model-value": "detail",
             type: "card"
           }, {
@@ -9508,58 +9511,58 @@ const ci = /* @__PURE__ */ W({
                 name: "detail"
               }, {
                 default: x(() => [
-                  C("div", e5, [
-                    C("div", t5, [
-                      i5,
-                      C("div", o5, [
-                        a5,
+                  C("div", zi, [
+                    C("div", Wi, [
+                      Xi,
+                      C("div", _i, [
+                        $i,
                         C("p", null, b(s.value.uuid), 1)
                       ]),
-                      C("div", r5, [
-                        s5,
+                      C("div", e5, [
+                        t5,
                         C("p", null, b(s.value.filename), 1)
                       ]),
-                      C("div", n5, [
-                        l5,
+                      C("div", i5, [
+                        o5,
                         C("p", null, b(s.value.size) + " bytes", 1)
                       ]),
-                      C("div", c5, [
-                        d5,
+                      C("div", a5, [
+                        r5,
                         C("p", null, b(s.value.penalized ? "已设置" : "未设置"), 1)
                       ]),
-                      C("div", p5, [
-                        A5,
+                      C("div", s5, [
+                        n5,
                         C("p", null, b(i(s.value.queuedDuration)), 1)
                       ]),
-                      C("div", h5, [
-                        C5,
+                      C("div", l5, [
+                        c5,
                         C("p", null, b(i(s.value.lineageDuration)), 1)
                       ]),
-                      C("div", g5, [
-                        f5,
+                      C("div", d5, [
+                        p5,
                         C("p", null, b(s.value.penaltyExpiresIn == 0 ? "否" : "是"), 1)
                       ])
                     ]),
-                    C("div", u5, [
-                      w5,
-                      C("div", m5, [
-                        y5,
+                    C("div", A5, [
+                      h5,
+                      C("div", C5, [
+                        g5,
                         C("p", null, b(s.value.contentClaimContainer), 1)
                       ]),
-                      C("div", B5, [
-                        E5,
+                      C("div", f5, [
+                        u5,
                         C("p", null, b(s.value.contentClaimSection), 1)
                       ]),
-                      C("div", F5, [
-                        Q5,
+                      C("div", w5, [
+                        m5,
                         C("p", null, b(s.value.contentClaimIdentifier), 1)
                       ]),
-                      C("div", D5, [
-                        I5,
+                      C("div", y5, [
+                        B5,
                         C("p", null, b(s.value.contentClaimOffset), 1)
                       ]),
-                      C("div", M5, [
-                        H5,
+                      C("div", E5, [
+                        F5,
                         C("p", null, b(s.value.contentClaimFileSize), 1)
                       ]),
                       I(l(O)),
@@ -9571,7 +9574,7 @@ const ci = /* @__PURE__ */ W({
                           onClick: m[0] || (m[0] = () => h(s.value))
                         }, {
                           default: x(() => [
-                            te("查看数据")
+                            ee("查看数据")
                           ]),
                           _: 1
                         }, 8, ["icon"]),
@@ -9582,7 +9585,7 @@ const ci = /* @__PURE__ */ W({
                           onClick: m[1] || (m[1] = () => A(s.value))
                         }, {
                           default: x(() => [
-                            te("下载")
+                            ee("下载")
                           ]),
                           _: 1
                         }, 8, ["icon"])
@@ -9598,9 +9601,9 @@ const ci = /* @__PURE__ */ W({
               }, {
                 default: x(() => [
                   C("div", null, [
-                    b5,
-                    (Q(!0), H(X, null, se(Object.keys(s.value.attributes), (p) => (Q(), H("div", v5, [
-                      C("p", S5, b(p), 1),
+                    Q5,
+                    (Q(!0), H(X, null, se(Object.keys(s.value.attributes), (p) => (Q(), H("div", D5, [
+                      C("p", I5, b(p), 1),
                       C("p", null, b(s.value.attributes[p]), 1)
                     ]))), 256))
                   ])
@@ -9628,7 +9631,7 @@ const ci = /* @__PURE__ */ W({
       }, 8, ["modelValue"])
     ]));
   }
-}), x5 = `{
+}), H5 = `{
 	"dataType": {
 		"sourceType": [
 			"GetMemoryMap",
@@ -10076,7 +10079,7 @@ const ci = /* @__PURE__ */ W({
     "org.apache.nifi.prioritizer.PriorityAttributePrioritizer"
   ]
 }`;
-class k5 {
+class b5 {
   constructor() {
     f(this, "NIFI_DATA", {});
     f(this, "initFinishFlag", !1);
@@ -10093,11 +10096,11 @@ class k5 {
     f(this, "rootGroups", []);
     f(this, "rootStatus", {});
     //
-    f(this, "nodeMarkup", Li);
+    f(this, "nodeMarkup", Mi);
     //
     f(this, "nodeList", F([]));
     // cellMetadata: Map<string, any> = new Map();
-    f(this, "edgeLabelConfig", ye({ elem: Si }));
+    f(this, "edgeLabelConfig", me({ elem: Ii }));
     f(this, "edgeFormData", F({}));
     f(this, "currentEdgeJson", {});
     //
@@ -10172,7 +10175,7 @@ class k5 {
       }
       // "currentNode:change": (newcell, oldcell) => { this.graphForm?.getCellFormData(newcell || oldcell) }
     });
-    this.initNodeList(), this.apiGetClientId(), this.initProcessType(), this.initPrioritizers(), this.initRoot(), this.apiGetRootStatus(), this.NIFI_DATA = JSON.parse(x5), this.contextmenu = xi(this), ge(() => {
+    this.initNodeList(), this.apiGetClientId(), this.initProcessType(), this.initPrioritizers(), this.initRoot(), this.apiGetRootStatus(), this.NIFI_DATA = JSON.parse(H5), this.contextmenu = Hi(this), Ce(() => {
       this.groupRefresh();
     }), y1(() => {
       this.refreshTimeHandle && clearInterval(this.refreshTimeHandle);
@@ -10236,7 +10239,7 @@ class k5 {
     const a = [i.breadcrumb];
     for (; i.parentBreadcrumb; )
       i = i.parentBreadcrumb, a.push(i.breadcrumb);
-    this.groupBreadcrumb = a.reverse(), this.menuElems.value = vi(this);
+    this.groupBreadcrumb = a.reverse(), this.menuElems.value = Di(this);
   }
   // 初始化算子元素，节点和边
   async initGraphFlowData() {
@@ -10262,7 +10265,7 @@ class k5 {
     t.close();
     try {
       const o = await this.apiGetHistory(e);
-      console.log(o), ((a = (i = o == null ? void 0 : o.statusHistory) == null ? void 0 : i.aggregateSnapshots) == null ? void 0 : a.length) == 0 ? K.info("历史记录不足，请稍后再试") : be({ title: "状态历史", message: V(_i, { data: o }) });
+      console.log(o), ((a = (i = o == null ? void 0 : o.statusHistory) == null ? void 0 : i.aggregateSnapshots) == null ? void 0 : a.length) == 0 ? K.info("历史记录不足，请稍后再试") : be({ title: "状态历史", message: V(ji, { data: o }) });
     } catch (o) {
       K.error("接口调用失败！"), console.warn(o);
     }
@@ -10306,7 +10309,7 @@ class k5 {
     var t;
     if (e.data && e.data.id) {
       e.data;
-      const i = ki(e, this);
+      const i = bi(e, this);
       (t = this.graphShadow) == null || t.setTabs(e, i);
     }
   }
@@ -10452,7 +10455,7 @@ class k5 {
     return { title: A, inPorts: n, outPorts: s, source: B, destination: y, modelValue: { source: B, destination: y }, relationships: h, sourceNode: o, targetNode: r };
   }
   async edgeElem(e) {
-    const { title: t, inPorts: i, outPorts: a, relationships: o, targetNode: r, modelValue: s } = await this.getEdgeInfo(e), n = bi({ relationships: o, outPorts: a }, { cell: r, inPorts: i }, { that: this, modelValue: s });
+    const { title: t, inPorts: i, outPorts: a, relationships: o, targetNode: r, modelValue: s } = await this.getEdgeInfo(e), n = Qi({ relationships: o, outPorts: a }, { cell: r, inPorts: i }, { that: this, modelValue: s });
     return { title: t, outPorts: a, inPorts: i, modelValue: s, elem: n };
   }
   async edgeInit(e) {
@@ -10883,7 +10886,7 @@ class k5 {
       type: "info",
       duration: 0,
       message: V("div", [
-        V(ee, { elem: { tag: ve, ":percentage": s, textInside: !0, strokeWidth: 26 } })
+        V($, { elem: { tag: ve, ":percentage": s, textInside: !0, strokeWidth: 26 } })
       ])
     });
     do
@@ -11035,7 +11038,7 @@ class k5 {
       type: "info",
       duration: 0,
       message: V("div", [
-        V(ee, { elem: { tag: ve, ":percentage": r, textInside: !0, strokeWidth: 26 } })
+        V($, { elem: { tag: ve, ":percentage": r, textInside: !0, strokeWidth: 26 } })
       ])
     });
     do
@@ -11049,7 +11052,7 @@ class k5 {
       message: "队列列表中没有数据"
     }) : be({
       title: "队列列表",
-      message: V(L5, { data: n })
+      message: V(M5, { data: n })
     });
   }
   // 清空队列 /nifi-api/flowfile-queues/073c1be9-018e-1000-cd2a-11f197e51741/drop-requests /nifi-api/flowfile-queues/073c1be9-018e-1000-cd2a-11f197e51741/drop-requests/354f6046-018e-1000-84d0-602c168b02a2 /nifi-api/flowfile-queues/073c1be9-018e-1000-cd2a-11f197e51741/drop-requests/354f6046-018e-1000-84d0-602c168b02a2
@@ -11063,7 +11066,7 @@ class k5 {
       type: "info",
       duration: 0,
       message: V("div", [
-        V(ee, { elem: { tag: ve, ":percentage": r, textInside: !0, strokeWidth: 26 } })
+        V($, { elem: { tag: ve, ":percentage": r, textInside: !0, strokeWidth: 26 } })
       ])
     });
     do
@@ -11115,19 +11118,19 @@ class k5 {
     });
   }
 }
-const q5 = {
-  Nifi: k5
-}, z5 = {
+const Y5 = {
+  Nifi: b5
+}, J5 = {
   install: (c) => {
     c.component("els-x6", hi);
   }
 };
 export {
-  z5 as E,
-  q5 as G,
+  J5 as E,
+  Y5 as G,
   hi as _,
-  j5 as a,
-  c1 as f,
-  n1 as g,
-  l1 as o
+  U5 as a,
+  d1 as f,
+  l1 as g,
+  c1 as o
 };
