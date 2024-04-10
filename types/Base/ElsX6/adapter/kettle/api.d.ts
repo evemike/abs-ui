@@ -1,8 +1,8 @@
 import MyWebSocket from "./ws";
 export declare class KettleApi {
     constructor();
-    PREFIX: string;
-    PREFIX_TASK: string;
+    static PREFIX: string;
+    static PREFIX_TASK: string;
     token: string;
     userInfo: any;
     timeHandle: any;
@@ -21,4 +21,8 @@ export declare class KettleApi {
     apiGet(url: string, headers?: Record<string, any>): Promise<any>;
     apiPut(url: string, data?: any): Promise<any>;
     apiDelete(url: string): Promise<any>;
+    static GET(url: string, headers?: Record<string, any>): Promise<any>;
+    static POST(url: string, data?: any, headers?: Record<string, any>): Promise<any>;
+    static PUT(url: string, data?: any): Promise<any>;
+    static DELETE(url: string): Promise<any>;
 }

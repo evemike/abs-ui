@@ -4,6 +4,8 @@ import { AdapterKettle } from "./main";
 import { NodeModel } from "./nodes/index";
 export declare class KettleEvent {
     constructor(kettle: AdapterKettle);
+    kettle: AdapterKettle;
+    api: import("./api").KettleApi;
     nodesMetadata: Map<string, NodeModel>;
     graph: Graph | undefined;
     shadow: IElsX6.Context['graphShadow'] | undefined;
@@ -34,6 +36,8 @@ export declare class KettleEvent {
         desc: any;
         shape: any;
     };
+    getNodeMetadata(node: IElsX6.GraphNode): Record<string, any>;
+    handleDrawerSubmit(cell: Cell): void;
     addEdge(edge: Edge): void;
     addNode(node: Node): void;
     addCell(cell: Cell): void;

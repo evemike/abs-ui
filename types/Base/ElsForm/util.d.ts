@@ -11,5 +11,10 @@ export declare namespace ElsFormUtil {
         errors: any[] | null;
         fields: any;
     }>;
+    const initProp: (props: IElsElem.Props) => string[];
+    const bindModelValue: (props: string[], formData: any, callBack?: ((val: any) => void) | undefined) => {
+        ":modelValue": import("vue").ComputedRef<any>;
+        "onUpdate:modelValue": (val: any) => void;
+    };
     const SELF_FORM_NAMES: string[];
 }

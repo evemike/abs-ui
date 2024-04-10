@@ -54,6 +54,7 @@ export declare namespace IElsX6 {
         nodeList?: GraphNode[] | Ref<GraphNode[]>;
         initNodeFn?: (node: GraphNode) => Promise<Node.Metadata>;
         graph?: Graph;
+        getNodeMetadata?: (node: GraphNode) => Record<string, any>;
     }
     interface DialogProps {
         config?: InstanceType<typeof ElDialog>["$props"] & {
@@ -69,6 +70,7 @@ export declare namespace IElsX6 {
         order?: IGrouporder.Order<any>;
         group?: IGrouporder.Group<any>;
         elems?: IElsElem.Elem[] | Ref<IElsElem.Elem[]>;
+        useDefault?: boolean;
     }
     type DefaultMenuNames = "elems" | "import" | "export" | "undo" | "redo" | "zoomBig" | "zoomSmall" | "save" | "help" | "fullscreen";
     interface EdgeLabelConfig {

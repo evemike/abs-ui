@@ -10,6 +10,7 @@ export declare class AdapterKettle {
     id: string;
     api: KettleApi;
     event: KettleEvent;
+    menuConfig: IElsX6.GraphMenuConfig;
     contextmenu: IElsX6.ContextmenuConfig;
     nodeList: import("vue").Ref<any[]>;
     projectData: any;
@@ -21,5 +22,6 @@ export declare class AdapterKettle {
     buildGraphData(): Promise<{
         transformation: any;
     }>;
+    saveGraph(): void;
 }
 export {};
