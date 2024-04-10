@@ -7,7 +7,7 @@ import { M as D1, y as z, z as Xe, o as ae, A as Ne, B as r1, f as H, C as Ae, G
 import { E as ee } from "./main.3l7vHGlx.js";
 import { _ as Me } from "./main.vue_vue_type_script_setup_true_lang.CvtchxTx.js";
 import { _ as c1 } from "./_plugin-vue_export-helper.CHgC5LLL.js";
-import { _ as d1, E as ht } from "./main.vue_vue_type_script_setup_true_lang.eT7epj6l.js";
+import { _ as d1, E as ht } from "./main.vue_vue_type_script_setup_true_lang.-hnuV0y4.js";
 import { _ as Ct } from "./view.vue_vue_type_style_index_0_lang.DXcUqBKT.js";
 import { l as gt } from "./flexAdd.vue_vue_type_style_index_0_scoped_546246fc_lang.D62XS5AP.js";
 import { _ as ft } from "./main.vue_vue_type_style_index_0_lang.DC7tGqLG.js";
@@ -8882,7 +8882,8 @@ const hi = /* @__PURE__ */ W({
 }), Mi = {
   "org.apache.nifi.processors.kafka.pubsub.ConsumeKafka_2_6": {
     "bootstrap.servers": { tag: o1, ":formdata": "formData", prop: "config.properties", isFormElem: !1, label: "", ":data": "formData" },
-    topic: !1
+    topic: !1,
+    "aws.profile.name": { tag: z }
     // "bootstrap.servers":{label:"Kafka 服务",tag:markRaw(ElSelect),filterable:true,allowCreate:true,defaultFirstOption:true,cls:kafkaOptions,':modelValue':"formData['bootstrap.servers']",'@update:modelValue':({formData,$}:any) => kafkaServerChange(formData,$[0]),setup:({params}:any) => initTopicList(params.formData['bootstrap.servers'])},
     // "topic":{label:"Kafka Topic",tag:markRaw(ElSelect),filterable:true,allowCreate:true,defaultFirstOption:true,cls:topicOptions,':modelValue':"formData['topic']",'@update:modelValue':({formData,$}:any) => topicChange(formData,$[0])},
     // "topic":{tag:markRaw(ElSelect),filterable:true,allowCreate:true,defaultFirstOption:true,valueKey,cls:topicOptions,':modelValue':"formData['topic']",'onUpdate:modelValue':(v) => currentTopic.value = v,'@change':({formData}:any) => {resetFormData(formData,NIFI_FORMAT_KEYS)}},

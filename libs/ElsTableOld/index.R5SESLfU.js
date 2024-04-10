@@ -2,7 +2,7 @@ import "../../css/ElsTableOld-D1aEQt7J.css";
 import { defineComponent as Me, toRefs as De, ref as f, onMounted as Oe, openBlock as g, createBlock as A, unref as l, withCtx as Ve, createElementBlock as z, Fragment as ce, renderList as de, useAttrs as $e, computed as D, onUpdated as je, createVNode as re, mergeProps as se, createCommentVNode as B, createElementVNode as ue } from "vue";
 import { E as me } from "../../chunks/main.3l7vHGlx.js";
 import { d as Ue, e as We, g as Ee, f as v, p as qe, i as Ge, v as Je, j as Te, k as He, l as Pe, m as Qe, r as Xe, n as Ye, o as Ze, q as _e, t as et, x as Ae } from "../../chunks/vendor.BpDCHYT3.js";
-import { _ as Le } from "../../chunks/main.vue_vue_type_script_setup_true_lang.eT7epj6l.js";
+import { _ as Le } from "../../chunks/main.vue_vue_type_script_setup_true_lang.-hnuV0y4.js";
 const tt = {
   name: "els-table-base"
 }, lt = /* @__PURE__ */ Me({
