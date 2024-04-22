@@ -14,7 +14,16 @@ export declare class AdapterKettle {
     contextmenu: IElsX6.ContextmenuConfig;
     nodeList: import("vue").Ref<any[]>;
     projectData: any;
+    projectFile: string;
     projectInfo: any;
+    projectParams: any[];
+    static variable: any;
+    static variables: {
+        name: string;
+        value: any;
+    }[];
+    run(): Promise<void>;
+    stop(): void;
     init(): Promise<void>;
     initNodeList(): Promise<void>;
     initGraph(): Promise<void>;

@@ -16,6 +16,7 @@ export declare class GraphShadow {
     defaultNodeMarkup: IElsX6.NodeMarkup;
     initCell(c: Cell | string): void;
     updateEdge(cell: Edge): void;
+    delEdge(id: string): void;
     setGraph(graph: Graph): void;
     has(cell: string | Cell): boolean;
     add(cell: Cell | string): void;
@@ -29,8 +30,8 @@ export declare class GraphShadow {
     getEdgeData(cell: Cell | string): IElsX6.EdgeData;
     getNodeData(cell: Cell | string): IElsX6.NodeData;
     set(cell: Cell | string, key: string, value: any): void;
-    setTabs(cell: Cell, tabs: any[]): void;
-    getTabs(cell: Cell): import("vue").Ref<any[]>;
+    setTabs(cell: Cell | string, tabs: any[]): void;
+    getTabs(cell: Cell | string): import("vue").Ref<any[]>;
     setLabel(cell: Cell, val: string): void;
     setStatus(cell: Cell, val: any): void;
     setData(cell: Cell, val: any): void;

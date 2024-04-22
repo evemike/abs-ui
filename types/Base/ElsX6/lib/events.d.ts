@@ -28,4 +28,5 @@ export declare class GraphEvents {
     clipboard(): void;
     keyevent(): void;
     registerEvent(): this;
+    customEvent(...args: any[]): void;
 }

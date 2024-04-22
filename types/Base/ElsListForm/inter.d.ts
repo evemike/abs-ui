@@ -17,6 +17,7 @@ export declare namespace IElsListForm {
         format?: (value: Record<string, any>) => any;
         size?: "" | "default" | "small" | "large";
         prop?: string;
+        column?: (Record<string, any>)[];
     }
     type ValueType = "string" | "number" | "boolean" | "json" | "color" | "elem" | "select" | "code";
     interface FormDescription {

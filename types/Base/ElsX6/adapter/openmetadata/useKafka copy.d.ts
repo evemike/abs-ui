@@ -17,7 +17,7 @@ export declare const NIFI_FORMAT_KEYS: ({
     "connection.config.saslUsername"?: undefined;
     "connection.config.saslPassword"?: undefined;
 })[];
-export declare const useKafka: (config?: UseKafkaConfig, formdata?: any, graphShadowCell?: any) => {
+export declare const useKafka: (config?: UseKafkaConfig) => {
     kafkaList: any[];
     topicList: any[];
     kafkaOptions: import("vue").Ref<any[]>;
@@ -35,10 +35,9 @@ export declare const useKafka: (config?: UseKafkaConfig, formdata?: any, graphSh
         "connection.config.saslUsername"?: undefined;
         "connection.config.saslPassword"?: undefined;
     })[];
-    initTopicList: (val: string, flag?: boolean) => void;
+    initTopicList: (val: string) => void;
     topicChange: (data: any, val: any) => void;
     kafkaServerChange: (data: any, val: any) => void;
     getKafkaValue: (data: any) => any;
     getTopicValue: (data: any) => any;
-    initTopic: (name: string, flag?: boolean) => Promise<void>;
 };

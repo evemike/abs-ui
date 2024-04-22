@@ -182,6 +182,7 @@ export declare namespace IElsX6 {
         "cell:selectAll"?: (cells: Cell[]) => void;
         "currentNode:change"?: (newcell: Cell, oldcell: Cell) => void;
         "node:selectAll"?: (cells: Cell[]) => void;
+        "custom:event"?: (...args: any[]) => void;
     } & {
         [key in keyof EventArgs]?: (e: EventArgs[key]) => void;
     };
@@ -207,7 +208,9 @@ export declare namespace IElsX6 {
         labelConfig: EdgeLabelConfig;
     }
     interface NodeData extends CellData {
-        inCells: Ref<Set<string>>;
-        outCells: Ref<Set<string>>;
+        inCells: Set<string>;
+        outCells: Set<string>;
+        prevNodes: Set<string>;
+        nextNodes: Set<string>;
     }
 }

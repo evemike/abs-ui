@@ -6,6 +6,7 @@ export interface SocketConfig {
     auto?: boolean;
     getKey?: (data: MessageEvent) => string;
     calls?: CallFunction | CallFunction[];
+    data?: Data[];
 }
 export default class MyWebSocket {
     isSupport: boolean;
@@ -19,7 +20,7 @@ export default class MyWebSocket {
     connect(): WebSocket | undefined;
     close(): void;
     send(data: Data): void;
-    subscribe(calls: CallFunction | CallFunction[], data?: Data, key?: string): void;
+    subscribe(calls: CallFunction | CallFunction[], key?: string, data?: Data): void;
     unSubscribe(key: string, data: Data): void;
     clear(): void;
     private testConnect;
