@@ -308,7 +308,6 @@ const be = A.buildRules, ke = A.buildElFormItemProps, Fe = A.isNeedElFormItem, _
   if (n == null || !n)
     return;
   const o = { ...{
-    // icon:InfoFilled,
     placement: "top-start",
     effect: "dark"
   }, ...typeof n == "string" ? { content: n } : n };

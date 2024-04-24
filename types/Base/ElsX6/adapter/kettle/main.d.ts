@@ -31,7 +31,7 @@ export declare class AdapterKettle {
     initNodeList(): Promise<void>;
     initGraph(): Promise<void>;
     updateGraph(): Promise<void>;
-    refresh(): Promise<void>;
+    refresh(ct?: any): Promise<void>;
     cellDelete(cell: Cell, ct?: any): void;
     cellEdit(cell: Cell, ct?: any): void;
     cellUpdate(): void;

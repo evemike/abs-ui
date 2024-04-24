@@ -1,21 +1,21 @@
 export declare namespace ICleaning {
     interface Props {
-        node?: any;
+        formdata: any;
+        graphShadowCell: any;
+        propOutput: string;
     }
     interface TableValue {
-        id: number;
-        cn: string;
-        en: string;
+        name: string;
+        doc: string;
+        type: string;
         testMethod?: string;
-        specifyValue?: string;
-        originalValue?: string;
-        disabledSpecifyValue?: boolean;
-        disabledOriginalValue?: boolean;
+        sValue?: string;
+        oValue?: string;
     }
     interface RuleForm {
         testMethod?: string;
-        specifyValue?: string;
-        originalValue?: string;
+        sValue?: string;
+        oValue?: string;
         cleaningData: ICleaning.TableValue[];
         tableData: ICleaning.TableValue[];
     }
