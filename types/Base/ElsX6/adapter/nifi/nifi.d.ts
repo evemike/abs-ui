@@ -44,7 +44,7 @@ export declare class AdapterNifi {
     initProcessType(): Promise<void>;
     initRoot(id?: string): Promise<void>;
     initGraph(id?: string): Promise<this>;
-    initFlow(id?: string): Promise<void>;
+    initFlow(id: string): Promise<void>;
     initGraphFlowData(): Promise<void>;
     initNodeForm(): void;
     initEdgeLabelConfig(edge: Edge): void;
@@ -178,7 +178,7 @@ export declare class AdapterNifi {
     apiGetNodeList(): Promise<never[]>;
     apiGetPrioritizers(): Promise<any>;
     apiGetRootStatus(): void;
-    apiGetFlowByGroup(id?: string): Promise<any>;
+    apiGetFlowByGroup(id: string): Promise<any>;
     apiGetGroupData(id: string): Promise<any>;
     apiUpdateGroup(data: any): Promise<any>;
     apiNewGroup(data: any): Promise<any>;

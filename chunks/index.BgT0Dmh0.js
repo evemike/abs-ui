@@ -12276,7 +12276,7 @@ class K5 {
       }
       // "currentNode:change": (newcell, oldcell) => { this.graphForm?.getCellFormData(newcell || oldcell) }
     });
-    this.rootId = A || "root", this.initNodeList(), this.apiGetClientId(), this.initProcessType(), this.initPrioritizers(), this.initRoot(A), this.apiGetRootStatus(), this.NIFI_DATA = JSON.parse(x5), this.contextmenu = xo(this), fA(() => {
+    this.rootId = A || "root", this.initNodeList(), this.apiGetClientId(), this.initProcessType(), this.initPrioritizers(), this.initRoot(), this.apiGetRootStatus(), this.NIFI_DATA = JSON.parse(x5), this.contextmenu = xo(this), fA(() => {
     }), _e(() => {
       this.refreshTimeHandle && clearInterval(this.refreshTimeHandle);
     });
@@ -12311,7 +12311,7 @@ class K5 {
     } catch {
     }
   }
-  async initRoot(A) {
+  async initRoot(A = this.rootId) {
     try {
       const e = await this.apiGetFlowByGroup(t);
       this.rootGroups = e.processGroupFlow.flow.processGroups;
@@ -12904,7 +12904,7 @@ class K5 {
     });
   }
   // 获取某个处理组的画布数据 作为当前画布数据
-  apiGetFlowByGroup(A = "root") {
+  apiGetFlowByGroup(A) {
     const e = `/nifi-api/flow/process-groups/${A}`;
     return this.apiGet(e);
   }
@@ -13650,7 +13650,7 @@ ${t}\0`;
 //
 p(iA, "PREFIX", "/kettle-api"), p(iA, "PREFIX_TASK", "/task-api");
 let se = iA;
-const es = /* @__PURE__ */ Object.assign({ "./tableInput.ts": () => import("./tableInput.CuCzyX0S.js"), "./tableOutput.ts": () => import("./tableOutput.BmWdrbWc.js") }), ts = async () => {
+const es = /* @__PURE__ */ Object.assign({ "./tableInput.ts": () => import("./tableInput.DTSOFSCm.js"), "./tableOutput.ts": () => import("./tableOutput.BdaGz6_K.js") }), ts = async () => {
   const r = /* @__PURE__ */ new Map();
   for (const [A, e] of Object.entries(es))
     if (!A.includes("index")) {
