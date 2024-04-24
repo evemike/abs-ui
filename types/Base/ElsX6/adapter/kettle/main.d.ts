@@ -1,3 +1,4 @@
+import type { Cell } from "@antv/x6";
 import { IElsX6 } from "../../inter";
 import { KettleApi } from "./api";
 import { KettleEvent } from "./event";
@@ -24,13 +25,17 @@ export declare class AdapterKettle {
     }[];
     run(): Promise<void>;
     stop(): void;
+    save(): void;
+    config(): Promise<void>;
     init(): Promise<void>;
     initNodeList(): Promise<void>;
     initGraph(): Promise<void>;
     updateGraph(): Promise<void>;
-    buildGraphData(): Promise<{
-        transformation: any;
-    }>;
-    saveGraph(): void;
+    refresh(): Promise<void>;
+    cellDelete(cell: Cell, ct?: any): void;
+    cellEdit(cell: Cell, ct?: any): void;
+    cellUpdate(): void;
+    upForm(): void;
+    upStatus(): void;
 }
 export {};

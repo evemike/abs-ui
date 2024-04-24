@@ -3,7 +3,7 @@ import type { Node, Cell, Edge, Graph } from "@antv/x6";
 export type NIFI_NODE_TYPE = "PROCESSORS" | "PROCESS-GROUPS" | "INPUT_PORTS" | "OUTPUT_PORTS" | "LABEL" | "FUNNELS" | "CONNECTIONS";
 export type NIFI_CELL_TYPE = "processors" | "process-groups" | "input-ports" | "output-ports" | "label" | "funnels" | "connections";
 export declare class AdapterNifi {
-    constructor();
+    constructor(id?: string);
     NIFI_DATA: any;
     initFinishFlag: boolean;
     refreshTimeHandle: any;
@@ -42,7 +42,7 @@ export declare class AdapterNifi {
     initPrioritizers(): Promise<void>;
     initNodeList(): Promise<void>;
     initProcessType(): Promise<void>;
-    initRoot(): Promise<void>;
+    initRoot(id?: string): Promise<void>;
     initGraph(id?: string): Promise<this>;
     initFlow(id?: string): Promise<void>;
     initGraphFlowData(): Promise<void>;

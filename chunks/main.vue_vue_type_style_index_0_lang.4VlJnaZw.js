@@ -1,8 +1,8 @@
 import "../css/main-BMVByKCq.css";
-import { defineComponent as ae, toRefs as se, reactive as ne, unref as l, shallowRef as P, ref as K, watch as ue, openBlock as n, createElementBlock as E, normalizeClass as re, createElementVNode as r, createVNode as d, Fragment as C, renderList as I, toDisplayString as L, createBlock as f, withCtx as i, createCommentVNode as c, mergeProps as w, createTextVNode as k } from "vue";
-import { aC as de, f as z, p as pe, aD as ie, o as fe, aE as ce, y as N, g as p, am as _, af as me, ad as ve, aq as ye, ap as T, aF as _e, j as Ve, P as be, a5 as G, ar as we, aG as x } from "./vendor.ufXmPQRI.js";
-import { C as H } from "./main.Crnw8pAU.js";
-import { E as ke } from "./main.s-trtcju.js";
+import { defineComponent as ae, toRefs as se, reactive as ne, unref as l, shallowRef as P, ref as I, watch as ue, openBlock as n, createElementBlock as E, normalizeClass as re, createElementVNode as r, createVNode as d, Fragment as C, renderList as K, toDisplayString as H, createBlock as f, withCtx as i, createCommentVNode as c, mergeProps as w, createTextVNode as k } from "vue";
+import { aE as de, f as z, p as pe, aF as ie, o as fe, aG as ce, y as N, g as p, am as _, af as me, ad as ve, aq as ye, ap as L, aH as _e, j as Ve, P as be, a5 as T, ar as we, aI as x } from "./vendor.CuV1wQwX.js";
+import { C as G } from "./main.DoW9ZmgL.js";
+import { E as ke } from "./main.B8kjKUzt.js";
 const he = {
   flex: "",
   "items-center": "",
@@ -40,10 +40,10 @@ const he = {
 }, Ae = /* @__PURE__ */ r("span", { "min-w-120": "" }, "值类型", -1), Se = {
   flex: "",
   "items-center": ""
-}, Fe = /* @__PURE__ */ r("span", { "min-w-120": "" }, "描述", -1), Ke = {
+}, Fe = /* @__PURE__ */ r("span", { "min-w-120": "" }, "描述", -1), Ie = {
   flex: "",
   "items-center": ""
-}, Ie = /* @__PURE__ */ r("span", { "min-w-120": "" }, "是否可删除", -1), Je = {
+}, Ke = /* @__PURE__ */ r("span", { "min-w-120": "" }, "是否可删除", -1), Je = {
   flex: "",
   "justify-end": ""
 }, Re = {
@@ -75,7 +75,7 @@ const he = {
     const u = ne({ ...l(m) }), b = P([]), W = (a) => {
       let o = typeof a;
       return o == "string" ? /^#[0-9a-fA-f]+$/.test(a) && (o = "color") : o == "object" && (o = "json"), o;
-    }, U = K(!1), V = K({ prop: "", type: "string" }), X = () => {
+    }, U = I(!1), V = I({ prop: "", type: "string" }), X = () => {
       Q && (V.value = { prop: "", type: "string", isDel: !0 }, U.value = !0);
     }, Y = () => {
       const a = V.value;
@@ -104,7 +104,7 @@ const he = {
       for (const s of b.value)
         _(u, s.prop, s.value);
     })();
-    const S = K(!1), h = P(), F = {}, oe = (a) => {
+    const S = I(!1), h = P(), F = {}, oe = (a) => {
       const o = a.type, s = a.prop;
       ["json", "code"].includes(o) ? p(F, s).openDialog() : (h.value = a, S.value = !0);
     }, te = {
@@ -141,7 +141,7 @@ const he = {
         ]),
         r("div", ze, [
           r("ul", xe, [
-            (n(!0), E(C, null, I(b.value, (e, g) => (n(), E("li", {
+            (n(!0), E(C, null, K(b.value, (e, g) => (n(), E("li", {
               "list-none": "",
               flex: "",
               "w-full": "",
@@ -160,7 +160,7 @@ const he = {
                 "min-w-200": "",
                 title: e.label || e.prop
               }, [
-                r("i", Ce, L(e.label || e.prop), 1),
+                r("i", Ce, H(e.label || e.prop), 1),
                 e.desc ? (n(), f(l(ie), {
                   key: 0,
                   content: e.desc,
@@ -202,7 +202,7 @@ const he = {
                     size: l(y)
                   }, e.attr || {}), {
                     default: i(() => [
-                      (n(!0), E(C, null, I(e.cls || [], (t) => (n(), f(l(ve), {
+                      (n(!0), E(C, null, K(e.cls || [], (t) => (n(), f(l(ve), {
                         label: t.label,
                         value: t.value
                       }, null, 8, ["label", "value"]))), 256))
@@ -216,7 +216,7 @@ const he = {
                     "onUpdate:modelValue": (t) => l(_)(u, e.prop, t),
                     size: l(y)
                   }, e.attr || {}), null, 16, ["model-value", "onUpdate:modelValue", "size"])) : c("", !0),
-                  e.type == "boolean" ? (n(), f(l(T), w({
+                  e.type == "boolean" ? (n(), f(l(L), w({
                     key: 3,
                     "w-full": "",
                     "model-value": l(p)(u, e.prop),
@@ -230,7 +230,7 @@ const he = {
                     "onUpdate:modelValue": (t) => l(_)(u, e.prop, t),
                     size: l(y)
                   }, e.attr || {}), null, 16, ["model-value", "onUpdate:modelValue", "size"])) : c("", !0),
-                  e.type == "json" ? (n(), f(l(H), w({
+                  e.type == "json" ? (n(), f(l(G), w({
                     key: 5,
                     class: "b-1 b-solid b-#E6E8EB rd-8 w-full overflow-hidden"
                   }, e.attr || {}, {
@@ -242,7 +242,7 @@ const he = {
                     "onUpdate:modelValue": (t) => ee(t, e.prop),
                     size: l(y)
                   }), null, 16, ["model-value", "onUpdate:modelValue", "size"])) : c("", !0),
-                  e.type == "code" ? (n(), f(l(H), w({
+                  e.type == "code" ? (n(), f(l(G), w({
                     key: 6,
                     class: "b-1 b-solid b-#E6E8EB rd-8 w-full overflow-hidden"
                   }, e.attr || {}, {
@@ -273,13 +273,13 @@ const he = {
                   onClick: (t) => oe(e),
                   title: "全屏"
                 }, null, 8, ["icon", "onClick"])) : c("", !0),
-                e.btns ? (n(!0), E(C, { key: 2 }, I(e.btns, (t) => (n(), f(l(z), w(t.attr || {}, {
+                e.btns ? (n(!0), E(C, { key: 2 }, K(e.btns, (t) => (n(), f(l(z), w(t.attr || {}, {
                   link: "",
                   title: t.title,
                   onClick: () => t.handle(e, g, u)
                 }), {
                   default: i(() => [
-                    k(L(t.label), 1)
+                    k(H(t.label), 1)
                   ]),
                   _: 2
                 }, 1040, ["title", "onClick"]))), 256)) : c("", !0)
@@ -287,7 +287,7 @@ const he = {
             ]))), 128))
           ])
         ]),
-        d(l(G), {
+        d(l(T), {
           modelValue: U.value,
           "onUpdate:modelValue": o[5] || (o[5] = (e) => U.value = e),
           title: "新增属性"
@@ -361,9 +361,9 @@ const he = {
                   placeholder: "属性描述"
                 }, null, 8, ["modelValue"])
               ]),
-              r("p", Ke, [
-                Ie,
-                d(l(T), {
+              r("p", Ie, [
+                Ke,
+                d(l(L), {
                   modelValue: V.value.isDel,
                   "onUpdate:modelValue": o[3] || (o[3] = (e) => V.value.isDel = e)
                 }, null, 8, ["modelValue"])
@@ -391,7 +391,7 @@ const he = {
           ]),
           _: 1
         }, 8, ["modelValue"]),
-        d(l(G), {
+        d(l(T), {
           modelValue: S.value,
           "onUpdate:modelValue": o[7] || (o[7] = (e) => S.value = e),
           title: ((s = h.value) == null ? void 0 : s.label) || ((v = h.value) == null ? void 0 : v.prop),

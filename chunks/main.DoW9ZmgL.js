@@ -1,6 +1,6 @@
 import "../css/main-D_velkAf.css";
 import { defineComponent as G, useSlots as J, toRefs as K, ref as i, shallowRef as V, watch as T, onMounted as W, openBlock as c, createElementBlock as b, createElementVNode as f, normalizeClass as q, renderSlot as B, normalizeStyle as Q, withDirectives as X, createVNode as Y, unref as l, createCommentVNode as C, createBlock as Z, vShow as ee, markRaw as te } from "vue";
-import { aH as oe, aI as ae, aJ as le, aK as s, aL as v, aM as H, aC as se, f as L, P as re, aN as ne } from "./vendor.ufXmPQRI.js";
+import { aJ as oe, aK as ae, aL as le, aM as s, aN as v, aO as O, aE as se, f as L, P as re, aP as ne } from "./vendor.CuV1wQwX.js";
 import { _ as ie } from "./_plugin-vue_export-helper.CHgC5LLL.js";
 const we = {
   autoCloseBrackets: !0,
@@ -83,8 +83,8 @@ const we = {
     class: {}
   },
   emits: ["update:modelValue"],
-  setup(O, { expose: R, emit: M }) {
-    const D = M, N = O;
+  setup(R, { expose: H, emit: M }) {
+    const D = M, N = R;
     J(), le();
     const { modelValue: k, showOperate: j, theme: m, format: n, teleport: _e, dialog: be, dialogTitle: Ce, lang: p, readOnly: u } = K(N), y = i(), E = i();
     i();
@@ -94,7 +94,7 @@ const we = {
     let h = s.theme(m.value), g = v.create({
       doc: a,
       extensions: [
-        H,
+        O,
         h,
         ...p.value,
         s.updateListener.of((e) => {
@@ -108,11 +108,11 @@ const we = {
       t == null || t.dispatch({ changes: { from: 0, to: t == null ? void 0 : t.state.doc.length, insert: e } }), t == null || t.focus();
     }, z = (e = "", t = l(o) ? d.value : r.value) => {
       t == null || t.dispatch(t == null ? void 0 : t.state.replaceSelection(e)), t == null || t.focus();
-    }, F = (e = l(o) ? d.value : r.value) => e == null ? void 0 : e.state.doc.toString(), I = () => {
+    }, F = (e = l(o) ? d.value : r.value) => e == null ? void 0 : e.state.doc.toString(), P = () => {
       h = s.theme(m.value), g = v.create({
         doc: a,
         extensions: [
-          H,
+          O,
           h,
           ...p.value,
           s.updateListener.of((e) => {
@@ -126,7 +126,7 @@ const we = {
       e == null || e.setState(g);
     }, A = () => {
       r.value = te(new s({ state: g, parent: E.value }));
-    }, P = () => {
+    }, I = () => {
       S();
     }, S = () => {
       var e;
@@ -141,11 +141,11 @@ const we = {
     return T(k, (e) => {
       e != a && _(e);
     }), T(p, () => {
-      I(), $();
+      P(), $();
     }), W(() => {
       A(), o.value = !1;
-    }), R({
-      openDialog: P,
+    }), H({
+      openDialog: I,
       setValue: _,
       getValue: F,
       insertValue: z

@@ -20,9 +20,8 @@ export declare class KettleApi {
     initApi(): void;
     getToken(): Promise<void>;
     getNodes(): Promise<any[]>;
-    getProjectInfo(id?: string): Promise<any>;
-    getFieldInfo(data: any): Promise<void>;
-    updateGraph(data: any): Promise<any>;
+    getProjectInfo(id: string): Promise<any>;
+    updateGraph(data: any): Promise<void>;
     dataPreview(file: string, node: Node): Promise<void>;
     initWS(): void;
     handleCall(val: any): void;
@@ -40,6 +39,7 @@ export declare class KettleApi {
     static POST(url: string, data?: any, headers?: Record<string, any>): Promise<any>;
     static PUT(url: string, data?: any): Promise<any>;
     static DELETE(url: string): Promise<any>;
+    static getFieldInfo(data: any): Promise<any>;
     static hdrValueEscape(str: string): string;
     /**
      * UnEscape header values
