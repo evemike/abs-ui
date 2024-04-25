@@ -1,0 +1,33 @@
+import type { Cell, Graph, Node } from "@antv/x6";
+import { IElsX6 } from "../../inter";
+import { AdapterNifi } from "./main";
+export declare class NifiEvent {
+    constructor(e: AdapterNifi);
+    nifi: AdapterNifi;
+    api: import("./api").NifiApi;
+    data: IElsX6.Events;
+    context: IElsX6.Context | undefined;
+    graph: Graph | undefined;
+    shadow: IElsX6.Context['graphShadow'] | undefined;
+    drawerRef: IElsX6.Context['drawerRef'] | undefined;
+    form: IElsX6.Context['graphForm'] | undefined;
+    processGroupFlow: any;
+    flow: Record<string, any[]> | undefined;
+    breadcrumb: any;
+    source: Map<string, any>;
+    mounted(ctx: IElsX6.Context): void;
+    initData(data: any): void;
+    initFlow(): void;
+    initCells(): void;
+    initCell(cell: Cell): void;
+    updateCell(): void;
+    updateCellFormData(): void;
+    updateCellStatus(): void;
+    updateCellData(): void;
+    openCellDrawer(cell: Cell): void;
+    cellAdd(cell: Cell): void;
+    cellUp(cell: Cell): void;
+    cellDel(cell: Cell): void;
+    cellEdit(): void;
+    nodeMove(node: Node): void;
+}

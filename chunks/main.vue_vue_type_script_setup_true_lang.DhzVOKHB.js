@@ -1,5 +1,5 @@
 import { defineComponent as f, computed as y, unref as e, onMounted as k, openBlock as o, createBlock as g, mergeProps as h, withCtx as C, createElementBlock as t, normalizeClass as a, createElementVNode as i, Fragment as v } from "vue";
-import { b5 as B, a as E, o as b } from "./vendor.CuV1wQwX.js";
+import { b5 as B, a as E, o as b } from "./vendor.BI0B3R_R.js";
 const x = ["src"], I = {
   key: 2,
   "aria-hidden": "true",

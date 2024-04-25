@@ -1,18 +1,18 @@
 import "../css/main-BMVByKCq.css";
-import { defineComponent as ae, toRefs as se, reactive as ne, unref as l, shallowRef as P, ref as I, watch as ue, openBlock as n, createElementBlock as E, normalizeClass as re, createElementVNode as r, createVNode as d, Fragment as C, renderList as K, toDisplayString as H, createBlock as f, withCtx as i, createCommentVNode as c, mergeProps as w, createTextVNode as k } from "vue";
-import { aE as de, f as z, p as pe, aF as ie, o as fe, aG as ce, y as N, g as p, am as _, af as me, ad as ve, aq as ye, ap as L, aH as _e, j as Ve, P as be, a5 as T, ar as we, aI as x } from "./vendor.CuV1wQwX.js";
-import { C as G } from "./main.DoW9ZmgL.js";
-import { E as ke } from "./main.B8kjKUzt.js";
+import { defineComponent as ae, toRefs as se, reactive as ne, unref as l, shallowRef as P, ref as I, watch as ue, openBlock as n, createElementBlock as z, normalizeClass as re, createElementVNode as r, createVNode as d, Fragment as C, renderList as J, toDisplayString as H, createBlock as f, withCtx as i, createCommentVNode as c, mergeProps as w, createTextVNode as k } from "vue";
+import { aF as de, f as E, p as pe, aG as ie, o as fe, aH as ce, y as N, g as p, an as _, af as me, ad as ve, ar as ye, aq as L, aI as _e, j as Ve, P as be, a5 as T, as as we, aJ as x } from "./vendor.BI0B3R_R.js";
+import { C as G } from "./main.DwkzpibS.js";
+import { E as ke } from "./main.CvSGwvbi.js";
 const he = {
   flex: "",
   "items-center": "",
   "justify-between": "",
   "gap-4": "",
   class: "_header"
-}, ge = /* @__PURE__ */ r("b", { "min-w-200": "" }, "属性名", -1), Ee = /* @__PURE__ */ r("b", {
+}, ge = /* @__PURE__ */ r("b", { "min-w-200": "" }, "属性名", -1), ze = /* @__PURE__ */ r("b", {
   "flex-1": "",
   "min-w-100": ""
-}, "属性值", -1), ze = {
+}, "属性值", -1), Ee = {
   class: "_body",
   "w-full": ""
 }, xe = {
@@ -43,7 +43,7 @@ const he = {
 }, Fe = /* @__PURE__ */ r("span", { "min-w-120": "" }, "描述", -1), Ie = {
   flex: "",
   "items-center": ""
-}, Ke = /* @__PURE__ */ r("span", { "min-w-120": "" }, "是否可删除", -1), Je = {
+}, Je = /* @__PURE__ */ r("span", { "min-w-120": "" }, "是否可删除", -1), Ke = {
   flex: "",
   "justify-end": ""
 }, Re = {
@@ -70,7 +70,7 @@ const he = {
   },
   emits: ["update:modelValue", "change", "add"],
   setup(q, { emit: M }) {
-    const j = q, D = M, { keys: J, keyName: R, modelValue: m, format: B, size: y, isNew: Pe, isAdd: Q } = j;
+    const j = q, D = M, { keys: K, keyName: R, modelValue: m, format: B, size: y, isNew: Pe, isAdd: Q } = j;
     se(j);
     const u = ne({ ...l(m) }), b = P([]), W = (a) => {
       let o = typeof a;
@@ -95,11 +95,11 @@ const he = {
     }, le = (a) => O ? (O = !1, A) : (A = JSON.stringify(p(l(u), a) || {}, null, 2), A);
     (() => {
       const { propKey: a, valueKey: o } = R;
-      if (J.length == 0)
+      if (K.length == 0)
         Array.isArray(m) ? b.value = m.map((s) => ({ prop: p(s, a), value: p(s, o), type: W(p(s, o)) })) : b.value = Object.keys(m).map((s) => ({ prop: s, value: p(m, s), type: p(m, s) }));
       else {
         let s = m || {};
-        Array.isArray(m) && (s = Object.fromEntries(m.map((v) => [v[a], v[o]]))), b.value = J.map((v) => ({ ...v, value: p(s, v.prop) ?? v.value }));
+        Array.isArray(m) && (s = Object.fromEntries(m.map((v) => [v[a], v[o]]))), b.value = K.map((v) => ({ ...v, value: p(s, v.prop) ?? v.value }));
       }
       for (const s of b.value)
         _(u, s.prop, s.value);
@@ -125,23 +125,23 @@ const he = {
       D("change", o), D("update:modelValue", o);
     }, 100), { deep: !0 }), (a, o) => {
       var s, v;
-      return n(), E("div", {
+      return n(), z("div", {
         class: re(["els-list-form", `size-${l(y)}`]),
         "w-full": ""
       }, [
         r("div", he, [
           ge,
-          Ee,
-          d(l(z), {
+          ze,
+          d(l(E), {
             "min-w-80": "",
             icon: l(pe),
             type: "success",
             onClick: X
           }, null, 8, ["icon"])
         ]),
-        r("div", ze, [
+        r("div", Ee, [
           r("ul", xe, [
-            (n(!0), E(C, null, K(b.value, (e, g) => (n(), E("li", {
+            (n(!0), z(C, null, J(b.value, (e, g) => (n(), z("li", {
               "list-none": "",
               flex: "",
               "w-full": "",
@@ -185,7 +185,7 @@ const he = {
                   key: 0,
                   elem: e,
                   params: te
-                }, null, 8, ["elem"])) : (n(), E(C, { key: 1 }, [
+                }, null, 8, ["elem"])) : (n(), z(C, { key: 1 }, [
                   e.type == "string" ? (n(), f(l(N), w({
                     key: 0,
                     "w-full": "",
@@ -202,7 +202,7 @@ const he = {
                     size: l(y)
                   }, e.attr || {}), {
                     default: i(() => [
-                      (n(!0), E(C, null, K(e.cls || [], (t) => (n(), f(l(ve), {
+                      (n(!0), z(C, null, J(e.cls || [], (t) => (n(), f(l(ve), {
                         label: t.label,
                         value: t.value
                       }, null, 8, ["label", "value"]))), 256))
@@ -257,7 +257,7 @@ const he = {
                 ], 64))
               ]),
               r("b", je, [
-                e.isDel ? (n(), f(l(z), {
+                e.isDel ? (n(), f(l(E), {
                   key: 0,
                   type: "danger",
                   link: "",
@@ -265,7 +265,7 @@ const he = {
                   onClick: (t) => Z(e),
                   title: "删除"
                 }, null, 8, ["icon", "onClick"])) : c("", !0),
-                ["string", "code", "json"].includes(e.type) && e.tag == null ? (n(), f(l(z), {
+                ["string", "code", "json"].includes(e.type) && e.tag == null ? (n(), f(l(E), {
                   key: 1,
                   link: "",
                   type: "success",
@@ -273,7 +273,7 @@ const he = {
                   onClick: (t) => oe(e),
                   title: "全屏"
                 }, null, 8, ["icon", "onClick"])) : c("", !0),
-                e.btns ? (n(!0), E(C, { key: 2 }, K(e.btns, (t) => (n(), f(l(z), w(t.attr || {}, {
+                e.btns ? (n(!0), z(C, { key: 2 }, J(e.btns, (t) => (n(), f(l(E), w(t.attr || {}, {
                   link: "",
                   title: t.title,
                   onClick: () => t.handle(e, g, u)
@@ -362,15 +362,15 @@ const he = {
                 }, null, 8, ["modelValue"])
               ]),
               r("p", Ie, [
-                Ke,
+                Je,
                 d(l(L), {
                   modelValue: V.value.isDel,
                   "onUpdate:modelValue": o[3] || (o[3] = (e) => V.value.isDel = e)
                 }, null, 8, ["modelValue"])
               ])
             ]),
-            r("div", Je, [
-              d(l(z), {
+            r("div", Ke, [
+              d(l(E), {
                 onClick: o[4] || (o[4] = (e) => U.value = !1)
               }, {
                 default: i(() => [
@@ -378,7 +378,7 @@ const he = {
                 ]),
                 _: 1
               }),
-              d(l(z), {
+              d(l(E), {
                 type: "primary",
                 onClick: Y
               }, {
@@ -399,7 +399,7 @@ const he = {
           width: "80%"
         }, {
           default: i(() => [
-            h.value ? (n(), E("div", Re, [
+            h.value ? (n(), z("div", Re, [
               h.value.type == "string" ? (n(), f(l(N), w({
                 key: 0,
                 "important-h-full": "",

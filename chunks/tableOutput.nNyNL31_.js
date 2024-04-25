@@ -1,7 +1,7 @@
 import "../css/tableOutput-DWvU-FoH.css";
-import { b as ye, c as ke, d as we, e as xe, h as Ne, i as Ce, j as Te, k as Ve, l as $e, m as De, n as Ie, p as Pe, q as Fe, r as qe, s as Oe, t as Ye, u as Le, v as je, w as Se, x as Ee, y as ze, z as Be, A as Re, B as Ue, C as Ae, D as Me, F as Xe, H as Ge, I as Ke, J as Qe, K as He, L as Je, M as We, N as Ze, O as ea, P as aa, Q as ta, R as la, S as na, T as ia, U as sa, V as oa, W as _a, X as ra, Y as ca, Z as da, $ as pa, a0 as ua, a1 as ga, a2 as ba, a3 as va, a4 as ma, a5 as fa, a6 as ha, a7 as ya, a8 as ka, a9 as wa, aa as xa, ab as Na, ac as Ca, ad as Ta, ae as Va, af as $a, ag as Da, ah as Ia, ai as Pa, aj as oe, ak as _e, al as X } from "./index.BEqRfAUE.js";
+import { b as ye, c as ke, d as we, e as xe, h as Ne, i as Ce, j as Te, k as Ve, l as $e, m as De, n as Ie, p as Pe, q as Fe, r as qe, s as Oe, t as Ye, u as Le, v as je, w as Se, x as Ee, y as ze, z as Be, A as Re, B as Ue, C as Ae, D as Me, F as Xe, H as Ge, I as Ke, J as Qe, K as He, L as Je, M as We, N as Ze, O as ea, P as aa, Q as ta, R as la, S as na, T as ia, U as sa, V as oa, W as _a, X as ra, Y as ca, Z as da, $ as pa, a0 as ua, a1 as ga, a2 as ba, a3 as va, a4 as ma, a5 as fa, a6 as ha, a7 as ya, a8 as ka, a9 as wa, aa as xa, ab as Na, ac as Ca, ad as Ta, ae as Va, af as $a, ag as Da, ah as Ia, ai as Pa, aj as oe, ak as _e, al as X } from "./index.Bpn48lbJ.js";
 import { defineComponent as ve, ref as S, openBlock as f, createElementBlock as I, createVNode as x, unref as a, withCtx as y, createElementVNode as N, createBlock as E, toDisplayString as Z, isRef as Fa, createTextVNode as te, createCommentVNode as re, markRaw as ce, computed as G, watch as qa, onMounted as Oa, Fragment as de, renderList as pe, withModifiers as ue } from "vue";
-import { aj as ge, o as ee, f as le, b6 as Ya, _ as La, g as h, d as be, e as j, af as ne, ad as ja, O as ae, ar as Sa, ap as C, am as T } from "./vendor.CuV1wQwX.js";
+import { aj as ge, o as ee, f as le, b6 as Ya, _ as La, g as h, d as be, e as j, af as ne, ad as ja, O as ae, as as Sa, aq as C, an as T } from "./vendor.BI0B3R_R.js";
 const Ea = {
   key: 0,
   flex: "",
@@ -414,10 +414,10 @@ const Ea = {
       { tag: ae },
       { tag: Sa, label: "数据入表方式", prop: "$truncate", tip: { content: `
   <p>覆盖：删除表数据后再插入新数据</p>
-  <p>直接插入：将数据直接追加到表中，如果遇到主键（唯一约束）冲突，则直接报错并结束</p>
-  <p>插入更新：将数据追加到表中，遇到主键冲突时覆盖这条数据</p>
-  <p>增量插入：只追加不同主键的数据，相同主键的数据直接舍弃</p>
-  `, rawContent: !0 }, "@change": ({ formData: t, $: l }) => F(t, l[0]), cls: [{ cls: "覆盖", label: "over" }, { cls: "直接插入", label: "insert" }, { cls: "插入更新", label: "update" }, { cls: "增量插入", label: "add" }] },
+  <p>仅插入：将数据直接追加到表中，如果遇到主键（唯一约束）冲突，则直接报错并结束</p>
+  <p>插入且更新：将数据追加到表中，遇到主键冲突时覆盖这条数据</p>
+  <p>插入不更新：只追加不同主键的数据，相同主键的数据直接舍弃</p>
+  `, rawContent: !0 }, "@change": ({ formData: t, $: l }) => F(t, l[0]), cls: [{ cls: "覆盖", label: "over" }, { cls: "仅插入", label: "insert" }, { cls: "插入且更新", label: "update" }, { cls: "插入不更新", label: "add" }] },
       { tag: ae },
       { tag: at, "v-model:data": "formData.$fieldsOutData", ":formdata": "formData", outputFileds: "$fields", inputFileds: "outFields", outputProps: { value: "fieldName", type: "fieldType" }, "@change": ({ formData: t, $: l }) => U(t, l[0]) }
     ] },

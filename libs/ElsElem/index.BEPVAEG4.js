@@ -1,5 +1,5 @@
-import { E as s } from "../../chunks/main.B8kjKUzt.js";
-import { D as o, a as E, i } from "../../chunks/main.B8kjKUzt.js";
+import { E as s } from "../../chunks/main.CvSGwvbi.js";
+import { D as o, a as E, i } from "../../chunks/main.CvSGwvbi.js";
 const a = {
   install: (l) => {
     l.component("els-elem", s);

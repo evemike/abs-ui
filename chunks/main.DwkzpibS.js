@@ -1,6 +1,6 @@
 import "../css/main-D_velkAf.css";
-import { defineComponent as G, useSlots as J, toRefs as K, ref as i, shallowRef as V, watch as T, onMounted as W, openBlock as c, createElementBlock as b, createElementVNode as f, normalizeClass as q, renderSlot as B, normalizeStyle as Q, withDirectives as X, createVNode as Y, unref as l, createCommentVNode as C, createBlock as Z, vShow as ee, markRaw as te } from "vue";
-import { aJ as oe, aK as ae, aL as le, aM as s, aN as v, aO as O, aE as se, f as L, P as re, aP as ne } from "./vendor.CuV1wQwX.js";
+import { defineComponent as G, useSlots as K, toRefs as Q, ref as i, shallowRef as V, watch as T, onMounted as W, openBlock as c, createElementBlock as b, createElementVNode as f, normalizeClass as q, renderSlot as B, normalizeStyle as J, withDirectives as X, createVNode as Y, unref as l, createCommentVNode as C, createBlock as Z, vShow as ee, markRaw as te } from "vue";
+import { aK as oe, aL as ae, aM as le, aN as s, aO as v, aP as O, aF as se, f as L, P as re, aQ as ne } from "./vendor.BI0B3R_R.js";
 import { _ as ie } from "./_plugin-vue_export-helper.CHgC5LLL.js";
 const we = {
   autoCloseBrackets: !0,
@@ -85,8 +85,8 @@ const we = {
   emits: ["update:modelValue"],
   setup(R, { expose: H, emit: M }) {
     const D = M, N = R;
-    J(), le();
-    const { modelValue: k, showOperate: j, theme: m, format: n, teleport: _e, dialog: be, dialogTitle: Ce, lang: p, readOnly: u } = K(N), y = i(), E = i();
+    K(), le();
+    const { modelValue: k, showOperate: j, theme: m, format: n, teleport: _e, dialog: be, dialogTitle: Ce, lang: p, readOnly: u } = Q(N), y = i(), E = i();
     i();
     const r = V(), d = V();
     let a = k.value || "";
@@ -167,7 +167,7 @@ const we = {
             class: "_codemirror-box",
             ref_key: "codeEditorRef",
             ref: E,
-            style: Q(o.value ? "" : `max-height:${e.maxHeight}`)
+            style: J(o.value ? "" : `max-height:${e.maxHeight}`)
           }, null, 4),
           X(f("div", fe, [
             Y(l(L), {

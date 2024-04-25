@@ -16,6 +16,7 @@ export declare namespace IElsX6 {
     interface Props {
         config?: GraphConfig;
         graphConfig?: Graph.Options;
+        edgeMeatadata?: Record<string, any>;
         nodeListConfig?: NodeListProps;
         model?: GraphModel;
         menuConfig?: GraphMenuConfig;
