@@ -20,6 +20,9 @@ export declare class NifiEvent {
     initFlow(): void;
     initCells(): void;
     initCell(cell: Cell): void;
+    initCellForm(): void;
+    initCellTabs(): void;
+    initCellStatus(): void;
     updateCell(): void;
     updateCellFormData(): void;
     updateCellStatus(): void;

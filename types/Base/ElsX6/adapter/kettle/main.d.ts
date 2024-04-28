@@ -18,6 +18,7 @@ export declare class AdapterKettle {
     projectFile: string;
     projectInfo: any;
     projectParams: any[];
+    isRun: import("vue").Ref<boolean>;
     static variable: any;
     static variables: {
         name: string;
@@ -27,11 +28,11 @@ export declare class AdapterKettle {
     stop(): void;
     save(): void;
     config(): Promise<void>;
-    init(): Promise<void>;
+    init(id?: string): Promise<void>;
     initNodeList(): Promise<void>;
-    initGraph(): Promise<void>;
+    initGraph(id?: string): Promise<void>;
     updateGraph(): Promise<void>;
-    refresh(ct?: any): Promise<void>;
+    refresh(id: string): Promise<void>;
     cellDelete(cell: Cell, ct?: any): void;
     cellEdit(cell: Cell, ct?: any): void;
     cellUpdate(): void;

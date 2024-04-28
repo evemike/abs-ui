@@ -1,4 +1,4 @@
-import { b as Ee, c as Le, d as Ve, e as De, h as Pe, i as je, j as Re, k as $e, l as Be, m as Oe, n as Fe, p as Qe, q as Ye, r as ze, s as Ke, t as Ue, u as Me, v as Xe, w as Ae, x as Ge, y as He, z as Je, A as We, B as Ze, C as ea, D as aa, F as ta, H as la, I as sa, J as oa, K as ia, L as na, M as _a, N as ca, O as ra, P as da, Q as ga, R as ua, S as pa, T as va, U as ba, V as fa, W as ma, X as ya, Y as ha, Z as wa, $ as ka, a0 as qa, a1 as xa, a2 as Ca, a3 as Ta, a4 as Ia, a5 as Na, a6 as Sa, a7 as Ea, a8 as La, a9 as Va, aa as Da, ab as Pa, ac as ja, ad as Ra, ae as $a, af as Ba, ag as Oa, ah as Fa, ai as Qa, aj as W, ak as re, al as B } from "./index.Bpn48lbJ.js";
+import { b as Ee, c as Le, d as Ve, e as De, h as Pe, i as je, j as Re, k as $e, l as Be, m as Oe, n as Fe, p as Qe, q as Ye, r as ze, s as Ke, t as Ue, u as Me, v as Xe, w as Ae, x as Ge, y as He, z as Je, A as We, B as Ze, C as ea, D as aa, F as ta, H as la, I as sa, J as oa, K as ia, L as na, M as _a, N as ca, O as ra, P as da, Q as ga, R as ua, S as pa, T as va, U as ba, V as fa, W as ma, X as ya, Y as ha, Z as wa, $ as ka, a0 as qa, a1 as xa, a2 as Ca, a3 as Ta, a4 as Ia, a5 as Na, a6 as Sa, a7 as Ea, a8 as La, a9 as Va, aa as Da, ab as Pa, ac as ja, ad as Ra, ae as $a, af as Ba, ag as Oa, ah as Fa, ai as Qa, aj as W, ak as re, al as B } from "./index.Dh7tBm9V.js";
 import { defineComponent as Ya, ref as v, openBlock as b, createElementBlock as O, createVNode as p, unref as a, withCtx as d, createElementVNode as _, createBlock as N, toDisplayString as Z, createTextVNode as P, createCommentVNode as j, markRaw as ee } from "vue";
 import { ai as za, aj as Ka, o as F, f as de, b6 as Ua, v as Ma, as as Xa, at as ae, y as ue, m as Aa, ah as Ga, a5 as Ha, d as Ja, e as Wa, _ as Za, b7 as et, g as at, a as ge, an as y, aq as te, af as tt, ar as lt } from "./vendor.BI0B3R_R.js";
 import { C as st } from "./main.DwkzpibS.js";
@@ -147,9 +147,7 @@ const ot = {
           g = g.parent, n.push(g), f.push(g.key);
         n.reverse();
         const u = at(ke, q.serviceType) || [], x = n.map((Se, $) => `${u[$] ? u[$] : ""}${Se.label}${u[$] ? u[$] : ""}`).join("."), H = (e = D.value) == null ? void 0 : e.getValue(), J = L ? L(n, H) : H ? x : `SELECT * FROM ${x}`;
-        (l = D.value) == null || l.insertValue(J), I = H ? I + J : J;
-        debugger;
-        h("update:tableIds", f), A = f;
+        (l = D.value) == null || l.insertValue(J), I = H ? I + J : J, h("update:tableIds", f), A = f;
       }
     };
     let I = w;
@@ -409,7 +407,7 @@ const ot = {
       type: "form",
       label: "属性配置",
       column: [
-        { tag: xt, ":sqlQuery": "formData.$sql", "v-model:serverId": "formData.$serverId", linkTest: C, "@change": ({ formData: o, $: c }) => U(o, c[0]), ":preview": "() => graphEvents.customEvent('datapreview',cell)" }
+        { tag: xt, ":sqlQuery": "formData.sql", "v-model:serverId": "formData.$serverId", linkTest: C, "@change": ({ formData: o, $: c }) => U(o, c[0]), ":preview": "() => graphEvents.customEvent('datapreview',cell)" }
       ]
     },
     {

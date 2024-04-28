@@ -18,6 +18,9 @@ export declare class KettleApi {
     wsTime: any;
     refreshToken(token?: string): void;
     initApi(): void;
+    addProject(): Promise<any>;
+    getProjects(): Promise<any>;
+    initProject(id: string): Promise<void>;
     getToken(): Promise<void>;
     getNodes(): Promise<any[]>;
     getProjectInfo(id: string): Promise<any>;
