@@ -31,6 +31,7 @@ export declare class GraphShadow {
     getNodeData(cell: Cell | string): IElsX6.NodeData;
     set(cell: Cell | string, key: string, value: any): void;
     setTabs(cell: Cell | string, tabs: any[]): void;
+    setTabsHeader(cell: Cell | string, header: IElsX6.NodeMarkup): void;
     getTabs(cell: Cell | string): import("vue").Ref<any[]>;
     setLabel(cell: Cell, val: string): void;
     setStatus(cell: Cell, val: any): void;

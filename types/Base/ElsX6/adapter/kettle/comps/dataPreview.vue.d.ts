@@ -1,14 +1,10 @@
-declare const _default: import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<{
-    names: string[];
-    types: string[];
-    rows: any[][];
-    log?: string | undefined;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<{
-    names: string[];
-    types: string[];
-    rows: any[][];
-    log?: string | undefined;
-}>>>, {}, {}>;
+interface Props {
+    data?: any;
+    names?: string | string[];
+    rows?: string | any[][];
+    attr?: Record<string, any>;
+}
+declare const _default: import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<Props>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<Props>>>, {}, {}>;
 export default _default;
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
 type __VLS_TypePropsToRuntimeProps<T> = {

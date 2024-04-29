@@ -4,9 +4,9 @@ export declare namespace IKettle {
     interface NodeModel {
         name: string;
         markup: Record<string, any>;
-        step?: Record<string, any>;
         tabs: any[];
         metadata: Record<string, any>;
+        step?: Record<string, any>;
         init?: NodeApi;
         open?: NodeApi;
         submit?: NodeApi;

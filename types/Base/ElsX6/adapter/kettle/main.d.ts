@@ -19,12 +19,17 @@ export declare class AdapterKettle {
     projectInfo: any;
     projectParams: any[];
     isRun: import("vue").Ref<boolean>;
+    executorId: string;
+    hasRunResult: import("vue").Ref<boolean>;
+    runResult: Map<string, any>;
     static variable: any;
     static variables: {
         name: string;
         value: any;
     }[];
     run(): Promise<void>;
+    setRunResult(data?: any): void;
+    openRunResult(): Promise<void>;
     stop(): void;
     save(): void;
     config(): Promise<void>;

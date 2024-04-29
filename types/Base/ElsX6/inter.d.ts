@@ -200,6 +200,7 @@ export declare namespace IElsX6 {
         name: string;
         metadata?: any;
         tabs: Ref<any[]>;
+        tabsHeader?: NodeMarkup;
         isEdge: boolean;
         isNode: boolean;
     }

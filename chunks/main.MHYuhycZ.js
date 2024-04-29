@@ -1,6 +1,6 @@
 import "../css/main-D_velkAf.css";
-import { defineComponent as G, useSlots as K, toRefs as Q, ref as i, shallowRef as V, watch as T, onMounted as W, openBlock as c, createElementBlock as b, createElementVNode as f, normalizeClass as q, renderSlot as B, normalizeStyle as J, withDirectives as X, createVNode as Y, unref as l, createCommentVNode as C, createBlock as Z, vShow as ee, markRaw as te } from "vue";
-import { aK as oe, aL as ae, aM as le, aN as s, aO as v, aP as O, aF as se, f as L, P as re, aQ as ne } from "./vendor.BI0B3R_R.js";
+import { defineComponent as G, useSlots as K, toRefs as Q, ref as i, shallowRef as x, watch as T, onMounted as W, openBlock as c, createElementBlock as b, createElementVNode as f, normalizeClass as q, renderSlot as B, normalizeStyle as J, withDirectives as X, createVNode as Y, unref as l, createCommentVNode as C, createBlock as Z, vShow as ee, markRaw as te } from "vue";
+import { aP as oe, aQ as ae, aR as le, aS as s, aT as v, aU as R, aK as se, f as O, P as re, aV as ne } from "./vendor.BvXqCPMY.js";
 import { _ as ie } from "./_plugin-vue_export-helper.CHgC5LLL.js";
 const we = {
   autoCloseBrackets: !0,
@@ -83,22 +83,22 @@ const we = {
     class: {}
   },
   emits: ["update:modelValue"],
-  setup(R, { expose: H, emit: M }) {
-    const D = M, N = R;
+  setup(H, { expose: L, emit: D }) {
+    const M = D, j = H;
     K(), le();
-    const { modelValue: k, showOperate: j, theme: m, format: n, teleport: _e, dialog: be, dialogTitle: Ce, lang: p, readOnly: u } = Q(N), y = i(), E = i();
+    const { modelValue: k, showOperate: N, theme: m, format: n, teleport: _e, dialog: be, dialogTitle: Ce, lang: p, readOnly: u } = Q(j), y = i(), E = i();
     i();
-    const r = V(), d = V();
+    const r = x(), d = x();
     let a = k.value || "";
     const o = i(!0), w = i("");
     let h = s.theme(m.value), g = v.create({
       doc: a,
       extensions: [
-        O,
+        R,
         h,
         ...p.value,
         s.updateListener.of((e) => {
-          e.docChanged && x(e);
+          e.docChanged && V(e);
         }),
         s.editable.of(!u.value),
         v.readOnly.of(u.value)
@@ -112,28 +112,28 @@ const we = {
       h = s.theme(m.value), g = v.create({
         doc: a,
         extensions: [
-          O,
+          R,
           h,
           ...p.value,
           s.updateListener.of((e) => {
-            e.docChanged && x(e);
+            e.docChanged && V(e);
           }),
           s.editable.of(!u.value),
           v.readOnly.of(u.value)
         ]
       });
-    }, $ = (e = r.value) => {
+    }, U = (e = r.value) => {
       e == null || e.setState(g);
-    }, A = () => {
+    }, $ = () => {
       r.value = te(new s({ state: g, parent: E.value }));
-    }, I = () => {
+    }, A = () => {
       S();
     }, S = () => {
       var e;
       w.value = ((e = y.value) == null ? void 0 : e.innerHTML) || "", o.value = !o.value;
-    }, x = se((e) => {
-      a = e.state.doc.toString(), D("update:modelValue", a);
-    }, 200), U = () => {
+    }, V = se((e) => {
+      a = e.state.doc.toString(), M("update:modelValue", a);
+    }, 200), I = () => {
       var t;
       const e = ((t = n.value) == null ? void 0 : t.call(n, a)) || a;
       e != a && (a = e, _(e, o.value ? d.value : r.value));
@@ -141,11 +141,11 @@ const we = {
     return T(k, (e) => {
       e != a && _(e);
     }), T(p, () => {
-      P(), $();
+      P(), U();
     }), W(() => {
-      A(), o.value = !1;
-    }), H({
-      openDialog: I,
+      $(), o.value = !1;
+    }), L({
+      openDialog: A,
       setValue: _,
       getValue: F,
       insertValue: z
@@ -170,23 +170,23 @@ const we = {
             style: J(o.value ? "" : `max-height:${e.maxHeight}`)
           }, null, 4),
           X(f("div", fe, [
-            Y(l(L), {
+            Y(l(O), {
               icon: l(re),
               title: o.value ? "恢复" : "放大",
               link: "",
               onClick: S
             }, null, 8, ["icon", "title"]),
             l(n) ? (c(), b("i", ve)) : C("", !0),
-            l(n) ? (c(), Z(l(L), {
+            l(n) ? (c(), Z(l(O), {
               key: 1,
               icon: l(ne),
               title: "格式化",
               link: "",
-              onClick: U
+              onClick: I
             }, null, 8, ["icon"])) : C("", !0),
             B(e.$slots, "operate", {}, void 0, !0)
           ], 512), [
-            [ee, l(j) || o.value]
+            [ee, l(N) || o.value]
           ])
         ])
       ], 2),
