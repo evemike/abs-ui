@@ -10,7 +10,9 @@ export declare namespace IKettle {
         init?: NodeApi;
         open?: NodeApi;
         submit?: NodeApi;
+        submitInit?: NodeApi;
         save?: NodeApi;
+        saveInit?: NodeApi;
         initForm?: NodeApi;
         submitForm?: NodeApi;
     }

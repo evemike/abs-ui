@@ -1,5 +1,5 @@
 import { defineComponent as f, computed as y, unref as e, onMounted as k, openBlock as o, createBlock as g, mergeProps as h, withCtx as C, createElementBlock as t, normalizeClass as a, createElementVNode as i, Fragment as v } from "vue";
-import { ba as B, a as E, o as b } from "./vendor.BvXqCPMY.js";
+import { bb as b, a as B, o as E } from "./vendor.WiziF_4i.js";
 const x = ["src"], I = {
   key: 2,
   "aria-hidden": "true",
@@ -24,10 +24,10 @@ const x = ["src"], I = {
       () => /^#/.test(e(s)) ? e(s) : "#" + e(s)
     ), n = /^data:/.test(e(s)) || /^http/.test(e(s)) || /\.(png|jpeg|ico|svg|jpg|bmp|gif)$/.test(e(s)), r = /\s+/.test(e(s));
     return k(() => {
-      d && new B(".click-copy", {
+      d && new b(".click-copy", {
         text: () => s || ""
       }).on("success", (c) => {
-        E.success("copy success");
+        B.success("copy success");
       }).on("error", (c) => {
         console.error(c);
       });
@@ -45,7 +45,7 @@ const x = ["src"], I = {
           fill: "currentColor"
         }, null, 8, F)
       ]))
-    ], 64)) : (o(), g(e(b), h({ key: 0 }, m, { class: "click-copy" }), {
+    ], 64)) : (o(), g(e(E), h({ key: 0 }, m, { class: "click-copy" }), {
       default: C(() => [
         e(n) ? (o(), t("img", {
           key: 0,

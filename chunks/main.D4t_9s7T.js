@@ -1,6 +1,6 @@
 import "../css/main-D_velkAf.css";
-import { defineComponent as G, useSlots as K, toRefs as Q, ref as i, shallowRef as x, watch as T, onMounted as W, openBlock as c, createElementBlock as b, createElementVNode as f, normalizeClass as q, renderSlot as B, normalizeStyle as J, withDirectives as X, createVNode as Y, unref as l, createCommentVNode as C, createBlock as Z, vShow as ee, markRaw as te } from "vue";
-import { aP as oe, aQ as ae, aR as le, aS as s, aT as v, aU as R, aK as se, f as O, P as re, aV as ne } from "./vendor.BvXqCPMY.js";
+import { defineComponent as W, useSlots as G, toRefs as X, ref as i, shallowRef as x, watch as T, onMounted as q, openBlock as c, createElementBlock as b, createElementVNode as f, normalizeClass as J, renderSlot as B, normalizeStyle as K, withDirectives as Q, createVNode as Y, unref as l, createCommentVNode as C, createBlock as Z, vShow as ee, markRaw as te } from "vue";
+import { aR as oe, aS as ae, aT as le, aU as s, aV as v, aW as R, aM as se, f as O, P as re, aX as ne } from "./vendor.WiziF_4i.js";
 import { _ as ie } from "./_plugin-vue_export-helper.CHgC5LLL.js";
 const we = {
   autoCloseBrackets: !0,
@@ -64,7 +64,7 @@ const we = {
   class: "_operate"
 }, ve = { key: 0 }, pe = ["innerHTML"], he = {
   name: "CodeEditor"
-}, ge = /* @__PURE__ */ G({
+}, ge = /* @__PURE__ */ W({
   ...he,
   props: {
     modelValue: {},
@@ -83,10 +83,10 @@ const we = {
     class: {}
   },
   emits: ["update:modelValue"],
-  setup(H, { expose: L, emit: D }) {
-    const M = D, j = H;
-    K(), le();
-    const { modelValue: k, showOperate: N, theme: m, format: n, teleport: _e, dialog: be, dialogTitle: Ce, lang: p, readOnly: u } = Q(j), y = i(), E = i();
+  setup(H, { expose: L, emit: M }) {
+    const D = M, j = H;
+    G(), le();
+    const { modelValue: k, showOperate: N, theme: m, format: n, teleport: _e, dialog: be, dialogTitle: Ce, lang: p, readOnly: u } = X(j), y = i(), E = i();
     i();
     const r = x(), d = x();
     let a = k.value || "";
@@ -108,7 +108,7 @@ const we = {
       t == null || t.dispatch({ changes: { from: 0, to: t == null ? void 0 : t.state.doc.length, insert: e } }), t == null || t.focus();
     }, z = (e = "", t = l(o) ? d.value : r.value) => {
       t == null || t.dispatch(t == null ? void 0 : t.state.replaceSelection(e)), t == null || t.focus();
-    }, F = (e = l(o) ? d.value : r.value) => e == null ? void 0 : e.state.doc.toString(), P = () => {
+    }, F = (e = l(o) ? d.value : r.value) => e == null ? void 0 : e.state.doc.toString(), U = () => {
       h = s.theme(m.value), g = v.create({
         doc: a,
         extensions: [
@@ -122,18 +122,18 @@ const we = {
           v.readOnly.of(u.value)
         ]
       });
-    }, U = (e = r.value) => {
+    }, $ = (e = r.value) => {
       e == null || e.setState(g);
-    }, $ = () => {
-      r.value = te(new s({ state: g, parent: E.value }));
     }, A = () => {
+      r.value = te(new s({ state: g, parent: E.value }));
+    }, I = () => {
       S();
     }, S = () => {
       var e;
       w.value = ((e = y.value) == null ? void 0 : e.innerHTML) || "", o.value = !o.value;
     }, V = se((e) => {
-      a = e.state.doc.toString(), M("update:modelValue", a);
-    }, 200), I = () => {
+      a = e.state.doc.toString(), D("update:modelValue", a);
+    }, 200), P = () => {
       var t;
       const e = ((t = n.value) == null ? void 0 : t.call(n, a)) || a;
       e != a && (a = e, _(e, o.value ? d.value : r.value));
@@ -141,11 +141,11 @@ const we = {
     return T(k, (e) => {
       e != a && _(e);
     }), T(p, () => {
-      P(), U();
-    }), W(() => {
-      $(), o.value = !1;
+      U(), $();
+    }), q(() => {
+      A(), o.value = !1;
     }), L({
-      openDialog: A,
+      openDialog: I,
       setValue: _,
       getValue: F,
       insertValue: z
@@ -156,7 +156,7 @@ const we = {
         "w-full": "",
         ref_key: "codeEditorBoxRef",
         ref: y,
-        class: q(["_mask", { "is-visible": o.value }])
+        class: J(["_mask", { "is-visible": o.value }])
       }, [
         f("div", ce, [
           B(e.$slots, "default", {}, void 0, !0),
@@ -167,9 +167,9 @@ const we = {
             class: "_codemirror-box",
             ref_key: "codeEditorRef",
             ref: E,
-            style: J(o.value ? "" : `max-height:${e.maxHeight}`)
+            style: K(o.value ? "" : `max-height:${e.maxHeight}`)
           }, null, 4),
-          X(f("div", fe, [
+          Q(f("div", fe, [
             Y(l(O), {
               icon: l(re),
               title: o.value ? "恢复" : "放大",
@@ -182,7 +182,7 @@ const we = {
               icon: l(ne),
               title: "格式化",
               link: "",
-              onClick: I
+              onClick: P
             }, null, 8, ["icon"])) : C("", !0),
             B(e.$slots, "operate", {}, void 0, !0)
           ], 512), [

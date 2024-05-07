@@ -1,4 +1,4 @@
-import { _ as s } from "../../chunks/main.vue_vue_type_script_setup_true_lang.DVCReFvr.js";
+import { _ as s } from "../../chunks/main.vue_vue_type_script_setup_true_lang.0Bktj0t_.js";
 const a = {
   install: (o) => {
     o.component("els-form", s);

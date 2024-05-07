@@ -23,14 +23,14 @@ export declare class NifiEvent {
     initCellForm(): void;
     initCellTabs(): void;
     initCellStatus(): void;
+    refreshCell(cell: Cell): Promise<void>;
     updateCell(): void;
     updateCellFormData(): void;
     updateCellStatus(): void;
     updateCellData(): void;
     openCellDrawer(cell: Cell): void;
-    cellAdd(cell: Cell): void;
-    cellUp(cell: Cell): void;
-    cellDel(cell: Cell): void;
-    cellEdit(): void;
-    nodeMove(node: Node): void;
+    cellAdd(cell: Cell): Promise<void>;
+    cellDel(cell: Cell): Promise<void>;
+    cellEdit(cell: Cell): Promise<void>;
+    nodeMove(cell: Node): Promise<void>;
 }
