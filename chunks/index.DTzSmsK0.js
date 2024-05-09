@@ -1,7 +1,7 @@
 var qe = Object.defineProperty;
 var _e = (s, A, e) => A in s ? qe(s, A, { enumerable: !0, configurable: !0, writable: !0, value: e }) : s[A] = e;
 var I = (s, A, e) => (_e(s, typeof A != "symbol" ? A + "" : A, e), e);
-import "../css/index-DaGNjgDs.css";
+import "../css/index-Hs8a1mv8.css";
 import { defineComponent as tA, inject as $e, computed as eA, openBlock as E, createElementBlock as x, normalizeClass as MA, createBlock as K, unref as n, createCommentVNode as nA, h as iA, createStaticVNode as At, createElementVNode as h, toRefs as pA, ref as y, onMounted as BA, watch as wA, normalizeStyle as ZA, toDisplayString as U, renderSlot as _A, shallowRef as dA, withCtx as u, createVNode as p, Fragment as aA, renderList as sA, mergeProps as ce, createTextVNode as V, withModifiers as fe, reactive as CA, toRef as et, withDirectives as tt, vShow as it, provide as kA, markRaw as vA, render as at, normalizeProps as we, guardReactiveProps as Be, resolveComponent as _, nextTick as TA, isRef as ot, pushScopeId as st, popScopeId as rt, onUnmounted as nt, onBeforeUnmount as lt } from "vue";
 import { M as gt, y as oA, z as Qe, o as gA, A as ae, B as ke, f as Z, C as LA, G as oe, D as Ct, F as Ge, H as ct, I as dt, J as me, K as pt, j as SA, s as de, L as Pe, N as Oe, O as rA, P as pe, Q as ht, R as ut, u as It, S as ft, T as he, U as JA, V as jA, W as wt, m as OA, X as Bt, Y as Qt, Z as mt, g as q, _ as se, $ as Dt, l as re, k as Et, a0 as yt, a1 as Mt, a2 as bt, a3 as vt, a4 as Ft, a5 as FA, a6 as Ht, a7 as Lt, a8 as St, a9 as Nt, a as J, aa as kt, ab as bA, ac as Gt, ad as NA, ae as $A, af as cA, p as Pt, d as QA, e as $, ag as De, ah as Ee, ai as Ot, aj as UA, i as uA, ak as Yt, al as xt, am as zt, an as VA, x as YA, ao as Rt, ap as yA, aq as IA, ar as Tt, as as Zt, at as Jt, au as jt, av as ye, aw as Ut, ax as Vt, ay as Xt, az as Wt, aA as Kt, v as Me, aB as qt, E as EA, aC as Ae, aD as Ye, aE as _t, aF as $t, aG as A1, aH as xe, aI as e1, aJ as t1, aK as i1, aL as be } from "./vendor.WiziF_4i.js";
 import { E as fA } from "./main.C4rBUSG_.js";
@@ -19,26 +19,23 @@ const n1 = /* @__PURE__ */ tA({
     graph: {}
   },
   setup(s) {
-    const A = s, { node: e } = A, t = $e("GRAPH-CONTEXT"), { graphForm: i, graphShadow: a } = t, o = eA(() => {
-      const g = ((a == null ? void 0 : a.selectedCells.value) || []).map((C) => C.id);
-      return !!(g.length > 0 && g.includes((e == null ? void 0 : e.id) || ""));
-    }), r = eA(() => {
-      var C;
-      const d = e == null ? void 0 : e.id, g = (C = a == null ? void 0 : a.currentCell.value) == null ? void 0 : C.id;
-      return !!(d && g && d == g);
-    }), l = eA(() => a == null ? void 0 : a.get(e)), c = eA(() => a == null ? void 0 : a.defaultNodeMarkup);
-    return (d, g) => {
-      var C;
-      return E(), x("div", {
-        class: MA(["default_node_style", { "is-selected": o.value, "is-current": r.value }])
-      }, [
-        c.value ? (E(), K(n(fA), {
-          key: 0,
-          elem: c.value,
-          params: { ...l.value, STEP_LIB: n(ue), formStatus: (C = n(i)) == null ? void 0 : C.getCellStatus(n(e)) }
-        }, null, 8, ["elem", "params"])) : nA("", !0)
-      ], 2);
-    };
+    const A = s, { node: e } = A, t = $e("GRAPH-CONTEXT"), { graphShadow: i } = t, a = eA(() => {
+      const d = ((i == null ? void 0 : i.selectedCells.value) || []).map((g) => g.id);
+      return !!(d.length > 0 && d.includes((e == null ? void 0 : e.id) || ""));
+    }), o = eA(() => {
+      var g;
+      const c = e == null ? void 0 : e.id, d = (g = i == null ? void 0 : i.currentCell.value) == null ? void 0 : g.id;
+      return !!(c && d && c == d);
+    }), r = eA(() => i == null ? void 0 : i.get(e)), l = eA(() => i == null ? void 0 : i.defaultNodeMarkup);
+    return (c, d) => (E(), x("div", {
+      class: MA(["default_node_style", { "is-selected": a.value, "is-current": o.value }])
+    }, [
+      l.value ? (E(), K(n(fA), {
+        key: 0,
+        elem: l.value,
+        params: { ...r.value, STEP_LIB: n(ue) }
+      }, null, 8, ["elem", "params"])) : nA("", !0)
+    ], 2));
   }
 }), l1 = [
   {
@@ -7309,7 +7306,7 @@ const b1 = /* @__PURE__ */ mA(Q1, [["render", M1]]), v1 = {
   },
   emits: ["update:visible"],
   setup(s, { expose: A, emit: e }) {
-    const t = s, i = e, { direction: a, minSize: o, maxSize: r, size: l, destoryOnClose: c } = t, { visible: d } = pA(t), g = y(n(d)), C = a == "left" || a == "right", B = ht(), Q = C ? "width" : "height", m = `min-${Q}:${o || "none"};max-${Q}:${r || "none"};`, w = y(), { x: f, y: M } = ut({ target: B }), { width: D, height: H } = It(w);
+    const t = s, i = e, { direction: a, minSize: o, maxSize: r, size: l, destoryOnClose: c } = t, { visible: d } = pA(t), g = y(n(d)), C = a == "left" || a == "right", m = ht(), w = C ? "width" : "height", Q = `min-${w}:${o || "none"};max-${w}:${r || "none"};`, B = y(), { x: f, y: M } = ut({ target: m }), { width: D, height: H } = It(B);
     let z = 0, X = y(0);
     const R = y(), { pressed: k } = ft({ target: R }), S = eA(() => {
       if (!n(k))
@@ -7318,11 +7315,11 @@ const b1 = /* @__PURE__ */ mA(Q1, [["render", M1]]), v1 = {
       return n(X) + O;
     }), v = eA(() => {
       const L = n(X) == 0 ? l : n(S) + "px";
-      return `${Q}:${L};${m}`;
+      return `${w}:${L};${Q}`;
     }), N = y(!1);
     BA(() => {
       var L;
-      (L = w.value) == null || L.addEventListener("transitionend", () => {
+      (L = B.value) == null || L.addEventListener("transitionend", () => {
         g.value == !1 && c && (N.value = !0);
       });
     }), wA(k, (L) => {
@@ -7338,7 +7335,7 @@ const b1 = /* @__PURE__ */ mA(Q1, [["render", M1]]), v1 = {
       N.value = !1, g.value = !0, i("update:visible", !0);
     }, close: j }), (L, F) => (E(), x("div", {
       ref_key: "boxRef",
-      ref: w,
+      ref: B,
       class: MA(["box-resize-drawer", n(a), g.value ? "trans-show" : "trans-hide"]),
       absolute: "",
       flex: "",
@@ -7381,7 +7378,7 @@ const b1 = /* @__PURE__ */ mA(Q1, [["render", M1]]), v1 = {
         relative: "",
         "w-full": "",
         "h-full": "",
-        style: ZA(`${n(Q)}:calc(100% - 1em)`)
+        style: ZA(`${n(w)}:calc(100% - 1em)`)
       }, [
         _A(L.$slots, "default", {}, void 0, !0)
       ], 4))
@@ -7419,18 +7416,18 @@ const b1 = /* @__PURE__ */ mA(Q1, [["render", M1]]), v1 = {
     }), d = eA(() => {
       var D;
       return n((D = r.value) == null ? void 0 : D.tabs) || [];
-    }), g = eA(() => d.value.map((D, H) => D.default ? "default-tab" : H + "-tab")), C = eA(() => ({ ...t, ...r.value || {} })), B = eA(() => {
+    }), g = eA(() => d.value.map((D, H) => D.default ? "default-tab" : H + "-tab")), C = eA(() => ({ ...t, ...r.value || {} })), m = eA(() => {
       var D, H;
       return ((H = (D = r.value) == null ? void 0 : D.step) == null ? void 0 : H.value) == "running";
-    }), Q = dA(), m = y(!1), w = y(!1), f = (D, H = !1) => {
+    }), w = dA(), Q = y(!1), B = y(!1), f = (D, H = !1) => {
       var z;
-      D != null && ((D.isNode || D.isEdge) && (D != null && D.isNode() || D != null && D.isEdge()) ? ((z = r.value) == null ? void 0 : z.id) != D.id && (r.value = i.get(D)) : r.value = D, m.value = !0, w.value = H);
+      D != null && ((D.isNode || D.isEdge) && (D != null && D.isNode() || D != null && D.isEdge()) ? ((z = r.value) == null ? void 0 : z.id) != D.id && (r.value = i.get(D)) : r.value = D, Q.value = !0, B.value = H);
     }, M = (D) => {
-      m.value = !1, D && (r.value = void 0), console.log("======>", a.data.value[n(l)]);
+      Q.value = !1, D && (r.value = void 0), console.log("======>", a.data.value[n(l)]);
     };
-    return A({ open: f, close: M, formRef: Q, celldata: r, visible: m }), (D, H) => (E(), K(k1, {
-      visible: m.value,
-      "onUpdate:visible": H[1] || (H[1] = (z) => m.value = z),
+    return A({ open: f, close: M, formRef: w, celldata: r, visible: Q }), (D, H) => (E(), K(k1, {
+      visible: Q.value,
+      "onUpdate:visible": H[1] || (H[1] = (z) => Q.value = z),
       "min-size": "200px",
       "h-full": "",
       "w-full": "",
@@ -7450,7 +7447,7 @@ const b1 = /* @__PURE__ */ mA(Q1, [["render", M1]]), v1 = {
           p(n(rA), { "m-y-8": "" }),
           d.value.length > 0 ? (E(), K(n(he), {
             "model-value": "default-tab",
-            key: l.value + B.value
+            key: l.value + m.value
           }, {
             default: u(() => [
               (E(!0), x(aA, null, sA(d.value, (z, X) => (E(), K(n(JA), {
@@ -7463,12 +7460,12 @@ const b1 = /* @__PURE__ */ mA(Q1, [["render", M1]]), v1 = {
                   z.type === "form" ? (E(), K(n(ze), ce({
                     key: 0,
                     ref_for: !0,
-                    ref: (R) => Q.value = R,
+                    ref: (R) => w.value = R,
                     modelValue: n(a).data.value[l.value],
                     "onUpdate:modelValue": H[0] || (H[0] = (R) => n(a).data.value[l.value] = R),
                     params: C.value,
                     column: z.column,
-                    elForm: { disabled: B.value }
+                    elForm: { disabled: m.value }
                   }, z.attr || {}, { class: "h-full w-full" }), null, 16, ["modelValue", "params", "column", "elForm"])) : (E(), K(n(fA), {
                     key: 1,
                     elem: z.elem,
@@ -7521,7 +7518,7 @@ class O1 {
       var t;
       const e = ((t = this.graph) == null ? void 0 : t.getCells()) || [];
       for (const i of e)
-        console.log(i.isNode(), i.isEdge()), this.graphShadow.initCell(i), this.graphForm.initCell(i).validateCell(i), this.eventCall("init:cell", i), i.isEdge() && this.eventCall("init:edge", i), i.isNode() && this.eventCall("init:node", i);
+        this.graphShadow.initCell(i), this.graphForm.initCell(i).validateCell(i), this.eventCall("init:cell", i), i.isEdge() && this.eventCall("init:edge", i), i.isNode() && this.eventCall("init:node", i);
       this.eventCall("render:done", this);
     });
   }
@@ -7544,9 +7541,9 @@ class O1 {
       const { cell: C } = g;
       this.graphShadow.initCell(C), this.graphForm.initCell(C).validateCell(C), this.eventCall("cell:added", g), this.eventCall("init:cell", C), C.isEdge() && this.eventCall("init:edge", C), C.isNode() && this.eventCall("init:node", C);
     }), (e = this.graph) == null || e.on("cell:removed", (g) => {
-      var B, Q;
+      var m, w;
       const { cell: C } = g;
-      (B = this.graphShadow) == null || B.remove(C), (Q = this.graphForm) == null || Q.remove(C), this.eventCall("cell:removed", g);
+      (m = this.graphShadow) == null || m.remove(C), (w = this.graphForm) == null || w.remove(C), this.eventCall("cell:removed", g);
     }), (t = this.graph) == null || t.on("cell:click", (g) => {
       var C;
       (C = this.contextmenuRef.value) == null || C.close(), this.currentKeydown.has("Control") || this.graphShadow.clearSelectedCells(), this.eventCall("cell:click", g);
@@ -7561,13 +7558,13 @@ class O1 {
       const { cell: C } = g;
       this.graphShadow.delSelectedCell(C), this.eventCall("cell:unselected", g);
     }), (l = this.graph) == null || l.on("cell:contextmenu", (g) => {
-      var w, f;
-      const { cell: C, x: B, y: Q } = g, m = (w = this.graph) == null ? void 0 : w.localToGraph({ x: B, y: Q });
-      (f = this.contextmenuRef.value) == null || f.open(m, C), this.eventCall("cell:contextmenu", g);
+      var B, f;
+      const { cell: C, x: m, y: w } = g, Q = (B = this.graph) == null ? void 0 : B.localToGraph({ x: m, y: w });
+      (f = this.contextmenuRef.value) == null || f.open(Q, C), this.eventCall("cell:contextmenu", g);
     }), (c = this.graph) == null || c.on("cell:selectAll", () => {
-      var C, B;
+      var C, m;
       const g = (C = this.graph) == null ? void 0 : C.getCells();
-      g && g.length > 0 && ((B = this.graph) == null || B.select(g), this.graphShadow.resetSelectedCells(g), this.eventCall("cell:selectAll", g));
+      g && g.length > 0 && ((m = this.graph) == null || m.select(g), this.graphShadow.resetSelectedCells(g), this.eventCall("cell:selectAll", g));
     }), (d = this.graph) == null || d.on("cell:dblclick", (g) => this.eventCall("cell:dblclick", g));
   }
   // 边连接事件
@@ -7807,34 +7804,34 @@ const x1 = { class: "_search" }, z1 = ["onMousedown", "title"], R1 = { class: "_
   },
   setup(s) {
     const A = s, e = y(), { graph: t } = pA(A), { nodeList: i } = A, { initNodeFn: a, getNodeMetadata: o } = A, r = y(""), l = y(), c = y([]), d = wt(r, 500), g = eA(() => {
-      const Q = d.value;
-      let m = n(i) || [];
-      Q ? (m = m.filter(({ label: M, name: D, group: H }) => M.includes(Q) || D.includes(Q) || (H == null ? void 0 : H.includes(Q))), c.value.push(...m.map((M) => M.groupName || M.group || ""))) : c.value = [];
-      const w = [], f = [];
-      for (const M of m) {
-        const { group: D = "默认分组", groupName: H } = M, z = w.indexOf(H || D);
-        z > -1 ? f[z][1].push(M) : (w.push(H || D), f.push([H || D, [M]]));
+      const w = d.value;
+      let Q = n(i) || [];
+      w ? (Q = Q.filter(({ label: M, name: D, group: H }) => M.includes(w) || D.includes(w) || (H == null ? void 0 : H.includes(w))), c.value.push(...Q.map((M) => M.groupName || M.group || ""))) : c.value = [];
+      const B = [], f = [];
+      for (const M of Q) {
+        const { group: D = "默认分组", groupName: H } = M, z = B.indexOf(H || D);
+        z > -1 ? f[z][1].push(M) : (B.push(H || D), f.push([H || D, [M]]));
       }
       return f;
     }), C = () => {
       t.value && (l.value = new mt({
         target: t.value,
         dndContainer: e.value,
-        getDragNode: (Q) => Q.clone({ keepId: !0 }),
-        getDropNode: (Q) => Q.clone({ keepId: !0 })
+        getDragNode: (w) => w.clone({ keepId: !0 }),
+        getDropNode: (w) => w.clone({ keepId: !0 })
       }));
-    }, B = (Q, m) => {
+    }, m = (w, Q) => {
       var D;
-      const w = t.value;
-      if (!w)
+      const B = t.value;
+      if (!B)
         return;
-      l.value || C(), Q.shape || (Q.shape = "vue-node"), Q.ports || (Q.ports = {});
-      const f = Q.ports;
+      l.value || C(), w.shape || (w.shape = "vue-node"), w.ports || (w.ports = {});
+      const f = w.ports;
       if (f.groups || (f.groups = Re.groups), a) {
         try {
-          a(Q).then((H) => {
+          a(w).then((H) => {
             var z;
-            return (z = l.value) == null ? void 0 : z.start(w.createNode(H), m);
+            return (z = l.value) == null ? void 0 : z.start(B.createNode(H), Q);
           });
         } catch (H) {
           console.warn(H);
@@ -7842,19 +7839,19 @@ const x1 = { class: "_search" }, z1 = ["onMousedown", "title"], R1 = { class: "_
         return;
       }
       const M = {
-        name: Q.name,
-        shape: Q.shape,
-        label: Q.label,
-        desc: Q.desc || "",
+        name: w.name,
+        shape: w.shape,
+        label: w.label,
+        desc: w.desc || "",
         ports: f,
         // data:node,
-        ...o ? o(Q) : {}
+        ...o ? o(w) : {}
       };
-      (D = l.value) == null || D.start(w.createNode(M), m);
+      (D = l.value) == null || D.start(B.createNode(M), Q);
     };
     return BA(() => {
       C();
-    }), (Q, m) => (E(), x("div", {
+    }), (w, Q) => (E(), x("div", {
       class: "_graph-node-list",
       ref_key: "graphNodeListRef",
       ref: e
@@ -7863,25 +7860,25 @@ const x1 = { class: "_search" }, z1 = ["onMousedown", "title"], R1 = { class: "_
         p(n(oA), {
           "prefix-icon": n(OA),
           modelValue: r.value,
-          "onUpdate:modelValue": m[0] || (m[0] = (w) => r.value = w),
+          "onUpdate:modelValue": Q[0] || (Q[0] = (B) => r.value = B),
           size: "small",
           placeholder: "搜索节点"
         }, null, 8, ["prefix-icon", "modelValue"])
       ]),
       p(n(Bt), {
         modelValue: c.value,
-        "onUpdate:modelValue": m[1] || (m[1] = (w) => c.value = w)
+        "onUpdate:modelValue": Q[1] || (Q[1] = (B) => c.value = B)
       }, {
         default: u(() => [
-          (E(!0), x(aA, null, sA(g.value, ([w, f]) => (E(), K(n(Qt), {
-            key: w,
-            title: w,
-            name: w
+          (E(!0), x(aA, null, sA(g.value, ([B, f]) => (E(), K(n(Qt), {
+            key: B,
+            title: B,
+            name: B
           }, {
             default: u(() => [
               (E(!0), x(aA, null, sA(f, (M) => (E(), x("div", {
                 class: "_node_item",
-                onMousedown: (D) => B(M, D),
+                onMousedown: (D) => m(M, D),
                 title: M.label
               }, [
                 p(n(gA), { class: "_icon" }, {
@@ -7910,9 +7907,9 @@ const x1 = { class: "_search" }, z1 = ["onMousedown", "title"], R1 = { class: "_
   let e = {}, t = [...s];
   const { index: i, key: a, fn: o, iteratee: r } = A;
   if (i) {
-    let l = !1, c = 1;
+    let l = !0, c = 1;
     for (const d of i)
-      l = l || d == null, e[c++] = d == null ? t : t.splice(0, d);
+      l = l && d != null, e[c++] = d == null ? t : d > 0 ? t.splice(0, d) : t.splice(d);
     l && t.length > 0 && (e[c] = t);
   } else if (a) {
     const l = new Array().concat(a), c = t.map((d) => ({ ...d, $_key: l.map((g) => q(d, g) || "").join() }));
@@ -7969,30 +7966,31 @@ const x1 = { class: "_search" }, z1 = ["onMousedown", "title"], R1 = { class: "_
       } },
       { key: "fullscreen", title: eA(() => a != null && a.isFullScreen.value ? "退出全屏" : "全屏"), type: eA(() => a != null && a.isFullScreen.value ? "primary" : "default"), icon: pe, handle: () => a == null ? void 0 : a.toggleFullScreen() }
     ], l = eA(() => {
-      const { elems: d = [], filter: g, order: C, group: B, useDefault: Q } = n(i) || {}, m = Q ? [...r, ...n(d)] : [...n(d)];
-      let w = m;
-      return g && (w = Je(m, g)), C && (w = Ze(w, C)), B && (w = Te(w, B)), console.log("menu - list = ", w, d, g, C, B, i.value), w && !Array.isArray(w) && (w = Object.keys(w).map((f) => q(w, f))), w;
+      const { elems: d = [], filter: g, order: C, group: m, useDefault: w } = n(i) || {}, Q = w ? [...r, ...n(d)] : [...n(d)];
+      let B = Q;
+      return g && (B = Je(Q, g)), C && (B = Ze(B, C)), m && (B = Te(B, m)), B && !Array.isArray(B) && (B = Object.keys(B).map((f) => q(B, f))), B;
     }), c = (d) => {
       d.handle && typeof d.handle == "function" && d.handle(t);
     };
     return A({}), (d, g) => (E(), x("div", J1, [
-      (E(!0), x(aA, null, sA(l.value, (C) => (E(), x(aA, null, [
+      (E(!0), x(aA, null, sA(l.value, (C, m) => (E(), x(aA, null, [
         Array.isArray(C) ? (E(), x("div", j1, [
-          (E(!0), x(aA, null, sA(C, (B) => (E(), x(aA, null, [
-            B.tag ? (E(), K(n(fA), {
+          (E(!0), x(aA, null, sA(C, (w) => (E(), x(aA, null, [
+            w.tag ? (E(), K(n(fA), {
               key: 0,
-              elem: C,
+              elem: w,
               params: n(t)
             }, null, 8, ["elem", "params"])) : (E(), K(n(Z), {
               key: 1,
-              onClick: (Q) => c(B),
-              title: B.title,
-              icon: B.icon,
-              disabled: n(B.disabled),
-              loading: n(B.loading)
+              onClick: (Q) => c(w),
+              title: w.title,
+              icon: w.icon,
+              size: "small",
+              disabled: n(w.disabled),
+              loading: n(w.loading)
             }, {
               default: u(() => [
-                V(U(B == null ? void 0 : B.text), 1)
+                V(U(w == null ? void 0 : w.text), 1)
               ]),
               _: 2
             }, 1032, ["onClick", "title", "icon", "disabled", "loading"]))
@@ -8004,7 +8002,7 @@ const x1 = { class: "_search" }, z1 = ["onMousedown", "title"], R1 = { class: "_
             params: n(t)
           }, null, 8, ["elem", "params"])) : (E(), K(n(Z), {
             key: 1,
-            onClick: (B) => c(C),
+            onClick: (w) => c(C),
             title: C.title,
             icon: C.icon,
             size: "small",
@@ -8017,7 +8015,7 @@ const x1 = { class: "_search" }, z1 = ["onMousedown", "title"], R1 = { class: "_
             _: 2
           }, 1032, ["onClick", "title", "icon", "disabled", "loading"]))
         ], 64)),
-        Array.isArray(C) ? (E(), K(n(rA), {
+        Array.isArray(C) && m < l.value.length - 1 ? (E(), K(n(rA), {
           key: 2,
           direction: "vertical"
         })) : nA("", !0)
@@ -8044,21 +8042,21 @@ const x1 = { class: "_search" }, z1 = ["onMousedown", "title"], R1 = { class: "_
     let g;
     const C = (f, M) => {
       g = M, f && (o.value = f), o.value && (d.value = !0);
-    }, B = () => {
-      d.value = !1;
-    }, Q = (f, M) => {
-      typeof f == "string" ? c.value[f] = M : c.value = LA({}, l, f);
     }, m = () => {
-      i.graphEvents.hasEvent("dialog:cancel") ? i.graphEvents.eventCall("dialog:cancel", g) : B();
-    }, w = () => {
-      i.graphEvents.hasEvent("dialog:submit") ? i.graphEvents.eventCall("dialog:submit", g) : B();
+      d.value = !1;
+    }, w = (f, M) => {
+      typeof f == "string" ? c.value[f] = M : c.value = LA({}, l, f);
+    }, Q = () => {
+      i.graphEvents.hasEvent("dialog:cancel") ? i.graphEvents.eventCall("dialog:cancel", g) : m();
+    }, B = () => {
+      i.graphEvents.hasEvent("dialog:submit") ? i.graphEvents.eventCall("dialog:submit", g) : m();
     };
     return wA(a, (f) => {
       f && (o.value = f);
     }), A({
       open: C,
-      close: B,
-      setConfig: Q
+      close: m,
+      setConfig: w
     }), (f, M) => (E(), K(n(FA), ce({
       class: "_graph-dialog",
       modelValue: d.value,
@@ -8072,7 +8070,7 @@ const x1 = { class: "_search" }, z1 = ["onMousedown", "title"], R1 = { class: "_
         n(r) ? (E(), K(n(rA), { key: 0 })) : nA("", !0),
         n(r) ? (E(), x("div", V1, [
           p(n(Z), {
-            onClick: fe(m, ["stop"])
+            onClick: fe(Q, ["stop"])
           }, {
             default: u(() => [
               V("取消")
@@ -8081,7 +8079,7 @@ const x1 = { class: "_search" }, z1 = ["onMousedown", "title"], R1 = { class: "_
           }),
           p(n(Z), {
             type: "primary",
-            onClick: fe(w, ["stop"])
+            onClick: fe(B, ["stop"])
           }, {
             default: u(() => [
               V("确定")
@@ -8511,10 +8509,10 @@ const _1 = {
     config: {}
   },
   setup(s) {
-    var B, Q;
-    const A = s, { edge: e, context: t, config: i } = A, { graphShadow: a, graph: o } = t, r = a.getEdgeData(e), l = r.source, c = r.target, d = (B = o.value) == null ? void 0 : B.getCellById(n(l)), g = (Q = o.value) == null ? void 0 : Q.getCellById(n(c)), C = Object.assign({}, i, n(r.labelConfig));
+    var m, w;
+    const A = s, { edge: e, context: t, config: i } = A, { graphShadow: a, graph: o } = t, r = a.getEdgeData(e), l = r.source, c = r.target, d = (m = o.value) == null ? void 0 : m.getCellById(n(l)), g = (w = o.value) == null ? void 0 : w.getCellById(n(c)), C = Object.assign({}, i, n(r.labelConfig));
     return BA(() => {
-    }), (m, w) => n(C).enabled != !1 ? (E(), x("div", _1, [
+    }), (Q, B) => n(C).enabled != !1 ? (E(), x("div", _1, [
       n(C).elem ? (E(), K(n(fA), {
         key: 0,
         class: "_content",
@@ -8558,7 +8556,7 @@ const _1 = {
       "modal-class": "_md-drawer",
       direction: "rtl",
       modelValue: d.value,
-      "onUpdate:modelValue": C[0] || (C[0] = (B) => d.value = B),
+      "onUpdate:modelValue": C[0] || (C[0] = (m) => d.value = m),
       modal: !1
     }, {
       default: u(() => [
@@ -8674,8 +8672,8 @@ const ti = /* @__PURE__ */ tA({
     viewModel: { type: Boolean }
   },
   setup(s, { expose: A }) {
-    const e = s, { viewModel: t, nodeListConfig: i } = pA(e), { graphConfig: a, menuConfig: o, pluginsConfig: r, contextmenuConfig: l, edgeLabelConfig: c, defaultNodeMarkup: d, register: g, events: C, edgeMeatadata: B } = e, Q = Gt(), m = dA(), w = y(), f = y(), M = y(), D = y(), H = y(), z = y(), X = y(), R = y(), k = new K1().resetDefaultNodeMarkup(d), S = new Y1(k), v = new O1({ graphShadow: k, graphForm: S, contextmenuRef: z, events: C, containerBox: M }), N = new W1(r), j = new q1({ elsX6Ref: w }), P = {
-      graph: m,
+    const e = s, { viewModel: t, nodeListConfig: i } = pA(e), { graphConfig: a, menuConfig: o, pluginsConfig: r, contextmenuConfig: l, edgeLabelConfig: c, defaultNodeMarkup: d, register: g, events: C, edgeMeatadata: m } = e, w = Gt(), Q = dA(), B = y(), f = y(), M = y(), D = y(), H = y(), z = y(), X = y(), R = y(), k = new K1().resetDefaultNodeMarkup(d), S = new Y1(k), v = new O1({ graphShadow: k, graphForm: S, contextmenuRef: z, events: C, containerBox: M }), N = new W1(r), j = new q1({ elsX6Ref: B }), P = {
+      graph: Q,
       graphShadow: k,
       graphForm: S,
       graphEvents: v,
@@ -8683,12 +8681,12 @@ const ti = /* @__PURE__ */ tA({
       markdownRef: D,
       graphTools: j,
       dialogRef: H,
-      elsX6Ref: w,
+      elsX6Ref: B,
       drawerRef: X
     };
-    return kA("GRAPH-SHADOW", k), kA("GRAPH", m), kA("GRAPH-FORM", S), kA("GRAPH-MARKDOWN", D), kA("GRAPH-CONTEXT", P), w1(B), B1(), g && g(oe), BA(() => {
+    return kA("GRAPH-SHADOW", k), kA("GRAPH", Q), kA("GRAPH-FORM", S), kA("GRAPH-MARKDOWN", D), kA("GRAPH-CONTEXT", P), w1(m), B1(), g && g(oe), BA(() => {
       const L = LA(C1, a);
-      m.value = vA(new oe({
+      Q.value = vA(new oe({
         ...L,
         // 自定义 边的弹出展示
         onEdgeLabelRendered: (F) => {
@@ -8703,21 +8701,21 @@ const ti = /* @__PURE__ */ tA({
           );
         },
         container: f.value
-      })), N.usePlugins(m.value), k.setGraph(m.value), S.setGraph(m.value), j.init(m.value), v.resetGraph(m.value).registerEvent().onMounted(P);
+      })), N.usePlugins(Q.value), k.setGraph(Q.value), S.setGraph(Q.value), j.init(Q.value), v.resetGraph(Q.value).registerEvent().onMounted(P);
     }), A({
-      graph: m
+      graph: Q
     }), (L, F) => {
       var O, b;
       return E(), x("div", {
         ref_key: "elsX6Ref",
-        ref: w,
+        ref: B,
         class: "ElsX6 w-full h-full bg-#fff"
       }, [
         p(b1),
         h("div", ii, [
           (O = n(i)) != null && O.enabled || !n(t) ? (E(), K(T1, ce({
             key: 0,
-            graph: m.value
+            graph: Q.value
           }, n(i)), null, 16, ["graph"])) : nA("", !0),
           h("div", ai, [
             ((b = n(o)) == null ? void 0 : b.enabled) !== !1 || !n(t) ? (E(), K(U1, {
@@ -8740,7 +8738,7 @@ const ti = /* @__PURE__ */ tA({
                 class: "_graph-container",
                 contenteditable: "false"
               }, null, 512),
-              p(n(Q)),
+              p(n(w)),
               p(ti, {
                 ref_key: "contextmenuRef",
                 ref: z,
@@ -8832,9 +8830,9 @@ const ti = /* @__PURE__ */ tA({
       e.cell,
       "my_topic_output",
       []
-    ), Q(S, !0));
+    ), w(S, !0));
   });
-  const B = async (k, S) => {
+  const m = async (k, S) => {
     if (!k)
       return;
     const v = await li(k);
@@ -8843,13 +8841,13 @@ const ti = /* @__PURE__ */ tA({
       value: q(N, l),
       tag: vA(NA)
     })), S && X(q(A, C));
-  }, Q = (k, S = !1) => {
+  }, w = (k, S = !1) => {
     const v = f(k);
-    v && B(v.name, S);
-  }, m = (k) => {
+    v && m(v.name, S);
+  }, Q = (k) => {
     const S = c[r];
     return S ? n(k)[S] : "";
-  }, w = (k) => {
+  }, B = (k) => {
     const S = d[l];
     return S ? n(k)[S] : "";
   }, f = (k) => {
@@ -8859,7 +8857,7 @@ const ti = /* @__PURE__ */ tA({
   }, M = (k, S) => {
     const v = f(S);
     if (v) {
-      B(v.name);
+      m(v.name);
       const N = c;
       Object.keys(N).forEach((j) => {
         const P = q(N, j), L = q(v, j);
@@ -8927,12 +8925,12 @@ const ti = /* @__PURE__ */ tA({
     kafkaOptions: a,
     topicOptions: o,
     NIFI_FORMAT_KEYS: te,
-    initTopicList: Q,
+    initTopicList: w,
     topicChange: H,
     kafkaServerChange: M,
-    getKafkaValue: m,
-    getTopicValue: w,
-    initTopic: B
+    getKafkaValue: Q,
+    getTopicValue: B,
+    initTopic: m
   };
 }, ci = {
   "w-full": "",
@@ -8961,19 +8959,19 @@ const ti = /* @__PURE__ */ tA({
       getKafkaValue: c,
       getTopicValue: d
       // initTopicList,
-    } = Ci(A.config, e, i), g = c(q(e, t)), C = d(q(e, t)), B = y(g), Q = y(C);
-    return wA(B, (m) => {
-      const w = q(e, t);
-      r(w, m);
-    }), wA(Q, (m) => {
-      const w = q(e, t);
-      l(w, m);
-    }), (m, w) => (E(), x("div", ci, [
+    } = Ci(A.config, e, i), g = c(q(e, t)), C = d(q(e, t)), m = y(g), w = y(C);
+    return wA(m, (Q) => {
+      const B = q(e, t);
+      r(B, Q);
+    }), wA(w, (Q) => {
+      const B = q(e, t);
+      l(B, Q);
+    }), (Q, B) => (E(), x("div", ci, [
       h("div", di, [
         pi,
         p(n(cA), {
-          modelValue: B.value,
-          "onUpdate:modelValue": w[0] || (w[0] = (f) => B.value = f)
+          modelValue: m.value,
+          "onUpdate:modelValue": B[0] || (B[0] = (f) => m.value = f)
         }, {
           default: u(() => [
             (E(!0), x(aA, null, sA(n(a), (f) => (E(), K(n(NA), we(Be(f)), null, 16))), 256))
@@ -8984,8 +8982,8 @@ const ti = /* @__PURE__ */ tA({
       h("div", hi, [
         ui,
         p(n(cA), {
-          modelValue: Q.value,
-          "onUpdate:modelValue": w[1] || (w[1] = (f) => Q.value = f)
+          modelValue: w.value,
+          "onUpdate:modelValue": B[1] || (B[1] = (f) => w.value = f)
         }, {
           default: u(() => [
             (E(!0), x(aA, null, sA(n(o), (f) => (E(), K(n(NA), we(Be(f)), null, 16))), 256))
@@ -9015,8 +9013,8 @@ const ti = /* @__PURE__ */ tA({
   setup(s) {
     const A = s, { formdata: e } = pA(A), t = y(!1), i = () => {
       t.value = !0;
-      let C = e.value.config.properties["output字段（自动填入）"], B = typeof C == "string" ? JSON.parse(C) : C;
-      B || (B = []), console.log(B), a.tableData = B.filter((Q) => !Q.originalValue);
+      let C = e.value.config.properties["output字段（自动填入）"], m = typeof C == "string" ? JSON.parse(C) : C;
+      m || (m = []), console.log(m), a.tableData = m.filter((w) => !w.originalValue);
     }, a = CA({
       tableData: []
     }), o = () => {
@@ -9035,12 +9033,12 @@ const ti = /* @__PURE__ */ tA({
       type: [{ required: !0, message: "字段类型不能为空", trigger: "change" }]
     }), g = async () => {
       var C;
-      await ((C = c.value) == null ? void 0 : C.validate((B, Q) => {
-        B ? (e.value.config.properties["output字段（自动填入）"] = a.tableData, r()) : console.log("error submit!", Q);
+      await ((C = c.value) == null ? void 0 : C.validate((m, w) => {
+        m ? (e.value.config.properties["output字段（自动填入）"] = a.tableData, r()) : console.log("error submit!", w);
       }));
     };
-    return (C, B) => {
-      const Q = _("el-input"), m = _("el-form-item"), w = _("el-option"), f = _("el-select"), M = _("el-form");
+    return (C, m) => {
+      const w = _("el-input"), Q = _("el-form-item"), B = _("el-option"), f = _("el-select"), M = _("el-form");
       return E(), x("div", fi, [
         V(" 字段设置 "),
         p(n(Z), {
@@ -9055,7 +9053,7 @@ const ti = /* @__PURE__ */ tA({
         }),
         p(n(FA), {
           modelValue: t.value,
-          "onUpdate:modelValue": B[0] || (B[0] = (D) => t.value = D),
+          "onUpdate:modelValue": m[0] || (m[0] = (D) => t.value = D),
           title: "字段设置",
           "destroy-on-close": "",
           "w-40vw": "",
@@ -9096,12 +9094,12 @@ const ti = /* @__PURE__ */ tA({
                         "show-overflow-tooltip": ""
                       }, {
                         default: u(({ $index: D, row: H }) => [
-                          p(m, {
+                          p(Q, {
                             prop: "tableData." + D + ".name",
                             rules: d.name
                           }, {
                             default: u(() => [
-                              p(Q, {
+                              p(w, {
                                 modelValue: H.name,
                                 "onUpdate:modelValue": (z) => H.name = z,
                                 placeholder: "请输入",
@@ -9121,12 +9119,12 @@ const ti = /* @__PURE__ */ tA({
                         "show-overflow-tooltip": ""
                       }, {
                         default: u(({ $index: D, row: H }) => [
-                          p(m, {
+                          p(Q, {
                             prop: "tableData." + D + ".doc",
                             rules: d.doc
                           }, {
                             default: u(() => [
-                              p(Q, {
+                              p(w, {
                                 modelValue: H.doc,
                                 "onUpdate:modelValue": (z) => H.doc = z,
                                 placeholder: "请输入",
@@ -9146,7 +9144,7 @@ const ti = /* @__PURE__ */ tA({
                         "show-overflow-tooltip": ""
                       }, {
                         default: u(({ $index: D, row: H }) => [
-                          p(m, {
+                          p(Q, {
                             prop: "tableData." + D + ".type",
                             rules: d.type
                           }, {
@@ -9161,7 +9159,7 @@ const ti = /* @__PURE__ */ tA({
                                 "popper-class": "select_popper"
                               }, {
                                 default: u(() => [
-                                  (E(!0), x(aA, null, sA(n(Ii), (z) => (E(), K(w, {
+                                  (E(!0), x(aA, null, sA(n(Ii), (z) => (E(), K(B, {
                                     label: z.label,
                                     value: z.value
                                   }, null, 8, ["label", "value"]))), 256))
@@ -9256,7 +9254,7 @@ const ti = /* @__PURE__ */ tA({
   setup(s) {
     const A = s, { formdata: e, graphShadowCell: t, propOutput: i, propInput: a } = pA(A), o = y(!1), r = () => {
       var P, L;
-      if (o.value = !0, B(), N(), ((P = c.value) == null ? void 0 : P.length) === 0 || g.cleaningData.length === 0) {
+      if (o.value = !0, m(), N(), ((P = c.value) == null ? void 0 : P.length) === 0 || g.cleaningData.length === 0) {
         v.value = !0;
         return;
       }
@@ -9303,11 +9301,11 @@ const ti = /* @__PURE__ */ tA({
           H.value === "" && g.cleaningData.push(...L), g.tableData.push(...F), X();
         }
       }
-    }, B = () => {
+    }, m = () => {
       c.value = [], d.value = [], g.tableData = [], g.cleaningData = [], D.value = "", H.value = "", v.value = !1;
-    }, Q = () => {
-      o.value = !1, B();
-    }, m = (P) => {
+    }, w = () => {
+      o.value = !1, m();
+    }, Q = (P) => {
       var b;
       let L = g.cleaningData.findIndex((Y) => Y.name === P.name);
       g.cleaningData.splice(L, 1);
@@ -9315,19 +9313,19 @@ const ti = /* @__PURE__ */ tA({
       g.tableData.splice(F, 1);
       let O = d.value.find((Y) => Y.name === P.name);
       (b = l.value) == null || b.toggleRowSelection(O, !1);
-    }, w = y(), f = CA({
+    }, B = y(), f = CA({
       testMethod: [
         { required: !0, message: "检测方法不能为空", trigger: "change" }
       ],
       sValue: [{ required: !0, message: "指定值不能为空", trigger: "blur" }]
     }), M = async () => {
       var P;
-      await ((P = w.value) == null ? void 0 : P.validate((L, F) => {
+      await ((P = B.value) == null ? void 0 : P.validate((L, F) => {
         L ? (console.log(g.tableData), t.value.graphShadow.set(
           t.value.cell,
           "My_data-cleaner-expression",
           g.tableData
-        ), Q()) : console.log("error submit!", F);
+        ), w()) : console.log("error submit!", F);
       }));
     }, D = y(""), H = y(""), z = De(() => {
       let P = D.value.toLowerCase();
@@ -9346,7 +9344,7 @@ const ti = /* @__PURE__ */ tA({
         let Y = `cleaningData.${P}.sValue`;
         return TA(() => {
           var W, G;
-          (W = w.value) == null || W.clearValidate(Y), (G = w.value) == null || G.validateField(Y, async (T) => await T);
+          (W = B.value) == null || W.clearValidate(Y), (G = B.value) == null || G.validateField(Y, async (T) => await T);
         }), [];
       }
       return [{ required: !0, message: "指定值不能为空", trigger: "blur" }];
@@ -9393,11 +9391,11 @@ const ti = /* @__PURE__ */ tA({
       );
     };
     BA(() => {
-      N(), w.value && (w.value.checkForm = j), t.value.drawerRef.value.calculateRef = w.value;
+      N(), B.value && (B.value.checkForm = j), t.value.drawerRef.value.calculateRef = B.value;
     });
     const j = () => new Promise((P) => {
       var L;
-      (L = w.value) == null || L.validate((F, O) => {
+      (L = B.value) == null || L.validate((F, O) => {
         F ? P(!0) : (J.error(Object.values({ ...O })[0][0].message), P(!1));
       });
     });
@@ -9422,7 +9420,7 @@ const ti = /* @__PURE__ */ tA({
           "destroy-on-close": "",
           "w-75vw": "",
           "h-70vh": "",
-          "before-close": Q
+          "before-close": w
         }, {
           default: u(() => [
             h("div", Mi, [
@@ -9482,7 +9480,7 @@ const ti = /* @__PURE__ */ tA({
                 }, null, 8, ["modelValue", "prefix-icon", "onInput"]),
                 p(W, {
                   ref_key: "formRef",
-                  ref: w,
+                  ref: B,
                   model: g,
                   rules: f,
                   "m-t-12": ""
@@ -9596,7 +9594,7 @@ const ti = /* @__PURE__ */ tA({
                           default: u(({ row: G }) => [
                             p(n(Z), {
                               text: "",
-                              onClick: () => m(G),
+                              onClick: () => Q(G),
                               style: { "margin-bottom": "18px" }
                             }, {
                               default: u(() => [
@@ -9616,7 +9614,7 @@ const ti = /* @__PURE__ */ tA({
               ])
             ]),
             h("div", Hi, [
-              p(n(Z), { onClick: Q }, {
+              p(n(Z), { onClick: w }, {
                 default: u(() => [
                   V("取消")
                 ]),
@@ -9663,8 +9661,8 @@ const ti = /* @__PURE__ */ tA({
     }, c = y([]), d = y([]), g = () => {
       o.value = !1;
     }, C = () => {
-      let Q = a.value.filter(
-        (m) => c.value.includes(m.name)
+      let w = a.value.filter(
+        (Q) => c.value.includes(Q.name)
       );
       t.value.graphShadow.set(
         t.value.cell,
@@ -9673,14 +9671,14 @@ const ti = /* @__PURE__ */ tA({
       ), t.value.graphShadow.set(
         t.value.cell,
         "My_col-selector-output",
-        Q
+        w
       ), g();
-    }, B = () => {
-      let Q = t.value.graphShadow.get(
+    }, m = () => {
+      let w = t.value.graphShadow.get(
         t.value.cell.id
       ).inCells;
-      for (let w of Q) {
-        let f = t.value.graphShadow.get(w);
+      for (let B of w) {
+        let f = t.value.graphShadow.get(B);
         if (f) {
           let M = f.source.value, D = t.value.graphShadow.get(M), H = q(D.cell.data.component, i.value);
           if (H)
@@ -9691,13 +9689,13 @@ const ti = /* @__PURE__ */ tA({
           }
         }
       }
-      let m = q(e.value, i.value);
-      if (m) {
-        let w = JSON.parse(m);
-        c.value = w.map((f) => f.name);
+      let Q = q(e.value, i.value);
+      if (Q) {
+        let B = JSON.parse(Q);
+        c.value = B.map((f) => f.name);
       } else
         d.value = a.value.map(
-          (w) => w.name
+          (B) => B.name
         );
       t.value.graphShadow.set(
         t.value.cell,
@@ -9706,13 +9704,13 @@ const ti = /* @__PURE__ */ tA({
       ), t.value.graphShadow.set(
         t.value.cell,
         "My_col-selector-output",
-        m ? JSON.parse(m) : []
+        Q ? JSON.parse(Q) : []
       );
     };
     return BA(() => {
-      B();
-    }), (Q, m) => {
-      const w = _("el-tooltip");
+      m();
+    }), (w, Q) => {
+      const B = _("el-tooltip");
       return E(), x("div", Ni, [
         V(" 选择输出列 "),
         p(n(Z), {
@@ -9727,7 +9725,7 @@ const ti = /* @__PURE__ */ tA({
         }),
         p(n(FA), {
           modelValue: o.value,
-          "onUpdate:modelValue": m[1] || (m[1] = (f) => o.value = f),
+          "onUpdate:modelValue": Q[1] || (Q[1] = (f) => o.value = f),
           title: "选择输出列",
           "destroy-on-close": "",
           "w-960": "",
@@ -9742,13 +9740,13 @@ const ti = /* @__PURE__ */ tA({
                 titles: ["已选字段", "已选字段"],
                 props: l,
                 modelValue: c.value,
-                "onUpdate:modelValue": m[0] || (m[0] = (f) => c.value = f),
+                "onUpdate:modelValue": Q[0] || (Q[0] = (f) => c.value = f),
                 data: a.value,
                 "left-default-checked": d.value
               }, {
                 default: u(({ option: f }) => [
                   h("div", Gi, [
-                    p(w, null, {
+                    p(B, null, {
                       content: u(() => [
                         V(U(f.name), 1)
                       ]),
@@ -9821,7 +9819,7 @@ const ti = /* @__PURE__ */ tA({
         name: "字段",
         children: o.value
       }
-    ]), B = y("从左侧列表选择或直接输入函数、字段"), Q = y(a.value.fieldName), m = y(a.value.expression), w = {
+    ]), m = y("从左侧列表选择或直接输入函数、字段"), w = y(a.value.fieldName), Q = y(a.value.expression), B = {
       children: "children",
       label: "name"
     }, f = (R, k) => {
@@ -9831,16 +9829,16 @@ const ti = /* @__PURE__ */ tA({
       var S;
       if (k.isLeaf) {
         if (!Ri.includes(R == null ? void 0 : R.type.toLowerCase())) {
-          B.value = "所选字段需时数值类型的字段";
+          m.value = "所选字段需时数值类型的字段";
           return;
         }
-        (S = r.value) == null || S.insertValue(R.name), B.value = "从左侧列表选择或直接输入函数、字段";
+        (S = r.value) == null || S.insertValue(R.name), m.value = "从左侧列表选择或直接输入函数、字段";
       }
     }, D = () => {
       e("update:modelValue", !1);
     }, H = () => {
       var k;
-      if (!Q.value) {
+      if (!w.value) {
         J.error("字段名不可为空");
         return;
       }
@@ -9851,7 +9849,7 @@ const ti = /* @__PURE__ */ tA({
       }
       e("handleUpdateValue", {
         ...a.value,
-        fieldName: Q.value,
+        fieldName: w.value,
         expression: R
       }), D();
     };
@@ -9879,8 +9877,8 @@ const ti = /* @__PURE__ */ tA({
             h("div", Zi, [
               V(" 新增字段名 "),
               p(S, {
-                modelValue: Q.value,
-                "onUpdate:modelValue": k[0] || (k[0] = (N) => Q.value = N)
+                modelValue: w.value,
+                "onUpdate:modelValue": k[0] || (k[0] = (N) => w.value = N)
               }, null, 8, ["modelValue"])
             ]),
             h("div", Ji, [
@@ -9896,7 +9894,7 @@ const ti = /* @__PURE__ */ tA({
                   ref: l,
                   "default-expand-all": "",
                   data: n(zi),
-                  props: w,
+                  props: B,
                   onNodeClick: f,
                   "filter-node-method": z
                 }, {
@@ -9929,7 +9927,7 @@ const ti = /* @__PURE__ */ tA({
                   ref: c,
                   "default-expand-all": "",
                   data: C.value,
-                  props: w,
+                  props: B,
                   onNodeClick: M,
                   "filter-node-method": X
                 }, {
@@ -9955,10 +9953,10 @@ const ti = /* @__PURE__ */ tA({
                   p(PA, {
                     ref_key: "codeEditorRef",
                     ref: r,
-                    "model-value": m.value
+                    "model-value": Q.value
                   }, null, 8, ["model-value"])
                 ]),
-                h("div", e2, U(B.value), 1)
+                h("div", e2, U(m.value), 1)
               ])
             ]),
             h("div", t2, [
@@ -9996,16 +9994,16 @@ const ti = /* @__PURE__ */ tA({
     let a = eA(
       () => e.value.graphShadow.get(e.value.cell.id).step.value === "running"
     ), o = q(i.value, "config.properties"), r = o.expression, l = o["new-field"];
-    const c = y(), d = y([]), g = y(!1), C = y(), B = y(0), Q = () => {
+    const c = y(), d = y([]), g = y(!1), C = y(), m = y(0), w = () => {
       M.tableData.push({
         fieldName: "",
         expression: "",
         prompt: ""
       });
-    }, m = (v, N) => {
-      C.value = v, B.value = N, g.value = !0;
-    }, w = (v) => {
-      M.tableData[B.value] = v;
+    }, Q = (v, N) => {
+      C.value = v, m.value = N, g.value = !0;
+    }, B = (v) => {
+      M.tableData[m.value] = v;
     }, f = (v) => {
       M.tableData.splice(v, 1);
     }, M = CA({
@@ -10099,7 +10097,7 @@ const ti = /* @__PURE__ */ tA({
         V(" 新增字段 "),
         p(n(Z), {
           type: "primary",
-          onClick: Q,
+          onClick: w,
           style: { "margin-left": "12px" }
         }, {
           default: u(() => [
@@ -10173,7 +10171,7 @@ const ti = /* @__PURE__ */ tA({
                           h("div", null, U(Y.expression), 1),
                           p(n(Z), {
                             icon: n(uA),
-                            onClick: (G) => m(Y, W)
+                            onClick: (G) => Q(Y, W)
                           }, null, 8, ["icon", "onClick"])
                         ])
                       ]),
@@ -10182,7 +10180,7 @@ const ti = /* @__PURE__ */ tA({
                       key: 1,
                       type: "primary",
                       link: "",
-                      onClick: (G) => m(Y, W)
+                      onClick: (G) => Q(Y, W)
                     }, {
                       default: u(() => [
                         V(" 添加字段值 ")
@@ -10213,7 +10211,7 @@ const ti = /* @__PURE__ */ tA({
           "onUpdate:modelValue": N[0] || (N[0] = (Y) => g.value = Y),
           fieldData: C.value,
           inputValue: d.value,
-          onHandleUpdateValue: w
+          onHandleUpdateValue: B
         }, null, 8, ["modelValue", "fieldData", "inputValue"])) : nA("", !0)
       ], 512);
     };
@@ -10300,19 +10298,19 @@ const ti = /* @__PURE__ */ tA({
       // { label: "属于区间", value: "between" },
     ], g = y(!1), C = () => {
       g.value = !0;
-    }, B = () => {
+    }, m = () => {
       g.value = !1;
-    }, Q = () => ({
+    }, w = () => ({
       field: "",
       compare: "",
       value: ""
-    }), m = () => ({
+    }), Q = () => ({
       operator: "or",
-      subCondition: [Q()]
-    }), w = (X = []) => {
-      X.push(Q()), B();
+      subCondition: [w()]
+    }), B = (X = []) => {
+      X.push(w()), m();
     }, f = (X = []) => {
-      X.push(m()), B();
+      X.push(Q()), m();
     }, M = (X = [], R) => {
       X.splice(R, 1), X.length == 0 && r("delAllNode");
     }, D = y(), H = y(!0);
@@ -10476,7 +10474,7 @@ const ti = /* @__PURE__ */ tA({
               h("div", p2, [
                 p(P, {
                   link: "",
-                  onClick: R[1] || (R[1] = (b) => w(n(i).subCondition))
+                  onClick: R[1] || (R[1] = (b) => B(n(i).subCondition))
                 }, {
                   default: u(() => [
                     V(" 条件 ")
@@ -10518,10 +10516,10 @@ const ti = /* @__PURE__ */ tA({
     }, l = () => {
       o.value = !1;
     }, c = y([]), d = () => {
-      let w = t.value.graphShadow.get(
+      let B = t.value.graphShadow.get(
         t.value.cell.id
       ).inCells;
-      for (let M of w) {
+      for (let M of B) {
         let D = t.value.graphShadow.get(M);
         if (D) {
           let H = D.source.value, z = t.value.graphShadow.get(H), X = q(z.cell.data.component, a.value);
@@ -10546,7 +10544,7 @@ const ti = /* @__PURE__ */ tA({
       ));
     }, g = y(), C = () => {
       g.value = {};
-    }, B = () => {
+    }, m = () => {
       g.value = {
         operator: "or",
         isTop: !0,
@@ -10559,8 +10557,8 @@ const ti = /* @__PURE__ */ tA({
           }
         ]
       };
-    }, Q = y(), m = async () => {
-      Q.value ? await Q.value.validateEvent() && (t.value.graphShadow.set(
+    }, w = y(), Q = async () => {
+      w.value ? await w.value.validateEvent() && (t.value.graphShadow.set(
         t.value.cell,
         "My_row-filter-expression",
         g.value
@@ -10568,7 +10566,7 @@ const ti = /* @__PURE__ */ tA({
     };
     return BA(() => {
       d();
-    }), (w, f) => {
+    }), (B, f) => {
       const M = _("el-button"), D = _("el-dialog");
       return E(), x("div", u2, [
         V(" 行过滤配置: "),
@@ -10597,14 +10595,14 @@ const ti = /* @__PURE__ */ tA({
                 (H = g.value) != null && H.isTop ? (E(), K(Ue, {
                   key: 0,
                   ref_key: "filterRef",
-                  ref: Q,
+                  ref: w,
                   condition: g.value,
                   "input-value": c.value,
                   "is-view": !1,
                   onDelAllNode: C
                 }, null, 8, ["condition", "input-value"])) : (E(), K(M, {
                   key: 1,
-                  onClick: B
+                  onClick: m
                 }, {
                   default: u(() => [
                     V(" 添加 ")
@@ -10621,7 +10619,7 @@ const ti = /* @__PURE__ */ tA({
                 }),
                 p(M, {
                   type: "primary",
-                  onClick: m
+                  onClick: Q
                 }, {
                   default: u(() => [
                     V("保存")
@@ -11002,7 +11000,7 @@ const ti = /* @__PURE__ */ tA({
       user: "",
       password: ""
     });
-    const B = [
+    const m = [
       {
         value: "org.postgresql.Driver",
         label: "org.postgresql.Driver"
@@ -11011,7 +11009,7 @@ const ti = /* @__PURE__ */ tA({
         value: "com.mysql.jdbc.Driver",
         label: "com.mysql.jdbc.Driver"
       }
-    ], Q = y(), m = async () => {
+    ], w = y(), Q = async () => {
       if (!q(l, c))
         return;
       let O = q(l, 'config.properties["web预留（自动填入）"]');
@@ -11024,7 +11022,7 @@ const ti = /* @__PURE__ */ tA({
         fullyQualifiedName: C.fullyQualifiedName,
         connection: {}
       });
-    }, w = y({
+    }, B = y({
       label: "label",
       children: "children",
       isLeaf: "isLeaf",
@@ -11032,7 +11030,7 @@ const ti = /* @__PURE__ */ tA({
       // disabled: () => true,
     }), f = y(), M = (F) => {
       const O = z(F);
-      Q.value = O, S(O), C.databaseType = O.serviceType === "Postgres" ? "postgresql" : "mysql", C.id = F;
+      w.value = O, S(O), C.databaseType = O.serviceType === "Postgres" ? "postgresql" : "mysql", C.id = F;
     };
     let D = [];
     const H = async (F, O) => {
@@ -11057,7 +11055,7 @@ const ti = /* @__PURE__ */ tA({
             data: vA(AA),
             isLeaf: !0
           }))
-        })), D.length > 0 && (Q.value = z(C.id));
+        })), D.length > 0 && (w.value = z(C.id));
       }
       O(Y);
     }, z = (F) => {
@@ -11113,7 +11111,7 @@ const ti = /* @__PURE__ */ tA({
         } else {
           (W = R.value) == null || W.setValue("");
           const qA = `SELECT * FROM ${F.label}`;
-          (G = R.value) == null || G.insertValue(qA), C.tableName = F.label, C.user = Q.value.connection.config.username, C.password = Q.value.connection.config.authType.password, C.ip = Q.value.connection.config.hostPort;
+          (G = R.value) == null || G.insertValue(qA), C.tableName = F.label, C.user = w.value.connection.config.username, C.password = w.value.connection.config.authType.password, C.ip = w.value.connection.config.hostPort;
         }
         C.tids = AA, C.warehouseName = F.data.database.name, C.currentSchema = F.data.databaseSchema.name;
       }
@@ -11129,7 +11127,7 @@ const ti = /* @__PURE__ */ tA({
         F
       );
     }), BA(() => {
-      m();
+      Q();
     }), (F, O) => {
       const b = _("el-option"), Y = _("el-select"), W = _("el-input");
       return E(), x("div", Uo, [
@@ -11141,7 +11139,7 @@ const ti = /* @__PURE__ */ tA({
             disabled: n(g)
           }, {
             default: u(() => [
-              (E(), x(aA, null, sA(B, (G) => p(b, {
+              (E(), x(aA, null, sA(m, (G) => p(b, {
                 key: G.value,
                 label: G.label,
                 value: G.value
@@ -11231,7 +11229,7 @@ const ti = /* @__PURE__ */ tA({
                       "flex-1": "",
                       "overflow-y-auto": "",
                       lazy: "",
-                      props: w.value,
+                      props: B.value,
                       load: v,
                       data: k.value,
                       "highlight-current": "",
@@ -11303,7 +11301,7 @@ const ti = /* @__PURE__ */ tA({
               "max-h-148": "",
               "overflow-y-auto": "",
               lazy: "",
-              props: w.value,
+              props: B.value,
               load: v,
               data: k.value,
               "highlight-current": "",
@@ -11784,8 +11782,8 @@ const ti = /* @__PURE__ */ tA({
   }
   return t;
 }, y5 = (s, A) => {
-  var w, f, M, D, H, z, X, R, k;
-  const e = s.data, t = ((f = (w = e.component) == null ? void 0 : w.config) == null ? void 0 : f.descriptors) || {}, i = e.component.type, a = f5[i], o = [], r = [];
+  var B, f, M, D, H, z, X, R, k;
+  const e = s.data, t = ((f = (B = e.component) == null ? void 0 : B.config) == null ? void 0 : f.descriptors) || {}, i = e.component.type, a = f5[i], o = [], r = [];
   for (const S of Object.keys(t)) {
     const v = t[S], N = v.name, j = v.displayName, P = v.description, L = v.required, F = ((M = v.allowableValues) == null ? void 0 : M.map((Y) => ({ label: Y.allowableValue.displayName, value: Y.allowableValue.value }))) || [], O = F.length > 0 ? "select" : "string", b = a == null ? void 0 : a[N];
     if (b !== !1) {
@@ -11816,7 +11814,7 @@ const ti = /* @__PURE__ */ tA({
       },
       { tag: oA, prop: "config.maxBackoffPeriod", label: "重试最大退避时间", tip: "Initial retries are based on the Penalty/Yield Duration time specified in the Settings tab. The duration time is repeatedly doubled for every subsequent retry attempt. This number indicates the maximum allowable time period before another retry attempt occurs." }
     ]
-  }, d = { label: "基础属性", type: "form", validate: !0, column: [{ tag: "div", prop: "config.properties", cls: o }] }, g = { label: "高级属性", type: "form", validate: !0, column: [{ tag: r1, label: "", prop: "config.properties", isFormElem: !0, keys: r }] }, C = { label: "关系", type: "form", validate: !0, column: [...l, c] }, B = {
+  }, d = { label: "基础属性", type: "form", validate: !0, column: [{ tag: "div", prop: "config.properties", cls: o }] }, g = { label: "高级属性", type: "form", validate: !0, column: [{ tag: r1, label: "", prop: "config.properties", isFormElem: !0, keys: r }] }, C = { label: "关系", type: "form", validate: !0, column: [...l, c] }, m = {
     label: "高级配置",
     type: "form",
     validate: !0,
@@ -11851,7 +11849,7 @@ const ti = /* @__PURE__ */ tA({
         ]
       }
     ]
-  }, m = [{
+  }, Q = [{
     label: "基础信息",
     type: "form",
     validate: !0,
@@ -11877,7 +11875,7 @@ const ti = /* @__PURE__ */ tA({
       ] }
     ]
   }];
-  return o.length > 0 && m.push(d), r.length === 0 ? m.push(C, B) : m.push(g, C, B), m;
+  return o.length > 0 && Q.push(d), r.length === 0 ? Q.push(C, m) : Q.push(g, C, m), Q;
 }, M5 = (s, A) => {
   var i, a, o;
   const e = s.data;
@@ -11917,7 +11915,7 @@ const ti = /* @__PURE__ */ tA({
     data: {}
   },
   setup(s) {
-    var B, Q, m, w;
+    var m, w, Q, B;
     const A = s, { data: e } = pA(A), t = y(), i = y(), a = {
       tooltip: {
         trigger: "axis",
@@ -11985,7 +11983,7 @@ const ti = /* @__PURE__ */ tA({
     }), r = eA(() => {
       const { statusHistory: f } = n(e), { fieldDescriptors: M } = f;
       return M.map((D) => ({ label: D.label, value: D.field, title: D.description }));
-    }), l = y(((w = (m = (Q = (B = n(e)) == null ? void 0 : B.statusHistory) == null ? void 0 : Q.fieldDescriptors) == null ? void 0 : m[0]) == null ? void 0 : w.field) || ""), c = eA(() => {
+    }), l = y(((B = (Q = (w = (m = n(e)) == null ? void 0 : m.statusHistory) == null ? void 0 : w.fieldDescriptors) == null ? void 0 : Q[0]) == null ? void 0 : B.field) || ""), c = eA(() => {
       var f, M;
       return ((M = (f = n(e)) == null ? void 0 : f.statusHistory) == null ? void 0 : M.aggregateSnapshots) || [];
     }), d = eA(() => n(c).map((f) => [f.timestamp, q(f.statusMetrics, n(l))])), g = eA(() => n(d).map((f) => f[1])), C = eA(() => ({ title: { text: n(l) }, series: [{ name: n(l), data: n(d) || [] }] }));
@@ -12081,37 +12079,37 @@ const ti = /* @__PURE__ */ tA({
     data: {}
   },
   setup(s) {
-    const A = ie * 60, e = A * 24, t = (m) => {
-      const w = m % e, f = w % A, M = f % ie, D = Math.floor(m / e), H = Math.floor(w / A), z = Math.floor(f / ie), X = Math.floor(M / 1e3), R = M % 1e3;
+    const A = ie * 60, e = A * 24, t = (Q) => {
+      const B = Q % e, f = B % A, M = f % ie, D = Math.floor(Q / e), H = Math.floor(B / A), z = Math.floor(f / ie), X = Math.floor(M / 1e3), R = M % 1e3;
       let k = "";
       return D > 0 && (k += `${D} 天 `), H > 0 && (k += `${H} 小时 `), z > 0 && (k += `${z} 分钟 `), X > 0 && (k += `${X} 秒 `), R > 0 && (k += `${R} 毫秒 `), k;
     }, i = y(!1), a = y(!1);
     let o = "";
-    const r = y({}), l = async (m) => {
-      o = m.uri.replace(/^http(.*?)\/nifi-api/, "/nifi-api");
-      const w = await Q(o);
-      r.value = w.flowFile, i.value = !0;
-    }, c = async (m) => {
-      const w = m ? m.uri.replace(/^http(.*?)\/nifi-api/, "/nifi-api") : o;
-      w && await B(w);
-    }, d = (m) => {
-      const w = m ? m.uri.replace(/^http(.*?)\/nifi-api/, "/nifi-api") : o, f = document.createElement("a");
-      f.href = `${w}/content`, f.download = `${m.filename}.json`, f.click(), f.remove();
+    const r = y({}), l = async (Q) => {
+      o = Q.uri.replace(/^http(.*?)\/nifi-api/, "/nifi-api");
+      const B = await w(o);
+      r.value = B.flowFile, i.value = !0;
+    }, c = async (Q) => {
+      const B = Q ? Q.uri.replace(/^http(.*?)\/nifi-api/, "/nifi-api") : o;
+      B && await m(B);
+    }, d = (Q) => {
+      const B = Q ? Q.uri.replace(/^http(.*?)\/nifi-api/, "/nifi-api") : o, f = document.createElement("a");
+      f.href = `${B}/content`, f.download = `${Q.filename}.json`, f.click(), f.remove();
     }, g = () => {
-    }, C = y(""), B = async (m) => {
-      const w = `${m}/content`, f = await Q(w);
+    }, C = y(""), m = async (Q) => {
+      const B = `${Q}/content`, f = await w(B);
       a.value = !0, C.value = JSON.stringify(f, null, 2).trim();
-    }, Q = (m) => new Promise((w, f) => {
-      fetch(m).then(async (M) => {
+    }, w = (Q) => new Promise((B, f) => {
+      fetch(Q).then(async (M) => {
         const D = M.ok, H = await (D ? M.json() : M.text());
-        D ? w(H) : (J.warning(H), f(H));
+        D ? B(H) : (J.warning(H), f(H));
       }).catch((M) => f(M));
     });
-    return (m, w) => (E(), x("div", Z5, [
+    return (Q, B) => (E(), x("div", Z5, [
       p(n(QA), {
         "w-full": "",
         "h-full": "",
-        data: m.data
+        data: Q.data
       }, {
         default: u(() => [
           p(n($), {
@@ -12212,7 +12210,7 @@ const ti = /* @__PURE__ */ tA({
       }, 8, ["data"]),
       p(n(FA), {
         modelValue: i.value,
-        "onUpdate:modelValue": w[2] || (w[2] = (f) => i.value = f),
+        "onUpdate:modelValue": B[2] || (B[2] = (f) => i.value = f),
         "append-to-body": "",
         title: "详细信息"
       }, {
@@ -12287,7 +12285,7 @@ const ti = /* @__PURE__ */ tA({
                           icon: n(Me),
                           title: "查看数据",
                           type: "primary",
-                          onClick: w[0] || (w[0] = () => c(r.value))
+                          onClick: B[0] || (B[0] = () => c(r.value))
                         }, {
                           default: u(() => [
                             V("查看数据")
@@ -12298,7 +12296,7 @@ const ti = /* @__PURE__ */ tA({
                           icon: n(re),
                           title: "下载",
                           type: "success",
-                          onClick: w[1] || (w[1] = () => d(r.value))
+                          onClick: B[1] || (B[1] = () => d(r.value))
                         }, {
                           default: u(() => [
                             V("下载")
@@ -12334,7 +12332,7 @@ const ti = /* @__PURE__ */ tA({
       }, 8, ["modelValue"]),
       p(n(FA), {
         modelValue: a.value,
-        "onUpdate:modelValue": w[3] || (w[3] = (f) => a.value = f),
+        "onUpdate:modelValue": B[3] || (B[3] = (f) => a.value = f),
         "append-to-body": "",
         title: "文件数据"
       }, {
@@ -12819,12 +12817,12 @@ const ti = /* @__PURE__ */ tA({
   } else {
     let C = i.indexOf("FROM");
     C === -1 && (C = i.indexOf("from"));
-    let B = i.substring(6, C).split(",").map((w) => w.replace(/\s+/g, "")), Q = JSON.stringify(
+    let m = i.substring(6, C).split(",").map((B) => B.replace(/\s+/g, "")), w = JSON.stringify(
       ne([...r, ...l || []])
-    ), m = r.filter(
-      (w) => B.includes(w.name)
+    ), Q = r.filter(
+      (B) => m.includes(B.name)
     ) || [];
-    e["input字段（自动填入）"] = Q, e["output字段（自动填入）"] = JSON.stringify(m), s.graphForm && (t["input字段（自动填入）"] = Q, t["output字段（自动填入）"] = JSON.stringify(m));
+    e["input字段（自动填入）"] = w, e["output字段（自动填入）"] = JSON.stringify(Q), s.graphForm && (t["input字段（自动填入）"] = w, t["output字段（自动填入）"] = JSON.stringify(Q));
   }
   return (g = s.graphShadow) == null || delete g.get(A.id).my_topic_output, !0;
 }, ys = (s, A) => {
@@ -12874,7 +12872,7 @@ const ti = /* @__PURE__ */ tA({
   l[t] = c.id, l[i] = e.tableName, t === "Database Connection Pooling Service" && (l["db-fetch-sql-query"] = e.sqlQuery);
   let g = `/nifi-api/controller-services/${c.id}`, C = `jdbc:${e.databaseType}://${e.ip}`;
   e.databaseType === "postgresql" ? C += `/${e.warehouseName}?currentSchema="${e.currentSchema}"` : C += `/${e.currentSchema}`;
-  let B = {
+  let m = {
     disconnectedNodeAcknowledged: !1,
     component: {
       id: c.id,
@@ -12897,8 +12895,8 @@ const ti = /* @__PURE__ */ tA({
       version: d
     }
   };
-  await s.apiPut(g, B);
-  let Q = `/nifi-api/controller-services/${c.id}/run-status`, m = {
+  await s.apiPut(g, m);
+  let w = `/nifi-api/controller-services/${c.id}/run-status`, Q = {
     disconnectedNodeAcknowledged: !1,
     state: "ENABLED",
     uiOnly: !0,
@@ -12907,7 +12905,7 @@ const ti = /* @__PURE__ */ tA({
       version: d
     }
   };
-  return await s.apiPut(Q, m), !0;
+  return await s.apiPut(w, Q), !0;
 }, bs = async (s, A, e, t) => {
   let i = await s.apiGet(
     `/nifi-api/controller-services/${t}?uiOnly=true`
@@ -13015,8 +13013,8 @@ const ti = /* @__PURE__ */ tA({
     let C = await ((d = (c = s.graphDrawerRef) == null ? void 0 : c.value) == null ? void 0 : d.calculateRef.checkForm());
     if (!C)
       return !1;
-    C.forEach((B) => {
-      t.push(B.fieldName), i.push(B.expression);
+    C.forEach((m) => {
+      t.push(m.fieldName), i.push(m.expression);
     }), e.expression = i.length > 0 ? JSON.stringify(i) : "", e["new-field"] = t.length > 0 ? JSON.stringify(t) : "";
   }
   let a = (g = s.graphShadow) == null ? void 0 : g.get(A.id)["My_cal-column-output"];
@@ -13420,26 +13418,26 @@ class Ps {
   //
   // EDGE
   getEdgeData(A) {
-    var Q, m, w, f, M, D, H;
-    const e = A.data, t = (Q = this.graphShadow) == null ? void 0 : Q.getEdgeData(A), i = n(t == null ? void 0 : t.source) || "", a = n(t == null ? void 0 : t.target) || "", o = (m = this.graph) == null ? void 0 : m.getCellById(i), r = (w = this.graph) == null ? void 0 : w.getCellById(a), l = ((M = (f = o == null ? void 0 : o.data) == null ? void 0 : f.component) == null ? void 0 : M.relationships) || [], c = e.component.name || (e.component.selectedRelationships || []).join(",");
-    let d = "", g = [], C = [], B = {};
-    return e != null && e.id ? (d = A.prop("title"), B = A.data.component, g = ((D = this.graphShadow) == null ? void 0 : D.get(i, "outputPorts")) || [], C = ((H = this.graphShadow) == null ? void 0 : H.get(a, "inputPorts")) || []) : d = `[${o == null ? void 0 : o.prop("label")}] -> [${r == null ? void 0 : r.prop("label")}]`, { title: d, outPorts: g, inPorts: C, modelValue: B, label: c, relationships: l, sourceNode: o, targetNode: r, sourceId: i, targetId: a, id: e == null ? void 0 : e.id };
+    var w, Q, B, f, M, D, H;
+    const e = A.data, t = (w = this.graphShadow) == null ? void 0 : w.getEdgeData(A), i = n(t == null ? void 0 : t.source) || "", a = n(t == null ? void 0 : t.target) || "", o = (Q = this.graph) == null ? void 0 : Q.getCellById(i), r = (B = this.graph) == null ? void 0 : B.getCellById(a), l = ((M = (f = o == null ? void 0 : o.data) == null ? void 0 : f.component) == null ? void 0 : M.relationships) || [], c = e.component.name || (e.component.selectedRelationships || []).join(",");
+    let d = "", g = [], C = [], m = {};
+    return e != null && e.id ? (d = A.prop("title"), m = A.data.component, g = ((D = this.graphShadow) == null ? void 0 : D.get(i, "outputPorts")) || [], C = ((H = this.graphShadow) == null ? void 0 : H.get(a, "inputPorts")) || []) : d = `[${o == null ? void 0 : o.prop("label")}] -> [${r == null ? void 0 : r.prop("label")}]`, { title: d, outPorts: g, inPorts: C, modelValue: m, label: c, relationships: l, sourceNode: o, targetNode: r, sourceId: i, targetId: a, id: e == null ? void 0 : e.id };
   }
   async getEdgeInfo(A) {
-    var w, f, M, D, H, z, X, R, k;
-    const e = (w = this.graphShadow) == null ? void 0 : w.get(A), t = n(e.source), i = n(e.target), a = (f = this.graph) == null ? void 0 : f.getCellById(t), o = (M = this.graph) == null ? void 0 : M.getCellById(i);
+    var B, f, M, D, H, z, X, R, k;
+    const e = (B = this.graphShadow) == null ? void 0 : B.get(A), t = n(e.source), i = n(e.target), a = (f = this.graph) == null ? void 0 : f.getCellById(t), o = (M = this.graph) == null ? void 0 : M.getCellById(i);
     let r = [], l = [];
     const c = ((H = (D = a == null ? void 0 : a.data) == null ? void 0 : D.component) == null ? void 0 : H.relationships) || [], d = `[${a == null ? void 0 : a.prop("label")}] -> [${o == null ? void 0 : o.prop("label")}]`, g = a == null ? void 0 : a.data.component.parentGroupId, C = o == null ? void 0 : o.data.component.parentGroupId;
-    let B = { id: t, groupId: g, type: "PROCESSOR" }, Q = { id: i, groupId: C, type: "PROCESSOR" };
+    let m = { id: t, groupId: g, type: "PROCESSOR" }, w = { id: i, groupId: C, type: "PROCESSOR" };
     if ((a == null ? void 0 : a.data.outputPortCount) > 0) {
       const S = await this.apiGetGroupData(t);
-      r = S.processGroupFlow.flow.outputPorts, B.id = r[0].id, B.type = "OUTPUT_PORT", B.groupId = t, (z = this.graphShadow) == null || z.set(t, "processGroupFlow", S.processGroupFlow), (X = this.graphShadow) == null || X.set(t, "outputPorts", r);
+      r = S.processGroupFlow.flow.outputPorts, m.id = r[0].id, m.type = "OUTPUT_PORT", m.groupId = t, (z = this.graphShadow) == null || z.set(t, "processGroupFlow", S.processGroupFlow), (X = this.graphShadow) == null || X.set(t, "outputPorts", r);
     }
     if ((o == null ? void 0 : o.data.inputPortCount) > 0) {
       const S = await this.apiGetGroupData(i);
-      l = S.processGroupFlow.flow.inputPorts, Q.id = l[0].id, Q.type = "INPUT_PORT", Q.groupId = i, (R = this.graphShadow) == null || R.set(i, "processGroupFlow", S.processGroupFlow), (k = this.graphShadow) == null || k.set(i, "inputPorts", l);
+      l = S.processGroupFlow.flow.inputPorts, w.id = l[0].id, w.type = "INPUT_PORT", w.groupId = i, (R = this.graphShadow) == null || R.set(i, "processGroupFlow", S.processGroupFlow), (k = this.graphShadow) == null || k.set(i, "inputPorts", l);
     }
-    return { title: d, inPorts: l, outPorts: r, source: B, destination: Q, modelValue: { source: B, destination: Q }, relationships: c, sourceNode: a, targetNode: o };
+    return { title: d, inPorts: l, outPorts: r, source: m, destination: w, modelValue: { source: m, destination: w }, relationships: c, sourceNode: a, targetNode: o };
   }
   async edgeElem(A) {
     const { title: e, inPorts: t, outPorts: i, relationships: a, targetNode: o, modelValue: r } = await this.getEdgeInfo(A), l = w5({ relationships: a, outPorts: i }, { cell: o, inPorts: t }, { that: this, modelValue: r });
@@ -14206,8 +14204,8 @@ const We = /* @__PURE__ */ tA({
     const A = s, { names: e = [], rows: t = [], attr: i = {}, data: a = {} } = A, o = Array.isArray(e) ? e : q(a, e) || [], l = (Array.isArray(t) ? t : q(a, t) || []).map((d) => {
       const g = {};
       let C = 0;
-      for (let B of o)
-        g[B] = d[C], C++;
+      for (let m of o)
+        g[m] = d[C], C++;
       return g;
     }), c = o.map((d) => ({ prop: d, label: d, ...i[d] || {} }));
     return (d, g) => (E(), K(n(QA), {
@@ -14384,8 +14382,8 @@ const We = /* @__PURE__ */ tA({
         projectName: "sds"
       }, a = lA.PREFIX + "/previewExecutor/executePreviewByFile", o = await this.apiPost(a, i);
       let r = o.message;
-      const l = o.content || o.result || {}, { previewFieldNames: c, previewFieldTypes: d, previewRows: g, log: C, errors: B } = l;
-      C && (r = C), B == 0 ? EA({
+      const l = o.content || o.result || {}, { previewFieldNames: c, previewFieldTypes: d, previewRows: g, log: C, errors: m } = l;
+      C && (r = C), m == 0 ? EA({
         title: "数据预览",
         message: iA(We, { names: c, types: d, rows: g }),
         cancelButtonText: "关闭",
@@ -14581,7 +14579,7 @@ ${t}\0`;
 //
 I(lA, "PREFIX", "/kettle-api"), I(lA, "PREFIX_TASK", "/task-api");
 let ge = lA;
-const zs = /* @__PURE__ */ Object.assign({ "./tableInput.ts": () => import("./tableInput.DPmrdM7q.js"), "./tableOutput.ts": () => import("./tableOutput.DWOPjJfB.js") }), Rs = async () => {
+const zs = /* @__PURE__ */ Object.assign({ "./tableInput.ts": () => import("./tableInput.COZDU4Fl.js"), "./tableOutput.ts": () => import("./tableOutput.KoSct30-.js") }), Rs = async () => {
   const s = /* @__PURE__ */ new Map();
   for (const [A, e] of Object.entries(zs))
     if (!A.includes("index")) {
@@ -14962,10 +14960,10 @@ class Cr {
   }
   // 初始化节点数据 将 kettle 画布数据转为画布所需要的格式
   initNode(A) {
-    var B;
+    var m;
     const { id: e, label: t, pluginId: i, left: a, top: o, name: r, position: l, icon: c, shape: d, ports: g } = A;
     return {
-      ...((B = this.nodesMetadata.get(r || i)) == null ? void 0 : B.markup) || {},
+      ...((m = this.nodesMetadata.get(r || i)) == null ? void 0 : m.markup) || {},
       shape: d || "vue-node",
       id: e,
       label: t,
@@ -15082,15 +15080,15 @@ class Cr {
       if (g.isNode()) {
         const { save: C = Ne } = this.nodesMetadata.get(g.prop("name")) || {};
         C(g, this), e.push(this.getNodeData(g));
-        const B = this.steps.find((Q) => Q.name == g.id);
-        if (B || console.warn("表单信息丢失！", g.id, this.steps), a.push(B), B && B.connection && !r.includes(B.connection)) {
-          const Q = this.connections.find((m) => (m == null ? void 0 : m.name) == B.connection);
-          Q ? (o.push(Q), r.push(Q.name)) : console.warn("连接信息丢失！", B, this.connections);
+        const m = this.steps.find((w) => w.name == g.id);
+        if (m || console.warn("表单信息丢失！", g.id, this.steps), a.push(m), m && m.connection && !r.includes(m.connection)) {
+          const w = this.connections.find((Q) => (Q == null ? void 0 : Q.name) == m.connection);
+          w ? (o.push(w), r.push(w.name)) : console.warn("连接信息丢失！", m, this.connections);
         }
       }
       if (g.isEdge()) {
-        const { edge: C, order: B } = this.getEdgeData(g) || {};
-        C && t.push(C), B && i.push(B);
+        const { edge: C, order: m } = this.getEdgeData(g) || {};
+        C && t.push(C), m && i.push(m);
       }
     }
     const l = i.length > 0 ? { hop: i } : {}, c = {
@@ -15431,7 +15429,7 @@ const cr = {
   async run() {
     const A = { logLevel: "Basic", safeModeEnabled: !1 }, e = [...this.projectParams];
     try {
-      await EA.confirm(iA(dr, { base: A, params: e }), "运行参数配置", { cancelButtonText: "取消", confirmButtonText: "确定" }), e.length > 0 && (this.projectParams.length = 0, this.projectParams.push(...e.filter((B) => B.name && B.default_value)));
+      await EA.confirm(iA(dr, { base: A, params: e }), "运行参数配置", { cancelButtonText: "取消", confirmButtonText: "确定" }), e.length > 0 && (this.projectParams.length = 0, this.projectParams.push(...e.filter((m) => m.name && m.default_value)));
       const { projectId: t } = this.projectData, { info: i, order: a, step: o, connection: r, step_error_handling: l, slave_transformation: c, attributes: d, notepads: g } = this.event.getProjectTransformation(), C = {
         projectId: t,
         requestId: `/project/${t}`,
@@ -15472,9 +15470,9 @@ const cr = {
             const g = { label: c };
             if (d.outFields && (g.inputFileds = d.outFields), d.fields && d.fields.field.length > 0) {
               const C = d.fields.field;
-              d.outFields ? g.outputFileds = d.outFields.map((B) => {
-                const Q = C.find((M) => M.column_name == B.name), m = Q != null, w = m ? Q.stream_name : B.name, f = B.type;
-                return { enabled: m, name: w, type: f };
+              d.outFields ? g.outputFileds = d.outFields.map((m) => {
+                const w = C.find((M) => M.column_name == m.name), Q = w != null, B = Q ? w.stream_name : m.name, f = m.type;
+                return { enabled: Q, name: B, type: f };
               }) : g.outputFileds = C;
             }
             t.fields[l] = g, t.hasFields = !0;

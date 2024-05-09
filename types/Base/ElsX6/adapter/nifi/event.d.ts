@@ -15,6 +15,7 @@ export declare class NifiEvent {
     flow: Record<string, any[]> | undefined;
     breadcrumb: any;
     currentCellId: string;
+    groupId: string;
     source: Map<string, any>;
     mounted(ctx: IElsX6.Context): void;
     initData(data: any): void;

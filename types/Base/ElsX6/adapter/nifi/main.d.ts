@@ -3,10 +3,12 @@ import { NifiApi } from "./api";
 import { NifiEvent } from "./event";
 import type { IElsX6 } from "../../inter";
 export declare class AdapterNifi {
-    constructor(id: string);
+    constructor(id: string, title?: string);
+    title: string;
     groupId: string;
     api: NifiApi;
     event: NifiEvent;
+    NODE_ELEM: IElsX6.NodeMarkup;
     edgeMeatadata: {
         name: string;
     };
@@ -18,6 +20,10 @@ export declare class AdapterNifi {
     initNodelist(): Promise<void>;
     initClientId(): Promise<void>;
     initGraph(id?: string): Promise<void>;
+    controls(): void;
+    dataSource(): void;
+    configParams(): void;
+    templates(): void;
     refresh(ct?: any): void;
     run(): void;
     stop(): void;

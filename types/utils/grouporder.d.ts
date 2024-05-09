@@ -12,7 +12,7 @@ export declare namespace IGrouporder {
         fn?: (list: T[]) => T[];
     }
     interface Group<T> {
-        index?: number[];
+        index?: (number | undefined)[];
         key?: string | string[];
         fn?: (list: T[]) => Record<string, T[]>;
         iteratee?: any[] | string | Function | Object;
