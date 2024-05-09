@@ -7,7 +7,7 @@ declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_T
         lockScroll: boolean;
     };
 }>, {
-    open: (cell: any) => void;
+    open: (cell: any, isModel?: boolean) => void;
     close: (clear?: boolean | undefined) => void;
     formRef: import("vue").ShallowRef<any>;
     celldata: import("vue").ShallowRef<IElsX6.CellData | undefined>;

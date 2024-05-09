@@ -2,6 +2,7 @@ import { AdapterNifi } from "./main";
 export declare class NifiApi {
     constructor(e: AdapterNifi);
     nifi: AdapterNifi;
+    getNodeList(): Promise<any>;
     getClientId(): Promise<string>;
     getGroupData(id: string): Promise<any>;
     getProcessTypes(): Promise<any>;
