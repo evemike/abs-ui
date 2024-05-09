@@ -4,10 +4,10 @@ import { NifiEvent } from "./event";
 import type { IElsX6 } from "../../inter";
 export declare class AdapterNifi {
     constructor(id: string, title?: string);
-    title: string;
     groupId: string;
     api: NifiApi;
     event: NifiEvent;
+    title: import("vue").Ref<string>;
     NODE_ELEM: IElsX6.NodeMarkup;
     edgeMeatadata: {
         name: string;
@@ -31,5 +31,5 @@ export declare class AdapterNifi {
     close(): void;
     cellEdit(cell: Cell, ct?: any): void;
     cellDelete(cell: Cell, ct?: any): void;
-    getNodeMetadata(d: IElsX6.GraphNode): void;
+    getNodeMetadata(d: IElsX6.GraphNode): {};
 }

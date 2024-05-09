@@ -108,6 +108,7 @@ export declare namespace IElsX6 {
         groupName?: string;
         markup?: NodeMarkup;
         icon?: string;
+        type?: string;
         contextmenu?: IElsElem.Elem[];
         tabs?: NodeTab[];
         events?: NodeEvent[];

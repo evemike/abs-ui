@@ -15,7 +15,6 @@ export declare class NifiEvent {
     flow: Record<string, any[]> | undefined;
     breadcrumb: any;
     currentCellId: string;
-    groupId: string;
     source: Map<string, any>;
     mounted(ctx: IElsX6.Context): void;
     initData(data: any): void;
@@ -35,6 +34,8 @@ export declare class NifiEvent {
     submitDrawer(): void;
     cellAdd(cell: Cell): Promise<void>;
     cellDel(cell: Cell): Promise<void>;
+    cellClear(): Promise<void>;
     cellEdit(cell: Cell): Promise<void>;
     nodeMove(cell: Node): Promise<void>;
+    edgeAdd(cell: Cell): Promise<void>;
 }

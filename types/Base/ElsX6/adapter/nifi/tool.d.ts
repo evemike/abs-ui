@@ -6,3 +6,4 @@ export declare const getCellInfo: (data: any) => [name: string | undefined, id: 
 export declare const getCellUrl: (data: any) => string | undefined;
 export declare const getCellMarkup: (name: NIFI_CELL_NAME, type: string, d: any) => any;
 export declare const statusToStep: (status: string) => IElsX6.CellStep;
+export declare const getDefProcessMarkup: (type: string) => any;
