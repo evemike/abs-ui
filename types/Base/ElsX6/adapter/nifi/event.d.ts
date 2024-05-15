@@ -1,4 +1,5 @@
-import type { Cell, Graph, Node } from "@antv/x6";
+import type { Cell, Graph, Node, Edge } from "@antv/x6";
+import { NIFI_CELL_NAME } from "./tool";
 import { IElsX6 } from "../../inter";
 import { AdapterNifi } from "./main";
 export declare class NifiEvent {
@@ -29,13 +30,16 @@ export declare class NifiEvent {
     updateCellFormData(): void;
     updateCellStatus(): void;
     updateCellData(): void;
-    openDrawer(cell: Cell): void;
+    openDrawer(cell: Cell): Promise<void>;
     closeDrawer(): void;
-    submitDrawer(): void;
-    cellAdd(cell: Cell): Promise<void>;
+    submitDrawer(cell: Cell): void;
     cellDel(cell: Cell): Promise<void>;
     cellClear(): Promise<void>;
     cellEdit(cell: Cell): Promise<void>;
+    cellStatus(cell: Cell, status: "RUN_ONCE" | "STOPPED" | "RUNNING" | "DISABLED"): Promise<void>;
+    nodeAdd(cell: Cell): Promise<void>;
     nodeMove(cell: Node): Promise<void>;
-    edgeAdd(cell: Cell): Promise<void>;
+    templateAdd(cell: Node): Promise<void>;
+    edgeAdd(cell: Edge): Promise<void>;
+    portNameCheck(name: NIFI_CELL_NAME): Promise<unknown>;
 }

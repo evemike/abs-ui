@@ -41,6 +41,7 @@ export declare class GraphShadow {
     setStepTip(cell: Cell, tip: string): void;
     setType(cell: Cell | string, type: string): void;
     setMetadata(cell: Cell | string, md: any): void;
+    setColor(cell: Cell | string, color: string): void;
     toggleSelected(cell: Cell | string, clear?: boolean, value?: boolean): void;
     resetCurrentCell(cell?: Cell): void;
     resetSelectedCells(cells?: Cell[]): void;

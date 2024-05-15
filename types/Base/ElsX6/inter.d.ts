@@ -209,6 +209,7 @@ export declare namespace IElsX6 {
         source: Ref<string>;
         target: Ref<string>;
         labelConfig: EdgeLabelConfig;
+        color: Ref<string>;
     }
     interface NodeData extends CellData {
         inCells: Set<string>;
