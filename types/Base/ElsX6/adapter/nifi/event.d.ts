@@ -36,7 +36,7 @@ export declare class NifiEvent {
     cellDel(cell: Cell): Promise<void>;
     cellClear(): Promise<void>;
     cellEdit(cell: Cell): Promise<void>;
-    cellStatus(cell: Cell, status: "RUN_ONCE" | "STOPPED" | "RUNNING" | "DISABLED"): Promise<void>;
+    cellStatus(cell: Cell, status: "RUN_ONCE" | "STOPPED" | "RUNNING" | "DISABLED" | "ENABLED"): Promise<void>;
     nodeAdd(cell: Cell): Promise<void>;
     nodeMove(cell: Node): Promise<void>;
     templateAdd(cell: Node): Promise<void>;
