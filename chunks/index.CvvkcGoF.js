@@ -1,7 +1,7 @@
 var ot = Object.defineProperty;
 var at = (l, e, t) => e in l ? ot(l, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : l[e] = t;
 var g = (l, e, t) => (at(l, typeof e != "symbol" ? e + "" : e, t), t);
-import "../css/index-BFupOWbu.css";
+import "../css/index-DGmjzqwx.css";
 import { defineComponent as _, inject as rt, computed as te, openBlock as Q, createElementBlock as k, normalizeClass as ke, createBlock as Y, unref as n, createCommentVNode as X, h as N, createStaticVNode as H1, createElementVNode as F, toRefs as me, ref as M, onMounted as De, watch as Ne, normalizeStyle as Ge, toDisplayString as U, renderSlot as qe, shallowRef as ge, withCtx as u, createVNode as d, Fragment as le, renderList as Ae, mergeProps as r1, createTextVNode as J, withModifiers as p1, reactive as ie, toRef as st, withDirectives as lt, vShow as nt, provide as Le, markRaw as ct, render as dt, resolveComponent as Z, pushScopeId as s1, popScopeId as l1, nextTick as pt, isRef as L1, onBeforeUnmount as S1 } from "vue";
 import { M as At, y as W, z as A1, o as se, A as We, B as ht, f as R, C as Pe, G as Ue, D as Ct, F as x1, H as n1, I as k1, J as N1, K as gt, j as Qe, s as G1, L as ut, N as ft, O as de, P as R1, Q as mt, R as wt, u as yt, S as Bt, T as je, U as Be, V as h1, W as Et, m as Ft, X as Qt, Y as Dt, Z as It, g as ne, _ as _e, $ as Mt, l as Ke, k as P1, a0 as bt, a1 as vt, a2 as Ht, a3 as Lt, a4 as St, a5 as Xe, a6 as xt, a7 as kt, a8 as Nt, a9 as Gt, a as z, aa as Rt, ab as Se, ac as Pt, d as ye, e as q, ad as Vt, v as $e, ae as Ot, af as Te, E as pe, ag as Ut, ah as Kt, ai as Tt, aj as Yt, ak as Jt, al as e1, x as Ye, am as V1, an as Zt, ao as C1, ap as Ee, aq as O1, ar as ue, as as U1, at as he, au as Me, av as jt, p as Re, i as Je, aw as g1, ax as K1, ay as qt, az as zt, aA as Wt, aB as T1, aC as u1, aD as _t, aE as Xt } from "./vendor.vR4RX31U.js";
 import { E as fe } from "./main.yWXEAUcF.js";
@@ -10177,8 +10177,8 @@ const zo = (l) => ({ elems: [
     { tag: R, link: !0, cls: "清空队列", "@click": ({ cell: e, contextmenu: t }) => l.dropQuene(e, t) }
   ],
   blank: [
-    { tag: R, link: !0, cls: "刷新", "@click": ({ contextmenu: e }) => l.refresh(e) },
-    { tag: R, link: !0, cls: "清空画布", "@click": () => l.event.cellClear() }
+    { tag: R, link: !0, cls: "刷新", "@click": ({ contextmenu: e }) => l.refresh(e) }
+    // { tag: ElButton, link: true, cls: "清空画布", "@click": () => adapter.event.cellClear() },
   ]
 }), W1 = (l = "config.comments", e = !1) => ({
   type: "form",
@@ -12293,7 +12293,8 @@ class Xa {
       confirmButtonText: "关闭",
       message: N(Wa, {
         clientId: this.clientId
-      })
+      }),
+      customClass: "custom-message-box"
     }).catch(() => {
     });
   }
@@ -12307,7 +12308,8 @@ class Xa {
         clientId: this.clientId,
         flow: this.event.flow,
         groupId: this.groupId
-      })
+      }),
+      customClass: "custom-message-box"
     }).catch(() => {
     });
   }
@@ -12873,7 +12875,7 @@ ${i}\0`;
 //
 g(ae, "PREFIX", "/kettle-api"), g(ae, "PREFIX_TASK", "/task-api");
 let o1 = ae;
-const i5 = /* @__PURE__ */ Object.assign({ "./rowGenerator.ts": () => import("./rowGenerator.Bzl1zbTW.js"), "./sortRows.ts": () => import("./sortRows.CZt-8YaG.js"), "./tableInput.ts": () => import("./tableInput.BX7Z-Azm.js"), "./tableOutput.ts": () => import("./tableOutput.PnRwixOS.js") }), o5 = async () => {
+const i5 = /* @__PURE__ */ Object.assign({ "./rowGenerator.ts": () => import("./rowGenerator.Bzl1zbTW.js"), "./sortRows.ts": () => import("./sortRows.CZt-8YaG.js"), "./tableInput.ts": () => import("./tableInput.CbHQ-mZQ.js"), "./tableOutput.ts": () => import("./tableOutput.CuPjjK7p.js") }), o5 = async () => {
   const l = /* @__PURE__ */ new Map();
   for (const [e, t] of Object.entries(i5))
     if (!e.includes("index")) {
