@@ -7,8 +7,13 @@ export declare namespace INifi {
         markup?: Record<string, any>;
         excludeKeys?: string[];
         selfFormColumn?: IElsForm.Column;
+        initSelfFormColumn?: (cell: Cell, nifi: AdapterNifi) => any[];
         initTabs?: (cell: Cell, nifi: AdapterNifi) => any[];
+        hooksInit?: NodeApi;
+        hooksOpen?: NodeApi;
+        hooksSubmit?: NodeApi;
     }
+    type NodeApi = (cell: Cell, nifi: AdapterNifi) => void;
     type UseNode = () => NodeModel;
     type NodeMetadata = Map<string, NodeModel>;
 }

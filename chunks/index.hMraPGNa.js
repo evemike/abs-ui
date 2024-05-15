@@ -6944,18 +6944,20 @@ Note: This Processor expects CEF messages WITHOUT the syslog headers (i.e. start
     allowEdge: !1,
     // 不允许连接到边
     highlight: !0,
-    // router: {
-    //   name: 'manhattan',
-    //   args: {
-    //     padding: { left: 30, right: 20 },
-    //   },
-    // },
-    connector: {
-      name: "smooth",
+    router: {
+      name: "manhattan",
       args: {
-        radius: 2
+        startDirections: ["right"],
+        endDirections: ["left"],
+        padding: 20
       }
     },
+    // connector: {
+    //   name: 'smooth',
+    //   args: {
+    //     radius: 2,
+    //   },
+    // },
     createEdge() {
       return this.createEdge({
         shape: "vue-edge"
@@ -7032,10 +7034,10 @@ Note: This Processor expects CEF messages WITHOUT the syslog headers (i.e. start
       }
     },
     position: {
-      distance: 0.5,
-      options: {
-        keepGradient: !0
-      }
+      distance: 0.5
+      // options: {
+      //   keepGradient: true,
+      // },
     }
   },
   label: {}
@@ -9807,6 +9809,30 @@ class qo {
     const i = { id: e, state: t, disconnectedNodeAcknowledged: !1 };
     return this.groupUp(i);
   }
+  // 控制器服务
+  // 查询控制器服务
+  getControllerServices() {
+    return this.get("/nifi-api/flow/controller/controller-services?uiOnly=true");
+  }
+  // 创建控制器服务
+  createControllerServices(e) {
+    const t = `/nifi-api/process-groups/${this.nifi.groupId}/controller-services`;
+    return this.post(t, e);
+  }
+  // 编辑控制器
+  editControllerServices(e) {
+    const i = `/nifi-api/controller-services/${e.component.id}`;
+    return this.put(i, e);
+  }
+  // 删除控制器
+  delControllerServices(e) {
+    const t = e.component.id, i = e.revision.version, o = `/nifi-api/controller-services/${t}?version=${i}&clientId=${this.nifi.clientId}&disconnectedNodeAcknowledged=false`;
+    return this.delete(o);
+  }
+  // 启用控制器
+  startControllerServices(e) {
+  }
+  // controllServices
   // 元素操作 增删改
   cellAdd(e, t = "processors") {
     const i = this.nifi.groupId, o = `/nifi-api/process-groups/${i}/${t}`;
@@ -10575,7 +10601,7 @@ class na {
         this.nodeMove(e);
       },
       "drawer:submit": (e) => {
-        this.cellEdit(e);
+        this.submitDrawer(e);
       },
       "blank:click": () => {
         this.closeDrawer();
@@ -10638,7 +10664,7 @@ class na {
   // 元素操作
   // 初始化元素 tab,状态，
   initCell(e) {
-    this.initCellForm(e), this.initCellTabs(e), this.initCellStatus(e);
+    this.initCellForm(e), this.initCellTabs(e), this.initCellStatus(e), this.nifi.cellHooksCall(e, "hooksInit");
   }
   initCellForm(e) {
     var a;
@@ -10690,14 +10716,14 @@ class na {
   //
   async openDrawer(e) {
     var t, i;
-    e.isEdge() ? (await pe.confirm(N(D1, { cell: e, nifi: this.nifi }), { title: "编辑连接" }), this.submitDrawer(e)) : (i = (t = this.drawerRef) == null ? void 0 : t.value) == null || i.open(e);
+    e.isEdge() ? (await pe.confirm(N(D1, { cell: e, nifi: this.nifi }), { title: "编辑连接" }), this.submitDrawer(e)) : (this.nifi.cellHooksCall(e, "hooksOpen"), (i = (t = this.drawerRef) == null ? void 0 : t.value) == null || i.open(e));
   }
   closeDrawer() {
     var e, t;
     (t = (e = this.drawerRef) == null ? void 0 : e.value) == null || t.close();
   }
   submitDrawer(e) {
-    this.cellEdit(e);
+    this.nifi.cellHooksCall(e, "hooksSubmit"), this.cellEdit(e);
   }
   // 新增元素
   // 删除元素
@@ -12172,7 +12198,7 @@ const ca = (l) => {
       ]);
     };
   }
-}), Wa = /* @__PURE__ */ Ie(za, [["__scopeId", "data-v-46f5430d"]]), _a = /* @__PURE__ */ Object.assign({ "./nodes/CalColumn.ts": () => import("./CalColumn.DsJKIYzN.js"), "./nodes/ColSelector.ts": () => import("./ColSelector.sCk33TcW.js"), "./nodes/ConsumeKafka_2_6.ts": () => import("./ConsumeKafka_2_6.B6KpNDzH.js"), "./nodes/ConsumeKafka_2_6_01.ts": () => import("./ConsumeKafka_2_6_01.NAr6oebe.js"), "./nodes/DataCleaner.ts": () => import("./DataCleaner.jcDSJsuR.js"), "./nodes/ExecuteGroovyScript.ts": () => import("./ExecuteGroovyScript.BOLw_YUb.js"), "./nodes/KafkaSQL.ts": () => import("./KafkaSQL.YSeKixe7.js"), "./nodes/PutDatabaseRecord.ts": () => import("./PutDatabaseRecord.B0bWt-BB.js"), "./nodes/QueryDatabaseTableRecord.ts": () => import("./QueryDatabaseTableRecord.Cvf-z4Qd.js"), "./nodes/RowFilter.ts": () => import("./RowFilter.DH0OY1x-.js") });
+}), Wa = /* @__PURE__ */ Ie(za, [["__scopeId", "data-v-46f5430d"]]), _a = /* @__PURE__ */ Object.assign({ "./nodes/CalColumn.ts": () => import("./CalColumn.DsJKIYzN.js"), "./nodes/ColSelector.ts": () => import("./ColSelector.sCk33TcW.js"), "./nodes/ConsumeKafka_2_6.ts": () => import("./ConsumeKafka_2_6.B6KpNDzH.js"), "./nodes/ConsumeKafka_2_6_01.ts": () => import("./ConsumeKafka_2_6_01.NAr6oebe.js"), "./nodes/DataCleaner.ts": () => import("./DataCleaner.jcDSJsuR.js"), "./nodes/ExecuteGroovyScript.ts": () => import("./ExecuteGroovyScript.BOLw_YUb.js"), "./nodes/KafkaSQL.ts": () => import("./KafkaSQL.YSeKixe7.js"), "./nodes/PutDatabaseRecord.ts": () => import("./PutDatabaseRecord.B0bWt-BB.js"), "./nodes/QueryDatabaseTableRecord.ts": () => import("./QueryDatabaseTableRecord.CWfdDl6y.js"), "./nodes/RowFilter.ts": () => import("./RowFilter.DH0OY1x-.js") });
 class Xa {
   constructor(e, t) {
     //
@@ -12317,7 +12343,7 @@ class Xa {
   }
   // 启用
   cellUnDisabled(e, t) {
-    t == null || t.close(), this.event.cellStatus(e, "STOPPED");
+    t == null || t.close(), this.event.cellStatus(e, "ENABLED");
   }
   // 停用
   cellDisabled(e, t) {
@@ -12330,6 +12356,12 @@ class Xa {
   // 删除
   cellDelete(e, t) {
     t == null || t.close(), this.event.cellDel(e);
+  }
+  // cell hooks
+  cellHooksCall(e, t) {
+    var a;
+    const i = e.prop("type"), o = this.NodeMetadata.get(i);
+    o && o[t] && typeof o[t] == "function" && ((a = o[t]) == null || a.call(this, e, this));
   }
   // 查看历史
   // 边操作
@@ -12841,7 +12873,7 @@ ${i}\0`;
 //
 g(ae, "PREFIX", "/kettle-api"), g(ae, "PREFIX_TASK", "/task-api");
 let o1 = ae;
-const i5 = /* @__PURE__ */ Object.assign({ "./rowGenerator.ts": () => import("./rowGenerator.Bzl1zbTW.js"), "./sortRows.ts": () => import("./sortRows.CZt-8YaG.js"), "./tableInput.ts": () => import("./tableInput.6CGS5VEZ.js"), "./tableOutput.ts": () => import("./tableOutput.B8Z_9bYl.js") }), o5 = async () => {
+const i5 = /* @__PURE__ */ Object.assign({ "./rowGenerator.ts": () => import("./rowGenerator.Bzl1zbTW.js"), "./sortRows.ts": () => import("./sortRows.CZt-8YaG.js"), "./tableInput.ts": () => import("./tableInput.BX7Z-Azm.js"), "./tableOutput.ts": () => import("./tableOutput.PnRwixOS.js") }), o5 = async () => {
   const l = /* @__PURE__ */ new Map();
   for (const [e, t] of Object.entries(i5))
     if (!e.includes("index")) {

@@ -15,7 +15,12 @@ export declare class NifiApi {
     initSnippet(data: any): Promise<any>;
     delSnippet(id: string): Promise<any>;
     groupUp(data: any): Promise<any>;
-    groupUpStatus(id: string, state: "ENABLED" | "DISABLED" | "RUNNING" | "STOPPED"): Promise<any>;
+    groupUpStatus(id: string, state: "ENABLED" | "DISABLED" | "RUNNING" | "STOPPED" | "RUN_ONCE"): Promise<any>;
+    getControllerServices(): Promise<any>;
+    createControllerServices(data: any): Promise<any>;
+    editControllerServices(data: any): Promise<any>;
+    delControllerServices(data: any): Promise<any>;
+    startControllerServices(data: any): void;
     cellAdd(data: any, name?: NIFI_CELL_NAME): Promise<any>;
     cellDel(data: any): Promise<any>;
     cellUp(data: any): Promise<any>;
