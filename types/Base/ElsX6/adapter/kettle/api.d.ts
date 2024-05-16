@@ -1,6 +1,10 @@
 import MyWebSocket from "./ws";
 import { AdapterKettle } from "./main";
 import type { Node } from '@antv/x6';
+interface DataPreviewConfig {
+    useOutLimit: boolean;
+    params: any;
+}
 export declare class KettleApi {
     constructor(kettle: AdapterKettle);
     static PREFIX: string;
@@ -25,7 +29,7 @@ export declare class KettleApi {
     getNodes(): Promise<any[]>;
     getProjectInfo(id: string): Promise<any>;
     updateGraph(data: any): Promise<void>;
-    dataPreview(file: string, node: Node): Promise<void>;
+    dataPreview(file: string, node: Node, config?: DataPreviewConfig): Promise<void>;
     initWS(): void;
     handleCall(val: any): void;
     wsHeartBeat(): void;
@@ -49,3 +53,4 @@ export declare class KettleApi {
      */
     static hdrValueUnEscape(str: string): string;
 }
+export {};

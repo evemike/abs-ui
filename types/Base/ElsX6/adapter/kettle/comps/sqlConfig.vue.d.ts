@@ -1,16 +1,17 @@
 interface Props {
-    targetData?: any;
-    sourceList?: any;
+    sourceList?: any[];
+    formData?: any;
+    preview?: () => void;
 }
 declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<Props>, {
-    targetData: () => {};
+    formData: () => {};
     sourceList: () => never[];
 }>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<Props>, {
-    targetData: () => {};
+    formData: () => {};
     sourceList: () => never[];
 }>>>, {
-    sourceList: any;
-    targetData: any;
+    formData: any;
+    sourceList: any[];
 }, {}>;
 export default _default;
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;

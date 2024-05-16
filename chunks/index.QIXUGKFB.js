@@ -12662,28 +12662,32 @@ const et = /* @__PURE__ */ q({
     }
   }
   // 数据预览
-  async dataPreview(e, t) {
+  async dataPreview(e, t, i) {
     try {
-      const i = await ne.prompt("请输入要预览的数据行数", "数据预览", { inputValue: "10", inputType: "number", cancelButtonText: "取消", confirmButtonText: "预览" }), o = {
-        previewSize: Number(i.value),
+      let o = null;
+      i != null && i.useOutLimit || (o = await ne.prompt("请输入要预览的数据行数", "数据预览", { inputValue: "10", inputType: "number", cancelButtonText: "取消", confirmButtonText: "预览" }));
+      const a = {
+        previewSize: Number((o == null ? void 0 : o.value) || 10),
         previewStepName: t.id,
         projectFile: e,
         projectId: "sss",
         projectName: "sds"
-      }, a = oe.PREFIX + "/previewExecutor/executePreviewByFile", l = await this.apiPost(a, o);
-      let s = l.message;
-      const c = l.content || l.result || {}, { previewFieldNames: p, previewFieldTypes: A, previewRows: h, log: C, errors: y } = c;
-      C && (s = C), y == 0 ? ne({
+      };
+      Object.assign(a, (i == null ? void 0 : i.params) || {});
+      const l = oe.PREFIX + "/previewExecutor/executePreviewByFile", s = await this.apiPost(l, a);
+      let c = s.message;
+      const p = s.content || s.result || {}, { previewFieldNames: A, previewFieldTypes: h, previewRows: C, log: y, errors: f } = p;
+      y && (c = y), f == 0 ? ne({
         title: "数据预览",
-        message: P(et, { names: p, types: A, rows: h }),
+        message: P(et, { names: A, types: h, rows: C }),
         cancelButtonText: "关闭",
         confirmButtonText: "查看日志",
         showCancelButton: !0
       }).then(() => {
-        ne({ title: "数据预览日志", message: P(t1, { log: s }), confirmButtonText: "关闭" });
-      }) : ne({ title: "数据预览日志", message: P(t1, { log: s }), confirmButtonText: "关闭" });
-    } catch (i) {
-      console.error("dataPreview :: ===> ", i);
+        ne({ title: "数据预览日志", message: P(t1, { log: c }), confirmButtonText: "关闭" });
+      }) : ne({ title: "数据预览日志", message: P(t1, { log: c }), confirmButtonText: "关闭" });
+    } catch (o) {
+      console.error("dataPreview :: ===> ", o);
     }
   }
   // 运行 ws
@@ -12869,7 +12873,7 @@ ${i}\0`;
 //
 g(oe, "PREFIX", "/kettle-api"), g(oe, "PREFIX_TASK", "/task-api");
 let i1 = oe;
-const i5 = /* @__PURE__ */ Object.assign({ "./rowGenerator.ts": () => import("./rowGenerator.ks1gMNUD.js"), "./sortRows.ts": () => import("./sortRows.D2y2i_io.js"), "./tableInput.ts": () => import("./tableInput.BdH6SJLJ.js"), "./tableOutput.ts": () => import("./tableOutput.D6kU3m_H.js") }), o5 = async () => {
+const i5 = /* @__PURE__ */ Object.assign({ "./olapSql.ts": () => import("./olapSql.CqH7-nNE.js"), "./rowGenerator.ts": () => import("./rowGenerator.ks1gMNUD.js"), "./sortRows.ts": () => import("./sortRows.D2y2i_io.js"), "./tableInput.ts": () => import("./tableInput.C6tJznu4.js"), "./tableOutput.ts": () => import("./tableOutput.CiBP6Aqq.js") }), o5 = async () => {
   const n = /* @__PURE__ */ new Map();
   for (const [e, t] of Object.entries(i5))
     if (!e.includes("index")) {
@@ -13204,6 +13208,10 @@ class b5 {
         switch (console.log(e, t), e) {
           case "datapreview":
             this.dataPreview(t);
+            break;
+          case "datapreviewbysql":
+            this.datapreviewbysql(t);
+            break;
         }
       }
     });
@@ -13355,6 +13363,19 @@ class b5 {
       const i = { transformation: this.getNodeProjectFile(e) };
       this.api.dataPreview(JSON.stringify(i), e);
     }
+  }
+  datapreviewbysql(e) {
+    let { projectFile: t } = this.getProjectFile(), i = JSON.parse(t);
+    delete i.transformation.nodeList;
+    const o = {
+      useOutLimit: !0,
+      params: {
+        projectId: this.kettle.id,
+        relatedPreviousSteps: !0,
+        previewSize: 1e3
+      }
+    };
+    e && e.isNode() && this.api.dataPreview(JSON.stringify(i), e, o);
   }
   // 构建节点数据和 step 数据，以及 connection 数据
   getNodeData(e) {
