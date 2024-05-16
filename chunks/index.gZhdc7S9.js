@@ -3,9 +3,9 @@ var at = (l, e, t) => e in l ? ot(l, e, { enumerable: !0, configurable: !0, writ
 var g = (l, e, t) => (at(l, typeof e != "symbol" ? e + "" : e, t), t);
 import "../css/index-DGmjzqwx.css";
 import { defineComponent as _, inject as rt, computed as te, openBlock as Q, createElementBlock as k, normalizeClass as ke, createBlock as Y, unref as n, createCommentVNode as X, h as N, createStaticVNode as H1, createElementVNode as F, toRefs as me, ref as M, onMounted as De, watch as Ne, normalizeStyle as Ge, toDisplayString as U, renderSlot as qe, shallowRef as ge, withCtx as u, createVNode as d, Fragment as le, renderList as Ae, mergeProps as r1, createTextVNode as J, withModifiers as p1, reactive as ie, toRef as st, withDirectives as lt, vShow as nt, provide as Le, markRaw as ct, render as dt, resolveComponent as Z, pushScopeId as s1, popScopeId as l1, nextTick as pt, isRef as L1, onBeforeUnmount as S1 } from "vue";
-import { M as At, y as W, z as A1, o as se, A as We, B as ht, f as R, C as Pe, G as Ue, D as Ct, F as x1, H as n1, I as k1, J as N1, K as gt, j as Qe, s as G1, L as ut, N as ft, O as de, P as R1, Q as mt, R as wt, u as yt, S as Bt, T as je, U as Be, V as h1, W as Et, m as Ft, X as Qt, Y as Dt, Z as It, g as ne, _ as _e, $ as Mt, l as Ke, k as P1, a0 as bt, a1 as vt, a2 as Ht, a3 as Lt, a4 as St, a5 as Xe, a6 as xt, a7 as kt, a8 as Nt, a9 as Gt, a as z, aa as Rt, ab as Se, ac as Pt, d as ye, e as q, ad as Vt, v as $e, ae as Ot, af as Te, E as pe, ag as Ut, ah as Kt, ai as Tt, aj as Yt, ak as Jt, al as e1, x as Ye, am as V1, an as Zt, ao as C1, ap as Ee, aq as O1, ar as ue, as as U1, at as he, au as Me, av as jt, p as Re, i as Je, aw as g1, ax as K1, ay as qt, az as zt, aA as Wt, aB as T1, aC as u1, aD as _t, aE as Xt } from "./vendor.vR4RX31U.js";
+import { M as At, y as W, z as A1, o as oe, A as We, B as ht, f as R, C as Pe, G as Ue, D as Ct, F as x1, H as n1, I as k1, J as N1, K as gt, j as Qe, s as G1, L as ut, N as ft, O as de, P as R1, Q as mt, R as wt, u as yt, S as Bt, T as je, U as Ee, V as h1, W as Et, m as Ft, X as Qt, Y as Dt, Z as It, g as ne, _ as _e, $ as Mt, l as Ke, k as P1, a0 as bt, a1 as vt, a2 as Ht, a3 as Lt, a4 as St, a5 as Xe, a6 as xt, a7 as kt, a8 as Nt, a9 as Gt, a as z, aa as Rt, ab as Se, ac as Pt, d as ye, e as q, ad as Vt, v as $e, ae as Ot, af as Te, E as pe, ag as Ut, ah as Kt, ai as Tt, aj as Yt, ak as Jt, al as e1, x as Ye, am as V1, an as Zt, ao as C1, ap as Fe, aq as O1, ar as ue, as as U1, at as he, au as Me, av as jt, p as Re, i as Je, aw as g1, ax as K1, ay as qt, az as zt, aA as Wt, aB as T1, aC as u1, aD as _t, aE as Xt } from "./vendor.vR4RX31U.js";
 import { E as fe } from "./main.yWXEAUcF.js";
-import { _ as Fe } from "./main.vue_vue_type_script_setup_true_lang.Bd5hIs-H.js";
+import { _ as Be } from "./main.vue_vue_type_script_setup_true_lang.Bd5hIs-H.js";
 import { _ as Ie } from "./_plugin-vue_export-helper.CHgC5LLL.js";
 import { _ as $t, E as ei } from "./main.vue_vue_type_script_setup_true_lang.DObJ2wHF.js";
 import { _ as ti } from "./view.vue_vue_type_style_index_0_lang.BlrkrPT2.js";
@@ -7101,8 +7101,8 @@ Note: This Processor expects CEF messages WITHOUT the syslog headers (i.e. start
       class: "_node-manage",
       ":style": "```border-color:{{STEP_LIB[step].bc}}```",
       cls: [
-        { tag: se, ":color": "STEP_LIB[step].c", ":class": "```_node-step {{STEP_LIB[step].class}}```", ":title": "stepTip", cls: ({ step: l }) => N(J1[n(l)].icon || "b") || void 0 },
-        { tag: se, cls: { tag: Fe, ":name": "icon" } }
+        { tag: oe, ":color": "STEP_LIB[step].c", ":class": "```_node-step {{STEP_LIB[step].class}}```", ":title": "stepTip", cls: ({ step: l }) => N(J1[n(l)].icon || "b") || void 0 },
+        { tag: oe, cls: { tag: Be, ":name": "icon" } }
       ]
     },
     {
@@ -7117,7 +7117,7 @@ Note: This Processor expects CEF messages WITHOUT the syslog headers (i.e. start
           width: "auto",
           "v-if": "!formStatus?.result",
           cls: [
-            { tag: se, "#reference": "", class: "_node-tip-icon", cls: { tag: ht } },
+            { tag: oe, "#reference": "", class: "_node-tip-icon", cls: { tag: ht } },
             { tag: "div", class: "_node-status-tip", cls: "{{ formStatus?.info.map(t => h('p',{class:'_tip-item'},t)) }}" }
           ]
         },
@@ -7130,7 +7130,7 @@ Note: This Processor expects CEF messages WITHOUT the syslog headers (i.e. start
   class: "_node-tab-header",
   cls: [
     { tag: "div", cls: [
-      { tag: "b", class: "_title", cls: [{ tag: se, cls: { tag: Fe, ":name": "icon" } }, "{{ label || '' }}"] }
+      { tag: "b", class: "_title", cls: [{ tag: oe, cls: { tag: Be, ":name": "icon" } }, "{{ label || '' }}"] }
       // { tag: "b", "@click": "() => close()", class: "_btn", cls: { tag: ElIcon, class: "_close", cls: Close } }
     ] },
     { tag: "div", class: "", cls: [
@@ -7454,7 +7454,7 @@ const Qi = /* @__PURE__ */ Ie(fi, [["render", Fi]]), Di = {
             key: c.value + y.value
           }, {
             default: u(() => [
-              (Q(!0), k(le, null, Ae(A.value, (v, G) => (Q(), Y(n(Be), {
+              (Q(!0), k(le, null, Ae(A.value, (v, G) => (Q(), Y(n(Ee), {
                 key: G + "-" + c.value,
                 name: h.value[G],
                 label: v.label,
@@ -7890,9 +7890,9 @@ const Gi = { class: "_search" }, Ri = ["onMousedown", "title"], Pi = { class: "_
                 onMousedown: (w) => y(I, w),
                 title: I.label
               }, [
-                d(n(se), { class: "_icon" }, {
+                d(n(oe), { class: "_icon" }, {
                   default: u(() => [
-                    d(n(Fe), {
+                    d(n(Be), {
                       name: I.icon || "#prep-virtual-node-font"
                     }, null, 8, ["name"])
                   ]),
@@ -7908,7 +7908,7 @@ const Gi = { class: "_search" }, Ri = ["onMousedown", "title"], Pi = { class: "_
       }, 8, ["modelValue"])
     ], 512));
   }
-}), K5 = (l, e) => {
+}), T5 = (l, e) => {
   const { filter: t, order: i, group: o } = e;
   let a = l;
   return t && (a = q1(a, t)), i && (a = j1(a, i)), o && (a = Z1(a, o)), a;
@@ -9599,7 +9599,7 @@ const Xi = /* @__PURE__ */ _({
             type: "card"
           }, {
             default: u(() => [
-              d(n(Be), {
+              d(n(Ee), {
                 label: "详细信息",
                 name: "detail"
               }, {
@@ -9688,7 +9688,7 @@ const Xi = /* @__PURE__ */ _({
                 ]),
                 _: 1
               }),
-              d(n(Be), {
+              d(n(Ee), {
                 label: "属性",
                 name: "attr"
               }, {
@@ -9999,12 +9999,12 @@ const zo = (l) => ({ elems: [
           class: "_node-manage",
           ":style": "```border-color:{{STEP_LIB[step].bc}}```",
           cls: [
-            { tag: se, "v-if": "cell.prop('name') != 'process-groups'", ":color": "STEP_LIB[step].c", ":class": "```_node-step {{STEP_LIB[step].class}}```", ":title": "stepTip", cls: ({ step: l, STEP_LIB: e }) => N(e[n(l)].icon || "b") || void 0 },
-            { tag: se, "v-if": "cell.prop('name') == 'processors'", cls: { tag: Fe, ":name": "icon" } },
-            { tag: se, "v-if": "cell.prop('name') == 'labels'", cls: { tag: W, type: "textarea" } },
-            { tag: se, "v-if": "cell.prop('name') == 'input-ports'", cls: { tag: Fe, name: "#icon-input" } },
-            { tag: se, "v-if": "cell.prop('name') == 'output-ports'", cls: { tag: Fe, name: "#icon-output" } },
-            { tag: se, "v-if": "cell.prop('name') == 'funnels'", cls: Ut },
+            { tag: oe, "v-if": "cell.prop('name') != 'process-groups'", ":color": "STEP_LIB[step].c", ":class": "```_node-step {{STEP_LIB[step].class}}```", ":title": "stepTip", cls: ({ step: l, STEP_LIB: e }) => N(e[n(l)].icon || "b") || void 0 },
+            { tag: oe, "v-if": "cell.prop('name') == 'processors'", cls: { tag: Be, ":name": "icon" } },
+            { tag: oe, "v-if": "cell.prop('name') == 'labels'", cls: { tag: W, type: "textarea" } },
+            { tag: oe, "v-if": "cell.prop('name') == 'input-ports'", cls: { tag: Be, name: "#icon-input" } },
+            { tag: oe, "v-if": "cell.prop('name') == 'output-ports'", cls: { tag: Be, name: "#icon-output" } },
+            { tag: oe, "v-if": "cell.prop('name') == 'funnels'", cls: Ut },
             {
               tag: "ul",
               "v-if": "cell.prop('name') == 'process-groups'",
@@ -10014,20 +10014,20 @@ const zo = (l) => ({ elems: [
                 {
                   tag: "li",
                   cls: [
-                    { tag: "b", ":title": "'运行实例数 : ' + status.count?.runningCount", cls: [{ tag: se, color: "#67C23A", cls: { tag: Kt } }, " {{ status.count?.runningCount || 0 }}"] }
+                    { tag: "b", ":title": "'运行实例数 : ' + status.count?.runningCount", cls: [{ tag: oe, color: "#67C23A", cls: { tag: Kt } }, " {{ status.count?.runningCount || 0 }}"] }
                     // {tag:'b',title:"停止实例数",cls:[{tag:ElIcon,color:"#909399",cls:{tag:Drizzling}},'{{ status.count?.stoppedCount }}']},
                   ]
                 },
                 {
                   tag: "li",
                   cls: [
-                    { tag: "b", ":title": "'停止实例数 : ' + status.count?.stoppedCount", cls: [{ tag: se, color: "#909399", cls: { tag: Tt } }, " {{ status.count?.stoppedCount || 0 }}"] }
+                    { tag: "b", ":title": "'停止实例数 : ' + status.count?.stoppedCount", cls: [{ tag: oe, color: "#909399", cls: { tag: Tt } }, " {{ status.count?.stoppedCount || 0 }}"] }
                   ]
                 },
                 {
                   tag: "li",
                   cls: [
-                    { tag: "b", ":title": "'无效的实例数 : ' + status.count?.invalidCount", cls: [{ tag: se, color: "#E6A23C", cls: { tag: Yt } }, " {{ status.count?.invalidCount || 0 }}"] }
+                    { tag: "b", ":title": "'无效的实例数 : ' + status.count?.invalidCount", cls: [{ tag: oe, color: "#E6A23C", cls: { tag: Yt } }, " {{ status.count?.invalidCount || 0 }}"] }
                     // {tag:'b',title:"禁止的实例数",cls:[{tag:ElIcon,color:"#F56C6C",cls:{tag:Lightning}},'{{ status.count?.disabledCount }}']},
                   ]
                 },
@@ -10035,7 +10035,7 @@ const zo = (l) => ({ elems: [
                   tag: "li",
                   cls: [
                     // {tag:'b',title:"无效的实例数",cls:[{tag:ElIcon,color:"#E6A23C",cls:{tag:MostlyCloudy}},'{{ status.count?.invalidCount }}']},
-                    { tag: "b", ":title": "'禁止的实例数 : ' + status.count?.disabledCount", cls: [{ tag: se, color: "#F56C6C", cls: { tag: Jt } }, " {{ status.count?.disabledCount || 0 }}"] }
+                    { tag: "b", ":title": "'禁止的实例数 : ' + status.count?.disabledCount", cls: [{ tag: oe, color: "#F56C6C", cls: { tag: Jt } }, " {{ status.count?.disabledCount || 0 }}"] }
                   ]
                 }
                 // {tag:'li',cls:[
@@ -10074,7 +10074,7 @@ const zo = (l) => ({ elems: [
           width: "auto",
           "v-if": "status?.enabled === true",
           cls: [
-            { tag: se, "#reference": "", class: "_node-tip-icon", cls: { tag: N1 } },
+            { tag: oe, "#reference": "", class: "_node-tip-icon", cls: { tag: N1 } },
             { tag: "div", class: "_node-status-tip", cls: ({ status: l }) => {
               var e, t;
               return (t = (e = l.value) == null ? void 0 : e.message) == null ? void 0 : t.map((i) => N("p", { class: "_tip-item" }, i));
@@ -10146,7 +10146,7 @@ const zo = (l) => ({ elems: [
     {
       tag: "div",
       cls: [
-        { tag: "b", class: "_title", cls: [{ tag: se, cls: { tag: Fe, ":name": "icon" } }, "{{ label || '' }}"] }
+        { tag: "b", class: "_title", cls: [{ tag: oe, cls: { tag: Be, ":name": "icon" } }, "{{ label || '' }}"] }
       ]
     },
     {
@@ -10166,6 +10166,7 @@ const zo = (l) => ({ elems: [
     { tag: R, link: !0, cls: "启用", "@click": ({ cell: e, contextmenu: t }) => l.cellUnDisabled(e, t), "v-if": "step == 'disabled' || status.name == 'process-groups'" },
     { tag: R, link: !0, cls: "停用", "@click": ({ cell: e, contextmenu: t }) => l.cellDisabled(e, t), "v-if": "step != 'running' && step != 'disabled' || status.name == 'process-groups'" },
     { tag: R, link: !0, cls: "运行", "@click": ({ cell: e, contextmenu: t }) => l.cellRun(e, t), "v-if": "step == 'stop' || status.name == 'process-groups'" },
+    { tag: R, link: !0, cls: "运行一次", "@click": ({ cell: e, contextmenu: t }) => l.cellRunOnce(e, t), "v-if": "step == 'stop' || status.name == 'process-groups'" },
     { tag: R, link: !0, cls: "停止", "@click": ({ cell: e, contextmenu: t }) => l.cellStop(e, t), "v-if": "step == 'running' || status.name == 'process-groups'" }
     // { tag: ElSwitch, size:"small",inlinePrompt:true, activeText: "显示",inactiveText:"隐藏", ":modelValue":"status.visible","@update:modelValue":({status,$}:any) => {status.value.visible = $[0]} },
   ],
@@ -10219,7 +10220,7 @@ const zo = (l) => ({ elems: [
           { prop: "state", label: "是否启用", tag: O1, activeValue: "STOPPED", inactiveValue: "DISABLED" },
           { prop: "config.penaltyDuration", label: "惩罚处理间隔", tip: "The amount of time used when this processor penalizes a FlowFile." },
           { prop: "config.yieldDuration", label: "让步持续时间", tip: "When a processor yields, it will not be scheduled again until this amount of time elapses." },
-          { tag: Ee, prop: "config.bulletinLevel", label: "公告级别", cls: [{ value: "DEBUG", label: "调试" }, { value: "INFO", label: "信息" }, { value: "WARN", label: "警告" }, { value: "ERROR", label: "错误" }, { value: "NONE", label: "无" }], tip: "The level at which this processor will generate bulletins." }
+          { tag: Fe, prop: "config.bulletinLevel", label: "公告级别", cls: [{ value: "DEBUG", label: "调试" }, { value: "INFO", label: "信息" }, { value: "WARN", label: "警告" }, { value: "ERROR", label: "错误" }, { value: "NONE", label: "无" }], tip: "The level at which this processor will generate bulletins." }
         ]
       },
       {
@@ -10227,7 +10228,7 @@ const zo = (l) => ({ elems: [
         cls: [
           { tag: "legend", cls: "调度" },
           {
-            tag: Ee,
+            tag: Fe,
             prop: "config.schedulingStrategy",
             label: "调度策略",
             cls: [{ value: "TIMER_DRIVEN", label: "定时器驱动" }, { value: "CRON_DRIVEN", label: "基于CRON表达式的驱动" }],
@@ -10238,7 +10239,7 @@ const zo = (l) => ({ elems: [
           },
           { prop: "config.concurrentlySchedulableTaskCount", label: "并发任务数", ":disabled": "formData?.config?.schedulingStrategy == 'TIMER_DRIVEN'", tip: "The number of tasks that should be concurrently scheduled for this processor." },
           { prop: "config.schedulingPeriod", label: "运行计划", tip: "The amount of time that should elapse between task executions." },
-          { tag: Ee, prop: "config.executionNode", label: "执行", cls: [{ value: "ALL", label: "所有节点" }, { value: "PRIMARY", label: "主节点" }], tip: "The node(s) that this processor will be scheduled to run on when clustered." }
+          { tag: Fe, prop: "config.executionNode", label: "执行", cls: [{ value: "ALL", label: "所有节点" }, { value: "PRIMARY", label: "主节点" }], tip: "The node(s) that this processor will be scheduled to run on when clustered." }
         ]
       }
     ]
@@ -10287,16 +10288,16 @@ const zo = (l) => ({ elems: [
   ]
 }], ta = (l) => {
   const e = l.paramsContext;
-  return { tag: Ee, valueKey: "id", prop: "parameterContext", label: "选择参数上下文", cls: e.map((t) => ({ label: t.component.name, tip: t.component.description, value: { id: t.id, component: { id: t.id, name: t.component.name }, permissions: t.permissions } })) };
+  return { tag: Fe, valueKey: "id", prop: "parameterContext", label: "选择参数上下文", cls: e.map((t) => ({ label: t.component.name, tip: t.component.description, value: { id: t.id, component: { id: t.id, name: t.component.name }, permissions: t.permissions } })) };
 }, ia = (l, e) => {
   const t = { label: "高级配置", type: "form", validate: !0, column: [
     ta(e),
-    { tag: Ee, label: "FlowFile并发数", prop: "flowfileConcurrency", cls: [
+    { tag: Fe, label: "FlowFile并发数", prop: "flowfileConcurrency", cls: [
       { label: "单个节点每个 flowfile", value: "SINGLE_FLOWFILE_PER_NODE", tip: "Only a single FlowFile is to be allowed to enter the Process Group at a time on each node in the cluster. While that FlowFile may be split into many or spawn many children, no additional FlowFiles will be allowed to enter the Process Group through a Local Input Port until the previous FlowFile - and all of its child/descendent FlowFiles - have been processed." },
       { label: "单个节点每个批次", value: "SINGLE_BATCH_PER_NODE", tip: "When an Input Port pulls a FlowFile into the Process Group, FlowFiles will continue to be ingested into the Process Group until all input queues have been emptied. At that point, no additional FlowFiles will be allowed to enter the Process Group through a Local Input Port until the entire batch of FlowFiles has been processed." },
       { label: "无限制", value: "UNBOUNDED", tip: "The number of FlowFiles that can be processed concurrently is unbounded." }
     ] },
-    { tag: Ee, label: "出站策略", prop: "flowfileOutboundPolicy", cls: [
+    { tag: Fe, label: "出站策略", prop: "flowfileOutboundPolicy", cls: [
       { label: "当可用时流式传输", value: "STREAM_WHEN_AVAILABLE", tip: "FlowFiles that are queued up to be transferred out of a Process Group by an Output Port will be transferred out of the Process Group as soon as they are available." },
       { label: "批量输出", value: "BATCH_OUTPUT", tip: "FlowFiles that are queued up to be transferred out of a Process Group by an Output Port will remain queued until all FlowFiles in the Process Group are ready to be transferred out of the group. The FlowFiles will then be transferred out of the group. This setting will be ignored if the FlowFile Concurrency is Unbounded." }
     ] },
@@ -10356,14 +10357,14 @@ const zo = (l) => ({ elems: [
       destination: {}
     }), c = ie({ groupName: i.groupTitle, isGroup: !1 }), p = ie({ groupName: i.groupTitle, isGroup: !1 }), A = (G = o.source) == null ? void 0 : G.cell, h = (K = o.target) == null ? void 0 : K.cell, C = i.event.source.get(A), y = i.event.source.get(h), f = (b = (H = C == null ? void 0 : C.component) == null ? void 0 : H.relationships) == null ? void 0 : b.map((L) => ({ label: L.name, desc: L.description })), m = ie([]), E = ie([]);
     (async () => {
-      var L, S, x, P, $, T, O, j, re, ee;
+      var L, S, x, P, $, T, O, j, se, ee;
       if (C.outputPortCount && C.outputPortCount > 0) {
-        const oe = await i.api.getGroupData(A), He = (x = (S = (L = oe == null ? void 0 : oe.processGroupFlow) == null ? void 0 : L.breadcrumb) == null ? void 0 : S.breadcrumb) == null ? void 0 : x.name, we = (($ = (P = oe == null ? void 0 : oe.processGroupFlow) == null ? void 0 : P.flow) == null ? void 0 : $.outputPorts.map((Ce) => ({ label: Ce.component.name, value: Ce.id, data: { name: Ce.component.name, id: Ce.id, groupId: A, type: "OUTPUT_PORT" } }))) || [];
+        const ae = await i.api.getGroupData(A), He = (x = (S = (L = ae == null ? void 0 : ae.processGroupFlow) == null ? void 0 : L.breadcrumb) == null ? void 0 : S.breadcrumb) == null ? void 0 : x.name, we = (($ = (P = ae == null ? void 0 : ae.processGroupFlow) == null ? void 0 : P.flow) == null ? void 0 : $.outputPorts.map((Ce) => ({ label: Ce.component.name, value: Ce.id, data: { name: Ce.component.name, id: Ce.id, groupId: A, type: "OUTPUT_PORT" } }))) || [];
         E.push(...we), p.groupName = He, p.type = "处理组", p.isGroup = !0, p.name = we[0].label, r.source = we[0].data;
       } else
         p.name = C.component.name, p.type = t1(C), r.source = { id: A, groupId: i.groupId, type: f1(C) };
       if (y.inputPortCount && y.inputPortCount > 0) {
-        const oe = await i.api.getGroupData(h), He = (j = (O = (T = oe == null ? void 0 : oe.processGroupFlow) == null ? void 0 : T.breadcrumb) == null ? void 0 : O.breadcrumb) == null ? void 0 : j.name, we = ((ee = (re = oe == null ? void 0 : oe.processGroupFlow) == null ? void 0 : re.flow) == null ? void 0 : ee.inputPorts.map((Ce) => ({ label: Ce.component.name, value: Ce.id, data: { name: Ce.component.name, id: Ce.id, groupId: h, type: "INPUT_PORT" } }))) || [];
+        const ae = await i.api.getGroupData(h), He = (j = (O = (T = ae == null ? void 0 : ae.processGroupFlow) == null ? void 0 : T.breadcrumb) == null ? void 0 : O.breadcrumb) == null ? void 0 : j.name, we = ((ee = (se = ae == null ? void 0 : ae.processGroupFlow) == null ? void 0 : se.flow) == null ? void 0 : ee.inputPorts.map((Ce) => ({ label: Ce.component.name, value: Ce.id, data: { name: Ce.component.name, id: Ce.id, groupId: h, type: "INPUT_PORT" } }))) || [];
         m.push(...we), c.groupName = He, c.type = "处理组", c.isGroup = !0, c.name = we[0].label, r.destination = we[0].data;
       } else
         c.name = y.component.name, c.type = t1(y), r.destination = { id: h, groupId: i.groupId, type: f1(y) };
@@ -10625,7 +10626,9 @@ class na {
   //
   mounted(e) {
     var t;
-    this.context = e, this.graph = e.graph.value, this.shadow = e.graphShadow, this.drawerRef = e.drawerRef, this.form = e.graphForm, (t = this.graph) == null || t.clearCells({ silent: !0 }), this.initFlow();
+    this.context = e, this.graph = e.graph.value, this.shadow = e.graphShadow, this.drawerRef = e.drawerRef, this.form = e.graphForm;
+    debugger;
+    (t = this.graph) == null || t.clearCells({ silent: !0 }), this.initFlow();
   }
   // 初始化画布 将接口获取的数据 解析
   initData(e) {
@@ -10716,6 +10719,7 @@ class na {
   //
   async openDrawer(e) {
     var t, i;
+    debugger;
     e.isEdge() ? (await pe.confirm(N(D1, { cell: e, nifi: this.nifi }), { title: "编辑连接" }), this.submitDrawer(e)) : (this.nifi.cellHooksCall(e, "hooksOpen"), (i = (t = this.drawerRef) == null ? void 0 : t.value) == null || i.open(e));
   }
   closeDrawer() {
@@ -10988,13 +10992,13 @@ const ca = (l) => {
       I.value = !1, (O = w.value) == null || O.resetFields();
     }, H = async () => {
       var O;
-      await ((O = w.value) == null ? void 0 : O.validate(async (j, re) => {
+      await ((O = w.value) == null ? void 0 : O.validate(async (j, se) => {
         j ? await y(
           t.value,
           i.value,
           o.value,
           D
-        ) && K() : console.log("error submit!", re);
+        ) && K() : console.log("error submit!", se);
       }));
     }, b = M(!1), V = M(), L = ie({
       template: []
@@ -11009,18 +11013,18 @@ const ca = (l) => {
       L.template = j;
     }, T = async () => {
       var O;
-      await ((O = V.value) == null ? void 0 : O.validate(async (j, re) => {
-        j ? await f(L.template) && P() : console.log("error submit!", re);
+      await ((O = V.value) == null ? void 0 : O.validate(async (j, se) => {
+        j ? await f(L.template) && P() : console.log("error submit!", se);
       }));
     };
     return De(() => {
       r();
     }), (O, j) => {
-      const re = Z("el-button"), ee = Z("el-input"), oe = Z("el-table-column"), He = Z("el-popconfirm"), we = Z("el-table"), Ce = Z("el-form-item"), c1 = Z("el-form"), d1 = Z("el-dialog"), it = Z("el-upload");
+      const se = Z("el-button"), ee = Z("el-input"), ae = Z("el-table-column"), He = Z("el-popconfirm"), we = Z("el-table"), Ce = Z("el-form-item"), c1 = Z("el-form"), d1 = Z("el-dialog"), it = Z("el-upload");
       return Q(), k("div", pa, [
         F("div", Aa, U(n(A)), 1),
         F("div", ha, [
-          d(re, {
+          d(se, {
             icon: n(Re),
             onClick: G
           }, {
@@ -11029,7 +11033,7 @@ const ca = (l) => {
             ]),
             _: 1
           }, 8, ["icon"]),
-          d(re, {
+          d(se, {
             icon: n(P1),
             onClick: x
           }, {
@@ -11060,25 +11064,25 @@ const ca = (l) => {
           height: "400"
         }, {
           default: u(() => [
-            d(oe, {
+            d(ae, {
               label: "名称",
               prop: "name"
             }),
-            d(oe, {
+            d(ae, {
               label: "日期/时间",
               prop: "timestamp"
             }),
-            d(oe, {
+            d(ae, {
               label: "描述",
               prop: "description"
             }),
-            d(oe, {
+            d(ae, {
               label: "流程组 ID",
               prop: "groupId"
             }),
-            d(oe, { label: "操作" }, {
+            d(ae, { label: "操作" }, {
               default: u(({ row: ce }) => [
-                d(re, {
+                d(se, {
                   icon: n(Ke),
                   onClick: () => E(ce)
                 }, null, 8, ["icon", "onClick"]),
@@ -11088,10 +11092,10 @@ const ca = (l) => {
                   "cancel-button-text": "取消",
                   "icon-color": "#626AEF",
                   title: `删除模板'${ce.name}'?`,
-                  onConfirm: (L5) => B(ce.id)
+                  onConfirm: (S5) => B(ce.id)
                 }, {
                   reference: u(() => [
-                    d(re, { icon: n(Qe) }, null, 8, ["icon"])
+                    d(se, { icon: n(Qe) }, null, 8, ["icon"])
                   ]),
                   _: 2
                 }, 1032, ["title", "onConfirm"])
@@ -11147,13 +11151,13 @@ const ca = (l) => {
               _: 1
             }, 8, ["model", "rules"]),
             F("div", ua, [
-              d(re, { onClick: K }, {
+              d(se, { onClick: K }, {
                 default: u(() => [
                   J("取消")
                 ]),
                 _: 1
               }),
-              d(re, {
+              d(se, {
                 type: "primary",
                 onClick: H
               }, {
@@ -11195,7 +11199,7 @@ const ca = (l) => {
                       "on-change": $
                     }, {
                       default: u(() => [
-                        d(re, { type: "primary" }, {
+                        d(se, { type: "primary" }, {
                           default: u(() => [
                             J("选择模板")
                           ]),
@@ -11211,13 +11215,13 @@ const ca = (l) => {
               _: 1
             }, 8, ["model", "rules"]),
             F("div", fa, [
-              d(re, { onClick: P }, {
+              d(se, { onClick: P }, {
                 default: u(() => [
                   J("取消")
                 ]),
                 _: 1
               }),
-              d(re, {
+              d(se, {
                 type: "primary",
                 onClick: T
               }, {
@@ -11300,9 +11304,9 @@ const ca = (l) => {
       props: ["disabled", "data"],
       setup(y, f) {
         return () => N(je, { modelValue: "A", class: "w-50vw h-50vh" }, { default: () => [
-          N(Be, { name: "A", label: "设置" }, { default: () => N(c, y) }),
-          N(Be, { name: "B", label: "参数" }, { default: () => N(p, y) }),
-          N(Be, { name: "C", label: "继承" }, { default: () => N(A, y) })
+          N(Ee, { name: "A", label: "设置" }, { default: () => N(c, y) }),
+          N(Ee, { name: "B", label: "参数" }, { default: () => N(p, y) }),
+          N(Ee, { name: "C", label: "继承" }, { default: () => N(A, y) })
         ] });
       }
     });
@@ -11932,8 +11936,8 @@ const ca = (l) => {
     return De(() => {
       a.value && G();
     }), (H, b) => {
-      const V = Z("el-input"), L = Z("el-form-item"), S = Z("el-form"), x = Z("el-icon"), P = Z("el-tooltip"), $ = Z("el-tree"), T = Z("el-tab-pane"), O = Z("el-tabs"), j = Z("el-button"), re = Z("el-dialog");
-      return Q(), Y(re, {
+      const V = Z("el-input"), L = Z("el-form-item"), S = Z("el-form"), x = Z("el-icon"), P = Z("el-tooltip"), $ = Z("el-tree"), T = Z("el-tab-pane"), O = Z("el-tabs"), j = Z("el-button"), se = Z("el-dialog");
+      return Q(), Y(se, {
         "w-900": "",
         "h-500": "",
         "model-value": n(o),
@@ -12339,6 +12343,9 @@ class Xa {
   cellRun(e, t) {
     t == null || t.close(), this.event.cellStatus(e, "RUNNING");
   }
+  cellRunOnce(e, t) {
+    t == null || t.close(), this.event.cellStatus(e, "RUN_ONCE");
+  }
   // 
   cellStop(e, t) {
     t == null || t.close(), this.event.cellStatus(e, "STOPPED");
@@ -12550,7 +12557,7 @@ const tt = /* @__PURE__ */ _({
       ]))), 256))
     ]));
   }
-}), ae = class ae {
+}), re = class re {
   constructor(e) {
     //
     g(this, "kettle");
@@ -12599,12 +12606,12 @@ const tt = /* @__PURE__ */ _({
       projectName: Math.random().toString(36).slice(-9),
       projectNameCn: "测试任务",
       projectFileVO: e
-    }, i = ae.PREFIX + "/batch/project/add";
+    }, i = re.PREFIX + "/batch/project/add";
     return this.apiPost(i, t);
   }
   // 获取项目列表
   async getProjects() {
-    const e = ae.PREFIX + "/batch/project/selectLikeBy?pageNum=1&pageSize=100&projectStatus=&order=updateTime&sort=DESC";
+    const e = re.PREFIX + "/batch/project/selectLikeBy?pageNum=1&pageSize=100&projectStatus=&order=updateTime&sort=DESC";
     return this.apiGet(e);
   }
   // 初始化项目
@@ -12619,7 +12626,7 @@ const tt = /* @__PURE__ */ _({
     this.updateGraph(i);
   }
   async getToken() {
-    const e = ae.PREFIX + "/api/dataintegration-common-sso-provider/oauth/token", t = new FormData();
+    const e = re.PREFIX + "/api/dataintegration-common-sso-provider/oauth/token", t = new FormData();
     t.append("username", "admin"), t.append("password", "123"), t.append("grant_type", "password"), t.append("client_id", "dataintegration"), t.append("client_secret", "dataintegration");
     try {
       const i = await this.apiPost(e, t, {});
@@ -12631,7 +12638,7 @@ const tt = /* @__PURE__ */ _({
   // 获取节点列表 
   async getNodes() {
     var t;
-    const e = ae.PREFIX_TASK + "/batch/pluginManage/getAllBasicPluginInfoByUserId";
+    const e = re.PREFIX_TASK + "/batch/pluginManage/getAllBasicPluginInfoByUserId";
     try {
       const o = (t = (await this.apiGet(e)).result) == null ? void 0 : t.map((a) => {
         var s;
@@ -12645,7 +12652,7 @@ const tt = /* @__PURE__ */ _({
   }
   // 项目信息 /api/dataintegration-project-provider/project/getProjectFile/a235fc269f3640a78a2bdcf6f3431d43
   async getProjectInfo(e) {
-    const t = ae.PREFIX + `/batch/project/getProjectFile/${e}`, o = (await this.apiGet(t)).result;
+    const t = re.PREFIX + `/batch/project/getProjectFile/${e}`, o = (await this.apiGet(t)).result;
     return o.projectStr = o.projectFile, o.projectFile = JSON.parse(o.projectFile), o;
   }
   // 获取字段信息 api/dataintegration-di-run-management-provider/database/getFieldInfo
@@ -12659,7 +12666,7 @@ const tt = /* @__PURE__ */ _({
   // 新建画布
   // 更新画布
   async updateGraph(e) {
-    const t = ae.PREFIX + "/batch/project/update";
+    const t = re.PREFIX + "/batch/project/update";
     try {
       const i = await this.apiPut(t, e);
       i.code == "200" || i.code == "10000" ? z.success("保存成功") : z.error("保存失败：" + (i.message || ""));
@@ -12676,7 +12683,7 @@ const tt = /* @__PURE__ */ _({
         projectFile: e,
         projectId: "sss",
         projectName: "sds"
-      }, a = ae.PREFIX + "/previewExecutor/executePreviewByFile", s = await this.apiPost(a, o);
+      }, a = re.PREFIX + "/previewExecutor/executePreviewByFile", s = await this.apiPost(a, o);
       let r = s.message;
       const c = s.content || s.result || {}, { previewFieldNames: p, previewFieldTypes: A, previewRows: h, log: C, errors: y } = c;
       C && (r = C), y == 0 ? pe({
@@ -12700,7 +12707,7 @@ const tt = /* @__PURE__ */ _({
   // ws 
   initWS() {
     this.mws = new e5({
-      url: ae.PREFIX + "/ws",
+      url: re.PREFIX + "/ws",
       getKey: (e) => {
         var t;
         return (t = e.data.split(`
@@ -12764,7 +12771,7 @@ const tt = /* @__PURE__ */ _({
     i && (t["content-length"] = new TextEncoder().encode(i).length);
     const o = [e];
     for (const [s, r] of Object.entries(t))
-      o.push(`${s}:${typeof r == "string" ? ae.hdrValueEscape(r) : r}`);
+      o.push(`${s}:${typeof r == "string" ? re.hdrValueEscape(r) : r}`);
     return `${o.join(`
 `)}
 
@@ -12813,17 +12820,17 @@ ${i}\0`;
   // 基础请求处理逻辑封装
   // apiPost(url: string, data: any = {}, headers: Record<string, any> = { "Content-Type": "application/json", Authorization: `Bearer ${this.token}` }) {
   apiPost(e, t = {}, i = { "Content-Type": "application/json" }) {
-    return ae.POST(e, t, i);
+    return re.POST(e, t, i);
   }
   // apiGet(url: string, headers: Record<string, any> = { Authorization: `Bearer ${this.token}` }) {
   apiGet(e, t = {}) {
-    return ae.GET(e, t);
+    return re.GET(e, t);
   }
   apiPut(e, t = {}) {
-    return ae.PUT(e, t);
+    return re.PUT(e, t);
   }
   apiDelete(e) {
-    return ae.DELETE(e);
+    return re.DELETE(e);
   }
   static GET(e, t = {}) {
     return new Promise((i, o) => {
@@ -12858,8 +12865,8 @@ ${i}\0`;
     });
   }
   static async getFieldInfo(e) {
-    const t = ae.PREFIX + "/database/getFieldInfo";
-    return await ae.POST(t, e);
+    const t = re.PREFIX + "/database/getFieldInfo";
+    return await re.POST(t, e);
   }
   static hdrValueEscape(e) {
     return e.replace(/\\/g, "\\\\").replace(/\r/g, "\\r").replace(/\n/g, "\\n").replace(/:/g, "\\c");
@@ -12873,9 +12880,9 @@ ${i}\0`;
   }
 };
 //
-g(ae, "PREFIX", "/kettle-api"), g(ae, "PREFIX_TASK", "/task-api");
-let o1 = ae;
-const i5 = /* @__PURE__ */ Object.assign({ "./rowGenerator.ts": () => import("./rowGenerator.Bzl1zbTW.js"), "./sortRows.ts": () => import("./sortRows.CZt-8YaG.js"), "./tableInput.ts": () => import("./tableInput.CbHQ-mZQ.js"), "./tableOutput.ts": () => import("./tableOutput.CuPjjK7p.js") }), o5 = async () => {
+g(re, "PREFIX", "/kettle-api"), g(re, "PREFIX_TASK", "/task-api");
+let o1 = re;
+const i5 = /* @__PURE__ */ Object.assign({ "./rowGenerator.ts": () => import("./rowGenerator.Bzl1zbTW.js"), "./sortRows.ts": () => import("./sortRows.CZt-8YaG.js"), "./tableInput.ts": () => import("./tableInput.DRa1AE2x.js"), "./tableOutput.ts": () => import("./tableOutput.o75zDVu_.js") }), o5 = async () => {
   const l = /* @__PURE__ */ new Map();
   for (const [e, t] of Object.entries(i5))
     if (!e.includes("index")) {
@@ -12982,7 +12989,35 @@ const i5 = /* @__PURE__ */ Object.assign({ "./rowGenerator.ts": () => import("./
   { icon: Wt, title: "停止", text: "停止", disabled: te(() => l.isRun.value == !1), handle: () => l.stop() },
   { icon: T1, title: "运行结果", text: "运行结果", disabled: te(() => l.hasRunResult.value == !1), handle: () => l.openRunResult() },
   { icon: x1, title: "参数配置", text: "参数配置", handle: () => l.config() }
-] }), g5 = [
+] }), g5 = {
+  tag: "div",
+  class: "_default-node",
+  ":class": "step",
+  cls: [
+    {
+      tag: "div",
+      class: "_node-manage",
+      ":style": "```border-color:{{STEP_LIB[step].bc}}```",
+      cls: [
+        { tag: oe, "v-if": "STEP_LIB[step].icon != undefined", ":color": "STEP_LIB[step].c", ":class": "```_node-step {{STEP_LIB[step].class}}```", ":title": "stepTip", cls: ({ step: l, STEP_LIB: e }) => N(e[n(l)].icon) || void 0 },
+        { tag: oe, cls: { tag: Be, ":name": "icon" } }
+      ]
+    },
+    {
+      tag: "div",
+      class: "_label-box",
+      cls: [
+        // {
+        //   tag: ElPopover, trigger: "hover", popperClass: "_node-label-tip-popover", showArrow: false, width: "auto", "v-if": "!formStatus?.result", cls: [
+        //     { tag: ElIcon, "#reference": "", class: "_node-tip-icon", cls: { tag: WarningFilled } },
+        //     { tag: 'div', class: "_node-status-tip", cls: "{{ formStatus?.info.map(t => h('p',{class:'_tip-item'},t)) }}" }
+        //   ]
+        // },
+        { tag: "span", class: "_label", ":style": "```color:{{STEP_LIB[step].c}}```", cls: "{{ label }}" }
+      ]
+    }
+  ]
+}, u5 = [
   { label: "序号", type: "index", width: 60, align: "center" },
   { label: "步骤名称", prop: "label" },
   { label: "复制记录数", prop: "copy" },
@@ -12997,17 +13032,17 @@ const i5 = /* @__PURE__ */ Object.assign({ "./rowGenerator.ts": () => import("./
   { label: "时间/秒", prop: "seconds" },
   { label: "速度(条/秒)", prop: "speed" },
   { label: "pri/in/out", prop: "priority" }
-], u5 = [
+], f5 = [
   { label: "日志", default: !0, elem: { tag: i1, ":log": "runResult.get(currentId).log", ":key": "currentId" } },
-  { label: "统计", elem: { tag: ye, ":key": "currentId", ":data": "runResult.get(currentId).executorSteps", cls: g5.map((l) => ({ tag: q, ...l })) } },
+  { label: "统计", elem: { tag: ye, ":key": "currentId", ":data": "runResult.get(currentId).executorSteps", cls: u5.map((l) => ({ tag: q, ...l })) } },
   { label: "数据预览", elem: { tag: tt, style: "height:100%;", ":key": "currentCell + currentId", ":data": "runResult.get(currentId)", ":names": "```preview.{{currentCell}}.names```", ":rows": "```preview.{{currentCell}}.rows```" } },
   { label: "字段信息", elem: { tag: h5, ":key": "currentCell + currentId", ":inFields": "runResult.get(currentId)?.fields?.[currentCell]?.inputFileds", ":outFields": "runResult.get(currentId)?.fields?.[currentCell]?.outputFileds" } }
-], f5 = {
+], m5 = {
   tag: "div",
   class: "_node-tab-header",
   cls: [
     { tag: "div", style: "display:flex;align-items:center;", cls: [
-      { tag: "b", class: "_title", cls: [{ tag: se, cls: T1 }, "{{ label || '' }}"] },
+      { tag: "b", class: "_title", cls: [{ tag: oe, cls: T1 }, "{{ label || '' }}"] },
       // { tag: "b", "@click": "() => close()", class: "_btn", cls: { tag: ElIcon, class: "_close", cls: Close } }
       { tag: "i", cls: "[ {{ currentId }} ]", style: "margin-left:2em;font-style:normal;" },
       { tag: u1, cls: "{{ currentCellLabel }}", style: "margin-left:2em;" },
@@ -13021,7 +13056,7 @@ const i5 = /* @__PURE__ */ Object.assign({ "./rowGenerator.ts": () => import("./
       { tag: R, cls: "关闭", icon: _t, "@click": ({ close: l }) => l() }
     ] }
   ]
-}, m5 = (l) => ({
+}, w5 = (l) => ({
   useDefaultMenu: !1,
   node: [
     { tag: R, link: !0, cls: "编辑", "@click": ({ cell: e, contextmenu: t }) => l.cellEdit(e, t) },
@@ -13046,7 +13081,7 @@ const i5 = /* @__PURE__ */ Object.assign({ "./rowGenerator.ts": () => import("./
     }
   },
   { tag: W, type: "textarea", class: "nifi-form-tip", autoSize: !0, prop: "$desc", label: "描述" }
-] }, w5 = {
+] }, y5 = {
   SUPPORTS_BOOLEAN_DATA_TYPE: "Y",
   SUPPORTS_TIMESTAMP_DATA_TYPE: "Y",
   QUOTE_ALL_FIELDS: "N",
@@ -13055,7 +13090,7 @@ const i5 = /* @__PURE__ */ Object.assign({ "./rowGenerator.ts": () => import("./
   STRICT_NUMBER_38_INTERPRETATION: "N",
   PREFERRED_SCHEMA_NAME: "",
   PRESERVE_RESERVED_WORD_CASE: "Y"
-}, y5 = {}, B5 = {
+}, B5 = {}, E5 = {
   limit: () => 10,
   name: "name",
   password: "connection.config.authType.password",
@@ -13068,16 +13103,16 @@ const i5 = /* @__PURE__ */ Object.assign({ "./rowGenerator.ts": () => import("./
     var e;
     return (e = l.connection.config) == null ? void 0 : e.type.toUpperCase();
   }
-}, E5 = {
+}, F5 = {
   POSTGRES: {
     type: () => "POSTGRESQL",
     port: (l) => l.connection.config.hostPort.split(":")[1] || "5432"
   }
-}, T5 = (l = {}) => {
+}, Y5 = (l = {}) => {
   var t, i;
   const e = (i = (t = l.connection.config) == null ? void 0 : t.type) == null ? void 0 : i.toUpperCase();
   if (console.log("useConnection ===> ", l, e), e) {
-    const o = Object.assign({}, B5, E5[e] || {}), a = Object.assign({}, w5, y5[e] || {}), s = {};
+    const o = Object.assign({}, E5, F5[e] || {}), a = Object.assign({}, y5, B5[e] || {}), s = {};
     return Object.keys(o).map((r) => {
       const c = o[r], p = typeof c == "function" ? c(l) : ne(l, c) || c;
       s[r] = p;
@@ -13090,23 +13125,23 @@ const i5 = /* @__PURE__ */ Object.assign({ "./rowGenerator.ts": () => import("./
   (p = e.shadow) == null || p.setTabs(l, [e.getBaseTab(), ...o]);
   const a = e.getExtFormData(l) || {}, s = e.steps.find((h) => h.name == l.id) || {}, r = (t == null ? void 0 : t.step) || {}, c = t != null && t.initForm ? t.initForm(l, e) : {};
   (A = e.form) == null || A.setFormData({ $desc: i, ...r, ...s, ...a, ...c }, l);
-}, F5 = (l, e) => {
-  D5(l, e);
 }, Q5 = (l, e) => {
+  I5(l, e);
+}, D5 = (l, e) => {
 }, v1 = (l, e) => {
   var a;
   const t = ((a = e.form) == null ? void 0 : a.getCellFormData(l)) || {}, i = {}, o = { id: l.id };
   for (const [s, r] of Object.entries(t))
     /^\$/.test(s) ? (o[s] = r, s == "$connection" && (delete r.limit, e.addConnection(r))) : i[s] = r;
   return i.name = l.id, i.id && delete i.id, e.setExtFormData(o), e.resetStep(i), {};
-}, D5 = (l, e) => {
+}, I5 = (l, e) => {
   var i;
-  const t = I5(l, e);
+  const t = M5(l, e);
   if (t != null) {
     const o = (i = e.form) == null ? void 0 : i.getCellFormData(l);
     o && ue(o, "outFields", t);
   }
-}, I5 = (l, e) => {
+}, M5 = (l, e) => {
   var t, i, o, a;
   if (l && l.isNode()) {
     const s = (t = e.shadow) == null ? void 0 : t.get(l);
@@ -13121,7 +13156,7 @@ const i5 = /* @__PURE__ */ Object.assign({ "./rowGenerator.ts": () => import("./
     }
   }
 };
-class M5 {
+class b5 {
   constructor(e) {
     //
     g(this, "kettle");
@@ -13297,7 +13332,7 @@ class M5 {
   }
   //
   handleDrawerSubmit(e) {
-    const t = e.prop("name"), { submit: i = Q5 } = this.nodesMetadata.get(t) || {};
+    const t = e.prop("name"), { submit: i = D5 } = this.nodesMetadata.get(t) || {};
     i == null || i(e, this);
   }
   // 
@@ -13324,7 +13359,7 @@ class M5 {
   //
   openDrawer(e) {
     var i, o;
-    const { open: t = F5 } = this.nodesMetadata.get(e.prop("name")) || {};
+    const { open: t = Q5 } = this.nodesMetadata.get(e.prop("name")) || {};
     t(e, this), (o = (i = this.drawerRef) == null ? void 0 : i.value) == null || o.open(e);
   }
   // 数据预览
@@ -13421,12 +13456,12 @@ class M5 {
     e && (this.currentCellId.value = e);
   }
 }
-const b5 = {
+const v5 = {
   class: "run-form",
   "min-w-500": "",
   "w-50vw": "",
   "max-w-1200": ""
-}, v5 = /* @__PURE__ */ _({
+}, H5 = /* @__PURE__ */ _({
   __name: "runForm",
   props: {
     base: {},
@@ -13456,7 +13491,7 @@ const b5 = {
       key: "Nothing",
       label: "没有日志"
     }];
-    return (s, r) => (Q(), k("div", b5, [
+    return (s, r) => (Q(), k("div", v5, [
       d(n(U1), null, {
         default: u(() => [
           d(n(W), {
@@ -13469,7 +13504,7 @@ const b5 = {
           d(n(de)),
           d(n(he), { label: "日志级别" }, {
             default: u(() => [
-              d(n(Ee), {
+              d(n(Fe), {
                 modelValue: t.logLevel,
                 "onUpdate:modelValue": r[2] || (r[2] = (c) => t.logLevel = c),
                 clearable: "",
@@ -13503,7 +13538,7 @@ const b5 = {
       d(n(de)),
       d(n(je), { "model-value": "params" }, {
         default: u(() => [
-          d(n(Be), {
+          d(n(Ee), {
             label: "局部参数",
             name: "params"
           }, {
@@ -13601,7 +13636,7 @@ const b5 = {
       })
     ]));
   }
-}), H5 = /* @__PURE__ */ _({
+}), L5 = /* @__PURE__ */ _({
   __name: "params",
   props: {
     data: {}
@@ -13709,6 +13744,8 @@ const b5 = {
     g(this, "api");
     g(this, "event");
     //
+    g(this, "NODE_ELEM", g5);
+    //
     g(this, "menuConfig");
     g(this, "contextmenu");
     //
@@ -13722,13 +13759,13 @@ const b5 = {
     g(this, "executorId", "");
     g(this, "hasRunResult", M(!1));
     g(this, "runResult", /* @__PURE__ */ new Map());
-    this.id = e.id, this.api = new o1(this), this.event = new M5(this), this.menuConfig = C5(this), this.contextmenu = m5(this), this.init();
+    this.id = e.id, this.api = new o1(this), this.event = new b5(this), this.menuConfig = C5(this), this.contextmenu = w5(this), this.init();
   }
   // 运行 project
   async run() {
     const e = { logLevel: "Basic", safeModeEnabled: !1 }, t = [...this.projectParams];
     try {
-      await pe.confirm(N(v5, { base: e, params: t }), "运行参数配置", { cancelButtonText: "取消", confirmButtonText: "确定" }), t.length > 0 && (this.projectParams.length = 0, this.projectParams.push(...t.filter((y) => y.name && y.default_value)));
+      await pe.confirm(N(H5, { base: e, params: t }), "运行参数配置", { cancelButtonText: "取消", confirmButtonText: "确定" }), t.length > 0 && (this.projectParams.length = 0, this.projectParams.push(...t.filter((y) => y.name && y.default_value)));
       const { projectId: i } = this.projectData, { info: o, order: a, step: s, connection: r, step_error_handling: c, slave_transformation: p, attributes: A, notepads: h } = this.event.getProjectTransformation(), C = {
         projectId: i,
         requestId: `/project/${i}`,
@@ -13792,8 +13829,8 @@ const b5 = {
       currentId: M(((i = e.slice(-1)) == null ? void 0 : i[0]) || ""),
       currentCell: this.event.currentCellId,
       currentCellLabel: this.event.currentCellLabel,
-      tabs: u5,
-      tabsHeader: f5,
+      tabs: f5,
+      tabsHeader: m5,
       resultOptions: e.map((s) => ({ value: s, label: s })),
       // resultOptions:[{label:'a',value:'a'},{label:'b',value:'b'},{label:'c',value:'c'}],
       runResult: this.runResult
@@ -13825,7 +13862,7 @@ const b5 = {
   // 参数配置
   async config() {
     const e = this.projectParams;
-    await pe.confirm(N(H5, { data: e }), "参数配置", { cancelButtonText: "取消", confirmButtonText: "确定" });
+    await pe.confirm(N(L5, { data: e }), "参数配置", { cancelButtonText: "取消", confirmButtonText: "确定" });
   }
   // 初始化
   async init(e = this.id) {
@@ -13875,22 +13912,22 @@ const b5 = {
 };
 g(ve, "variable", { "Internal.Job.Repository.Directory": "Parent Job Repository Directory", "Internal.Job.Filename.Directory": "Parent Job File Directory", "Internal.Job.Filename.Name": "Parent Job Filename", "Internal.Job.Name": "Parent Job Name" }), g(ve, "variables", Object.keys(ve.variable).map((e) => ({ name: e, value: ve.variable[e] })));
 let a1 = ve;
-const Y5 = {
+const J5 = {
   Nifi: Xa,
   Kettle: a1
-}, J5 = {
+}, Z5 = {
   install: (l) => {
     l.component("els-x6", io);
   }
 };
 export {
-  J5 as E,
-  Y5 as G,
+  Z5 as E,
+  J5 as G,
   o1 as K,
   io as _,
-  K5 as a,
+  T5 as a,
   q1 as f,
   Z1 as g,
   j1 as o,
-  T5 as u
+  Y5 as u
 };

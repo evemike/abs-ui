@@ -11,6 +11,7 @@ export declare class AdapterKettle {
     id: string;
     api: KettleApi;
     event: KettleEvent;
+    NODE_ELEM: IElsX6.NodeMarkup;
     menuConfig: IElsX6.GraphMenuConfig;
     contextmenu: IElsX6.ContextmenuConfig;
     nodeList: import("vue").Ref<any[]>;
