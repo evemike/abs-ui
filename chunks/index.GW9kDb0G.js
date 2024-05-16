@@ -9971,7 +9971,7 @@ class qo {
   }
 }
 const zo = (l) => ({ elems: [
-  { tag: "span", cls: l.title },
+  { tag: "span", style: "font-size:14px;", cls: l.title },
   // {icon:Check,title:"保存画布",text:"保存",handle:() => adapter.save()},
   { icon: "", title: "运行", text: "运行", handle: () => l.run() },
   { icon: "", title: "停止", text: "停止", handle: () => l.stop() },
@@ -12879,7 +12879,7 @@ ${i}\0`;
 //
 g(re, "PREFIX", "/kettle-api"), g(re, "PREFIX_TASK", "/task-api");
 let o1 = re;
-const i5 = /* @__PURE__ */ Object.assign({ "./rowGenerator.ts": () => import("./rowGenerator.Bzl1zbTW.js"), "./sortRows.ts": () => import("./sortRows.Dy2q5n0s.js"), "./tableInput.ts": () => import("./tableInput.i49M8COk.js"), "./tableOutput.ts": () => import("./tableOutput.QDCJtMAv.js") }), o5 = async () => {
+const i5 = /* @__PURE__ */ Object.assign({ "./rowGenerator.ts": () => import("./rowGenerator.Bzl1zbTW.js"), "./sortRows.ts": () => import("./sortRows.Dy2q5n0s.js"), "./tableInput.ts": () => import("./tableInput.D7Q_OfkD.js"), "./tableOutput.ts": () => import("./tableOutput.D_LB5h9B.js") }), o5 = async () => {
   const l = /* @__PURE__ */ new Map();
   for (const [e, t] of Object.entries(i5))
     if (!e.includes("index")) {
