@@ -9,7 +9,7 @@ import { _ as me } from "./main.vue_vue_type_script_setup_true_lang.27q4tKaI.js"
 import { _ as Qe } from "./_plugin-vue_export-helper.CHgC5LLL.js";
 import { _ as $t, E as ei } from "./main.vue_vue_type_script_setup_true_lang.CyhwIVLb.js";
 import { _ as ti } from "./view.vue_vue_type_style_index_0_lang.2lt9jhpr.js";
-import { _ as ii } from "./main.vue_vue_type_style_index_0_lang.DXKj3SE_.js";
+import { _ as ii } from "./main.vue_vue_type_style_index_0_lang.BgYtIcEP.js";
 const oi = /* @__PURE__ */ q({
   __name: "node",
   props: {
@@ -12190,7 +12190,7 @@ const ca = (n) => {
       }, null, 8, ["modelValue", "id", "clientId", "tableData"])) : W("", !0)
     ]));
   }
-}), Wa = /* @__PURE__ */ Qe(za, [["__scopeId", "data-v-efbb7b74"]]), _a = /* @__PURE__ */ Object.assign({ "./nodes/CalColumn.ts": () => import("./CalColumn.9UxvkuNm.js"), "./nodes/ColSelector.ts": () => import("./ColSelector.RzgIW8Pd.js"), "./nodes/ConsumeKafka_2_6.ts": () => import("./ConsumeKafka_2_6.C6amcHbq.js"), "./nodes/ConsumeKafka_2_6_01.ts": () => import("./ConsumeKafka_2_6_01.D5jEehWC.js"), "./nodes/DataCleaner.ts": () => import("./DataCleaner.DzlcH27H.js"), "./nodes/ExecuteGroovyScript.ts": () => import("./ExecuteGroovyScript.B6j9-bJz.js"), "./nodes/KafkaSQL.ts": () => import("./KafkaSQL.DuU4GUpM.js"), "./nodes/PutDatabaseRecord.ts": () => import("./PutDatabaseRecord.z2QY9KzX.js"), "./nodes/QueryDatabaseTableRecord.ts": () => import("./QueryDatabaseTableRecord.DbVUJ5w1.js"), "./nodes/RowFilter.ts": () => import("./RowFilter.-6ErFN1c.js") });
+}), Wa = /* @__PURE__ */ Qe(za, [["__scopeId", "data-v-efbb7b74"]]), _a = /* @__PURE__ */ Object.assign({ "./nodes/CalColumn.ts": () => import("./CalColumn.DYL4KrYh.js"), "./nodes/ColSelector.ts": () => import("./ColSelector.RzgIW8Pd.js"), "./nodes/ConsumeKafka_2_6.ts": () => import("./ConsumeKafka_2_6.C6amcHbq.js"), "./nodes/ConsumeKafka_2_6_01.ts": () => import("./ConsumeKafka_2_6_01.CfNrjqhD.js"), "./nodes/DataCleaner.ts": () => import("./DataCleaner.DzlcH27H.js"), "./nodes/ExecuteGroovyScript.ts": () => import("./ExecuteGroovyScript.B40GzKdh.js"), "./nodes/KafkaSQL.ts": () => import("./KafkaSQL.Ct-6sgOg.js"), "./nodes/PutDatabaseRecord.ts": () => import("./PutDatabaseRecord.C4-6fcqb.js"), "./nodes/QueryDatabaseTableRecord.ts": () => import("./QueryDatabaseTableRecord.Dauf8QSJ.js"), "./nodes/RowFilter.ts": () => import("./RowFilter.-6ErFN1c.js") });
 class Xa {
   constructor(e, t) {
     //
@@ -12874,7 +12874,7 @@ ${i}\0`;
 //
 g(oe, "PREFIX", "/kettle-api"), g(oe, "PREFIX_TASK", "/task-api");
 let i1 = oe;
-const i5 = /* @__PURE__ */ Object.assign({ "./olapSql.ts": () => import("./olapSql.RkjzIR7Y.js"), "./rowGenerator.ts": () => import("./rowGenerator.Bxj8Fwdi.js"), "./sortRows.ts": () => import("./sortRows.cD7it-mC.js"), "./tableInput.ts": () => import("./tableInput.CivBQui7.js"), "./tableOutput.ts": () => import("./tableOutput.CgORC3Tu.js") }), o5 = async () => {
+const i5 = /* @__PURE__ */ Object.assign({ "./olapSql.ts": () => import("./olapSql.DDZjnaPP.js"), "./rowGenerator.ts": () => import("./rowGenerator.Bxj8Fwdi.js"), "./sortRows.ts": () => import("./sortRows.cD7it-mC.js"), "./tableInput.ts": () => import("./tableInput.TCQolMzK.js"), "./tableOutput.ts": () => import("./tableOutput.6Zpvktda.js") }), o5 = async () => {
   const n = /* @__PURE__ */ new Map();
   for (const [e, t] of Object.entries(i5))
     if (!e.includes("index")) {
@@ -13323,7 +13323,7 @@ class b5 {
   }
   // 初始化节点时
   getNodeMetadata(e) {
-    const { name: t, label: i } = e, o = this.nodesMetadata.get(t), a = (o == null ? void 0 : o.markup) || {}, l = crypto.randomUUID().replace("/-/g", ""), s = this.checkAndCreateLabel(i);
+    const { name: t, label: i } = e, o = this.nodesMetadata.get(t), a = (o == null ? void 0 : o.markup) || {}, l = (/* @__PURE__ */ new Date()).getTime().toString(36) + Math.random().toString(36).replace("0.", ""), s = this.checkAndCreateLabel(i);
     return Object.assign({ id: l, label: s }, a);
   }
   //

@@ -1,5 +1,5 @@
-import { C as t } from "../../chunks/main.nJRry0wr.js";
-import { D as s, a as E } from "../../chunks/main.nJRry0wr.js";
+import { C as t } from "../../chunks/main.C9B4zdL3.js";
+import { D as s, a as E } from "../../chunks/main.C9B4zdL3.js";
 const e = {
   install: (o) => {
     o.component("code-editor", t);
