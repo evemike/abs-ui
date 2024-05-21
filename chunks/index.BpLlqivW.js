@@ -12874,7 +12874,7 @@ ${i}\0`;
 //
 g(oe, "PREFIX", "/kettle-api"), g(oe, "PREFIX_TASK", "/task-api");
 let i1 = oe;
-const i5 = /* @__PURE__ */ Object.assign({ "./olapSql.ts": () => import("./olapSql.DDZjnaPP.js"), "./rowGenerator.ts": () => import("./rowGenerator.Bxj8Fwdi.js"), "./sortRows.ts": () => import("./sortRows.cD7it-mC.js"), "./tableInput.ts": () => import("./tableInput.TCQolMzK.js"), "./tableOutput.ts": () => import("./tableOutput.6Zpvktda.js") }), o5 = async () => {
+const i5 = /* @__PURE__ */ Object.assign({ "./olapSql.ts": () => import("./olapSql.DDZjnaPP.js"), "./rowGenerator.ts": () => import("./rowGenerator.Bxj8Fwdi.js"), "./sortRows.ts": () => import("./sortRows.cD7it-mC.js"), "./tableInput.ts": () => import("./tableInput.Ccf0Tgp-.js"), "./tableOutput.ts": () => import("./tableOutput.1OJZPWtO.js") }), o5 = async () => {
   const n = /* @__PURE__ */ new Map();
   for (const [e, t] of Object.entries(i5))
     if (!e.includes("index")) {

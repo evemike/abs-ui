@@ -3,7 +3,7 @@ interface Props {
     schemaIds: string[];
     sql: string;
     groups?: string[];
-    testConnect?: (server: any) => Promise<boolean>;
+    testConnect?: (server: any, schema: any) => Promise<boolean>;
     preview?: (server: any, schema: any, sql: string) => void;
     refresh?: (server: any, schema: any, sql: string) => void;
 }
