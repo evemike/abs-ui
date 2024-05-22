@@ -1,9 +1,9 @@
 export declare namespace ICleaning {
     interface Props {
         formdata: any;
-        graphShadowCell: any;
         propInput: string;
         propOutput: string;
+        inputV: any;
     }
     interface TableValue {
         name: string;
