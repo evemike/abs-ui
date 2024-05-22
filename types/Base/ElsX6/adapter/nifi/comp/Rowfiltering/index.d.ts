@@ -1,9 +1,9 @@
 export declare namespace IFilter {
     interface Props {
         formdata: any;
-        graphShadowCell: any;
         propInput: string;
         propOutput: string;
+        inputV: any;
     }
     interface Condition {
         operator: string;

@@ -1,7 +1,7 @@
 var ot = Object.defineProperty;
 var at = (n, e, t) => e in n ? ot(n, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : n[e] = t;
 var g = (n, e, t) => (at(n, typeof e != "symbol" ? e + "" : e, t), t);
-import "../css/index-BPt-8y3n.css";
+import "../css/index-DQsVNPIq.css";
 import { defineComponent as q, inject as rt, computed as ee, openBlock as Q, createElementBlock as x, normalizeClass as ke, createBlock as J, unref as r, createCommentVNode as _, h as R, createStaticVNode as b1, createElementVNode as F, toRefs as me, ref as I, onMounted as Qe, watch as Ne, normalizeStyle as Ge, toDisplayString as O, renderSlot as qe, shallowRef as Ae, withCtx as u, createVNode as p, Fragment as ae, renderList as de, mergeProps as r1, createTextVNode as Y, withModifiers as c1, reactive as oe, toRef as st, withDirectives as lt, vShow as nt, provide as He, markRaw as ct, render as dt, pushScopeId as s1, popScopeId as l1, nextTick as pt, isRef as v1, onBeforeUnmount as H1, resolveComponent as At } from "vue";
 import { M as ht, y as T, z as d1, o as $, A as We, B as Ct, f as v, C as Pe, G as Ke, D as gt, F as S1, H as n1, I as L1, J as x1, K as ut, j as Ee, s as k1, L as ft, N as mt, O as ne, P as N1, Q as wt, R as yt, u as Bt, S as Et, T as Ve, U as ue, V as p1, W as Ft, m as Qt, X as Dt, Y as It, Z as Mt, g as le, _ as _e, $ as bt, l as Te, k as G1, a0 as vt, a1 as Ht, a2 as St, a3 as Lt, a4 as xt, a5 as Fe, a6 as kt, a7 as Nt, a8 as Gt, a9 as Rt, a as Z, aa as Pt, ab as Se, ac as Vt, d as he, e as V, ad as Ot, v as Xe, ae as Ut, af as Ye, E as ce, ag as Kt, ah as Tt, ai as Yt, aj as Jt, ak as Zt, al as $e, x as Je, am as R1, an as jt, ao as A1, ap as Be, aq as P1, ar as ge, as as be, at as X, au as Ie, av as qt, p as Re, aw as V1, ax as zt, i as Ze, ay as O1, az as U1, aA as h1, aB as K1, aC as Wt, aD as _t, aE as Xt, aF as T1, aG as C1, aH as $t, aI as ei } from "./vendor.CawUkpaF.js";
 import { E as fe } from "./main.Cpqa8RLW.js";
@@ -8888,7 +8888,6 @@ const eo = /* @__PURE__ */ q({
     "FetchAzureBlobStorage_v12",
     "FetchAzureDataLakeStorage",
     "FetchBoxFile",
-    "FetchDistributedMapCache",
     "FetchDropbox",
     "FetchElasticsearchHttp",
     "FetchFTP",
@@ -9191,7 +9190,8 @@ const eo = /* @__PURE__ */ q({
     "VerifyContentMAC",
     "VerifyContentPGP",
     "YandexTranslate",
-    "PutDistributedMapCache"
+    "PutDistributedMapCache",
+    "FetchDistributedMapCache"
   ],
   mathDataType: [
     "CaptureChangePostgreSQL",
@@ -11024,7 +11024,7 @@ const pa = (n) => {
       i[o][a.id] = t;
     });
   return i;
-}, _1 = (n) => (s1("data-v-0c5fa170"), n = n(), l1(), n), ha = { class: "nifi-template" }, Ca = {
+}, _1 = (n) => (s1("data-v-baf7dbfa"), n = n(), l1(), n), ha = { class: "nifi-template" }, Ca = {
   "text-18": "",
   "m-b-12": ""
 }, ga = {
@@ -11145,6 +11145,7 @@ const pa = (n) => {
       ]),
       p(r(he), {
         data: r(c),
+        "default-sort": { prop: "timestamp", order: "descending" },
         height: "400"
       }, {
         default: u(() => [
@@ -11341,7 +11342,7 @@ const pa = (n) => {
       }, 8, ["modelValue"])
     ]));
   }
-}), Ba = /* @__PURE__ */ De(ya, [["__scopeId", "data-v-0c5fa170"]]), Ea = {
+}), Ba = /* @__PURE__ */ De(ya, [["__scopeId", "data-v-baf7dbfa"]]), Ea = {
   "w-60vw": "",
   "h-60vh": ""
 }, Fa = /* @__PURE__ */ q({
@@ -12330,7 +12331,7 @@ const pa = (n) => {
       }, null, 8, ["modelValue", "id", "clientId", "tableData"])) : _("", !0)
     ]));
   }
-}), $a = /* @__PURE__ */ De(Xa, [["__scopeId", "data-v-164a8984"]]), e5 = /* @__PURE__ */ Object.assign({ "./nodes/CalColumn.ts": () => import("./CalColumn.DYL4KrYh.js"), "./nodes/ColSelector.ts": () => import("./ColSelector.DCVEQsVi.js"), "./nodes/ConsumeKafka_2_6.ts": () => import("./ConsumeKafka_2_6.fjC8k5tp.js"), "./nodes/ConsumeKafka_2_6_01.ts": () => import("./ConsumeKafka_2_6_01.Bv37I9q6.js"), "./nodes/DataCleaner.ts": () => import("./DataCleaner.DzlcH27H.js"), "./nodes/ExecuteGroovyScript.ts": () => import("./ExecuteGroovyScript.B40GzKdh.js"), "./nodes/KafkaSQL.ts": () => import("./KafkaSQL.BBRoHP28.js"), "./nodes/PutDatabaseRecord.ts": () => import("./PutDatabaseRecord.C4-6fcqb.js"), "./nodes/QueryDatabaseTableRecord.ts": () => import("./QueryDatabaseTableRecord.Dauf8QSJ.js"), "./nodes/RowFilter.ts": () => import("./RowFilter.-6ErFN1c.js") });
+}), $a = /* @__PURE__ */ De(Xa, [["__scopeId", "data-v-164a8984"]]), e5 = /* @__PURE__ */ Object.assign({ "./nodes/CalColumn.ts": () => import("./CalColumn.DYL4KrYh.js"), "./nodes/ColSelector.ts": () => import("./ColSelector.DCVEQsVi.js"), "./nodes/ConsumeKafka_2_6.ts": () => import("./ConsumeKafka_2_6.fjC8k5tp.js"), "./nodes/ConsumeKafka_2_6_01.ts": () => import("./ConsumeKafka_2_6_01.Bv37I9q6.js"), "./nodes/DataCleaner.ts": () => import("./DataCleaner.DzlcH27H.js"), "./nodes/ExecuteGroovyScript.ts": () => import("./ExecuteGroovyScript.B40GzKdh.js"), "./nodes/KafkaSQL.ts": () => import("./KafkaSQL.BBRoHP28.js"), "./nodes/PutDatabaseRecord.ts": () => import("./PutDatabaseRecord.C4-6fcqb.js"), "./nodes/QueryDatabaseTableRecord.ts": () => import("./QueryDatabaseTableRecord.Dauf8QSJ.js"), "./nodes/RowFilter.ts": () => import("./RowFilter.UgS56Nbn.js") });
 class t5 {
   constructor(e, t) {
     //
@@ -13388,7 +13389,10 @@ class b5 {
   }
   addConnection(e) {
     const t = e.name;
-    t && this.connections.find((i) => i.name == t) == null && this.connections.push(e);
+    if (!t)
+      return;
+    const i = this.connections.find((o) => o.name == t);
+    i == null ? this.connections.push(e) : Object.assign(i, e);
   }
   //
   setExtFormData(e) {
@@ -13881,7 +13885,7 @@ const v5 = {
       }, 8, ["data"]);
     };
   }
-}), L5 = /* @__PURE__ */ Object.assign({ "./nodes/olapSql.ts": () => import("./olapSql.DDZjnaPP.js"), "./nodes/rowGenerator.ts": () => import("./rowGenerator.Bxj8Fwdi.js"), "./nodes/sortRows.ts": () => import("./sortRows.B-vRCpmB.js"), "./nodes/tableInput.ts": () => import("./tableInput.CgQkjhoz.js"), "./nodes/tableOutput.ts": () => import("./tableOutput.CvBTYhFW.js") }), Me = class Me {
+}), L5 = /* @__PURE__ */ Object.assign({ "./nodes/olapSql.ts": () => import("./olapSql.DDZjnaPP.js"), "./nodes/rowGenerator.ts": () => import("./rowGenerator.Bxj8Fwdi.js"), "./nodes/sortRows.ts": () => import("./sortRows.BhZdYr1i.js"), "./nodes/tableInput.ts": () => import("./tableInput.BVGqZbl2.js"), "./nodes/tableOutput.ts": () => import("./tableOutput.D4SYqzY5.js") }), Me = class Me {
   constructor(e) {
     //
     g(this, "id");
