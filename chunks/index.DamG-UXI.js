@@ -12237,7 +12237,7 @@ class Xa {
       if (!t.includes("index")) {
         const o = await i();
         if (o && o.default && typeof o.default == "function") {
-          const a = o.default();
+          const a = o.default(this);
           if (a && a.name)
             if (Array.isArray(a.name))
               for (const l of a.name)
@@ -12874,7 +12874,7 @@ ${i}\0`;
 //
 g(oe, "PREFIX", "/kettle-api"), g(oe, "PREFIX_TASK", "/task-api");
 let i1 = oe;
-const i5 = /* @__PURE__ */ Object.assign({ "./olapSql.ts": () => import("./olapSql.DDZjnaPP.js"), "./rowGenerator.ts": () => import("./rowGenerator.Bxj8Fwdi.js"), "./sortRows.ts": () => import("./sortRows.cD7it-mC.js"), "./tableInput.ts": () => import("./tableInput.Ccf0Tgp-.js"), "./tableOutput.ts": () => import("./tableOutput.1OJZPWtO.js") }), o5 = async () => {
+const i5 = /* @__PURE__ */ Object.assign({ "./olapSql.ts": () => import("./olapSql.DDZjnaPP.js"), "./rowGenerator.ts": () => import("./rowGenerator.Bxj8Fwdi.js"), "./sortRows.ts": () => import("./sortRows.cD7it-mC.js"), "./tableInput.ts": () => import("./tableInput.CVrRJOHc.js"), "./tableOutput.ts": () => import("./tableOutput.CTONKvG8.js") }), o5 = async () => {
   const n = /* @__PURE__ */ new Map();
   for (const [e, t] of Object.entries(i5))
     if (!e.includes("index")) {
@@ -13083,30 +13083,30 @@ const i5 = /* @__PURE__ */ Object.assign({ "./olapSql.ts": () => import("./olapS
   PREFERRED_SCHEMA_NAME: "",
   PRESERVE_RESERVED_WORD_CASE: "Y"
 }, B5 = {}, E5 = {
-  limit: () => 10,
   name: "name",
   password: "connection.config.authType.password",
   port: (n) => n.connection.config.hostPort.split(":")[1],
   server: (n) => n.connection.config.hostPort.split(":")[0],
   database: "connection.config.database",
   username: "connection.config.username",
-  access: () => "Native",
-  type: (n) => {
-    var e;
-    return (e = n.connection.config) == null ? void 0 : e.type.toUpperCase();
-  }
+  access: () => "Native"
+  // type: (d: any) => d.connection.config?.type.toUpperCase(),
 }, F5 = {
   POSTGRES: {
     type: () => "POSTGRESQL",
-    port: (n) => n.connection.config.hostPort.split(":")[1] || "5432"
+    port: (n) => n.connection.config.hostPort.split(":")[1] || "5432",
+    limit: () => 10
+  },
+  CLICKHOUSE: {
+    type: () => "1111"
   }
 }, T5 = (n = {}, e) => {
   var i, o, a;
   const t = (a = (o = (i = n.connection) == null ? void 0 : i.config) == null ? void 0 : o.type) == null ? void 0 : a.toUpperCase();
   if (t) {
-    const l = Object.assign({}, E5, F5[t] || {}), s = Object.assign({}, y5, B5[t] || {}), c = {};
+    const l = Object.assign({}, E5, F5[t] || {}), s = Object.assign({}, y5, B5[t] || {}), c = { type: t };
     return Object.keys(l).map((d) => {
-      const p = l[d], h = typeof p == "function" ? p(n) : se(n, p) || p;
+      const p = l[d], h = typeof p == "function" ? p(n) : se(n, p) || "";
       c[d] = h;
     }), e && (c.database = e.name), c.attributes = { attribute: Object.keys(s).map((d) => ({ code: d, attribute: s[d] })) }, c;
   }

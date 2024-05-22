@@ -14,6 +14,6 @@ export declare namespace INifi {
         hooksSubmit?: NodeApi;
     }
     type NodeApi = (cell: Cell, nifi: AdapterNifi) => void;
-    type UseNode = () => NodeModel;
+    type UseNode = (nifi: AdapterNifi) => NodeModel;
     type NodeMetadata = Map<string, NodeModel>;
 }
