@@ -1,15 +1,16 @@
 import "../css/sortRows-CptFRggr.css";
-import { defineComponent as z, toRefs as P, ref as E, computed as S, resolveComponent as C, openBlock as D, createElementBlock as Y, createVNode as a, withCtx as n, createElementVNode as V, unref as t, Fragment as R, renderList as q, createTextVNode as B } from "vue";
-import { m as F, d as I, e as u, f as w, bd as A, ap as j, aI as G, be as K, bf as O, aC as H, aq as L } from "./vendor.CawUkpaF.js";
-import { _ as J } from "./_plugin-vue_export-helper.CHgC5LLL.js";
-const M = { class: "container-lef" }, Q = { class: "h-full flex justify-center items-center" }, W = { class: "flex" }, X = /* @__PURE__ */ z({
+import { defineComponent as z, toRefs as F, ref as x, computed as D, resolveComponent as V, openBlock as S, createElementBlock as Y, createVNode as a, withCtx as n, createElementVNode as E, unref as t, Fragment as q, renderList as B, createTextVNode as A, toRaw as L } from "vue";
+import { m as O, d as I, e as i, f as g, bd as P, ap as j, aI as G, be as K, bf as H, aC as J, aq as R } from "./vendor.CawUkpaF.js";
+import { _ as M } from "./_plugin-vue_export-helper.CHgC5LLL.js";
+import { d as Q } from "./index.rpiYk2i5.js";
+const W = { class: "container-lef" }, X = { class: "h-full flex justify-center items-center" }, Z = { class: "flex" }, $ = /* @__PURE__ */ z({
   __name: "transformTable",
   props: {
     targetData: { default: () => ({}) },
     sourceList: { default: () => [] }
   },
-  setup(T) {
-    const k = T, { targetData: s, sourceList: h } = P(k), m = E(""), d = E([]), x = [
+  setup(h) {
+    const w = h, { targetData: s, sourceList: y } = F(w), p = x(""), d = x([]), N = [
       {
         key: "Y",
         label: "升序"
@@ -18,65 +19,65 @@ const M = { class: "container-lef" }, Q = { class: "h-full flex justify-center i
         key: "N",
         label: "降序"
       }
-    ], N = S(() => d.value.length > 0), _ = S(() => {
-      let e = h.value.filter((l) => !l.isTarget);
-      return m.value ? e.filter((l) => l.name.includes(m.value)) : e;
+    ], f = D(() => d.value.length > 0), m = D(() => {
+      let e = y.value.filter((l) => !l.isTarget);
+      return p.value ? e.filter((l) => l.name.includes(p.value)) : e;
     });
-    function b(e) {
+    function T(e) {
       d.value = e;
     }
-    function v() {
+    function k() {
       d.value.forEach((e) => {
         e.isTarget = !0;
       }), s.value.push(...d.value), d.value = [];
     }
-    function g(e) {
-      e > 0 && r(s.value, e, e - 1);
+    function C(e) {
+      e > 0 && b(s.value, e, e - 1);
     }
-    function c(e) {
-      e < s.value.length - 1 && r(s.value, e, e + 1);
+    function _(e) {
+      e < s.value.length - 1 && b(s.value, e, e + 1);
     }
-    function r(e, l, p) {
-      let f = e[l];
-      e[l] = e[p], e[p] = f;
+    function b(e, l, c) {
+      let u = e[l];
+      e[l] = e[c], e[c] = u;
     }
-    function y(e, l) {
-      let p = h.value.find((f) => f.name == e.name);
-      p && (p.isTarget = !1), s.value.splice(l, 1);
+    function v(e, l) {
+      let c = y.value.find((u) => u.name == e.name);
+      c && (c.isTarget = !1), s.value.splice(l, 1);
     }
     return (e, l) => {
-      const p = C("el-input"), f = C("el-col"), U = C("el-row");
-      return D(), Y("div", null, [
+      const c = V("el-input"), u = V("el-col"), U = V("el-row");
+      return S(), Y("div", null, [
         a(U, { gutter: 10 }, {
           default: n(() => [
-            a(f, { span: 8 }, {
+            a(u, { span: 8 }, {
               default: n(() => [
-                V("div", M, [
-                  a(p, {
+                E("div", W, [
+                  a(c, {
                     class: "container-input mt-0",
-                    modelValue: m.value,
-                    "onUpdate:modelValue": l[0] || (l[0] = (o) => m.value = o),
+                    modelValue: p.value,
+                    "onUpdate:modelValue": l[0] || (l[0] = (o) => p.value = o),
                     size: "large",
                     placeholder: "请输入",
-                    "suffix-icon": t(F)
+                    "suffix-icon": t(O)
                   }, null, 8, ["modelValue", "suffix-icon"]),
                   a(t(I), {
                     class: "container-table",
-                    data: _.value,
+                    data: m.value,
                     "row-key": "name",
                     border: "",
-                    onSelectionChange: b
+                    onSelectionChange: T
                   }, {
                     default: n(() => [
-                      a(t(u), {
+                      a(t(i), {
                         type: "selection",
                         width: "40"
                       }),
-                      a(t(u), {
+                      a(t(i), {
                         label: "字段名",
                         prop: "name"
                       }),
-                      a(t(u), {
+                      a(t(i), {
                         label: "字段类型",
                         prop: "type"
                       })
@@ -87,20 +88,20 @@ const M = { class: "container-lef" }, Q = { class: "h-full flex justify-center i
               ]),
               _: 1
             }),
-            a(f, { span: 1 }, {
+            a(u, { span: 1 }, {
               default: n(() => [
-                V("div", Q, [
-                  a(t(w), {
+                E("div", X, [
+                  a(t(g), {
                     type: "primary",
-                    disabled: !N.value,
-                    icon: t(A),
-                    onClick: v
+                    disabled: !f.value,
+                    icon: t(P),
+                    onClick: k
                   }, null, 8, ["disabled", "icon"])
                 ])
               ]),
               _: 1
             }),
-            a(f, { span: 15 }, {
+            a(u, { span: 15 }, {
               default: n(() => [
                 a(t(I), {
                   class: "container-table",
@@ -108,15 +109,15 @@ const M = { class: "container-lef" }, Q = { class: "h-full flex justify-center i
                   border: ""
                 }, {
                   default: n(() => [
-                    a(t(u), {
+                    a(t(i), {
                       label: "字段名",
                       prop: "name"
                     }),
-                    a(t(u), {
+                    a(t(i), {
                       label: "字段类型",
                       prop: "type"
                     }),
-                    a(t(u), {
+                    a(t(i), {
                       label: "排序方式",
                       width: "120",
                       prop: "ascending"
@@ -124,16 +125,16 @@ const M = { class: "container-lef" }, Q = { class: "h-full flex justify-center i
                       default: n(({ row: o }) => [
                         a(t(j), {
                           modelValue: o.ascending,
-                          "onUpdate:modelValue": (i) => o.ascending = i,
+                          "onUpdate:modelValue": (r) => o.ascending = r,
                           size: "mini",
                           placeholder: "请选择",
                           clearable: ""
                         }, {
                           default: n(() => [
-                            (D(), Y(R, null, q(x, (i) => a(t(G), {
-                              key: i.key,
-                              label: i.label,
-                              value: i.key
+                            (S(), Y(q, null, B(N, (r) => a(t(G), {
+                              key: r.key,
+                              label: r.label,
+                              value: r.key
                             }, null, 8, ["label", "value"])), 64))
                           ]),
                           _: 2
@@ -141,36 +142,36 @@ const M = { class: "container-lef" }, Q = { class: "h-full flex justify-center i
                       ]),
                       _: 1
                     }),
-                    a(t(u), {
+                    a(t(i), {
                       label: "调整顺序",
                       width: "140"
                     }, {
                       default: n(({ $index: o }) => [
-                        V("div", W, [
-                          a(t(w), {
+                        E("div", Z, [
+                          a(t(g), {
                             disabled: o === 0,
                             icon: t(K),
-                            onClick: (i) => g(o)
+                            onClick: (r) => C(o)
                           }, null, 8, ["disabled", "icon", "onClick"]),
-                          a(t(w), {
+                          a(t(g), {
                             disabled: o === t(s).length - 1,
-                            icon: t(O),
-                            onClick: (i) => c(o)
+                            icon: t(H),
+                            onClick: (r) => _(o)
                           }, null, 8, ["disabled", "icon", "onClick"])
                         ])
                       ]),
                       _: 1
                     }),
-                    a(t(u), {
+                    a(t(i), {
                       label: "操作",
                       width: "100"
                     }, {
-                      default: n(({ row: o, $index: i }) => [
-                        a(t(w), {
-                          onClick: ($) => y(o, i)
+                      default: n(({ row: o, $index: r }) => [
+                        a(t(g), {
+                          onClick: (te) => v(o, r)
                         }, {
                           default: n(() => [
-                            B("删除")
+                            A("删除")
                           ]),
                           _: 2
                         }, 1032, ["onClick"])
@@ -189,10 +190,11 @@ const M = { class: "container-lef" }, Q = { class: "h-full flex justify-center i
       ]);
     };
   }
-}), Z = /* @__PURE__ */ J(X, [["__scopeId", "data-v-7168d1d7"]]), oe = () => {
-  const T = "SortRows", k = {
+}), ee = /* @__PURE__ */ M($, [["__scopeId", "data-v-7168d1d7"]]), re = () => {
+  const h = "SortRows", w = {
     ports: { items: [{ id: "in", group: "left" }, { id: "out", group: "right" }] }
-  }, s = E([]), h = {
+  }, s = x([]);
+  return { name: h, step: {
     name: "排序记录",
     type: "SortRows",
     description: [],
@@ -228,33 +230,14 @@ const M = { class: "container-lef" }, Q = { class: "h-full flex justify-center i
       yloc: 64,
       draw: "Y"
     }
-  }, m = (_, b) => {
-    const v = H(d(_, b)), g = b.steps.find((c) => c.name == _.id);
-    if (g) {
-      const c = g.fields.field.map((r) => r.name);
-      v.forEach((r) => {
-        r.isTarget = !!c.includes(r.name);
-      });
-    }
-    s.value = v;
-  };
-  function d(_, b) {
-    const { graph: v, steps: g } = b, c = v.getPredecessors(_, { distance: 1 });
-    if (c.length <= 0)
-      return;
-    const r = c.map((e) => e.id), y = [];
-    return g.forEach((e) => {
-      r.includes(e.name) && y.push(...e.fields.field);
-    }), y;
-  }
-  return { name: T, step: h, markup: k, tabs: [
+  }, markup: w, tabs: [
     {
       default: !0,
       type: "form",
       label: "属性配置",
       column: [
         {
-          tag: Z,
+          tag: ee,
           ":targetData": "formData.fields.field",
           ":sourceList": s
         }
@@ -268,12 +251,19 @@ const M = { class: "container-lef" }, Q = { class: "h-full flex justify-center i
         { label: "临时文件前缀", prop: "prefix" },
         { label: "排序缓存大小(内存里存放的记录数)", prop: "sort_size" },
         { label: "未使用内存限值(%)", prop: "free_memory" },
-        { label: "临时压缩文件?", prop: "compress", tag: L, inlinePrompt: !0, activeValue: "Y", inactiveValue: "N", activeText: "Y", inactiveText: "N" },
-        { label: "仅仅传递非重复的记录?(仅仅校验关键字)", prop: "unique_rows", tag: L, inlinePrompt: !0, activeValue: "Y", inactiveValue: "N", activeText: "Y", inactiveText: "N" }
+        { label: "临时压缩文件?", prop: "compress", tag: R, inlinePrompt: !0, activeValue: "Y", inactiveValue: "N", activeText: "Y", inactiveText: "N" },
+        { label: "仅仅传递非重复的记录?(仅仅校验关键字)", prop: "unique_rows", tag: R, inlinePrompt: !0, activeValue: "Y", inactiveValue: "N", activeText: "Y", inactiveText: "N" }
       ]
     }
-  ], open: m, metadata: {} };
+  ], open: (f, m) => {
+    var v;
+    console.log(f, m), Q(f, m);
+    const T = (v = m.form) == null ? void 0 : v.getCellFormData(f), { fields: k, outFields: C } = T, _ = J(L(C) || []), b = (L(k.field) || []).map((e) => e.name);
+    _.forEach((e) => {
+      e.isTarget = !!b.includes(e.name);
+    }), s.value = _;
+  }, metadata: {} };
 };
 export {
-  oe as default
+  re as default
 };
