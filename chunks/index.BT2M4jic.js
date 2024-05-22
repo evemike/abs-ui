@@ -2,7 +2,7 @@ var ot = Object.defineProperty;
 var at = (n, e, t) => e in n ? ot(n, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : n[e] = t;
 var g = (n, e, t) => (at(n, typeof e != "symbol" ? e + "" : e, t), t);
 import "../css/index-BPt-8y3n.css";
-import { defineComponent as q, inject as rt, computed as ee, openBlock as Q, createElementBlock as x, normalizeClass as ke, createBlock as J, unref as r, createCommentVNode as _, h as R, createStaticVNode as b1, createElementVNode as F, toRefs as me, ref as I, onMounted as Qe, watch as Ne, normalizeStyle as Ge, toDisplayString as O, renderSlot as qe, shallowRef as Ae, withCtx as u, createVNode as p, Fragment as se, renderList as de, mergeProps as r1, createTextVNode as Y, withModifiers as c1, reactive as ie, toRef as st, withDirectives as lt, vShow as nt, provide as He, markRaw as ct, render as dt, pushScopeId as s1, popScopeId as l1, nextTick as pt, isRef as v1, onBeforeUnmount as H1, resolveComponent as At } from "vue";
+import { defineComponent as q, inject as rt, computed as ee, openBlock as Q, createElementBlock as x, normalizeClass as ke, createBlock as J, unref as r, createCommentVNode as _, h as R, createStaticVNode as b1, createElementVNode as F, toRefs as me, ref as I, onMounted as Qe, watch as Ne, normalizeStyle as Ge, toDisplayString as O, renderSlot as qe, shallowRef as Ae, withCtx as u, createVNode as p, Fragment as ae, renderList as de, mergeProps as r1, createTextVNode as Y, withModifiers as c1, reactive as oe, toRef as st, withDirectives as lt, vShow as nt, provide as He, markRaw as ct, render as dt, pushScopeId as s1, popScopeId as l1, nextTick as pt, isRef as v1, onBeforeUnmount as H1, resolveComponent as At } from "vue";
 import { M as ht, y as T, z as d1, o as $, A as We, B as Ct, f as v, C as Pe, G as Ke, D as gt, F as S1, H as n1, I as L1, J as x1, K as ut, j as Ee, s as k1, L as ft, N as mt, O as ne, P as N1, Q as wt, R as yt, u as Bt, S as Et, T as Ve, U as ue, V as p1, W as Ft, m as Qt, X as Dt, Y as It, Z as Mt, g as le, _ as _e, $ as bt, l as Te, k as G1, a0 as vt, a1 as Ht, a2 as St, a3 as Lt, a4 as xt, a5 as Fe, a6 as kt, a7 as Nt, a8 as Gt, a9 as Rt, a as Z, aa as Pt, ab as Se, ac as Vt, d as he, e as V, ad as Ot, v as Xe, ae as Ut, af as Ye, E as ce, ag as Kt, ah as Tt, ai as Yt, aj as Jt, ak as Zt, al as $e, x as Je, am as R1, an as jt, ao as A1, ap as Be, aq as P1, ar as ge, as as be, at as X, au as Ie, av as qt, p as Re, aw as V1, ax as zt, i as Ze, ay as O1, az as U1, aA as h1, aB as K1, aC as Wt, aD as _t, aE as Xt, aF as T1, aG as C1, aH as $t, aI as ei } from "./vendor.CawUkpaF.js";
 import { E as fe } from "./main.Cpqa8RLW.js";
 import { _ as ye } from "./main.vue_vue_type_script_setup_true_lang.27q4tKaI.js";
@@ -7315,7 +7315,7 @@ const Ii = /* @__PURE__ */ De(wi, [["render", Di]]), Mi = {
     const U = I(), { pressed: S } = Et({ target: U }), b = ee(() => {
       if (!r(S))
         return C ? r(M) : r(D);
-      const K = C ? r(B) : r(m), ae = ["right", "bottom"].includes(a) ? -1 : 1, te = (K - H) * ae;
+      const K = C ? r(B) : r(m), re = ["right", "bottom"].includes(a) ? -1 : 1, te = (K - H) * re;
       return r(k) + te;
     }), N = ee(() => {
       const K = r(k) == 0 ? c : r(b) + "px";
@@ -7327,8 +7327,8 @@ const Ii = /* @__PURE__ */ De(wi, [["render", Di]]), Mi = {
         h.value == !1 && A && (P.value = !0);
       });
     }), Ne(S, (K) => {
-      const ae = C ? r(B) : r(m);
-      K ? (H = ae, k.value = C ? r(M) : r(D)) : H = 0;
+      const re = C ? r(B) : r(m);
+      K ? (H = re, k.value = C ? r(M) : r(D)) : H = 0;
     }), Ne(d, (K) => {
       K != r(h) && (h.value = K), K && (P.value = !1);
     });
@@ -7337,7 +7337,7 @@ const Ii = /* @__PURE__ */ De(wi, [["render", Di]]), Mi = {
     };
     return e({ visible: h, open: () => {
       P.value = !1, h.value = !0, o("update:visible", !0);
-    }, close: L }), (K, ae) => (Q(), x("div", {
+    }, close: L }), (K, re) => (Q(), x("div", {
       ref_key: "boxRef",
       ref: E,
       class: ke(["box-resize-drawer", r(a), h.value ? "trans-show" : "trans-hide"]),
@@ -7459,31 +7459,35 @@ const Ii = /* @__PURE__ */ De(wi, [["render", Di]]), Mi = {
             key: l.value + C.value
           }, {
             default: u(() => [
-              (Q(!0), x(se, null, de(A.value, (D, H) => (Q(), J(r(ue), {
-                key: H + "-" + l.value,
-                name: d.value[H],
-                label: D.label,
-                class: "w-full h-full"
-              }, {
-                default: u(() => [
-                  D.type === "form" ? (Q(), J(r(ti), r1({
-                    key: 0,
-                    ref_for: !0,
-                    ref: (k) => w.value = k,
-                    modelValue: r(a).data.value[l.value],
-                    "onUpdate:modelValue": M[0] || (M[0] = (k) => r(a).data.value[l.value] = k),
-                    params: h.value,
-                    column: D.column,
-                    elForm: { disabled: C.value }
-                  }, D.attr || {}, { class: "h-full w-full" }), null, 16, ["modelValue", "params", "column", "elForm"])) : (Q(), J(r(fe), {
-                    key: 1,
-                    elem: D.elem,
-                    params: h.value,
-                    context: { params: { index: H } }
-                  }, null, 8, ["elem", "params", "context"]))
-                ]),
-                _: 2
-              }, 1032, ["name", "label"]))), 128))
+              (Q(!0), x(ae, null, de(A.value, (D, H) => (Q(), x(ae, {
+                key: H + "-" + l.value
+              }, [
+                D.condition == null || D.condition(h.value) ? (Q(), J(r(ue), {
+                  key: 0,
+                  name: d.value[H],
+                  label: D.label,
+                  class: "w-full h-full"
+                }, {
+                  default: u(() => [
+                    D.type === "form" ? (Q(), J(r(ti), r1({
+                      key: 0,
+                      ref_for: !0,
+                      ref: (k) => w.value = k,
+                      modelValue: r(a).data.value[l.value],
+                      "onUpdate:modelValue": M[0] || (M[0] = (k) => r(a).data.value[l.value] = k),
+                      params: h.value,
+                      column: D.column,
+                      elForm: { disabled: C.value }
+                    }, D.attr || {}, { class: "h-full w-full" }), null, 16, ["modelValue", "params", "column", "elForm"])) : (Q(), J(r(fe), {
+                      key: 1,
+                      elem: D.elem,
+                      params: h.value,
+                      context: { params: { index: H } }
+                    }, null, 8, ["elem", "params", "context"]))
+                  ]),
+                  _: 2
+                }, 1032, ["name", "label"])) : _("", !0)
+              ], 64))), 128))
             ]),
             _: 1
           })) : _("", !0)
@@ -7886,13 +7890,13 @@ const Pi = { class: "_search" }, Vi = ["onMousedown", "title"], Oi = { class: "_
         "onUpdate:modelValue": y[1] || (y[1] = (E) => A.value = E)
       }, {
         default: u(() => [
-          (Q(!0), x(se, null, de(h.value, ([E, B]) => (Q(), J(r(It), {
+          (Q(!0), x(ae, null, de(h.value, ([E, B]) => (Q(), J(r(It), {
             key: E,
             title: E,
             name: E
           }, {
             default: u(() => [
-              (Q(!0), x(se, null, de(B, (m) => (Q(), x("div", {
+              (Q(!0), x(ae, null, de(B, (m) => (Q(), x("div", {
                 class: "_node_item",
                 onMousedown: (M) => w(m, M),
                 title: m.label
@@ -7915,7 +7919,7 @@ const Pi = { class: "_search" }, Vi = ["onMousedown", "title"], Oi = { class: "_
       }, 8, ["modelValue"])
     ], 512));
   }
-}), J5 = (n, e) => {
+}), T5 = (n, e) => {
   const { filter: t, order: i, group: o } = e;
   let a = n;
   return t && (a = q1(a, t)), i && (a = j1(a, i)), o && (a = Z1(a, o)), a;
@@ -8036,12 +8040,12 @@ const Pi = { class: "_search" }, Vi = ["onMousedown", "title"], Oi = { class: "_
       d.handle && typeof d.handle == "function" && d.handle(i);
     };
     return e({}), (d, h) => (Q(), x("div", Ti, [
-      (Q(!0), x(se, null, de(c.value, (C, w) => (Q(), x(se, null, [
+      (Q(!0), x(ae, null, de(c.value, (C, w) => (Q(), x(ae, null, [
         Array.isArray(C) ? (Q(), x("div", {
           key: 0,
           class: ke(["_group", `_group-${w}`])
         }, [
-          (Q(!0), x(se, null, de(C, (f) => (Q(), x(se, null, [
+          (Q(!0), x(ae, null, de(C, (f) => (Q(), x(ae, null, [
             f.tag ? (Q(), J(r(fe), {
               key: 0,
               elem: f,
@@ -8061,7 +8065,7 @@ const Pi = { class: "_search" }, Vi = ["onMousedown", "title"], Oi = { class: "_
               _: 2
             }, 1032, ["onClick", "title", "icon", "disabled", "loading"]))
           ], 64))), 256))
-        ], 2)) : (Q(), x(se, { key: 1 }, [
+        ], 2)) : (Q(), x(ae, { key: 1 }, [
           C.tag ? (Q(), J(r(fe), {
             key: 0,
             elem: C,
@@ -8252,7 +8256,7 @@ class qi {
       refData: I({})
     };
     if (i.isEdge) {
-      if (i.color = I(""), i.source = I(((a = t.source) == null ? void 0 : a.cell) || ""), i.target = I(((s = t.target) == null ? void 0 : s.cell) || ""), i.labelConfig = ie({}), this.cells.has(i.target.value)) {
+      if (i.color = I(""), i.source = I(((a = t.source) == null ? void 0 : a.cell) || ""), i.target = I(((s = t.target) == null ? void 0 : s.cell) || ""), i.labelConfig = oe({}), this.cells.has(i.target.value)) {
         const l = this.cells.get(i.target.value);
         l == null || l.inCells.add(i.id), i.source.value && (l == null || l.prevNodes.add(r(i.source)));
       }
@@ -8261,7 +8265,7 @@ class qi {
         l == null || l.outCells.add(i.id), i.target.value && (l == null || l.nextNodes.add(r(i.target)));
       }
     }
-    i.isNode && (i.inCells = ie(/* @__PURE__ */ new Set()), i.outCells = ie(/* @__PURE__ */ new Set()), i.prevNodes = ie(/* @__PURE__ */ new Set()), i.nextNodes = ie(/* @__PURE__ */ new Set())), this.cells.set(t.id, i);
+    i.isNode && (i.inCells = oe(/* @__PURE__ */ new Set()), i.outCells = oe(/* @__PURE__ */ new Set()), i.prevNodes = oe(/* @__PURE__ */ new Set()), i.nextNodes = oe(/* @__PURE__ */ new Set())), this.cells.set(t.id, i);
   }
   //边连接完成时更新边的数据
   updateEdge(e) {
@@ -8777,8 +8781,8 @@ const eo = /* @__PURE__ */ q({
         new Ke({
           ...K,
           // 自定义 边的弹出展示
-          onEdgeLabelRendered: (ae) => {
-            const { selectors: te, edge: pe } = ae, z = te.foContent;
+          onEdgeLabelRendered: (re) => {
+            const { selectors: te, edge: pe } = re, z = te.foContent;
             z && dt(
               R(_i, {
                 edge: pe,
@@ -8793,7 +8797,7 @@ const eo = /* @__PURE__ */ q({
       ), P.usePlugins(y.value), S.setGraph(y.value), b.setGraph(y.value), L.init(y.value), N.resetGraph(y.value).registerEvent().onMounted(G);
     }), e({
       graph: y
-    }), (K, ae) => {
+    }), (K, re) => {
       var te, pe;
       return Q(), x("div", {
         ref_key: "elsX6Ref",
@@ -9771,7 +9775,7 @@ const eo = /* @__PURE__ */ q({
                 default: u(() => [
                   F("div", null, [
                     Zo,
-                    (Q(!0), x(se, null, de(Object.keys(l.value.attributes), (B) => (Q(), x("div", jo, [
+                    (Q(!0), x(ae, null, de(Object.keys(l.value.attributes), (B) => (Q(), x("div", jo, [
                       F("p", qo, O(B), 1),
                       F("p", null, O(l.value.attributes[B]), 1)
                     ]))), 256))
@@ -10421,7 +10425,7 @@ const _o = (n) => ({ elems: [
   emits: ["change"],
   setup(n, { emit: e }) {
     var k, U, S, b, N;
-    const t = n, { nifi: i, cell: o } = t, a = i.event.source.get(o.id), s = a == null, l = ie((a == null ? void 0 : a.component) || {
+    const t = n, { nifi: i, cell: o } = t, a = i.event.source.get(o.id), s = a == null, l = oe((a == null ? void 0 : a.component) || {
       backPressureDataSizeThreshold: "1 GB",
       backPressureObjectThreshold: "10000",
       flowFileExpiration: "0 sec",
@@ -10431,16 +10435,16 @@ const _o = (n) => ({ elems: [
       prioritizers: [],
       source: {},
       destination: {}
-    }), c = ie({ groupName: i.groupTitle, isGroup: !1 }), A = ie({ groupName: i.groupTitle, isGroup: !1 }), d = (k = o.source) == null ? void 0 : k.cell, h = (U = o.target) == null ? void 0 : U.cell, C = i.event.source.get(d), w = i.event.source.get(h), f = (b = (S = C == null ? void 0 : C.component) == null ? void 0 : S.relationships) == null ? void 0 : b.map((P) => ({ label: P.name, desc: P.description })), y = ie([]), E = ie([]);
+    }), c = oe({ groupName: i.groupTitle, isGroup: !1 }), A = oe({ groupName: i.groupTitle, isGroup: !1 }), d = (k = o.source) == null ? void 0 : k.cell, h = (U = o.target) == null ? void 0 : U.cell, C = i.event.source.get(d), w = i.event.source.get(h), f = (b = (S = C == null ? void 0 : C.component) == null ? void 0 : S.relationships) == null ? void 0 : b.map((P) => ({ label: P.name, desc: P.description })), y = oe([]), E = oe([]);
     (async () => {
-      var P, L, G, K, ae, te, pe, z, W, j;
+      var P, L, G, K, re, te, pe, z, W, j;
       if (C.outputPortCount && C.outputPortCount > 0) {
-        const re = await i.api.getGroupData(d), ve = (G = (L = (P = re == null ? void 0 : re.processGroupFlow) == null ? void 0 : P.breadcrumb) == null ? void 0 : L.breadcrumb) == null ? void 0 : G.name, we = ((ae = (K = re == null ? void 0 : re.processGroupFlow) == null ? void 0 : K.flow) == null ? void 0 : ae.outputPorts.map((Ce) => ({ label: Ce.component.name, value: Ce.id, data: { name: Ce.component.name, id: Ce.id, groupId: d, type: "OUTPUT_PORT" } }))) || [];
+        const se = await i.api.getGroupData(d), ve = (G = (L = (P = se == null ? void 0 : se.processGroupFlow) == null ? void 0 : P.breadcrumb) == null ? void 0 : L.breadcrumb) == null ? void 0 : G.name, we = ((re = (K = se == null ? void 0 : se.processGroupFlow) == null ? void 0 : K.flow) == null ? void 0 : re.outputPorts.map((Ce) => ({ label: Ce.component.name, value: Ce.id, data: { name: Ce.component.name, id: Ce.id, groupId: d, type: "OUTPUT_PORT" } }))) || [];
         E.push(...we), A.groupName = ve, A.type = "处理组", A.isGroup = !0, A.name = we[0].label, l.source = we[0].data;
       } else
         A.name = C.component.name, A.type = e1(C), l.source = { id: d, groupId: i.groupId, type: g1(C) };
       if (w.inputPortCount && w.inputPortCount > 0) {
-        const re = await i.api.getGroupData(h), ve = (z = (pe = (te = re == null ? void 0 : re.processGroupFlow) == null ? void 0 : te.breadcrumb) == null ? void 0 : pe.breadcrumb) == null ? void 0 : z.name, we = ((j = (W = re == null ? void 0 : re.processGroupFlow) == null ? void 0 : W.flow) == null ? void 0 : j.inputPorts.map((Ce) => ({ label: Ce.component.name, value: Ce.id, data: { name: Ce.component.name, id: Ce.id, groupId: h, type: "INPUT_PORT" } }))) || [];
+        const se = await i.api.getGroupData(h), ve = (z = (pe = (te = se == null ? void 0 : se.processGroupFlow) == null ? void 0 : te.breadcrumb) == null ? void 0 : pe.breadcrumb) == null ? void 0 : z.name, we = ((j = (W = se == null ? void 0 : se.processGroupFlow) == null ? void 0 : W.flow) == null ? void 0 : j.inputPorts.map((Ce) => ({ label: Ce.component.name, value: Ce.id, data: { name: Ce.component.name, id: Ce.id, groupId: h, type: "INPUT_PORT" } }))) || [];
         y.push(...we), c.groupName = ve, c.type = "处理组", c.isGroup = !0, c.name = we[0].label, l.destination = we[0].data;
       } else
         c.name = w.component.name, c.type = e1(w), l.destination = { id: h, groupId: i.groupId, type: g1(w) };
@@ -10461,8 +10465,8 @@ const _o = (n) => ({ elems: [
       "org.apache.nifi.prioritizer.FirstInFirstOutPrioritizer",
       "org.apache.nifi.prioritizer.NewestFlowFileFirstPrioritizer"
     ].map((P) => ({ label: P.split(".").pop(), value: P })), H = (P, L = "source") => {
-      const G = L == "source" ? E : y, K = L == "source" ? l.source : l.destination, ae = L == "source" ? A : c, te = G.find((pe) => pe.value == P);
-      console.log(P, L, te), te && (K.id = te.value, K.groupId = te.data.groupId, ae.name = te.label);
+      const G = L == "source" ? E : y, K = L == "source" ? l.source : l.destination, re = L == "source" ? A : c, te = G.find((pe) => pe.value == P);
+      console.log(P, L, te), te && (K.id = te.value, K.groupId = te.data.groupId, re.name = te.label);
     };
     return (N = i.event.form) == null || N.resetCellFormData(o, l), (P, L) => (Q(), x("div", ra, [
       F("div", sa, [
@@ -10545,7 +10549,7 @@ const _o = (n) => ({ elems: [
                 "onUpdate:modelValue": L[4] || (L[4] = (G) => l.selectedRelationships = G)
               }, {
                 default: u(() => [
-                  (Q(!0), x(se, null, de(r(f), (G) => (Q(), J(r(Je), {
+                  (Q(!0), x(ae, null, de(r(f), (G) => (Q(), J(r(Je), {
                     label: G.label,
                     title: G.desc
                   }, null, 8, ["label", "title"]))), 256))
@@ -11057,10 +11061,10 @@ const pa = (n) => {
       C(W, z);
     }, B = (z) => {
       h(z);
-    }, m = I(!1), M = I(), D = ie({
+    }, m = I(!1), M = I(), D = oe({
       name: "",
       description: ""
-    }), H = ie({
+    }), H = oe({
       name: [{ required: !0, message: "请输入名称", trigger: "blur" }]
     }), k = () => {
       m.value = !0;
@@ -11077,16 +11081,16 @@ const pa = (n) => {
           D
         ) && U() : console.log("error submit!", j);
       }));
-    }, b = I(!1), N = I(), P = ie({
+    }, b = I(!1), N = I(), P = oe({
       template: []
-    }), L = ie({
+    }), L = oe({
       template: [{ required: !0, message: "请选择模板", trigger: "change" }]
     }), G = () => {
       b.value = !0;
     }, K = () => {
       var z;
       b.value = !1, (z = N.value) == null || z.resetFields();
-    }, ae = (z, W) => {
+    }, re = (z, W) => {
       P.template = W;
     }, te = async () => {
       var z;
@@ -11098,8 +11102,8 @@ const pa = (n) => {
       l();
     });
     const pe = ({ timestamp: z }) => {
-      const W = z.slice(0, -4), j = new Date(W), re = j.getFullYear(), ve = String(j.getMonth() + 1).padStart(2, "0"), we = String(j.getDate()).padStart(2, "0"), Ce = String(j.getHours()).padStart(2, "0"), tt = String(j.getMinutes()).padStart(2, "0"), it = String(j.getSeconds()).padStart(2, "0");
-      return `${re}/${ve}/${we} ${Ce}:${tt}:${it}`;
+      const W = z.slice(0, -4), j = new Date(W), se = j.getFullYear(), ve = String(j.getMonth() + 1).padStart(2, "0"), we = String(j.getDate()).padStart(2, "0"), Ce = String(j.getHours()).padStart(2, "0"), tt = String(j.getMinutes()).padStart(2, "0"), it = String(j.getSeconds()).padStart(2, "0");
+      return `${se}/${ve}/${we} ${Ce}:${tt}:${it}`;
     };
     return (z, W) => (Q(), x("div", ha, [
       F("div", Ca, O(r(d)), 1),
@@ -11186,7 +11190,7 @@ const pa = (n) => {
                 "cancel-button-text": "取消",
                 "icon-color": "#626AEF",
                 title: `删除模板'${j.name}'?`,
-                onConfirm: (re) => B(j.id)
+                onConfirm: (se) => B(j.id)
               }, {
                 reference: u(() => [
                   p(r(v), {
@@ -11297,7 +11301,7 @@ const pa = (n) => {
                     accept: ".xml",
                     "auto-upload": !1,
                     "file-list": P.template,
-                    "on-change": ae
+                    "on-change": re
                   }, {
                     default: u(() => [
                       p(r(v), { type: "primary" }, {
@@ -11346,7 +11350,7 @@ const pa = (n) => {
     nifi: {}
   },
   setup(n) {
-    const e = n, { nifi: t } = e, i = ie([]), o = async () => {
+    const e = n, { nifi: t } = e, i = oe([]), o = async () => {
       const w = { component: { name: "", description: "", parameters: [], inheritedParameterContexts: [] } };
       try {
         await ce.confirm(R(h, { disabled: !1, data: w }), {});
@@ -11559,10 +11563,10 @@ const pa = (n) => {
         for (let N = 0; N < y.component.parameters.length; N++) {
           const { name: P, value: L, description: G } = B[b], {
             name: K,
-            value: ae,
+            value: re,
             description: te
           } = y.component.parameters[N].parameter;
-          P === K && (L !== ae || G !== te) && D.push({
+          P === K && (L !== re || G !== te) && D.push({
             parameter: {
               name: P,
               value: L,
@@ -11655,7 +11659,7 @@ const pa = (n) => {
       name: "",
       value: "",
       description: ""
-    }), h = ie({
+    }), h = oe({
       name: [{ required: !0, message: "请输入名称", trigger: "blur" }]
     }), C = I(!1), w = () => {
       C.value = !1, d.value = {
@@ -11925,7 +11929,7 @@ const pa = (n) => {
           onRemove: A
         }, {
           default: u(() => [
-            (Q(!0), x(se, null, de(s.value, (C) => (Q(), x("div", {
+            (Q(!0), x(ae, null, de(s.value, (C) => (Q(), x("div", {
               key: C.id,
               class: "draggable-value"
             }, O(C.component.name), 1))), 128))
@@ -11947,7 +11951,7 @@ const pa = (n) => {
           onRemove: A
         }, {
           default: u(() => [
-            (Q(!0), x(se, null, de(r(o), (C) => (Q(), x("div", {
+            (Q(!0), x(ae, null, de(r(o), (C) => (Q(), x("div", {
               key: C.id,
               class: "draggable-value draggable-active"
             }, O(C.component.name), 1))), 128))
@@ -11988,7 +11992,7 @@ const pa = (n) => {
     }), C = I("setup"), w = I(), f = I({
       name: "",
       description: ""
-    }), y = ie({
+    }), y = oe({
       name: [{ required: !0, message: "请输入名称", trigger: "blur" }]
     }), E = () => {
       t("update:modelValue", !1);
@@ -12181,7 +12185,7 @@ const pa = (n) => {
           _: 1
         }, 8, ["modelValue"])) : (Q(), x("div", Ya, [
           Y(" 更新参数的步骤 "),
-          (Q(!0), x(se, null, de(B.value, (N) => (Q(), x("div", {
+          (Q(!0), x(ae, null, de(B.value, (N) => (Q(), x("div", {
             "w-300": "",
             flex: "",
             "justify-between": "",
@@ -12346,7 +12350,7 @@ class t5 {
     g(this, "group", {});
     g(this, "groupTitle", "");
     g(this, "clientId", "");
-    g(this, "nodeList", ie([]));
+    g(this, "nodeList", oe([]));
     //
     g(this, "nodeListConfig", { nodeList: this.nodeList, getNodeMetadata: this.getNodeMetadata });
     g(this, "edgeLabelConfig", { elem: $o });
@@ -12646,7 +12650,7 @@ const et = /* @__PURE__ */ q({
           width: "60",
           align: "center"
         }),
-        (Q(!0), x(se, null, de(r(A), (C) => (Q(), J(r(V), {
+        (Q(!0), x(ae, null, de(r(A), (C) => (Q(), J(r(V), {
           prop: C.prop,
           label: C.label
         }, null, 8, ["prop", "label"]))), 256))
@@ -12672,8 +12676,8 @@ const et = /* @__PURE__ */ q({
     const e = n, { log: t } = e, i = t.split(`
 `).map((a) => a), o = ["#E6A23C", "#67C23A", "#409EFF"];
     return (a, s) => (Q(), x("div", a5, [
-      (Q(!0), x(se, null, de(r(i), (l) => (Q(), x("div", null, [
-        (Q(!0), x(se, null, de(l.split(" - "), (c, A) => (Q(), x("span", {
+      (Q(!0), x(ae, null, de(r(i), (l) => (Q(), x("div", null, [
+        (Q(!0), x(ae, null, de(l.split(" - "), (c, A) => (Q(), x("span", {
           "m-x-4": "",
           class: ke(`_log-item-${A}`),
           style: Ge(`color:${o[A]}`)
@@ -12681,7 +12685,7 @@ const et = /* @__PURE__ */ q({
       ]))), 256))
     ]));
   }
-}), oe = class oe {
+}), ie = class ie {
   constructor(e) {
     //
     g(this, "kettle");
@@ -12730,12 +12734,12 @@ const et = /* @__PURE__ */ q({
       projectName: Math.random().toString(36).slice(-9),
       projectNameCn: "测试任务",
       projectFileVO: e
-    }, i = oe.PREFIX + "/batch/project/add";
+    }, i = ie.PREFIX + "/batch/project/add";
     return this.apiPost(i, t);
   }
   // 获取项目列表
   async getProjects() {
-    const e = oe.PREFIX + "/batch/project/selectLikeBy?pageNum=1&pageSize=100&projectStatus=&order=updateTime&sort=DESC";
+    const e = ie.PREFIX + "/batch/project/selectLikeBy?pageNum=1&pageSize=100&projectStatus=&order=updateTime&sort=DESC";
     return this.apiGet(e);
   }
   // 初始化项目
@@ -12750,7 +12754,7 @@ const et = /* @__PURE__ */ q({
     this.updateGraph(i);
   }
   async getToken() {
-    const e = oe.PREFIX + "/api/dataintegration-common-sso-provider/oauth/token", t = new FormData();
+    const e = ie.PREFIX + "/api/dataintegration-common-sso-provider/oauth/token", t = new FormData();
     t.append("username", "admin"), t.append("password", "123"), t.append("grant_type", "password"), t.append("client_id", "dataintegration"), t.append("client_secret", "dataintegration");
     try {
       const i = await this.apiPost(e, t, {});
@@ -12762,7 +12766,7 @@ const et = /* @__PURE__ */ q({
   // 获取节点列表 
   async getNodes() {
     var t;
-    const e = oe.PREFIX_TASK + "/batch/pluginManage/getAllBasicPluginInfoByUserId";
+    const e = ie.PREFIX_TASK + "/batch/pluginManage/getAllBasicPluginInfoByUserId";
     try {
       const o = (t = (await this.apiGet(e)).result) == null ? void 0 : t.map((a) => {
         var s;
@@ -12776,7 +12780,7 @@ const et = /* @__PURE__ */ q({
   }
   // 项目信息 /api/dataintegration-project-provider/project/getProjectFile/a235fc269f3640a78a2bdcf6f3431d43
   async getProjectInfo(e) {
-    const t = oe.PREFIX + `/batch/project/getProjectFile/${e}`, o = (await this.apiGet(t)).result;
+    const t = ie.PREFIX + `/batch/project/getProjectFile/${e}`, o = (await this.apiGet(t)).result;
     return o.projectStr = o.projectFile, o.projectFile = JSON.parse(o.projectFile), o;
   }
   // 获取字段信息 api/dataintegration-di-run-management-provider/database/getFieldInfo
@@ -12790,7 +12794,7 @@ const et = /* @__PURE__ */ q({
   // 新建画布
   // 更新画布
   async updateGraph(e) {
-    const t = oe.PREFIX + "/batch/project/update";
+    const t = ie.PREFIX + "/batch/project/update";
     try {
       const i = await this.apiPut(t, e);
       i.code == "200" || i.code == "10000" ? Z.success("保存成功") : Z.error("保存失败：" + (i.message || ""));
@@ -12811,7 +12815,7 @@ const et = /* @__PURE__ */ q({
         projectName: "sds"
       };
       Object.assign(a, (i == null ? void 0 : i.params) || {});
-      const s = oe.PREFIX + "/previewExecutor/executePreviewByFile", l = await this.apiPost(s, a);
+      const s = ie.PREFIX + "/previewExecutor/executePreviewByFile", l = await this.apiPost(s, a);
       let c = l.message;
       const A = l.content || l.result || {}, { previewFieldNames: d, previewFieldTypes: h, previewRows: C, log: w, errors: f } = A;
       w && (c = w), f == 0 ? ce({
@@ -12827,6 +12831,15 @@ const et = /* @__PURE__ */ q({
       console.error("dataPreview :: ===> ", o);
     }
   }
+  //
+  async getFieldInfo(e) {
+    const t = ie.PREFIX + "/database/getFieldInfo", i = await this.apiPost(t, e);
+    return i.result || i.content;
+  }
+  async testConnect(e) {
+    const t = ie.PREFIX + "/database/testConnect", i = await this.apiPost(t, e), o = i.result || i.content;
+    return o === !0 || o === !1 ? o : (Z.error("测试连接接口调用失败"), console.error("测试连接接口调用失败 ===> ", i), !1);
+  }
   // 运行 ws
   // 停止 ws
   // 保存 /api/dataintegration-project-provider/project/updateSelective
@@ -12835,7 +12848,7 @@ const et = /* @__PURE__ */ q({
   // ws 
   initWS() {
     this.mws = new o5({
-      url: oe.PREFIX + "/ws",
+      url: ie.PREFIX + "/ws",
       getKey: (e) => {
         var t;
         return (t = e.data.split(`
@@ -12876,11 +12889,6 @@ const et = /* @__PURE__ */ q({
   }
   //
   wsHeartBeat() {
-    clearInterval(this.wsTime), this.wsTime = setInterval(() => {
-      var e;
-      (e = this.mws) == null || e.send(`
-`);
-    }, this.wsHeartbeat);
   }
   // 运行 项目
   running(e = {}) {
@@ -12899,7 +12907,7 @@ const et = /* @__PURE__ */ q({
     i && (t["content-length"] = new TextEncoder().encode(i).length);
     const o = [e];
     for (const [s, l] of Object.entries(t))
-      o.push(`${s}:${typeof l == "string" ? oe.hdrValueEscape(l) : l}`);
+      o.push(`${s}:${typeof l == "string" ? ie.hdrValueEscape(l) : l}`);
     return `${o.join(`
 `)}
 
@@ -12948,17 +12956,17 @@ ${i}\0`;
   // 基础请求处理逻辑封装
   // apiPost(url: string, data: any = {}, headers: Record<string, any> = { "Content-Type": "application/json", Authorization: `Bearer ${this.token}` }) {
   apiPost(e, t = {}, i = { "Content-Type": "application/json" }) {
-    return oe.POST(e, t, i);
+    return ie.POST(e, t, i);
   }
   // apiGet(url: string, headers: Record<string, any> = { Authorization: `Bearer ${this.token}` }) {
   apiGet(e, t = {}) {
-    return oe.GET(e, t);
+    return ie.GET(e, t);
   }
   apiPut(e, t = {}) {
-    return oe.PUT(e, t);
+    return ie.PUT(e, t);
   }
   apiDelete(e) {
-    return oe.DELETE(e);
+    return ie.DELETE(e);
   }
   static GET(e, t = {}) {
     return new Promise((i, o) => {
@@ -12993,8 +13001,8 @@ ${i}\0`;
     });
   }
   static async getFieldInfo(e) {
-    const t = oe.PREFIX + "/database/getFieldInfo";
-    return await oe.POST(t, e);
+    const t = ie.PREFIX + "/database/getFieldInfo";
+    return await ie.POST(t, e);
   }
   static hdrValueEscape(e) {
     return e.replace(/\\/g, "\\\\").replace(/\r/g, "\\r").replace(/\n/g, "\\n").replace(/:/g, "\\c");
@@ -13008,43 +13016,32 @@ ${i}\0`;
   }
 };
 //
-g(oe, "PREFIX", "/kettle-api"), g(oe, "PREFIX_TASK", "/task-api");
-let o1 = oe;
-const r5 = /* @__PURE__ */ Object.assign({ "./olapSql.ts": () => import("./olapSql.DDZjnaPP.js"), "./rowGenerator.ts": () => import("./rowGenerator.Bxj8Fwdi.js"), "./sortRows.ts": () => import("./sortRows.su3a3jFj.js"), "./tableInput.ts": () => import("./tableInput.B1C6NbH1.js"), "./tableOutput.ts": () => import("./tableOutput.d9NMLuPy.js") }), s5 = async () => {
-  const n = /* @__PURE__ */ new Map();
-  for (const [e, t] of Object.entries(r5))
-    if (!e.includes("index")) {
-      const i = await t();
-      if (i && i.default && typeof i.default == "function") {
-        const o = i.default();
-        o && o.name && n.set(o.name, o);
-      }
-    }
-  return n;
-}, l5 = s5(), n5 = {
+g(ie, "PREFIX", "/kettle-api"), g(ie, "PREFIX_TASK", "/task-api");
+let o1 = ie;
+const r5 = {
   class: "comp-fields",
   flex: "",
   "w-full": "",
   "gap-20": "",
   "overflow-auto": ""
-}, c5 = {
+}, s5 = {
   "flex-1": "",
   class: "max-w-40% min-w-30%"
-}, d5 = { "min-w-50": "" }, p5 = /* @__PURE__ */ F("div", { "h-50": "" }, null, -1), A5 = {
+}, l5 = { "min-w-50": "" }, n5 = /* @__PURE__ */ F("div", { "h-50": "" }, null, -1), c5 = {
   "h-48": "",
   flex: "",
   "items-center": "",
   "justify-center": ""
-}, h5 = {
+}, d5 = {
   key: 0,
   class: "i-mingcute:arrow-right-fill w-2em h-2em c-#409EFF"
-}, C5 = {
+}, p5 = {
   key: 1,
   class: "i-solar:close-square-bold w-2em h-2em c-rose"
-}, g5 = {
+}, A5 = {
   "flex-2": "",
   "w-full": ""
-}, u5 = /* @__PURE__ */ q({
+}, h5 = /* @__PURE__ */ q({
   __name: "runFields",
   props: {
     inputProps: { default: () => ({}) },
@@ -13062,8 +13059,8 @@ const r5 = /* @__PURE__ */ Object.assign({ "./olapSql.ts": () => import("./olapS
       const A = Object.assign({}, s, a || {});
       return r(o).map((d) => ({ name: le(d, A.name), type: le(d, A.type), remark: le(d, A.remark), $enabled: le(d, A.enabled) }));
     });
-    return (A, d) => (Q(), x("div", n5, [
-      F("div", c5, [
+    return (A, d) => (Q(), x("div", r5, [
+      F("div", s5, [
         p(r(he), {
           data: l.value,
           "row-style": { height: "48px", "box-sizing": "border-box" },
@@ -13083,13 +13080,13 @@ const r5 = /* @__PURE__ */ Object.assign({ "./olapSql.ts": () => import("./olapS
           _: 1
         }, 8, ["data"])
       ]),
-      F("div", d5, [
-        p5,
-        (Q(!0), x(se, null, de(c.value, (h) => (Q(), x("div", A5, [
-          h.$enabled != !1 ? (Q(), x("div", h5)) : (Q(), x("div", C5))
+      F("div", l5, [
+        n5,
+        (Q(!0), x(ae, null, de(c.value, (h) => (Q(), x("div", c5, [
+          h.$enabled != !1 ? (Q(), x("div", d5)) : (Q(), x("div", p5))
         ]))), 256))
       ]),
-      F("div", g5, [
+      F("div", A5, [
         p(r(he), {
           data: c.value,
           "row-style": { height: "48px", "box-sizing": "border-box" },
@@ -13111,13 +13108,13 @@ const r5 = /* @__PURE__ */ Object.assign({ "./olapSql.ts": () => import("./olapS
       ])
     ]));
   }
-}), f5 = (n) => ({ elems: [
+}), C5 = (n) => ({ elems: [
   { icon: K1, title: "保存画布", text: "保存", handle: () => n.save() },
   { icon: _t, title: "运行", text: "运行", loading: n.isRun, handle: () => n.run() },
   { icon: Xt, title: "停止", text: "停止", disabled: ee(() => n.isRun.value == !1), handle: () => n.stop() },
   { icon: T1, title: "运行结果", text: "运行结果", disabled: ee(() => n.hasRunResult.value == !1), handle: () => n.openRunResult() },
   { icon: S1, title: "参数配置", text: "参数配置", handle: () => n.config() }
-] }), m5 = {
+] }), g5 = {
   tag: "div",
   class: "_default-node",
   ":class": "step",
@@ -13145,7 +13142,7 @@ const r5 = /* @__PURE__ */ Object.assign({ "./olapSql.ts": () => import("./olapS
       ]
     }
   ]
-}, w5 = [
+}, u5 = [
   { label: "序号", type: "index", width: 60, align: "center" },
   { label: "步骤名称", prop: "label" },
   { label: "复制记录数", prop: "copy" },
@@ -13160,12 +13157,12 @@ const r5 = /* @__PURE__ */ Object.assign({ "./olapSql.ts": () => import("./olapS
   { label: "时间/秒", prop: "seconds" },
   { label: "速度(条/秒)", prop: "speed" },
   { label: "pri/in/out", prop: "priority" }
-], y5 = [
+], f5 = [
   { label: "日志", default: !0, elem: { tag: i1, ":log": "runResult.get(currentId).log", ":key": "currentId" } },
-  { label: "统计", elem: { tag: he, ":key": "currentId", ":data": "runResult.get(currentId).executorSteps", cls: w5.map((n) => ({ tag: V, ...n })) } },
+  { label: "统计", elem: { tag: he, ":key": "currentId", ":data": "runResult.get(currentId).executorSteps", cls: u5.map((n) => ({ tag: V, ...n })) } },
   { label: "数据预览", elem: { tag: et, style: "height:100%;", ":key": "currentCell + currentId", ":data": "runResult.get(currentId)", ":names": "```preview.{{currentCell}}.names```", ":rows": "```preview.{{currentCell}}.rows```" } },
-  { label: "字段信息", elem: { tag: u5, ":key": "currentCell + currentId", ":inFields": "runResult.get(currentId)?.fields?.[currentCell]?.inputFileds", ":outFields": "runResult.get(currentId)?.fields?.[currentCell]?.outputFileds" } }
-], B5 = {
+  { label: "字段信息", elem: { tag: h5, ":key": "currentCell + currentId", ":inFields": "runResult.get(currentId)?.fields?.[currentCell]?.inputFileds", ":outFields": "runResult.get(currentId)?.fields?.[currentCell]?.outputFileds" } }
+], m5 = {
   tag: "div",
   class: "_node-tab-header",
   cls: [
@@ -13184,7 +13181,7 @@ const r5 = /* @__PURE__ */ Object.assign({ "./olapSql.ts": () => import("./olapS
       { tag: v, cls: "关闭", icon: $t, "@click": ({ close: n }) => n() }
     ] }
   ]
-}, E5 = (n) => ({
+}, w5 = (n) => ({
   useDefaultMenu: !1,
   node: [
     { tag: v, link: !0, cls: "编辑", "@click": ({ cell: e, contextmenu: t }) => n.cellEdit(e, t) },
@@ -13209,7 +13206,7 @@ const r5 = /* @__PURE__ */ Object.assign({ "./olapSql.ts": () => import("./olapS
     }
   },
   { tag: T, type: "textarea", class: "nifi-form-tip", autoSize: !0, prop: "$desc", label: "描述" }
-] }, F5 = {
+] }, y5 = {
   SUPPORTS_BOOLEAN_DATA_TYPE: "Y",
   SUPPORTS_TIMESTAMP_DATA_TYPE: "Y",
   QUOTE_ALL_FIELDS: "N",
@@ -13218,56 +13215,57 @@ const r5 = /* @__PURE__ */ Object.assign({ "./olapSql.ts": () => import("./olapS
   STRICT_NUMBER_38_INTERPRETATION: "N",
   PREFERRED_SCHEMA_NAME: "",
   PRESERVE_RESERVED_WORD_CASE: "Y"
-}, Q5 = {}, D5 = {
+}, B5 = {}, E5 = {
   name: "name",
-  password: "connection.config.authType.password",
+  password: "connection.config.password",
   port: (n) => n.connection.config.hostPort.split(":")[1],
   server: (n) => n.connection.config.hostPort.split(":")[0],
   database: "connection.config.database",
   username: "connection.config.username",
   access: () => "Native"
   // type: (d: any) => d.connection.config?.type.toUpperCase(),
-}, I5 = {
+}, F5 = {
   POSTGRES: {
+    password: "connection.config.authType.password",
     type: () => "POSTGRESQL",
     port: (n) => n.connection.config.hostPort.split(":")[1] || "5432",
     limit: () => 10
   },
   CLICKHOUSE: {}
-}, Z5 = (n = {}, e) => {
+}, Y5 = (n = {}, e) => {
   var i, o, a;
   const t = (a = (o = (i = n.connection) == null ? void 0 : i.config) == null ? void 0 : o.type) == null ? void 0 : a.toUpperCase();
   if (t) {
-    const s = Object.assign({}, D5, I5[t] || {}), l = Object.assign({}, F5, Q5[t] || {}), c = { type: t };
+    const s = Object.assign({}, E5, F5[t] || {}), l = Object.assign({}, y5, B5[t] || {}), c = { type: t };
     return Object.keys(s).map((A) => {
       const d = s[A], h = typeof d == "function" ? d(n) : le(n, d) || "";
-      c[A] = h;
+      h != null && (c[A] = h);
     }), e && (c.database = e.name), c.attributes = { attribute: Object.keys(l).map((A) => ({ code: A, attribute: l[A] })) }, c;
   }
   throw console.warn(n), new Error("useConnection :: 获取 type 失败！");
 }, I1 = (n, e) => {
   var A, d;
-  const t = e.nodesMetadata.get(n.prop("name")), i = n.prop("desc") || "", o = (t == null ? void 0 : t.tabs) || [];
+  const t = e.kettle.NodeMetadata.get(n.prop("name")), i = n.prop("desc") || "", o = (t == null ? void 0 : t.tabs) || [];
   (A = e.shadow) == null || A.setTabs(n, [e.getBaseTab(), ...o]);
   const a = e.getExtFormData(n) || {}, s = e.steps.find((h) => h.name == n.id) || {}, l = (t == null ? void 0 : t.step) || {}, c = t != null && t.initForm ? t.initForm(n, e) : {};
   (d = e.form) == null || d.setFormData({ $desc: i, ...l, ...s, ...a, ...c }, n);
-}, M5 = (n, e) => {
-  v5(n, e);
-}, b5 = (n, e) => {
+}, Q5 = (n, e) => {
+  I5(n, e);
+}, D5 = (n, e) => {
 }, M1 = (n, e) => {
   var a;
   const t = ((a = e.form) == null ? void 0 : a.getCellFormData(n)) || {}, i = {}, o = { id: n.id };
   for (const [s, l] of Object.entries(t))
     /^\$/.test(s) ? (o[s] = l, s == "$connection" && (delete l.limit, e.addConnection(l))) : i[s] = l;
   return i.name = n.id, i.id && delete i.id, e.setExtFormData(o), e.resetStep(i), {};
-}, v5 = (n, e) => {
+}, I5 = (n, e) => {
   var i;
-  const t = H5(n, e);
+  const t = M5(n, e);
   if (t != null) {
     const o = (i = e.form) == null ? void 0 : i.getCellFormData(n);
     o && ge(o, "outFields", t);
   }
-}, H5 = (n, e) => {
+}, M5 = (n, e) => {
   var t, i, o, a;
   if (n && n.isNode()) {
     const s = (t = e.shadow) == null ? void 0 : t.get(n);
@@ -13282,20 +13280,17 @@ const r5 = /* @__PURE__ */ Object.assign({ "./olapSql.ts": () => import("./olapS
     }
   }
 };
-class S5 {
+class b5 {
   constructor(e) {
     //
     g(this, "kettle");
     g(this, "api");
     //
-    g(this, "nodesMetadata", /* @__PURE__ */ new Map());
     g(this, "context");
     g(this, "graph");
     g(this, "shadow");
     g(this, "drawerRef");
     g(this, "form");
-    g(this, "initFlag", !1);
-    g(this, "initMeatadataFlag", !1);
     //
     g(this, "nodes", []);
     g(this, "edges", []);
@@ -13308,6 +13303,7 @@ class S5 {
     g(this, "flowInfo", {});
     g(this, "extFormData", []);
     //
+    g(this, "currentCell");
     g(this, "currentCellId", I(""));
     g(this, "currentCellLabel", ee(() => {
       var e, t;
@@ -13341,6 +13337,8 @@ class S5 {
       "drawer:submit": (e, t) => {
         t(), this.handleDrawerSubmit(e);
       },
+      "blank:click": () => {
+      },
       "custom:event": (e, t) => {
         switch (console.log(e, t), e) {
           case "datapreview":
@@ -13352,32 +13350,24 @@ class S5 {
         }
       }
     });
-    this.init(), this.kettle = e, this.api = e.api;
-  }
-  //
-  async init() {
-    l5.then((e) => {
-      this.nodesMetadata = e, this.initMeatadataFlag = !0, this.initFlow(this.initFlag, !0);
-    });
+    this.kettle = e, this.api = e.api;
   }
   //
   initGraph(e) {
     var t, i, o;
-    this.projectInfo = e, this.flowInfo = (t = e == null ? void 0 : e.nodeList) == null ? void 0 : t.flowInfo, this.steps = (e == null ? void 0 : e.step) || [], this.connections = (e == null ? void 0 : e.connection) || [], this.extFormData = ((i = e == null ? void 0 : e.nodeList) == null ? void 0 : i.extdata) || [], this.initFlag = !0, (o = this.graph) == null || o.clearCells(), this.initFlow(!0, this.initMeatadataFlag);
+    this.projectInfo = e, this.flowInfo = (t = e == null ? void 0 : e.nodeList) == null ? void 0 : t.flowInfo, this.steps = (e == null ? void 0 : e.step) || [], this.connections = (e == null ? void 0 : e.connection) || [], this.extFormData = ((i = e == null ? void 0 : e.nodeList) == null ? void 0 : i.extdata) || [], (o = this.graph) == null || o.clearCells(), this.initFlow();
   }
-  initFlow(e = !1, t = !1) {
-    var i, o;
-    if (e && t) {
-      const a = ((i = this.projectInfo) == null ? void 0 : i.nodeList) || {}, s = a.nodeList || [], l = a.lineList || [], c = s.map((d) => this.initNode(d)), A = l.map((d) => this.initEdge(d));
-      (o = this.graph) == null || o.fromJSON({ nodes: c, edges: A });
-    }
+  initFlow() {
+    var s, l;
+    const e = ((s = this.projectInfo) == null ? void 0 : s.nodeList) || {}, t = e.nodeList || [], i = e.lineList || [], o = t.map((c) => this.initNode(c)), a = i.map((c) => this.initEdge(c));
+    (l = this.graph) == null || l.fromJSON({ nodes: o, edges: a });
   }
   doneUpdate() {
     var t;
     const e = ((t = this.graph) == null ? void 0 : t.getCells()) || [];
     for (const i of e)
       if (i.isNode() && this.shadow) {
-        const o = i.prop("name"), { init: a = I1 } = this.nodesMetadata.get(o) || {};
+        const o = i.prop("name"), { init: a = I1 } = this.kettle.NodeMetadata.get(o) || {};
         a(i, this);
       }
   }
@@ -13428,7 +13418,7 @@ class S5 {
     var w;
     const { id: t, label: i, pluginId: o, left: a, top: s, name: l, position: c, icon: A, shape: d, ports: h } = e;
     return {
-      ...((w = this.nodesMetadata.get(l || o)) == null ? void 0 : w.markup) || {},
+      ...((w = this.kettle.NodeMetadata.get(l || o)) == null ? void 0 : w.markup) || {},
       shape: d || "vue-node",
       id: t,
       label: this.checkAndCreateLabel(i),
@@ -13457,12 +13447,12 @@ class S5 {
   }
   // 初始化节点时
   getNodeMetadata(e) {
-    const { name: t, label: i } = e, o = this.nodesMetadata.get(t), a = (o == null ? void 0 : o.markup) || {}, s = (/* @__PURE__ */ new Date()).getTime().toString(36) + Math.random().toString(36).replace("0.", ""), l = this.checkAndCreateLabel(i);
+    const { name: t, label: i } = e, o = this.kettle.NodeMetadata.get(t), a = (o == null ? void 0 : o.markup) || {}, s = (/* @__PURE__ */ new Date()).getTime().toString(36) + Math.random().toString(36).replace("0.", ""), l = this.checkAndCreateLabel(i);
     return Object.assign({ id: s, label: l }, a);
   }
   //
   handleDrawerSubmit(e) {
-    const t = e.prop("name"), { submit: i = b5 } = this.nodesMetadata.get(t) || {};
+    const t = e.prop("name"), { submit: i = D5 } = this.kettle.NodeMetadata.get(t) || {};
     i == null || i(e, this);
   }
   // 
@@ -13470,8 +13460,8 @@ class S5 {
   // addNode(node: Node) {
   //   // 节点类型
   //   const name = node.prop('name');
-  //   if (this.nodesMetadata.has(name)) {
-  //     const { tabs } = this.nodesMetadata.get(name) as NodeModel
+  //   if (this.kettle.NodeMetadata.has(name)) {
+  //     const { tabs } = this.kettle.NodeMetadata.get(name) as NodeModel
   //     //
   //     if (tabs != undefined) { this.shadow?.setTabs(node, tabs) }
   //   }
@@ -13479,7 +13469,7 @@ class S5 {
   addCell(e) {
     const t = e.prop("name");
     if (e.isNode()) {
-      const { init: i = I1 } = this.nodesMetadata.get(t) || {};
+      const { init: i = I1 } = this.kettle.NodeMetadata.get(t) || {};
       i(e, this);
     }
   }
@@ -13489,11 +13479,16 @@ class S5 {
   //
   openDrawer(e) {
     var i, o;
-    const { open: t = M5 } = this.nodesMetadata.get(e.prop("name")) || {};
+    this.currentCell = e;
+    const { open: t = Q5 } = this.kettle.NodeMetadata.get(e.prop("name")) || {};
     t(e, this), (o = (i = this.drawerRef) == null ? void 0 : i.value) == null || o.open(e);
   }
+  closeDrawer() {
+    var e, t;
+    this.currentCell = void 0, (t = (e = this.drawerRef) == null ? void 0 : e.value) == null || t.close();
+  }
   // 数据预览
-  dataPreview(e) {
+  dataPreview(e = this.currentCell) {
     if (e && e.isNode()) {
       const i = { transformation: this.getNodeProjectFile(e) };
       this.api.dataPreview(JSON.stringify(i), e);
@@ -13541,7 +13536,7 @@ class S5 {
     }, order: s };
   }
   getNodeProjectFile(e, t) {
-    const { save: i = M1 } = this.nodesMetadata.get(e.prop("name")) || {};
+    const { save: i = M1 } = this.kettle.NodeMetadata.get(e.prop("name")) || {};
     i(e, this);
     const o = t || { step_error_handling: { error: [] }, "slave-step-copy-partition-distribution": "", slave_transformation: "N", attributes: "", notepads: "" }, a = this.projectInfo.info, s = { hop: [] }, l = [], c = [], A = this.steps.find((d) => d.name == e.id);
     if (A && l.push(A), A && A.connection) {
@@ -13555,7 +13550,7 @@ class S5 {
     const e = ((d = this.graph) == null ? void 0 : d.getCells()) || [], t = [], i = [], o = [], a = [], s = [], l = [];
     for (const h of e) {
       if (h.isNode()) {
-        const { save: C = M1 } = this.nodesMetadata.get(h.prop("name")) || {};
+        const { save: C = M1 } = this.kettle.NodeMetadata.get(h.prop("name")) || {};
         C(h, this), t.push(this.getNodeData(h));
         const w = this.steps.find((f) => f.name == h.id);
         if (w || console.warn("表单信息丢失！", h.id, this.steps), a.push(w), w && w.connection && !l.includes(w.connection)) {
@@ -13605,12 +13600,12 @@ class S5 {
     return this.nodeLabels.add(t), t;
   }
 }
-const L5 = {
+const v5 = {
   class: "run-form",
   "min-w-500": "",
   "w-50vw": "",
   "max-w-1200": ""
-}, x5 = /* @__PURE__ */ q({
+}, H5 = /* @__PURE__ */ q({
   __name: "runForm",
   props: {
     base: {},
@@ -13618,7 +13613,7 @@ const L5 = {
   },
   setup(n) {
     var a;
-    const e = n, t = ie({ logLevel: "Basic", safeModeEnabled: !1, datajson: ((a = e == null ? void 0 : e.base) == null ? void 0 : a.datajson) || "" }), i = ie([...e.params]), o = [{
+    const e = n, t = oe({ logLevel: "Basic", safeModeEnabled: !1, datajson: ((a = e == null ? void 0 : e.base) == null ? void 0 : a.datajson) || "" }), i = oe([...e.params]), o = [{
       key: "Basic",
       label: "基本日志"
     }, {
@@ -13640,7 +13635,7 @@ const L5 = {
       key: "Nothing",
       label: "没有日志"
     }];
-    return (s, l) => (Q(), x("div", L5, [
+    return (s, l) => (Q(), x("div", v5, [
       p(r(be), null, {
         default: u(() => [
           p(r(T), {
@@ -13660,7 +13655,7 @@ const L5 = {
                 onChange: l[3] || (l[3] = (c) => s.base.logLevel = c)
               }, {
                 default: u(() => [
-                  (Q(), x(se, null, de(o, (c) => p(r(ei), {
+                  (Q(), x(ae, null, de(o, (c) => p(r(ei), {
                     key: c.key,
                     label: c.label,
                     value: c.key
@@ -13785,13 +13780,13 @@ const L5 = {
       })
     ]));
   }
-}), k5 = /* @__PURE__ */ q({
+}), S5 = /* @__PURE__ */ q({
   __name: "params",
   props: {
     data: {}
   },
   setup(n) {
-    const e = n, { data: t = [] } = e, i = ie(t), o = () => {
+    const e = n, { data: t = [] } = e, i = oe(t), o = () => {
       i.push({});
     }, a = (l) => {
       const c = l.$index;
@@ -13886,14 +13881,14 @@ const L5 = {
       }, 8, ["data"]);
     };
   }
-}), Me = class Me {
+}), L5 = /* @__PURE__ */ Object.assign({ "./nodes/olapSql.ts": () => import("./olapSql.DDZjnaPP.js"), "./nodes/rowGenerator.ts": () => import("./rowGenerator.Bxj8Fwdi.js"), "./nodes/sortRows.ts": () => import("./sortRows.B-vRCpmB.js"), "./nodes/tableInput.ts": () => import("./tableInput.CgQkjhoz.js"), "./nodes/tableOutput.ts": () => import("./tableOutput.CvBTYhFW.js") }), Me = class Me {
   constructor(e) {
     //
     g(this, "id");
     g(this, "api");
     g(this, "event");
     //
-    g(this, "NODE_ELEM", m5);
+    g(this, "NODE_ELEM", g5);
     //
     g(this, "menuConfig");
     g(this, "contextmenu");
@@ -13908,13 +13903,33 @@ const L5 = {
     g(this, "executorId", "");
     g(this, "hasRunResult", I(!1));
     g(this, "runResult", /* @__PURE__ */ new Map());
-    this.id = e.id, this.api = new o1(this), this.event = new S5(this), this.menuConfig = f5(this), this.contextmenu = E5(this), this.init();
+    //
+    g(this, "NodeMetadata", /* @__PURE__ */ new Map());
+    this.id = e.id, this.api = new o1(this), this.event = new b5(this), this.menuConfig = C5(this), this.contextmenu = w5(this), this.init();
+  }
+  //
+  async initNodeMeatadata() {
+    const e = /* @__PURE__ */ new Map();
+    for (const [t, i] of Object.entries(L5))
+      if (!t.includes("index")) {
+        const o = await i();
+        if (o && o.default && typeof o.default == "function") {
+          const a = o.default(this);
+          if (a && a.name)
+            if (Array.isArray(a.name))
+              for (const s of a.name)
+                s && e.set(s, a);
+            else
+              e.set(a.name, a);
+        }
+      }
+    this.NodeMetadata = e;
   }
   // 运行 project
   async run() {
     const e = { logLevel: "Basic", safeModeEnabled: !1 }, t = [...this.projectParams];
     try {
-      await ce.confirm(R(x5, { base: e, params: t }), "运行参数配置", { cancelButtonText: "取消", confirmButtonText: "确定" }), t.length > 0 && (this.projectParams.length = 0, this.projectParams.push(...t.filter((w) => w.name && w.default_value)));
+      await ce.confirm(R(H5, { base: e, params: t }), "运行参数配置", { cancelButtonText: "取消", confirmButtonText: "确定" }), t.length > 0 && (this.projectParams.length = 0, this.projectParams.push(...t.filter((w) => w.name && w.default_value)));
       const { projectId: i } = this.projectData, { info: o, order: a, step: s, connection: l, step_error_handling: c, slave_transformation: A, attributes: d, notepads: h } = this.event.getProjectTransformation(), C = {
         projectId: i,
         requestId: `/project/${i}`,
@@ -13978,8 +13993,8 @@ const L5 = {
       currentId: I(((i = e.slice(-1)) == null ? void 0 : i[0]) || ""),
       currentCell: this.event.currentCellId,
       currentCellLabel: this.event.currentCellLabel,
-      tabs: y5,
-      tabsHeader: B5,
+      tabs: f5,
+      tabsHeader: m5,
       resultOptions: e.map((s) => ({ value: s, label: s })),
       // resultOptions:[{label:'a',value:'a'},{label:'b',value:'b'},{label:'c',value:'c'}],
       runResult: this.runResult
@@ -14011,11 +14026,11 @@ const L5 = {
   // 参数配置
   async config() {
     const e = this.projectParams;
-    await ce.confirm(R(k5, { data: e }), "参数配置", { cancelButtonText: "取消", confirmButtonText: "确定" });
+    await ce.confirm(R(S5, { data: e }), "参数配置", { cancelButtonText: "取消", confirmButtonText: "确定" });
   }
   // 初始化
   async init(e = this.id) {
-    this.initNodeList(), this.initGraph(e);
+    this.initNodeList(), await this.initNodeMeatadata(), this.initGraph(e);
   }
   // 初始化节点列表
   async initNodeList() {
@@ -14061,23 +14076,22 @@ const L5 = {
 };
 g(Me, "variable", { "Internal.Job.Repository.Directory": "Parent Job Repository Directory", "Internal.Job.Filename.Directory": "Parent Job File Directory", "Internal.Job.Filename.Name": "Parent Job Filename", "Internal.Job.Name": "Parent Job Name" }), g(Me, "variables", Object.keys(Me.variable).map((e) => ({ name: e, value: Me.variable[e] })));
 let a1 = Me;
-const j5 = {
+const J5 = {
   Nifi: t5,
   Kettle: a1
-}, q5 = {
+}, Z5 = {
   install: (n) => {
     n.component("els-x6", ao);
   }
 };
 export {
-  q5 as E,
-  j5 as G,
-  o1 as K,
+  Z5 as E,
+  J5 as G,
   ao as _,
-  J5 as a,
-  M5 as d,
+  T5 as a,
+  Q5 as d,
   q1 as f,
   Z1 as g,
   j1 as o,
-  Z5 as u
+  Y5 as u
 };

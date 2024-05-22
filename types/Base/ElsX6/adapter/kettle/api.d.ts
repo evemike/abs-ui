@@ -30,6 +30,8 @@ export declare class KettleApi {
     getProjectInfo(id: string): Promise<any>;
     updateGraph(data: any): Promise<void>;
     dataPreview(file: string, node: Node, config?: DataPreviewConfig): Promise<void>;
+    getFieldInfo(data: any): Promise<any>;
+    testConnect(data: any): Promise<any>;
     initWS(): void;
     handleCall(val: any): void;
     wsHeartBeat(): void;

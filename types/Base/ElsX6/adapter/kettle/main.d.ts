@@ -2,6 +2,7 @@ import type { Cell } from "@antv/x6";
 import { IElsX6 } from "../../inter";
 import { KettleApi } from "./api";
 import { KettleEvent } from "./event";
+import { IKettle } from "./inter";
 interface KettleConfig {
     id: string;
     token?: string;
@@ -23,11 +24,13 @@ export declare class AdapterKettle {
     executorId: string;
     hasRunResult: import("vue").Ref<boolean>;
     runResult: Map<string, any>;
+    NodeMetadata: IKettle.NodeMetadata;
     static variable: any;
     static variables: {
         name: string;
         value: any;
     }[];
+    initNodeMeatadata(): Promise<void>;
     run(): Promise<void>;
     setRunResult(data?: any): void;
     openRunResult(): Promise<void>;

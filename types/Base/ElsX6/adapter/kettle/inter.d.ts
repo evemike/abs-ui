@@ -1,5 +1,6 @@
 import type { Cell } from "@antv/x6";
 import type { KettleEvent } from "./event";
+import { AdapterKettle } from "./main";
 export declare namespace IKettle {
     interface NodeModel {
         name: string;
@@ -16,6 +17,7 @@ export declare namespace IKettle {
         initForm?: NodeApi;
         submitForm?: NodeApi;
     }
-    type UseNode = () => NodeModel;
+    type UseNode = (kettle: AdapterKettle) => NodeModel;
     type NodeApi = (cell: Cell, e: KettleEvent) => void;
+    type NodeMetadata = Map<string, NodeModel>;
 }
