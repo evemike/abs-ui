@@ -22,4 +22,5 @@ export * from "./Base/DialogTable";
 export * from "./Base/ModalOk";
 export * from "./Data/ElsFormDesign";
 export * from "./Base/ElsResizeBox";
+export * from "./Base/ElsCron";
 export * as ElsUtil from "./utils";

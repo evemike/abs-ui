@@ -62,6 +62,9 @@ declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_T
         className: {
             type: import("vue").PropType<string>;
         };
+        lazy: {
+            type: import("vue").PropType<boolean>;
+        };
         emptyText: {
             type: import("vue").PropType<string>;
             default: string;
@@ -195,9 +198,6 @@ declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_T
                 hasChildren?: string | undefined;
                 children?: string | undefined;
             }>;
-        };
-        lazy: {
-            type: import("vue").PropType<boolean>;
         };
     }>> & {
         onSelect?: ((selection: any, row: any) => any) | undefined;
@@ -849,6 +849,9 @@ declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_T
         className: {
             type: import("vue").PropType<string>;
         };
+        lazy: {
+            type: import("vue").PropType<boolean>;
+        };
         emptyText: {
             type: import("vue").PropType<string>;
             default: string;
@@ -982,9 +985,6 @@ declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_T
                 hasChildren?: string | undefined;
                 children?: string | undefined;
             }>;
-        };
-        lazy: {
-            type: import("vue").PropType<boolean>;
         };
     }>> & {
         onSelect?: ((selection: any, row: any) => any) | undefined;
@@ -1061,6 +1061,9 @@ declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_T
         className: {
             type: import("vue").PropType<string>;
         };
+        lazy: {
+            type: import("vue").PropType<boolean>;
+        };
         emptyText: {
             type: import("vue").PropType<string>;
             default: string;
@@ -1194,9 +1197,6 @@ declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_T
                 hasChildren?: string | undefined;
                 children?: string | undefined;
             }>;
-        };
-        lazy: {
-            type: import("vue").PropType<boolean>;
         };
     }>> & {
         onSelect?: ((selection: any, row: any) => any) | undefined;

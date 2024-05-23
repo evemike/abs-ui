@@ -1,8 +1,11 @@
 export declare namespace ICalculate {
     interface Props {
         formdata: any;
-        graphShadowCell: any;
-        propOutput: string;
+        graphShadow: any;
+        inputV: any;
+        expression: any[];
+        newField: any[];
+        step: string;
     }
     interface TableValue {
         fieldName: string;
