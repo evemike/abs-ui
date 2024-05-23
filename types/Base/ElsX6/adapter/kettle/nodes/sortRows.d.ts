@@ -1,3 +1,3 @@
 import type { IKettle } from "../inter";
-declare const useTableInput: IKettle.UseNode;
-export default useTableInput;
+declare const useSortRows: IKettle.UseNode;
+export default useSortRows;

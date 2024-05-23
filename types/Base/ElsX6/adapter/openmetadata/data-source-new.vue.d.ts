@@ -14,9 +14,9 @@ declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_T
     groups: () => never[];
 }>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     change: (server: any, database: any, sql: string) => void;
+    "update:sql": (sql: string) => void;
     "update:serverId": (id: string) => void;
     "update:schemaIds": (ids: string[]) => void;
-    "update:sql": (sql: string) => void;
     "put:server": (server: any) => void;
     "put:schema": (schema: any) => void;
 }, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<Props>, {
@@ -26,9 +26,9 @@ declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_T
     groups: () => never[];
 }>>> & {
     onChange?: ((server: any, database: any, sql: string) => any) | undefined;
+    "onUpdate:sql"?: ((sql: string) => any) | undefined;
     "onUpdate:serverId"?: ((id: string) => any) | undefined;
     "onUpdate:schemaIds"?: ((ids: string[]) => any) | undefined;
-    "onUpdate:sql"?: ((sql: string) => any) | undefined;
     "onPut:server"?: ((server: any) => any) | undefined;
     "onPut:schema"?: ((schema: any) => any) | undefined;
 }, {

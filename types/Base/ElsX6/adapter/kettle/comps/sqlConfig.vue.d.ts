@@ -1,16 +1,22 @@
 interface Props {
+    sql: string;
     sourceList?: any[];
-    formData?: any;
     preview?: () => void;
 }
 declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<Props>, {
-    formData: () => {};
+    sql: string;
     sourceList: () => never[];
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<Props>, {
-    formData: () => {};
+}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+    change: () => void;
+    "update:sql": (v: string) => void;
+}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<Props>, {
+    sql: string;
     sourceList: () => never[];
-}>>>, {
-    formData: any;
+}>>> & {
+    onChange?: (() => any) | undefined;
+    "onUpdate:sql"?: ((v: string) => any) | undefined;
+}, {
+    sql: string;
     sourceList: any[];
 }, {}>;
 export default _default;

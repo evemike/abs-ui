@@ -4,6 +4,7 @@ import type { Node } from '@antv/x6';
 interface DataPreviewConfig {
     useOutLimit: boolean;
     params: any;
+    onlyLoadData?: boolean;
 }
 export declare class KettleApi {
     constructor(kettle: AdapterKettle);
@@ -29,7 +30,7 @@ export declare class KettleApi {
     getNodes(): Promise<any[]>;
     getProjectInfo(id: string): Promise<any>;
     updateGraph(data: any): Promise<void>;
-    dataPreview(file: string, node: Node, config?: DataPreviewConfig): Promise<void>;
+    dataPreview(file: string, node: Node, config?: DataPreviewConfig): Promise<any>;
     getFieldInfo(data: any): Promise<any>;
     testConnect(data: any): Promise<any>;
     initWS(): void;
