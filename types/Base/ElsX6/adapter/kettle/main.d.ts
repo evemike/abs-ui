@@ -3,6 +3,7 @@ import { IElsX6 } from "../../inter";
 import { KettleApi } from "./api";
 import { KettleEvent } from "./event";
 import { IKettle } from "./inter";
+import { KettleUtil } from "./util";
 interface KettleConfig {
     id: string;
     token?: string;
@@ -12,7 +13,9 @@ export declare class AdapterKettle {
     id: string;
     api: KettleApi;
     event: KettleEvent;
+    util: KettleUtil;
     NODE_ELEM: IElsX6.NodeMarkup;
+    NODE_TAB_ELEM: IElsX6.NodeMarkup;
     menuConfig: IElsX6.GraphMenuConfig;
     contextmenu: IElsX6.ContextmenuConfig;
     nodeList: import("vue").Ref<any[]>;
@@ -23,7 +26,10 @@ export declare class AdapterKettle {
     isRun: import("vue").Ref<boolean>;
     executorId: string;
     hasRunResult: import("vue").Ref<boolean>;
-    runResult: Map<string, any>;
+    runResult: Map<string, any> & Omit<Map<string, any>, keyof Map<any, any>>;
+    cellRunData: Record<string, any>;
+    resultDrawerId: string;
+    currentRunId: import("vue").Ref<string>;
     NodeMetadata: IKettle.NodeMetadata;
     static variable: any;
     static variables: {
