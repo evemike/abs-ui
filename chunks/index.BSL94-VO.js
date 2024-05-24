@@ -7,7 +7,7 @@ import { N as ht, q as T, O as d1, K as $, P as We, Q as Ct, B as H, m as Pe, R 
 import { E as fe } from "./main.BrWO7REl.js";
 import { _ as ye } from "./main.vue_vue_type_script_setup_true_lang.BpGxPM27.js";
 import { _ as Ie } from "./_plugin-vue_export-helper.CHgC5LLL.js";
-import { _ as ti, E as ii } from "./main.vue_vue_type_script_setup_true_lang.BRptxycn.js";
+import { _ as ti, E as ii } from "./main.vue_vue_type_script_setup_true_lang.MTvVqFmn.js";
 import { _ as oi } from "./view.vue_vue_type_style_index_0_lang.DqbqAt9_.js";
 import { _ as ai } from "./main.vue_vue_type_style_index_0_lang.GUQ9Q6Cg.js";
 const ri = /* @__PURE__ */ q({
@@ -13324,7 +13324,6 @@ class b5 {
     //
     g(this, "nodeLabels", /* @__PURE__ */ new Set());
     //
-    g(this, "projectInfo", {});
     g(this, "steps", []);
     g(this, "connections", []);
     g(this, "flowInfo", {});
@@ -13382,11 +13381,11 @@ class b5 {
   //
   initGraph(e) {
     var t, i, o;
-    this.projectInfo = e, this.flowInfo = (t = e == null ? void 0 : e.nodeList) == null ? void 0 : t.flowInfo, this.steps = (e == null ? void 0 : e.step) || [], this.connections = (e == null ? void 0 : e.connection) || [], this.extFormData = ((i = e == null ? void 0 : e.nodeList) == null ? void 0 : i.extdata) || [], (o = this.graph) == null || o.clearCells(), this.initFlow();
+    this.flowInfo = (t = e == null ? void 0 : e.nodeList) == null ? void 0 : t.flowInfo, this.steps = (e == null ? void 0 : e.step) || [], this.connections = (e == null ? void 0 : e.connection) || [], this.extFormData = ((i = e == null ? void 0 : e.nodeList) == null ? void 0 : i.extdata) || [], (o = this.graph) == null || o.clearCells(), this.initFlow();
   }
   initFlow() {
     var s, l;
-    const e = ((s = this.projectInfo) == null ? void 0 : s.nodeList) || {}, t = e.nodeList || [], i = e.lineList || [], o = t.map((c) => this.initNode(c)), a = i.map((c) => this.initEdge(c));
+    const e = ((s = this.kettle.projectInfo) == null ? void 0 : s.nodeList) || {}, t = e.nodeList || [], i = e.lineList || [], o = t.map((c) => this.initNode(c)), a = i.map((c) => this.initEdge(c));
     (l = this.graph) == null || l.fromJSON({ nodes: o, edges: a });
   }
   doneUpdate() {
@@ -13470,7 +13469,7 @@ class b5 {
     (a = this.shadow) == null || a.setTabs(i, o);
   }
   //
-  initForm(e, t = {}, i = this.projectInfo) {
+  initForm(e, t = {}, i = this.kettle.projectInfo) {
     var a, s;
     const o = ((a = i.step) == null ? void 0 : a.find((l) => l.name == e.id)) || {};
     (s = this.form) == null || s.appendCellFormData(e.id, Object.assign({}, t, o));
@@ -13583,7 +13582,7 @@ class b5 {
   getNodeProjectFile(e, t) {
     const { save: i = M1 } = this.kettle.NodeMetadata.get(e.prop("name")) || {};
     i(e, this);
-    const o = t || { step_error_handling: { error: [] }, "slave-step-copy-partition-distribution": "", slave_transformation: "N", attributes: "", notepads: "" }, a = this.projectInfo.info, s = { hop: [] }, l = [], c = [], A = this.steps.find((d) => d.name == e.id);
+    const o = t || { step_error_handling: { error: [] }, "slave-step-copy-partition-distribution": "", slave_transformation: "N", attributes: "", notepads: "" }, a = this.kettle.projectInfo.info, s = { hop: [] }, l = [], c = [], A = this.steps.find((d) => d.name == e.id);
     if (A && l.push(A), A && A.connection) {
       const d = this.connections.find((h) => (h == null ? void 0 : h.name) == A.connection);
       d && c.push(d);
@@ -13609,7 +13608,7 @@ class b5 {
       }
     }
     const c = o.length > 0 ? { hop: o } : {}, A = {
-      ...this.projectInfo,
+      ...this.kettle.projectInfo,
       connection: s,
       step: a,
       order: c,
@@ -13926,7 +13925,7 @@ const v5 = {
       }, 8, ["data"]);
     };
   }
-}), L5 = /* @__PURE__ */ Object.assign({ "./nodes/olapSql.ts": () => import("./olapSql.BHCbzQkU.js"), "./nodes/rowGenerator.ts": () => import("./rowGenerator.CXxVaT3o.js"), "./nodes/sortRows.ts": () => import("./sortRows.CVMSkThW.js"), "./nodes/tableInput.ts": () => import("./tableInput.m-JHMsDP.js"), "./nodes/tableOutput.ts": () => import("./tableOutput.g8ldMVFe.js") }), Me = class Me {
+}), L5 = /* @__PURE__ */ Object.assign({ "./nodes/olapSql.ts": () => import("./olapSql.BHCbzQkU.js"), "./nodes/rowGenerator.ts": () => import("./rowGenerator.CXxVaT3o.js"), "./nodes/sortRows.ts": () => import("./sortRows.CUoiQLmR.js"), "./nodes/tableInput.ts": () => import("./tableInput.BMKIjMJq.js"), "./nodes/tableOutput.ts": () => import("./tableOutput.B5wTWhog.js") }), Me = class Me {
   constructor(e) {
     //
     g(this, "id");
