@@ -21,6 +21,7 @@ export declare class NifiApi {
     editControllerServices(data: any): Promise<any>;
     delControllerServices(data: any): Promise<any>;
     startControllerServices(data: any): void;
+    getControllerServiceTypes(data: any): Promise<any>;
     createCSByType(data: any): Promise<void>;
     stopControllerServices(): void;
     getProcessorDescriptors(id: string, propertyName: string): Promise<any>;

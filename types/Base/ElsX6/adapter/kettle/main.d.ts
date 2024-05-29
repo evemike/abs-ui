@@ -43,6 +43,7 @@ export declare class AdapterKettle {
     stop(): void;
     save(): void;
     config(): Promise<void>;
+    schedule(): Promise<void>;
     init(id?: string): Promise<void>;
     initNodeList(): Promise<void>;
     initGraph(id?: string): Promise<void>;

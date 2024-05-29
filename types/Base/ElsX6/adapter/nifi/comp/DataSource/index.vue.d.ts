@@ -1,15 +1,13 @@
 interface Props {
     cascaderProps?: any;
-    loadCascaderData?: (data?: any) => Promise<any[]>;
     treeProps?: any;
-    treeNodeClick?: (data: any, node: any) => void;
-    getSql?: (nodes: any[], sql?: string) => string;
     autoSql?: boolean;
     showCascader?: boolean;
     showSql?: boolean;
-    data?: any;
+    formData?: any;
     prop?: string;
-    graphShadowCell?: any;
+    disabled?: boolean;
+    propOutput?: string;
 }
 declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<Props>, {
     cascaderProps: () => {
@@ -29,6 +27,8 @@ declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_T
     showSql: boolean;
     autoSql: boolean;
     prop: string;
+    disabled: boolean;
+    propOutput: string;
 }>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<Props>, {
     cascaderProps: () => {
         label: string;
@@ -47,9 +47,13 @@ declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_T
     showSql: boolean;
     autoSql: boolean;
     prop: string;
+    disabled: boolean;
+    propOutput: string;
 }>>>, {
+    disabled: boolean;
     prop: string;
     treeProps: any;
+    propOutput: string;
     cascaderProps: any;
     autoSql: boolean;
     showCascader: boolean;

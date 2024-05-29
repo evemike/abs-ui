@@ -29,4 +29,8 @@ type ParameterValues = {
 };
 export declare const parameterWhetherValuable: (formData: any, parameterValues: ParameterValues[]) => void;
 export declare const uniqueFun: (arr: any[]) => any;
+export declare const databaseMapping: {
+    PostgreSQL: string;
+    MySQL: string;
+};
 export {};
