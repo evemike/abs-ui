@@ -192,6 +192,7 @@ export declare namespace IElsX6 {
         id: string;
         cell: Cell;
         status: Ref<Record<string, any>>;
+        stressed: Ref<boolean>;
         step: Ref<CellStep>;
         selected: Ref<boolean>;
         stepTip: Ref<string>;

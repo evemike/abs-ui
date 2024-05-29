@@ -23,7 +23,7 @@ export default class MyWebSocket {
     subscribe(calls: CallFunction | CallFunction[], key?: string, data?: Data): void;
     unSubscribe(key: string, data: Data): void;
     clear(): void;
-    private testConnect;
+    testConnect: () => boolean;
     private onOpen;
     private onMessage;
     private onClose;

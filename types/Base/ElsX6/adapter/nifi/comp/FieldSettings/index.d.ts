@@ -1,8 +1,9 @@
 export declare namespace IField {
     interface Props {
         formdata: any;
-        prop: string;
-        datas: any;
+        propOutput: string;
+        graphShadow: any;
+        inputV: any;
     }
     interface TableValue {
         doc?: string;

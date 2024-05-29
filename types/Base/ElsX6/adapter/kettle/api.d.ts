@@ -15,6 +15,7 @@ export declare class KettleApi {
     userInfo: any;
     timeHandle: any;
     initFlag: boolean;
+    wsStatus: import("vue").Ref<boolean>;
     iws: MyWebSocket | undefined;
     mws: MyWebSocket | undefined;
     wsVersion: string;

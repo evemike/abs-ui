@@ -23,6 +23,7 @@ export declare class NifiApi {
     startControllerServices(data: any): void;
     createCSByType(data: any): Promise<void>;
     stopControllerServices(): void;
+    getProcessorDescriptors(id: string, propertyName: string): Promise<any>;
     cellAdd(data: any, name?: NIFI_CELL_NAME): Promise<any>;
     cellDel(data: any): Promise<any>;
     cellUp(data: any): Promise<any>;

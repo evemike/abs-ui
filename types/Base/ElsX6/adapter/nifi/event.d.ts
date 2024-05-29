@@ -42,4 +42,5 @@ export declare class NifiEvent {
     templateAdd(cell: Node): Promise<void>;
     edgeAdd(cell: Edge): Promise<void>;
     portNameCheck(name: NIFI_CELL_NAME): Promise<unknown>;
+    goToCell(c: Cell | string): void;
 }

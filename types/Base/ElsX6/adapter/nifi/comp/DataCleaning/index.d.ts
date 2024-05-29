@@ -12,6 +12,7 @@ export declare namespace ICleaning {
         testMethod?: string;
         sValue?: string;
         oValue?: string;
+        originalValue?: string;
     }
     interface RuleForm {
         testMethod?: string;
