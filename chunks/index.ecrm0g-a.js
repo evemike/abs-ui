@@ -2,8 +2,8 @@ var yt = Object.defineProperty;
 var Bt = (n, e, t) => e in n ? yt(n, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : n[e] = t;
 var C = (n, e, t) => (Bt(n, typeof e != "symbol" ? e + "" : e, t), t);
 import "../css/index-DQsVNPIq.css";
-import { defineComponent as z, inject as Et, computed as W, openBlock as Q, createElementBlock as R, normalizeClass as Oe, createBlock as J, unref as r, createCommentVNode as _, h as L, createStaticVNode as T1, createElementVNode as E, toRefs as me, ref as D, onMounted as Qe, watch as Ue, normalizeStyle as Ke, toDisplayString as O, renderSlot as o1, shallowRef as ge, withCtx as f, createVNode as d, Fragment as se, renderList as he, mergeProps as f1, createTextVNode as K, withModifiers as I1, reactive as $, toRef as Ft, withDirectives as Qt, vShow as Dt, provide as Ge, markRaw as It, render as Mt, pushScopeId as m1, popScopeId as w1, nextTick as bt, isRef as Y1, onBeforeUnmount as J1, onUpdated as vt, resolveComponent as Ht } from "vue";
-import { N as St, e as T, O as M1, d as ie, P as s1, Q as Lt, b as k, R as Te, S as ze, T as xt, U as Z1, V as y1, W as j1, X as q1, Y as kt, o as be, s as z1, Z as Nt, _ as Gt, $ as de, q as W1, a0 as Rt, a1 as Pt, x as Vt, a2 as Ot, a3 as Ye, a4 as Ee, a5 as l1, a6 as Ut, H as Kt, a7 as Tt, a8 as Yt, a9 as Jt, g as ce, aa as n1, ab as Zt, G as We, F as _1, ac as jt, ad as qt, ae as zt, af as Wt, ag as _t, r as ve, ah as Xt, ai as $t, aj as ei, ak as ti, a as Z, al as ii, am as Re, an as oi, ao as ai, ap as ri, B as fe, C as U, aq as si, v as c1, ar as li, as as _e, E as ne, at as De, f as Be, m as t1, c as B1, i as ni, p as ke, au as ci, av as di, aw as pi, ax as Ai, ay as hi, az as d1, M as Xe, l as X1, t as $1, aA as p1, j as Me, aB as He, aC as te, aD as ui, aE as et, aF as Ci, D as $e, aG as tt, aH as b1, aI as it, aJ as gi, J as fi, L as mi, aK as wi, aL as yi, aM as ot, aN as Bi, aO as v1, aP as Ei, k as Fi } from "./vendor.CTqz3lQh.js";
+import { defineComponent as z, inject as Et, computed as W, openBlock as Q, createElementBlock as R, normalizeClass as Oe, createBlock as J, unref as r, createCommentVNode as _, h as L, createStaticVNode as T1, createElementVNode as E, toRefs as we, ref as D, onMounted as Qe, watch as Ue, normalizeStyle as Ke, toDisplayString as O, renderSlot as o1, shallowRef as ge, withCtx as f, createVNode as d, Fragment as se, renderList as he, mergeProps as f1, createTextVNode as K, withModifiers as I1, reactive as $, toRef as Ft, withDirectives as Qt, vShow as Dt, provide as Ge, markRaw as It, render as Mt, pushScopeId as m1, popScopeId as w1, nextTick as bt, isRef as Y1, onBeforeUnmount as J1, onUpdated as vt, resolveComponent as Ht } from "vue";
+import { N as St, e as T, O as M1, d as ie, P as s1, Q as Lt, b as k, R as Te, S as ze, T as xt, U as Z1, V as y1, W as j1, X as q1, Y as kt, o as be, s as z1, Z as Nt, _ as Gt, $ as de, q as W1, a0 as Rt, a1 as Pt, x as Vt, a2 as Ot, a3 as Ye, a4 as Ee, a5 as l1, a6 as Ut, H as Kt, a7 as Tt, a8 as Yt, a9 as Jt, g as ce, aa as n1, ab as Zt, G as We, F as _1, ac as jt, ad as qt, ae as zt, af as Wt, ag as _t, r as ve, ah as Xt, ai as $t, aj as ei, ak as ti, a as Z, al as ii, am as Re, an as oi, ao as ai, ap as ri, B as me, C as U, aq as si, v as c1, ar as li, as as _e, E as ne, at as De, f as fe, m as t1, c as B1, i as ni, p as ke, au as ci, av as di, aw as pi, ax as Ai, ay as hi, az as d1, M as Xe, l as X1, t as $1, aA as p1, j as Me, aB as He, aC as te, aD as ui, aE as et, aF as Ci, D as $e, aG as tt, aH as b1, aI as it, aJ as gi, J as fi, L as mi, aK as wi, aL as yi, aM as ot, aN as Bi, aO as v1, aP as Ei, k as Fi } from "./vendor.CTqz3lQh.js";
 import { E as Fe } from "./main.cJIrziHF.js";
 import { _ as Ie } from "./main.vue_vue_type_script_setup_true_lang.gxWGRn5S.js";
 import { _ as Se } from "./_plugin-vue_export-helper.CHgC5LLL.js";
@@ -7310,10 +7310,10 @@ const zi = /* @__PURE__ */ Se(Ki, [["render", qi]]), Wi = {
   },
   emits: ["update:visible"],
   setup(n, { expose: e, emit: t }) {
-    const i = n, o = t, { direction: a, minSize: l, maxSize: s, size: c, destoryOnClose: p } = i, { visible: A } = me(i), h = D(r(A)), u = a == "left" || a == "right", m = Rt(), g = u ? "width" : "height", w = `min-${g}:${l || "none"};max-${g}:${s || "none"};`, y = D(), { x: F, y: B } = Pt({ target: m }), { width: v, height: I } = Vt(y);
+    const i = n, o = t, { direction: a, minSize: l, maxSize: s, size: c, destoryOnClose: p } = i, { visible: A } = we(i), h = D(r(A)), u = a == "left" || a == "right", m = Rt(), g = u ? "width" : "height", w = `min-${g}:${l || "none"};max-${g}:${s || "none"};`, y = D(), { x: F, y: B } = Pt({ target: m }), { width: v, height: I } = Vt(y);
     let N = 0, H = D(0);
-    const b = D(), { pressed: M } = Ot({ target: b }), S = W(() => {
-      if (!r(M))
+    const M = D(), { pressed: b } = Ot({ target: M }), S = W(() => {
+      if (!r(b))
         return u ? r(v) : r(I);
       const Y = u ? r(F) : r(B), oe = ["right", "bottom"].includes(a) ? -1 : 1, ee = (Y - N) * oe;
       return r(H) + ee;
@@ -7326,7 +7326,7 @@ const zi = /* @__PURE__ */ Se(Ki, [["render", qi]]), Wi = {
       (Y = y.value) == null || Y.addEventListener("transitionend", () => {
         h.value == !1 && p && (V.value = !0);
       });
-    }), Ue(M, (Y) => {
+    }), Ue(b, (Y) => {
       const oe = u ? r(F) : r(B);
       Y ? (N = oe, H.value = u ? r(v) : r(I)) : N = 0;
     }), Ue(A, (Y) => {
@@ -7357,7 +7357,7 @@ const zi = /* @__PURE__ */ Se(Ki, [["render", qi]]), Wi = {
         ]),
         E("div", {
           ref_key: "operateRef",
-          ref: b,
+          ref: M,
           flex: "",
           "items-center": "",
           "justify-center": ""
@@ -7818,7 +7818,7 @@ const lo = { class: "_search" }, no = ["onMousedown", "title"], co = { class: "_
     getNodeMetadata: { type: Function }
   },
   setup(n) {
-    const e = n, t = D(), { graph: i } = me(e), { nodeList: o } = e, { initNodeFn: a, getNodeMetadata: l } = e, s = D(""), c = D(), p = D([]), A = Ut(s, 500), h = W(() => {
+    const e = n, t = D(), { graph: i } = we(e), { nodeList: o } = e, { initNodeFn: a, getNodeMetadata: l } = e, s = D(""), c = D(), p = D([]), A = Ut(s, 500), h = W(() => {
       const g = A.value;
       let w = r(o) || [];
       g ? (w = w.filter(
@@ -7967,7 +7967,7 @@ const lo = { class: "_search" }, no = ["onMousedown", "title"], co = { class: "_
     context: {}
   },
   setup(n, { expose: e }) {
-    const t = n, { context: i } = t, { config: o } = me(t), a = i == null ? void 0 : i.graphTools, l = i == null ? void 0 : i.markdownRef, s = [
+    const t = n, { context: i } = t, { config: o } = we(t), a = i == null ? void 0 : i.graphTools, l = i == null ? void 0 : i.markdownRef, s = [
       {
         title: "导出",
         key: "export",
@@ -8106,7 +8106,7 @@ const lo = { class: "_search" }, no = ["onMousedown", "title"], co = { class: "_
     elem: {}
   },
   setup(n, { expose: e }) {
-    const t = n, { config: i, context: o } = t, { elem: a } = me(t), l = ge(a.value || {}), { showFooter: s, ...c } = i, p = ge(c), A = D(!1);
+    const t = n, { config: i, context: o } = t, { elem: a } = we(t), l = ge(a.value || {}), { showFooter: s, ...c } = i, p = ge(c), A = D(!1);
     let h;
     const u = (F, B) => {
       h = B, F && (l.value = F), l.value && (A.value = !0);
@@ -8755,7 +8755,7 @@ const Qo = /* @__PURE__ */ z({
     viewModel: { type: Boolean }
   },
   setup(n, { expose: e }) {
-    const t = n, { viewModel: i, nodeListConfig: o } = me(t), {
+    const t = n, { viewModel: i, nodeListConfig: o } = we(t), {
       graphConfig: a,
       menuConfig: l,
       pluginsConfig: s,
@@ -8765,15 +8765,15 @@ const Qo = /* @__PURE__ */ z({
       register: h,
       events: u,
       edgeMeatadata: m
-    } = t, g = oi(), w = ge(), y = D(), F = D(), B = D(), v = D(), I = D(), N = D(), H = D(), b = D(), M = new mo().resetDefaultNodeMarkup(A), S = new so(M), G = new ro({
-      graphShadow: M,
+    } = t, g = oi(), w = ge(), y = D(), F = D(), B = D(), v = D(), I = D(), N = D(), H = D(), M = D(), b = new mo().resetDefaultNodeMarkup(A), S = new so(b), G = new ro({
+      graphShadow: b,
       graphForm: S,
       contextmenuRef: N,
       events: u,
       containerBox: B
     }), V = new fo(s), x = new wo({ elsX6Ref: y }), P = {
       graph: w,
-      graphShadow: M,
+      graphShadow: b,
       graphForm: S,
       graphEvents: G,
       graphPlugins: V,
@@ -8783,7 +8783,7 @@ const Qo = /* @__PURE__ */ z({
       elsX6Ref: y,
       drawerRef: H
     };
-    return Ge("GRAPH-SHADOW", M), Ge("GRAPH", w), Ge("GRAPH-FORM", S), Ge("GRAPH-MARKDOWN", v), Ge("GRAPH-CONTEXT", P), Vi(m), Oi(), Ui(), h && h(ze), Qe(() => {
+    return Ge("GRAPH-SHADOW", b), Ge("GRAPH", w), Ge("GRAPH-FORM", S), Ge("GRAPH-MARKDOWN", v), Ge("GRAPH-CONTEXT", P), Vi(m), Oi(), Ui(), h && h(ze), Qe(() => {
       const Y = Te(Si, a);
       w.value = It(
         new ze({
@@ -8802,7 +8802,7 @@ const Qo = /* @__PURE__ */ z({
           },
           container: F.value
         })
-      ), V.usePlugins(w.value), M.setGraph(w.value), S.setGraph(w.value), x.init(w.value), G.resetGraph(w.value).registerEvent().onMounted(P);
+      ), V.usePlugins(w.value), b.setGraph(w.value), S.setGraph(w.value), x.init(w.value), G.resetGraph(w.value).registerEvent().onMounted(P);
     }), e({
       graph: w
     }), (Y, oe) => {
@@ -8822,7 +8822,7 @@ const Qo = /* @__PURE__ */ z({
             ((ue = r(l)) == null ? void 0 : ue.enabled) !== !1 || !r(i) ? (Q(), J(uo, {
               key: 0,
               ref_key: "menuRef",
-              ref: b,
+              ref: M,
               class: "_menu",
               config: r(l),
               context: P
@@ -9592,9 +9592,9 @@ const Qo = /* @__PURE__ */ z({
   },
   setup(n) {
     const e = a1 * 60, t = e * 24, i = (w) => {
-      const y = w % t, F = y % e, B = F % a1, v = Math.floor(w / t), I = Math.floor(y / e), N = Math.floor(F / a1), H = Math.floor(B / 1e3), b = B % 1e3;
-      let M = "";
-      return v > 0 && (M += `${v} 天 `), I > 0 && (M += `${I} 小时 `), N > 0 && (M += `${N} 分钟 `), H > 0 && (M += `${H} 秒 `), b > 0 && (M += `${b} 毫秒 `), M;
+      const y = w % t, F = y % e, B = F % a1, v = Math.floor(w / t), I = Math.floor(y / e), N = Math.floor(F / a1), H = Math.floor(B / 1e3), M = B % 1e3;
+      let b = "";
+      return v > 0 && (b += `${v} 天 `), I > 0 && (b += `${I} 小时 `), N > 0 && (b += `${N} 分钟 `), H > 0 && (b += `${H} 秒 `), M > 0 && (b += `${M} 毫秒 `), b;
     }, o = D(!1), a = D(!1);
     let l = "";
     const s = D({}), c = async (w) => {
@@ -9624,7 +9624,7 @@ const Qo = /* @__PURE__ */ z({
       }).catch((B) => F(B));
     });
     return (w, y) => (Q(), R("div", Oo, [
-      d(r(fe), {
+      d(r(me), {
         "w-full": "",
         "h-full": "",
         data: w.data
@@ -10237,42 +10237,42 @@ const Ba = { "w-50vw": "" }, Ea = /* @__PURE__ */ E("span", null, "选择控制�
   },
   setup(n) {
     var N;
-    const e = n, { nifi: t, cell: i, keys: o } = e, { disabled: a } = me(e), l = t.event.source.get(i.id), s = $(l.component.config.descriptors || {}), c = Object.keys(s), p = ((N = t.event.form) == null ? void 0 : N.getCellFormData(i)) || {}, A = l.component.supportsSensitiveDynamicProperties, h = ["config", "properties"], u = { closeOnPressEscape: !1, closeOnClickModal: !1, confirmButtonText: "确定", cancelButtonText: "取消", showClose: !1, draggable: !0 }, m = async (H) => {
-      const M = (await t.api.getProcessorDescriptors(i.id, H)).propertyDescriptor;
-      Object.assign(s, { propName: M });
-    }, g = W(() => o.map((H) => s[H]).filter((H) => H != null)), w = W(() => {
-      var b, M;
+    const e = n, { nifi: t, cell: i, keys: o } = e, { disabled: a } = we(e), l = t.event.source.get(i.id), s = D(l.component.config.descriptors || {}), c = Object.keys(s), p = ((N = t.event.form) == null ? void 0 : N.getCellFormData(i)) || {}, A = l.component.supportsSensitiveDynamicProperties, h = ["config", "properties"], u = { closeOnPressEscape: !1, closeOnClickModal: !1, confirmButtonText: "确定", cancelButtonText: "取消", showClose: !1, draggable: !0 }, m = async (H) => {
+      const M = await t.api.getProcessorDescriptors(i.id, H);
+      s.value = Object.assign({}, s.value, { propName: M }), fe(l.component.config.descriptors, [H], M);
+    }, g = W(() => o.map((H) => s.value[H]).filter((H) => H != null)), w = W(() => {
+      var M, b;
       const H = [];
-      console.log(g, s, o, c);
+      console.log(g.value, s, o, c);
       for (const S of g.value) {
         const { allowableValues: G, dependencies: V = [], identifiesControllerService: x, description: P, displayName: Y, name: oe, defaultValue: ee, supportsEl: ue, expressionLanguageScope: X } = S;
-        if (!V.map((we) => we.dependentValues.includes(ce(p, [...h, we.propertyName]))).reduce((we, Le) => we && Le, !0))
+        if (!V.map((ye) => ye.dependentValues.includes(ce(p, [...h, ye.propertyName]))).reduce((ye, Le) => ye && Le, !0))
           continue;
         const j = Y, ae = [...h, oe];
-        !l1(p, ae) && ee != null && Be(p, ae, ee);
+        !l1(p, ae) && ee != null && fe(p, ae, ee);
         const Ce = ce(p, ae);
         let pe = Ce, le = "text";
-        G && (/^\#\{.*?\}$/.test(Ce) ? le = "parms" : x != null ? (pe = (b = G.find((we) => we.allowableValue.value == Ce)) == null ? void 0 : b.allowableValue.displayName, le = "cs") : (pe = (M = G.find((we) => we.allowableValue.value == Ce)) == null ? void 0 : M.allowableValue.displayName, le = "select")), H.push({ label: j, value: Ce, data: S, type: le, valueLabel: pe });
+        G && (/^\#\{.*?\}$/.test(Ce) ? le = "parms" : x != null ? (pe = (M = G.find((ye) => ye.allowableValue.value == Ce)) == null ? void 0 : M.allowableValue.displayName, le = "cs") : (pe = (b = G.find((ye) => ye.allowableValue.value == Ce)) == null ? void 0 : b.allowableValue.displayName, le = "select")), H.push({ label: j, value: Ce, data: S, type: le, valueLabel: pe });
       }
       return H;
     }), y = W(() => {
       const H = t.parameters;
-      return console.log(H), H.map((b) => {
-        var M, S, G;
-        return { label: (M = b.parameter) == null ? void 0 : M.name, value: (S = b.parameter) == null ? void 0 : S.name, desc: (G = b.parameter) == null ? void 0 : G.description };
+      return console.log(H), H.map((M) => {
+        var b, S, G;
+        return { label: (b = M.parameter) == null ? void 0 : b.name, value: (S = M.parameter) == null ? void 0 : S.name, desc: (G = M.parameter) == null ? void 0 : G.description };
       });
     }), F = z({
       emits: ["update:name", "update:sensitive", "update:status"],
-      setup(H, b) {
-        const M = D(""), S = D(!1), G = D(!1), V = (P) => {
-          M.value = P, c.includes(P) ? (G.value = !0, b.emit("update:status", !1)) : (b.emit("update:status", !0), b.emit("update:name", P));
+      setup(H, M) {
+        const b = D(""), S = D(!1), G = D(!1), V = (P) => {
+          b.value = P, c.includes(P) ? (G.value = !0, M.emit("update:status", !1)) : (M.emit("update:status", !0), M.emit("update:name", P));
         }, x = (P) => {
-          S.value = P, b.emit("update:sensitive", P);
+          S.value = P, M.emit("update:sensitive", P);
         };
         return () => L("div", { class: "w-500 text-14" }, [
           L("p", { class: "flex items-center gap-1em text-nowrap" }, [
             L("b", "属性名称:"),
-            L(T, { modelValue: M.value, "onUpdate:modelValue": V })
+            L(T, { modelValue: b.value, "onUpdate:modelValue": V })
           ]),
           L("p", { class: "c-red h-14 text-12" }, G.value ? "存在重复属性名！" : ""),
           L("p", { class: "m-t-2em flex gap-1em items-center" }, [
@@ -10285,35 +10285,35 @@ const Ba = { "w-50vw": "" }, Ea = /* @__PURE__ */ E("span", null, "选择控制�
     }), B = z({
       props: ["modelValue", "data"],
       emits: ["update:modelValue"],
-      setup(H, b) {
-        const M = H.data, S = H.modelValue, { allowableValues: G, dependencies: V, identifiesControllerService: x, identifiesControllerServiceBundle: P, description: Y, displayName: oe, name: ee, supportsEl: ue, expressionLanguageScope: X } = M;
+      setup(H, M) {
+        const b = H.data, S = H.modelValue, { allowableValues: G, dependencies: V, identifiesControllerService: x, identifiesControllerServiceBundle: P, description: Y, displayName: oe, name: ee, supportsEl: ue, expressionLanguageScope: X } = b;
         let q = !1;
-        const j = G != null, ae = /^\#\{.*?\}$/.test(S), Ce = x != null, pe = ue, le = G ? G.map((Ae) => ({ label: Ae.allowableValue.displayName, value: Ae.allowableValue.value })) : [], we = D(), Le = D();
+        const j = G != null, ae = /^\#\{.*?\}$/.test(S), Ce = x != null, pe = ue, le = G ? G.map((Ae) => ({ label: Ae.allowableValue.displayName, value: Ae.allowableValue.value })) : [], ye = D(), Le = D();
         le.push({ label: "引用参数", value: "&reference-param" }), Ce && le.push({ label: "创建控制器服务", value: "&create-new-service" });
         let i1 = S, Ze = S;
-        const ye = D(S), Ne = D(S);
-        ae && (Ze = "&reference-param", ye.value = "&reference-param", Ne.value = S.replace(/^\#\{|\}$/g, ""));
+        const Be = D(S), Ne = D(S);
+        ae && (Ze = "&reference-param", Be.value = "&reference-param", Ne.value = S.replace(/^\#\{|\}$/g, ""));
         const gt = async (Ae) => {
-          if (q = !1, ye.value = Ae, Ae == "&create-new-service") {
-            ye.value = "";
+          if (q = !1, Be.value = Ae, Ae == "&create-new-service") {
+            Be.value = "";
             const wt = { type: x, artifact: P.artifact, version: P.version, group: P.group };
             try {
               await ne.confirm(L(Ma, { nifi: t, data: wt, onMounted: (je) => Le.value = je }), { ...u, title: "创建控制器服务", beforeClose: async (je, f2, F1) => {
                 var Q1;
                 if (je == "confirm") {
                   const D1 = await ((Q1 = Le.value) == null ? void 0 : Q1.create());
-                  D1.id && (ye.value = D1.id, q = !0), F1();
+                  D1.id && (Be.value = D1.id, q = !0), F1();
                 } else
                   F1();
               } });
             } catch {
-              ye.value = Ze;
+              Be.value = Ze;
             }
             console.log();
           }
-          Ae == "&reference-param" && !/^\#\{.*?\}$/.test(i1) ? Ne.value = "" : b.emit("update:modelValue", ye.value, q), ye.value != Ze && (Ze = ye.value);
+          Ae == "&reference-param" && !/^\#\{.*?\}$/.test(i1) ? Ne.value = "" : M.emit("update:modelValue", Be.value, q), Be.value != Ze && (Ze = Be.value);
         }, E1 = (Ae) => {
-          Ne.value = Ae, ye.value == "&reference-param" ? (i1 = `#{${Ae}}`, b.emit("update:modelValue", i1, q)) : b.emit("update:modelValue", Ae, q);
+          Ne.value = Ae, Be.value == "&reference-param" ? (i1 = `#{${Ae}}`, M.emit("update:modelValue", i1, q)) : M.emit("update:modelValue", Ae, q);
         }, ft = () => L("div", { class: "flex items-center justify-between m-b-1em" }, [
           L("b", oe),
           L("span", {}, [
@@ -10323,9 +10323,9 @@ const Ba = { "w-50vw": "" }, Ea = /* @__PURE__ */ E("span", null, "选择控制�
           ])
         ]), mt = () => j ? L("div", { class: "flex-1" }, [
           // 选择框
-          L(De, { options: le, modelValue: ye.value, "onUpdate:modelValue": gt }),
-          ye.value == "&reference-param" ? L(de) : "",
-          ye.value == "&reference-param" ? L(De, { modelValue: Ne.value, options: y.value, "onUpdate:modelValue": E1 }, { default: ({ item: Ae }) => L("p", {}, [
+          L(De, { options: le, modelValue: Be.value, "onUpdate:modelValue": gt }),
+          Be.value == "&reference-param" ? L(de) : "",
+          Be.value == "&reference-param" ? L(De, { modelValue: Ne.value, options: y.value, "onUpdate:modelValue": E1 }, { default: ({ item: Ae }) => L("p", {}, [
             L("b", Ae.label),
             Ae.desc ? L("i", { title: Ae.desc }, "i") : ""
           ]) }) : ""
@@ -10333,7 +10333,7 @@ const Ba = { "w-50vw": "" }, Ea = /* @__PURE__ */ E("span", null, "选择控制�
           // 输入框
           L(T, { class: "h-full", type: "textarea", modelValue: Ne.value, "onUpdate:modelValue": E1, resize: "both", autosize: { minRows: 7 } })
         ]);
-        return () => L("div", { class: "min-w-500 min-h-200 w-full h-full flex flex-col", ref: (Ae) => we.value = Ae }, [
+        return () => L("div", { class: "min-w-500 min-h-200 w-full h-full flex flex-col", ref: (Ae) => ye.value = Ae }, [
           ft(),
           mt()
         ]);
@@ -10343,26 +10343,26 @@ const Ba = { "w-50vw": "" }, Ea = /* @__PURE__ */ E("span", null, "选择控制�
         name: "",
         sensitive: !1
       };
-      let b = !0;
+      let M = !0;
       try {
-        await ne.confirm(L(F, { "onUpdate:name": (M) => H.name = M, "onUpdate:sensitive": (M) => H.sensitive = M, "onUpdate:status": (M) => b = M }), { ...u, title: "新增属性", beforeClose: (M, S, G) => {
-          (b || M != "confirm") && G();
+        await ne.confirm(L(F, { "onUpdate:name": (b) => H.name = b, "onUpdate:sensitive": (b) => H.sensitive = b, "onUpdate:status": (b) => M = b }), { ...u, title: "新增属性", beforeClose: (b, S, G) => {
+          (M || b != "confirm") && G();
         } }), console.log(H);
-      } catch (M) {
-        console.warn(M);
+      } catch (b) {
+        console.warn(b);
       }
     }, I = async (H) => {
-      const b = H.data, M = H.value, S = [...h, b.name], G = (V, x) => {
-        console.log("handleChange .....", V, x), x && m(b.name), Be(p, S, V);
+      const M = H.data, b = H.value, S = [...h, M.name], G = async (V, x) => {
+        console.log("handleChange .....", V, x), x && await m(M.name), fe(p, S, V);
       };
       try {
-        await ne.confirm(() => L(B, { modelValue: M, data: b, "onUpdate:modelValue": G }), { ...u });
+        await ne.confirm(() => L(B, { modelValue: b, data: M, "onUpdate:modelValue": G }), { ...u });
       } catch (V) {
         console.error(V);
       }
     };
-    return t.refreshParameters(), (H, b) => (Q(), R("div", ba, [
-      d(r(fe), {
+    return t.refreshParameters(), (H, M) => (Q(), R("div", ba, [
+      d(r(me), {
         class: "w-full h-full box-border",
         data: w.value,
         "row-class-name": "max-h-32"
@@ -10373,11 +10373,11 @@ const Ba = { "w-50vw": "" }, Ea = /* @__PURE__ */ E("span", null, "选择控制�
             prop: "label",
             "show-overflow-tooltip": ""
           }, {
-            default: f(({ row: M }) => [
+            default: f(({ row: b }) => [
               E("div", va, [
-                E("span", null, O(M.label), 1),
+                E("span", null, O(b.label), 1),
                 d(r(B1), {
-                  content: M.data.description,
+                  content: b.data.description,
                   "popper-class": "max-w-50vw"
                 }, {
                   default: f(() => [
@@ -10399,14 +10399,14 @@ const Ba = { "w-50vw": "" }, Ea = /* @__PURE__ */ E("span", null, "选择控制�
             prop: "value",
             "show-overflow-tooltip": ""
           }, {
-            default: f(({ row: M }) => [
+            default: f(({ row: b }) => [
               d(r(k), {
                 disabled: r(a),
                 link: "",
-                onClick: () => I(M)
+                onClick: () => I(b)
               }, {
                 default: f(() => [
-                  K(O(M.valueLabel), 1)
+                  K(O(b.valueLabel), 1)
                 ]),
                 _: 2
               }, 1032, ["disabled", "onClick"])
@@ -10422,9 +10422,9 @@ const Ba = { "w-50vw": "" }, Ea = /* @__PURE__ */ E("span", null, "选择控制�
                 onClick: v
               }, null, 8, ["disabled", "icon"])
             ]),
-            default: f(({ row: M }) => [
-              M.value ? (Q(), R(se, { key: 0 }, [
-                M.type == "parms" ? (Q(), J(r(k), {
+            default: f(({ row: b }) => [
+              b.value ? (Q(), R(se, { key: 0 }, [
+                b.type == "parms" ? (Q(), J(r(k), {
                   key: 0,
                   disabled: r(a),
                   link: "",
@@ -10435,7 +10435,7 @@ const Ba = { "w-50vw": "" }, Ea = /* @__PURE__ */ E("span", null, "选择控制�
                   ]),
                   _: 1
                 }, 8, ["disabled"])) : _("", !0),
-                M.type == "cs" ? (Q(), J(r(k), {
+                b.type == "cs" ? (Q(), J(r(k), {
                   key: 1,
                   disabled: r(a),
                   link: "",
@@ -10446,7 +10446,7 @@ const Ba = { "w-50vw": "" }, Ea = /* @__PURE__ */ E("span", null, "选择控制�
                   ]),
                   _: 1
                 }, 8, ["disabled"])) : _("", !0),
-                M.type != "parms" ? (Q(), J(r(k), {
+                b.type != "parms" ? (Q(), J(r(k), {
                   key: 2,
                   disabled: r(a),
                   link: "",
@@ -10690,7 +10690,7 @@ const Ba = { "w-50vw": "" }, Ea = /* @__PURE__ */ E("span", null, "选择控制�
       prop: "data.label",
       ":modelValue": "label",
       "@update:modelValue": ({ label: t, $: i, formData: o }) => {
-        t.value = i[0], Be(r(o), "name", t.value);
+        t.value = i[0], fe(r(o), "name", t.value);
       }
     },
     { tag: T, type: "textarea", class: "nifi-form-tip", autoSize: !0, prop: n, label: "描述" }
@@ -10700,11 +10700,11 @@ const Ba = { "w-50vw": "" }, Ea = /* @__PURE__ */ E("span", null, "选择控制�
   const t = e.event.source.get(n.id), i = e.NodeMetadata.get(n.prop("type")) || {}, { excludeKeys: o = [], selfFormColumn: a = [], initTabs: l } = i;
   if (l)
     return l(n, e);
-  const s = ((B = (F = t.component) == null ? void 0 : F.config) == null ? void 0 : B.descriptors) || {}, c = Object.keys(s), p = c.map((b) => {
+  const s = ((B = (F = t.component) == null ? void 0 : F.config) == null ? void 0 : B.descriptors) || {}, c = Object.keys(s), p = c.map((M) => {
     var oe;
-    const M = s[b], S = M.name, G = M.displayName, V = M.description, x = M.required, P = ((oe = M.allowableValues) == null ? void 0 : oe.map((ee) => ({ label: ee.allowableValue.displayName, value: ee.allowableValue.value }))) || [];
-    return { type: P.length > 0 ? "select" : "string", prop: S, label: G, desc: V, required: x, value: M.defaultValue, cls: P };
-  }), A = c.map((b, M) => [b, M]).filter(([b]) => !o.includes(b)), u = { type: "form", label: "常用属性", default: !0, column: a.map((b) => b.assignKey ? Object.assign({}, p[c.indexOf(b.assignKey)] || {}, b) : b) }, m = { type: "form", label: "高级属性", column: [{ tag: Ha, keys: A.map((b) => b[0]), nifi: e, cell: n }] }, g = {
+    const b = s[M], S = b.name, G = b.displayName, V = b.description, x = b.required, P = ((oe = b.allowableValues) == null ? void 0 : oe.map((ee) => ({ label: ee.allowableValue.displayName, value: ee.allowableValue.value }))) || [];
+    return { type: P.length > 0 ? "select" : "string", prop: S, label: G, desc: V, required: x, value: b.defaultValue, cls: P };
+  }), A = c.map((M, b) => [M, b]).filter(([M]) => !o.includes(M)), u = { type: "form", label: "常用属性", default: !0, column: a.map((M) => M.assignKey ? Object.assign({}, p[c.indexOf(M.assignKey)] || {}, M) : M) }, m = { type: "form", label: "高级属性", column: [{ tag: Ha, keys: A.map((M) => M[0]), nifi: e, cell: n }] }, g = {
     label: "高级配置",
     type: "form",
     validate: !0,
@@ -10728,8 +10728,8 @@ const Ba = { "w-50vw": "" }, Ea = /* @__PURE__ */ E("span", null, "选择控制�
             prop: "config.schedulingStrategy",
             label: "调度策略",
             cls: [{ value: "TIMER_DRIVEN", label: "定时器驱动" }, { value: "CRON_DRIVEN", label: "基于CRON表达式的驱动" }],
-            "@change": ({ formData: b, $: M }) => {
-              M[0] == "CRON_DRIVEN" ? (Be(r(b), "config.schedulingPeriod", "* * * * * ?"), Be(r(b), "config.concurrentlySchedulableTaskCount", "1")) : (Be(r(b), "config.schedulingPeriod", "0 sec"), Be(r(b), "config.concurrentlySchedulableTaskCount", "1"));
+            "@change": ({ formData: M, $: b }) => {
+              b[0] == "CRON_DRIVEN" ? (fe(r(M), "config.schedulingPeriod", "* * * * * ?"), fe(r(M), "config.concurrentlySchedulableTaskCount", "1")) : (fe(r(M), "config.schedulingPeriod", "0 sec"), fe(r(M), "config.concurrentlySchedulableTaskCount", "1"));
             },
             tip: "The strategy used to schedule this processor."
           },
@@ -10740,11 +10740,11 @@ const Ba = { "w-50vw": "" }, Ea = /* @__PURE__ */ E("span", null, "选择控制�
       }
     ]
   }, w = { label: "关系", type: "form", validate: !0, column: [
-    { tag: d1, prop: "config.autoTerminatedRelationships", label: "终止", cls: (I = (v = t == null ? void 0 : t.component) == null ? void 0 : v.relationships) == null ? void 0 : I.map((b) => ({ tag: Xe, label: b.name })) },
-    { tag: d1, prop: "config.retriedRelationships", label: "重试", cls: (H = (N = t == null ? void 0 : t.component) == null ? void 0 : N.relationships) == null ? void 0 : H.map((b) => ({ tag: Xe, label: b.name })) },
+    { tag: d1, prop: "config.autoTerminatedRelationships", label: "终止", cls: (I = (v = t == null ? void 0 : t.component) == null ? void 0 : v.relationships) == null ? void 0 : I.map((M) => ({ tag: Xe, label: M.name })) },
+    { tag: d1, prop: "config.retriedRelationships", label: "重试", cls: (H = (N = t == null ? void 0 : t.component) == null ? void 0 : N.relationships) == null ? void 0 : H.map((M) => ({ tag: Xe, label: M.name })) },
     {
       tag: "div",
-      "v-if": ({ formData: b }) => b.config.retriedRelationships.length > 0,
+      "v-if": ({ formData: M }) => M.config.retriedRelationships.length > 0,
       cls: [
         { tag: X1, prop: "config.retryCount", label: "重试尝试次数", tip: "For relationships set to retry, this number indicates how many times a FlowFile will attempt to reprocess before it is routed elsewhere." },
         {
@@ -10775,7 +10775,7 @@ const Ba = { "w-50vw": "" }, Ea = /* @__PURE__ */ E("span", null, "选择控制�
       prop: "data.label",
       ":modelValue": "label",
       "@update:modelValue": ({ label: t, $: i, formData: o }) => {
-        t.value = i[0], Be(r(o), "name", t.value);
+        t.value = i[0], fe(r(o), "name", t.value);
       }
     },
     { tag: t1, label: "是否启用", prop: "state", activeValue: "STOPPED", inactiveValue: "DISABLED" },
@@ -10840,7 +10840,7 @@ const Ba = { "w-50vw": "" }, Ea = /* @__PURE__ */ E("span", null, "选择控制�
   },
   emits: ["change"],
   setup(n, { emit: e }) {
-    var H, b, M, S, G;
+    var H, M, b, S, G;
     const t = n, { nifi: i, cell: o } = t, a = i.event.source.get(o.id), l = a == null, s = $((a == null ? void 0 : a.component) || {
       backPressureDataSizeThreshold: "1 GB",
       backPressureObjectThreshold: "10000",
@@ -10851,7 +10851,7 @@ const Ba = { "w-50vw": "" }, Ea = /* @__PURE__ */ E("span", null, "选择控制�
       prioritizers: [],
       source: {},
       destination: {}
-    }), c = $({ groupName: i.groupTitle, isGroup: !1 }), p = $({ groupName: i.groupTitle, isGroup: !1 }), A = (H = o.source) == null ? void 0 : H.cell, h = (b = o.target) == null ? void 0 : b.cell, u = i.event.source.get(A), m = i.event.source.get(h), g = (S = (M = u == null ? void 0 : u.component) == null ? void 0 : M.relationships) == null ? void 0 : S.map((V) => ({ label: V.name, desc: V.description })), w = $([]), y = $([]);
+    }), c = $({ groupName: i.groupTitle, isGroup: !1 }), p = $({ groupName: i.groupTitle, isGroup: !1 }), A = (H = o.source) == null ? void 0 : H.cell, h = (M = o.target) == null ? void 0 : M.cell, u = i.event.source.get(A), m = i.event.source.get(h), g = (S = (b = u == null ? void 0 : u.component) == null ? void 0 : b.relationships) == null ? void 0 : S.map((V) => ({ label: V.name, desc: V.description })), w = $([]), y = $([]);
     (async () => {
       var V, x, P, Y, oe, ee, ue, X, q, j;
       if (u.outputPortCount && u.outputPortCount > 0) {
@@ -11362,8 +11362,8 @@ const Ja = (n) => {
     const B = await Pe(e);
     c.value = [], p.value = [], B.templates.forEach((v) => {
       let {
-        template: { id: I, description: N, name: H, timestamp: b, groupId: M, uri: S }
-      } = v, G = { id: I, description: N, name: H, timestamp: b, groupId: M, uri: S };
+        template: { id: I, description: N, name: H, timestamp: M, groupId: b, uri: S }
+      } = v, G = { id: I, description: N, name: H, timestamp: M, groupId: b, uri: S };
       c.value.push(G), p.value.push(G);
     });
   };
@@ -11388,12 +11388,12 @@ const Ja = (n) => {
       I.style.display = "none", I.href = v + "/download", I.setAttribute("download", B), document.body.appendChild(I), I.click();
     },
     createTemplate: async (B, v, I, N) => {
-      let b = {
+      let M = {
         disconnectedNodeAcknowledged: !1,
         snippet: { parentGroupId: v, ...Za(B, I) }
       }, G = {
         disconnectedNodeAcknowledged: !1,
-        snippetId: (await Ve(o, b)).snippet.id,
+        snippetId: (await Ve(o, M)).snippet.id,
         ...N
       };
       try {
@@ -11467,7 +11467,7 @@ const Ja = (n) => {
     flow: {}
   },
   setup(n) {
-    const e = n, { clientId: t, groupId: i, flow: o } = me(e), a = D(""), l = D(""), {
+    const e = n, { clientId: t, groupId: i, flow: o } = we(e), a = D(""), l = D(""), {
       getTemplateData: s,
       filterData: c,
       filterTableList: p,
@@ -11496,10 +11496,10 @@ const Ja = (n) => {
       name: [{ required: !0, message: "请输入名称", trigger: "blur" }]
     }), H = () => {
       B.value = !0;
-    }, b = () => {
+    }, M = () => {
       var X;
       B.value = !1, (X = v.value) == null || X.resetFields();
-    }, M = async () => {
+    }, b = async () => {
       var X;
       await ((X = v.value) == null ? void 0 : X.validate(async (q, j) => {
         q ? await m(
@@ -11507,7 +11507,7 @@ const Ja = (n) => {
           i.value,
           o.value,
           I
-        ) && b() : console.log("error submit!", j);
+        ) && M() : console.log("error submit!", j);
       }));
     }, S = D(!1), G = D(), V = $({
       template: []
@@ -11530,8 +11530,8 @@ const Ja = (n) => {
       s();
     });
     const ue = ({ timestamp: X }) => {
-      const q = X.slice(0, -4), j = new Date(q), ae = j.getFullYear(), Ce = String(j.getMonth() + 1).padStart(2, "0"), pe = String(j.getDate()).padStart(2, "0"), le = String(j.getHours()).padStart(2, "0"), we = String(j.getMinutes()).padStart(2, "0"), Le = String(j.getSeconds()).padStart(2, "0");
-      return `${ae}/${Ce}/${pe} ${le}:${we}:${Le}`;
+      const q = X.slice(0, -4), j = new Date(q), ae = j.getFullYear(), Ce = String(j.getMonth() + 1).padStart(2, "0"), pe = String(j.getDate()).padStart(2, "0"), le = String(j.getHours()).padStart(2, "0"), ye = String(j.getMinutes()).padStart(2, "0"), Le = String(j.getSeconds()).padStart(2, "0");
+      return `${ae}/${Ce}/${pe} ${le}:${ye}:${Le}`;
     };
     return (X, q) => (Q(), R("div", ja, [
       E("div", qa, O(r(A)), 1),
@@ -11571,7 +11571,7 @@ const Ja = (n) => {
           onInput: r(w)
         }, null, 8, ["modelValue", "onInput"])
       ]),
-      d(r(fe), {
+      d(r(me), {
         data: r(c),
         "default-sort": { prop: "timestamp", order: "descending" },
         height: "400"
@@ -11643,7 +11643,7 @@ const Ja = (n) => {
         title: "新增模板",
         width: "500",
         "destroy-on-close": "",
-        "before-close": b
+        "before-close": M
       }, {
         default: f(() => [
           d(r(He), {
@@ -11684,7 +11684,7 @@ const Ja = (n) => {
             _: 1
           }, 8, ["model", "rules"]),
           E("div", Xa, [
-            d(r(k), { onClick: b }, {
+            d(r(k), { onClick: M }, {
               default: f(() => [
                 K("取消")
               ]),
@@ -11692,7 +11692,7 @@ const Ja = (n) => {
             }),
             d(r(k), {
               type: "primary",
-              onClick: M
+              onClick: b
             }, {
               default: f(() => [
                 K("保存")
@@ -11798,9 +11798,9 @@ const Ja = (n) => {
         return () => L("div", { class: "flex gap-2em" }, [
           L("div", [
             L("span", "名称"),
-            L(T, { disabled: g, modelValue: ce(w, y), "onUpdate:modelValue": (B) => Be(w, y, B) }),
+            L(T, { disabled: g, modelValue: ce(w, y), "onUpdate:modelValue": (B) => fe(w, y, B) }),
             L("span", "描述"),
-            L(T, { disabled: g, type: "textarea", modelValue: ce(w, F), "onUpdate:modelValue": (B) => Be(w, F, B) })
+            L(T, { disabled: g, type: "textarea", modelValue: ce(w, F), "onUpdate:modelValue": (B) => fe(w, F, B) })
           ]),
           L("div", [
             L("span", "引用组件")
@@ -11813,7 +11813,7 @@ const Ja = (n) => {
       setup: (m) => {
         const { disabled: g = !1, data: w } = m, y = w.component.parameters;
         return () => L("div", [
-          L(fe, { data: y }, { default: () => [
+          L(me, { data: y }, { default: () => [
             L(U, { label: "名称", prop: "parameter.name" }),
             L(U, { label: "值", prop: "parameter.value" }),
             L(U, {
@@ -11847,7 +11847,7 @@ const Ja = (n) => {
       const m = await t.refreshParamsContext();
       i.length = 0, i.push(...m);
     })(), (m, g) => (Q(), R("div", i5, [
-      d(r(fe), {
+      d(r(me), {
         data: i,
         "w-full": "",
         "h-full": ""
@@ -12006,8 +12006,8 @@ const Ja = (n) => {
         }
       let N = F.map((S) => S.name), H = w.component.parameters.map(
         (S) => S.parameter.name
-      ), b = N.filter((S) => !H.includes(S));
-      b.length > 0 && b.forEach((S) => {
+      ), M = N.filter((S) => !H.includes(S));
+      M.length > 0 && M.forEach((S) => {
         let G = F.find((V) => V.name === S);
         I.push({
           parameter: {
@@ -12016,8 +12016,8 @@ const Ja = (n) => {
           }
         });
       });
-      let M = H.filter((S) => !N.includes(S));
-      M.length > 0 && M.forEach((S) => {
+      let b = H.filter((S) => !N.includes(S));
+      b.length > 0 && b.forEach((S) => {
         I.push({ parameter: { name: S } });
       }), v.component.parameters = I, v.component.inheritedParameterContexts = [], v.component.inheritedParameterContexts = B.map((S) => ({
         component: {
@@ -12072,7 +12072,7 @@ const Ja = (n) => {
   },
   emits: ["update:parameterTableData"],
   setup(n, { emit: e }) {
-    const t = e, i = n, { parameterTableData: o, id: a } = me(i), l = D(), s = W(() => {
+    const t = e, i = n, { parameterTableData: o, id: a } = we(i), l = D(), s = W(() => {
       if (!a.value)
         return "";
       if (F.value)
@@ -12120,22 +12120,22 @@ const Ja = (n) => {
       if (!a.value)
         return;
       F.value = I.name, B.value = [];
-      let b = (S = o.value.find(
+      let M = (S = o.value.find(
         (G) => G.name === I.name
-      )) == null ? void 0 : S.referencingComponents, M = n1(b, "processGroup.id");
-      for (const G in M) {
-        let V = b.find((x) => x.processGroup.id === G).processGroup.name;
+      )) == null ? void 0 : S.referencingComponents, b = n1(M, "processGroup.id");
+      for (const G in b) {
+        let V = M.find((x) => x.processGroup.id === G).processGroup.name;
         B.value.push({
           name: V,
-          len: M[G].length,
+          len: b[G].length,
           children: [
             {
               name: "引用处理器",
-              children: M[G].filter((x) => x.referenceType === "PROCESSOR").map((x) => x.component)
+              children: b[G].filter((x) => x.referenceType === "PROCESSOR").map((x) => x.component)
             },
             {
               name: "引用控制器服务",
-              children: M[G].filter((x) => x.referenceType === "CONTROLLER_SERVICE").map((x) => x.component)
+              children: b[G].filter((x) => x.referenceType === "CONTROLLER_SERVICE").map((x) => x.component)
             }
             // { name: "未授权引用的组件", children: [] },
           ]
@@ -12153,7 +12153,7 @@ const Ja = (n) => {
           ]),
           _: 1
         }, 8, ["icon"]),
-        d(r(fe), {
+        d(r(me), {
           ref_key: "parameterRef",
           ref: l,
           "highlight-current-row": "",
@@ -12170,20 +12170,20 @@ const Ja = (n) => {
               prop: "value"
             }),
             d(r(U), { label: "操作" }, {
-              default: f(({ $index: H, row: b }) => [
+              default: f(({ $index: H, row: M }) => [
                 d(r(k), {
                   text: "",
                   type: "primary",
                   title: "更新",
                   icon: r($e),
-                  onClick: (M) => g(b, H)
+                  onClick: (b) => g(M, H)
                 }, null, 8, ["icon", "onClick"]),
                 d(r(k), {
                   text: "",
                   type: "primary",
                   title: "删除",
                   icon: r(be),
-                  onClick: (M) => w(H)
+                  onClick: (b) => w(H)
                 }, null, 8, ["icon", "onClick"])
               ]),
               _: 1
@@ -12225,14 +12225,14 @@ const Ja = (n) => {
               label: "name"
             }
           }, {
-            default: f(({ node: H, data: b }) => [
+            default: f(({ node: H, data: M }) => [
               E("span", {
                 style: Ke({
                   color: "#224b6c",
-                  fontWeight: b.len ? "bold" : ""
+                  fontWeight: M.len ? "bold" : ""
                 })
               }, O(H.label), 5),
-              b.len ? (Q(), R("span", p5, "(" + O(b.len) + ")", 1)) : _("", !0)
+              M.len ? (Q(), R("span", p5, "(" + O(M.len) + ")", 1)) : _("", !0)
             ]),
             _: 1
           }, 8, ["data"])
@@ -12264,7 +12264,7 @@ const Ja = (n) => {
                   return [
                     d(r(T), {
                       modelValue: A.value.name,
-                      "onUpdate:modelValue": N[1] || (N[1] = (b) => A.value.name = b),
+                      "onUpdate:modelValue": N[1] || (N[1] = (M) => A.value.name = M),
                       disabled: !!((H = A.value.parameterContext) != null && H.id)
                     }, null, 8, ["modelValue", "disabled"])
                   ];
@@ -12331,7 +12331,7 @@ const Ja = (n) => {
   },
   emits: ["update:modelValue"],
   setup(n, { emit: e }) {
-    const t = n, { tableData: i, inheritedContexts: o, id: a } = me(t), l = W(() => i.value.filter(
+    const t = n, { tableData: i, inheritedContexts: o, id: a } = we(t), l = W(() => i.value.filter(
       (A) => o.value.every((h) => A.id !== h.id) && A.id !== a.value
     ));
     function s() {
@@ -12413,7 +12413,7 @@ const Ja = (n) => {
   },
   emits: ["update:modelValue", "updateParameterData"],
   setup(n, { emit: e }) {
-    const t = e, i = n, { modelValue: o, id: a, clientId: l, tableData: s } = me(i), { createParameter: c, getParameterDetail: p, editParameter: A, editStep: h } = ht({
+    const t = e, i = n, { modelValue: o, id: a, clientId: l, tableData: s } = we(i), { createParameter: c, getParameterDetail: p, editParameter: A, editStep: h } = ht({
       createUrl: "/nifi-api/parameter-contexts",
       detailUrl: `/nifi-api/parameter-contexts/${a.value}?includeInheritedParameters=true`,
       editUrl: `/nifi-api/parameter-contexts/${a.value}/update-requests`,
@@ -12426,8 +12426,8 @@ const Ja = (n) => {
     }), y = () => {
       t("update:modelValue", !1);
     }, F = D([]), B = async () => {
-      var M;
-      await ((M = m.value) == null ? void 0 : M.validate(async (S, G) => {
+      var b;
+      await ((b = m.value) == null ? void 0 : b.validate(async (S, G) => {
         if (S) {
           let V = !1;
           if (F.value = [], a.value) {
@@ -12452,7 +12452,7 @@ const Ja = (n) => {
       I.value = await p();
       let {
         component: {
-          description: M,
+          description: b,
           name: S,
           parameters: G,
           inheritedParameterContexts: V,
@@ -12460,9 +12460,9 @@ const Ja = (n) => {
         }
       } = I.value;
       g.value = {
-        description: M,
+        description: b,
         name: S
-      }, N.value = V, b.value[0].children = x.map(
+      }, N.value = V, M.value[0].children = x.map(
         (P) => ({
           name: P.component.name,
           id: P.id
@@ -12470,7 +12470,7 @@ const Ja = (n) => {
       ), v.value = gi(
         G.map((P) => P.parameter)
       );
-    }, b = D([
+    }, M = D([
       {
         name: "流程组",
         children: []
@@ -12478,7 +12478,7 @@ const Ja = (n) => {
     ]);
     return Qe(() => {
       a.value && H();
-    }), (M, S) => (Q(), J(r(ve), {
+    }), (b, S) => (Q(), J(r(ve), {
       "w-900": "",
       "h-500": "",
       "model-value": r(o),
@@ -12573,7 +12573,7 @@ const Ja = (n) => {
                     d(r(tt), {
                       style: { "max-width": "600px" },
                       "default-expand-all": "",
-                      data: b.value,
+                      data: M.value,
                       props: {
                         children: "children",
                         label: "name"
@@ -12670,7 +12670,7 @@ const Ja = (n) => {
     clientId: {}
   },
   setup(n) {
-    const e = n, { clientId: t } = me(e), { tableData: i, getParameterData: o, deleteParameter: a } = ht({
+    const e = n, { clientId: t } = we(e), { tableData: i, getParameterData: o, deleteParameter: a } = ht({
       url: "/nifi-api/flow/parameter-contexts",
       deleteUrl: "/nifi-api/parameter-contexts/"
     }), l = D(!1), s = D(""), c = () => {
@@ -12695,7 +12695,7 @@ const Ja = (n) => {
         ]),
         _: 1
       }, 8, ["icon"]),
-      d(r(fe), {
+      d(r(me), {
         data: r(i),
         height: "400"
       }, {
@@ -12759,7 +12759,7 @@ const Ja = (n) => {
       }, null, 8, ["modelValue", "id", "clientId", "tableData"])) : _("", !0)
     ]));
   }
-}), x5 = /* @__PURE__ */ Se(L5, [["__scopeId", "data-v-164a8984"]]), k5 = /* @__PURE__ */ Object.assign({ "./nodes/CalColumn.ts": () => import("./CalColumn.nFw_xSFO.js"), "./nodes/ColSelector.ts": () => import("./ColSelector.CalpQsfR.js"), "./nodes/ConsumeKafka_2_6.ts": () => import("./ConsumeKafka_2_6.BnkbLR2a.js"), "./nodes/ConsumeKafka_2_6_01.ts": () => import("./ConsumeKafka_2_6_01.CE0HP3St.js"), "./nodes/DataCleaner.ts": () => import("./DataCleaner.LQ8xYtCl.js"), "./nodes/ExecuteGroovyScript.ts": () => import("./ExecuteGroovyScript.CckZpzBH.js"), "./nodes/KafkaSQL.ts": () => import("./KafkaSQL.DzQa-OnW.js"), "./nodes/PutDatabaseRecord.ts": () => import("./PutDatabaseRecord.BfS2pT-s.js"), "./nodes/QueryDatabaseTableRecord.ts": () => import("./QueryDatabaseTableRecord.BrACsqAy.js"), "./nodes/RowFilter.ts": () => import("./RowFilter.xcATumSU.js") });
+}), x5 = /* @__PURE__ */ Se(L5, [["__scopeId", "data-v-164a8984"]]), k5 = /* @__PURE__ */ Object.assign({ "./nodes/CalColumn.ts": () => import("./CalColumn.CPcFcC11.js"), "./nodes/ColSelector.ts": () => import("./ColSelector.NKijbkQP.js"), "./nodes/ConsumeKafka_2_6.ts": () => import("./ConsumeKafka_2_6.BV-ZZl8x.js"), "./nodes/ConsumeKafka_2_6_01.ts": () => import("./ConsumeKafka_2_6_01.DasZM7qU.js"), "./nodes/DataCleaner.ts": () => import("./DataCleaner.SaYzos_4.js"), "./nodes/ExecuteGroovyScript.ts": () => import("./ExecuteGroovyScript.CckZpzBH.js"), "./nodes/KafkaSQL.ts": () => import("./KafkaSQL.lGH5bXso.js"), "./nodes/PutDatabaseRecord.ts": () => import("./PutDatabaseRecord.KNijHWfp.js"), "./nodes/QueryDatabaseTableRecord.ts": () => import("./QueryDatabaseTableRecord.D-xbpWBD.js"), "./nodes/RowFilter.ts": () => import("./RowFilter.DI_Uc1mv.js") });
 class N5 {
   constructor(e, t) {
     //
@@ -13093,7 +13093,7 @@ const P5 = {
       });
     }), A = l.map((h) => ({ prop: h, label: h, ...o[h] || {} }));
     return (h, u) => (Q(), R("div", P5, [
-      d(r(fe), {
+      d(r(me), {
         class: "w-full h-full min-w-60vw",
         data: p.value
       }, {
@@ -13121,7 +13121,7 @@ const P5 = {
     log: {}
   },
   setup(n) {
-    const e = n, { log: t } = me(e), i = D(), o = W(() => {
+    const e = n, { log: t } = we(e), i = D(), o = W(() => {
       var s;
       return (s = t.value) == null ? void 0 : s.split(`
 `);
@@ -13546,7 +13546,7 @@ const V5 = {
     });
     return (p, A) => (Q(), R("div", V5, [
       E("div", O5, [
-        d(r(fe), {
+        d(r(me), {
           data: s.value,
           "row-style": { height: "48px", "box-sizing": "border-box" },
           "header-row-style": { height: "50px", "box-sizing": "border-box" }
@@ -13572,7 +13572,7 @@ const V5 = {
         ]))), 256))
       ]),
       E("div", Z5, [
-        d(r(fe), {
+        d(r(me), {
           data: c.value,
           "row-style": { height: "48px", "box-sizing": "border-box" },
           "header-row-style": { height: "50px", "box-sizing": "border-box" }
@@ -13661,7 +13661,7 @@ const V5 = {
   { label: "pri/in/out", prop: "priority" }
 ], X5 = [
   { label: "日志", default: !0, elem: { tag: u1, ":log": "runResult.get(currentId).log", ":key": "currentId" } },
-  { label: "统计", elem: { tag: fe, ":key": "currentId", ":data": "runResult.get(currentId).executorSteps", cls: _5.map((n) => ({ tag: U, ...n })) } },
+  { label: "统计", elem: { tag: me, ":key": "currentId", ":data": "runResult.get(currentId).executorSteps", cls: _5.map((n) => ({ tag: U, ...n })) } },
   { label: "数据预览", elem: { tag: Ct, style: "height:100%;", ":key": "currentCell + currentId", ":data": "runResult.get(currentId)", ":names": "```preview.{{currentCell}}.names```", ":rows": "```preview.{{currentCell}}.rows```" } },
   { label: "字段信息", elem: { tag: j5, ":key": "currentCell + currentId", ":inFields": "runResult.get(currentId)?.fields?.[currentCell]?.inputFileds", ":outFields": "runResult.get(currentId)?.fields?.[currentCell]?.outputFileds" } }
 ], $5 = {
@@ -13704,7 +13704,7 @@ const V5 = {
     prop: "data.label",
     ":modelValue": "label",
     "@update:modelValue": ({ label: n, $: e, data: t, formData: i }) => {
-      n.value = e[0], Be(r(i), "name", n.value);
+      n.value = e[0], fe(r(i), "name", n.value);
     }
   },
   { tag: T, type: "textarea", class: "nifi-form-tip", autoSize: !0, prop: "$desc", label: "描述" },
@@ -13765,7 +13765,7 @@ const V5 = {
   const t = n2(n, e);
   if (t != null) {
     const o = (i = e.form) == null ? void 0 : i.getCellFormData(n);
-    o && Be(o, "outFields", t);
+    o && fe(o, "outFields", t);
   }
 }, n2 = (n, e) => {
   var t, i, o, a;
@@ -14239,7 +14239,7 @@ const d2 = {
             name: "params"
           }, {
             default: f(() => [
-              d(r(fe), {
+              d(r(me), {
                 "header-cell-style": { background: "#f5f7fa", color: "#606266" },
                 height: "200px",
                 data: i
@@ -14347,7 +14347,7 @@ const d2 = {
     };
     return (s, c) => {
       const p = Ht("el-button");
-      return Q(), J(r(fe), {
+      return Q(), J(r(me), {
         class: "w-60vw",
         "header-cell-style": { background: "#f5f7fa", color: "#606266" },
         height: "200px",
@@ -14465,7 +14465,7 @@ const u2 = {
     const e = [
       { label: "手动执行", value: 0 },
       { label: "定时执行", value: 1 }
-    ], t = n, { data: i, formRef: o } = me(t), a = D();
+    ], t = n, { data: i, formRef: o } = we(t), a = D();
     return Qe(() => {
       o.value = a.value, a.value && a.value.resetFields();
     }), (l, s) => (Q(), R("div", u2, [
@@ -14502,8 +14502,7 @@ const u2 = {
             ]),
             _: 1
           }),
-          r(i).execute_type == 1 ? (Q(), J(r(te), {
-            key: 0,
+          d(r(te), {
             label: "定时时间",
             prop: "execute_cron",
             rules: [{ required: !0, message: "请配置定时时间" }]
@@ -14515,7 +14514,7 @@ const u2 = {
               }, null, 8, ["modelValue"])
             ]),
             _: 1
-          })) : _("", !0)
+          })
         ]),
         _: 1
       }, 8, ["model"])
