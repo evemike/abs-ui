@@ -10,6 +10,7 @@ export declare class NifiApi {
     getGroupStatus(id: string): Promise<any>;
     getParamsContext(): Promise<any>;
     delParamsContext(data: any): Promise<any>;
+    getParametersById(id: string): Promise<any>;
     getTemplates(): Promise<any>;
     initTemplate(data: any): Promise<any>;
     initSnippet(data: any): Promise<any>;
@@ -17,12 +18,13 @@ export declare class NifiApi {
     groupUp(data: any): Promise<any>;
     groupUpStatus(id: string, state: "ENABLED" | "DISABLED" | "RUNNING" | "STOPPED" | "RUN_ONCE"): Promise<any>;
     getControllerServices(): Promise<any>;
-    createControllerServices(data: any): Promise<any>;
+    createControllerServices(d: {
+        component: any;
+    }): Promise<any>;
     editControllerServices(data: any): Promise<any>;
     delControllerServices(data: any): Promise<any>;
     startControllerServices(data: any): void;
     getControllerServiceTypes(data: any): Promise<any>;
-    createCSByType(data: any): Promise<void>;
     stopControllerServices(): void;
     getProcessorDescriptors(id: string, propertyName: string): Promise<any>;
     cellAdd(data: any, name?: NIFI_CELL_NAME): Promise<any>;
