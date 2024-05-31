@@ -1,35 +1,36 @@
-import { defineComponent as j, toRefs as B, computed as L, ref as b, resolveComponent as I, openBlock as k, createElementBlock as F, createElementVNode as i, Fragment as K, renderList as Q, unref as _, createBlock as V, withCtx as R, createTextVNode as N, toDisplayString as Y, createVNode as O } from "vue";
+import { defineComponent as j, toRefs as B, computed as L, ref as b, resolveComponent as I, openBlock as k, createElementBlock as P, createElementVNode as i, Fragment as K, renderList as Q, unref as _, createBlock as V, withCtx as O, createTextVNode as R, toDisplayString as Y, createVNode as N } from "vue";
 import { bb as z, b9 as J, b as T, v as U, a as D } from "./vendor.CTqz3lQh.js";
 import { C as A } from "./main.BzEWEJBT.js";
-const G = {
+import { i as G } from "./index.CtJfHKlH.js";
+const M = {
   "w-full": "",
   "h-full": "",
   "overflow-auto": ""
-}, M = {
+}, H = {
   flex: "",
   "items-center": "",
   "gap-16": ""
-}, H = /* @__PURE__ */ i("span", {
+}, W = /* @__PURE__ */ i("span", {
   "w-100": "",
   "text-nowrap": "",
   "self-start": ""
-}, "输入源", -1), W = {
+}, "输入源", -1), X = {
   class: "flex flex-1 flex-wrap",
   style: { width: "calc(100% - 100px)" }
-}, X = { class: "flex items-center mb-5" }, Z = /* @__PURE__ */ i("div", { "w-100": "" }, "SQL 语句", -1), ee = {
+}, Z = { class: "flex items-center mb-5" }, ee = /* @__PURE__ */ i("div", { "w-100": "" }, "SQL 语句", -1), te = {
   "w-full": "",
   style: { height: "calc(100% - 40px)" }
-}, te = {
+}, le = {
   relative: "",
   "w-full": "",
   "h-full": "",
   flex: "",
   "flex-col": "",
   "overflow-hidden": ""
-}, le = {
+}, se = {
   "min-h-100": "",
   style: { height: "calc(100% - 32px)" }
-}, se = /* @__PURE__ */ j({
+}, ne = /* @__PURE__ */ j({
   __name: "sqlConfig",
   props: {
     sql: { default: "" },
@@ -38,7 +39,7 @@ const G = {
   },
   emits: ["change", "update:sql"],
   setup(y, { emit: q }) {
-    const m = y, v = q, { sourceList: d, sql: p } = B(m), { preview: g } = m, a = L({
+    const m = y, v = q, { sourceList: d, sql: p } = B(m), { preview: g } = m, r = L({
       get: () => h(p.value, !1),
       set: (e) => {
         const l = h(e, !0);
@@ -50,7 +51,7 @@ const G = {
     })).sort((e, l) => l.label.length - e.label.length)), E = z(() => {
       v("change");
     }, 1e3), S = (e) => {
-      a.value = e;
+      r.value = e;
     };
     function h(e, l = !1) {
       let o = e, u = l ? "label" : "id", f = l ? "id" : "label";
@@ -61,16 +62,16 @@ const G = {
         o = o.replace($, w);
       }), o;
     }
-    function P(e) {
-      let l = e.label, o = a.value ? l : `select * from ${l}`;
+    function F(e) {
+      let l = e.label, o = r.value ? l : `select * from ${l}`;
       s.value.insertValue(o);
     }
-    const t = b([J()]), s = b(), n = new RegExp("(select)(?!.*(update|delete|insert))", "i"), r = L(() => n.test(a.value)), c = async () => {
-      if (!n.test(a.value)) {
+    const t = b([J()]), s = b(), n = new RegExp("(select)(?!.*(update|delete|insert))", "i"), a = L(() => n.test(r.value)), c = async () => {
+      if (!n.test(r.value)) {
         D.warning("仅支持【SELECT】语句");
         return;
       }
-      if (!a.value) {
+      if (!r.value) {
         D.warning("请输入 SQL 语句");
         return;
       }
@@ -78,46 +79,46 @@ const G = {
     };
     return (e, l) => {
       const o = I("el-tag");
-      return k(), F("div", G, [
-        i("div", M, [
-          H,
-          i("div", W, [
-            (k(!0), F(K, null, Q(_(d), (u, f) => (k(), V(o, {
+      return k(), P("div", M, [
+        i("div", H, [
+          W,
+          i("div", X, [
+            (k(!0), P(K, null, Q(_(d), (u, f) => (k(), V(o, {
               key: f,
               type: "primary",
               effect: "light",
               class: "mr-10 mb-10 cursor-pointer",
-              onClick: (C) => P(u)
+              onClick: (C) => F(u)
             }, {
-              default: R(() => [
-                N(Y(u.label), 1)
+              default: O(() => [
+                R(Y(u.label), 1)
               ]),
               _: 2
             }, 1032, ["onClick"]))), 128))
           ])
         ]),
-        i("div", X, [
-          Z,
-          O(_(T), {
-            disabled: !r.value,
+        i("div", Z, [
+          ee,
+          N(_(T), {
+            disabled: !a.value,
             text: "",
             type: "success",
             icon: _(U),
             onClick: c
           }, {
-            default: R(() => [
-              N("数据预览")
+            default: O(() => [
+              R("数据预览")
             ]),
             _: 1
           }, 8, ["disabled", "icon"])
         ]),
-        i("div", ee, [
-          i("div", te, [
-            i("div", le, [
-              O(_(A), {
+        i("div", te, [
+          i("div", le, [
+            i("div", se, [
+              N(_(A), {
                 ref_key: "codeEditorRef",
                 ref: s,
-                "model-value": a.value,
+                "model-value": r.value,
                 "onUpdate:modelValue": S,
                 lang: t.value,
                 class: "w-full h-full"
@@ -128,7 +129,7 @@ const G = {
       ]);
     };
   }
-}), re = (y) => {
+}), ce = (y) => {
   const q = "OLAPSQL", m = {
     ports: { items: [{ id: "in", group: "left" }, { id: "out", group: "right" }] }
   }, v = {
@@ -153,9 +154,9 @@ const G = {
       draw: "Y"
     }
   }, d = b(""), p = b([]), g = (t, s) => {
-    console.log("open", t, s), d.value = t.id, p.value = x(t, s), a(p.value.map((n) => n.label)) && D.warning("输入源名称重复了，请检查并重新命名");
+    G(t, s), d.value = t.id, p.value = x(t, s), r(p.value.map((n) => n.label)) && D.warning("输入源名称重复了，请检查并重新命名");
   };
-  function a(t) {
+  function r(t) {
     return new Set(t).size !== t.length;
   }
   function x(t, s) {
@@ -166,10 +167,10 @@ const G = {
     });
   }
   const E = {}, S = (t, s) => {
-    let { projectFile: n } = s.getProjectFile(), r = JSON.parse(n);
-    r.transformation.step.forEach((e) => {
+    let { projectFile: n } = s.getProjectFile(), a = JSON.parse(n);
+    a.transformation.step.forEach((e) => {
       e.name === d.value && (e.only_query_sql_meta = "Y");
-    }), delete r.transformation.nodeList;
+    }), delete a.transformation.nodeList;
     const c = {
       useOutLimit: !0,
       params: {
@@ -180,13 +181,13 @@ const G = {
       onlyLoadData: !0
     };
     Object.assign(t, {
-      file: JSON.stringify(r),
+      file: JSON.stringify(a),
       config: c
     });
   }, h = (t, s) => {
     if (!t)
       return;
-    const { previewFieldNames: n, previewRows: r } = t, c = (n || []).map((l) => l.replace("field", "").toLowerCase()), e = (r || []).map((l) => {
+    const { previewFieldNames: n, previewRows: a } = t, c = (n || []).map((l) => l.replace("field", "").toLowerCase()), e = (a || []).map((l) => {
       const o = {};
       return l.forEach((u, f) => {
         o[c[f]] = u;
@@ -201,7 +202,7 @@ const G = {
       label: "属性配置",
       column: [
         {
-          tag: se,
+          tag: ne,
           setup({ params: t }) {
             const { formData: s } = t;
             return { preConfig: { handleData: S, getPreviewData: (n) => h(n, s) } };
@@ -216,5 +217,5 @@ const G = {
   ], open: g, metadata: E };
 };
 export {
-  re as default
+  ce as default
 };
